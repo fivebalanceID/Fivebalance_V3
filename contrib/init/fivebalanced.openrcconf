@@ -1,0 +1,26 @@
+# /etc/conf.d/fivebalanced: config file for /etc/init.d/fivebalanced
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/fivebalance/fivebalance.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/fivebalanced"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/fivebalanced.pid"
+
+# Where to write fivebalanced data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/fivebalanced"
+
+# User and group to own fivebalanced process
+#BITCOIND_USER="fivebalance"
+#BITCOIND_GROUP="fivebalance"
+
+# Path to fivebalanced executable
+#BITCOIND_BIN="/usr/bin/fivebalanced"
+
+# Nice value to run fivebalanced under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

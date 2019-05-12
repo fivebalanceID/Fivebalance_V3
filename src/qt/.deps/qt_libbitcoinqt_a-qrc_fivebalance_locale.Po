@@ -1,0 +1,2 @@
+qt/qt_libbitcoinqt_a-qrc_fivebalance_locale.o: \
+ qt/qrc_fivebalance_locale.cpp

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Fivebalance
+Comment=Fivebalance P2P Cryptocurrency
+Comment[fr]=Fivebalance, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Fivebalance, eşten eşe kriptografik sanal para birimi
+Exec=fivebalance-qt %u
+Terminal=false
+Type=Application
+Icon=fivebalance128
+MimeType=x-scheme-handler/fivebalance;
+Categories=Office;Finance;

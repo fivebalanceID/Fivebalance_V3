@@ -1,0 +1,26 @@
+[Unit]
+Description=fivebalance's distributed currency daemon
+After=network.target
+
+[Service]
+User=fivebalance
+Group=fivebalance
+
+Type=forking
+PIDFile=/var/lib/fivebalanced/fivebalanced.pid
+
+ExecStart=/usr/bin/fivebalanced -daemon -pid=/var/lib/fivebalanced/fivebalanced.pid \
+          -conf=/etc/fivebalance/fivebalance.conf -datadir=/var/lib/fivebalanced
+
+ExecStop=-/usr/bin/fivebalance-cli -conf=/etc/fivebalance/fivebalance.conf \
+         -datadir=/var/lib/fivebalanced stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

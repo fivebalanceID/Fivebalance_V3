@@ -1,0 +1,1 @@
+qt/qt_libbitcoinqt_a-qrc_fivebalance.o: qt/qrc_fivebalance.cpp
