@@ -123,7 +123,7 @@ public:
         nMaxMoneyOut = 1000000000 * COIN; //1 Billion
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 620863;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = std::numeric_limits<int>::max();
         nAccumulatorStartHeight = 1;
