@@ -555,7 +555,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
                     continue;
             }
           
-			if(fProofOfStake && pwallet->GetBalance() < 100000 * COIN) {
+			if(fProofOfStake && pwallet->GetBalance() < 1 * COIN) {
 				LogPrintf("PoS and Balance is too low %d\n", pwallet->GetBalance());
 				MilliSleep(60000);
 				continue;
