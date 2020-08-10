@@ -3901,7 +3901,7 @@ bool IsDevFeeValid(const CBlock& block, int nBlockHeight)
 
 }
 
-#define STAKE_MIN_CONF 60
+#define STAKE_MIN_CONF 10
 
 bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig)
 {
