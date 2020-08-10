@@ -123,7 +123,7 @@ public:
         nMaxMoneyOut = 1000000000 * COIN; //1 Billion
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 620863;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = std::numeric_limits<int>::max();
         nAccumulatorStartHeight = 1;
@@ -198,7 +198,7 @@ public:
 
         nPoolMaxTransactions = 3;
         strSporkKey = "04bcfbea59ec97482475f554db08f7f67c5c5a95a52a356b052d0ed878628riki6fe6022c33a0baf09fcd8d3ee98ebb6aa6a77fb43d716641242cfd45369a88e7d";
-        strObfuscationPoolDummyAddress = "Jeax8jHDQ1s2kHVjysEoTQncVdUrNBuXtp";
+        strObfuscationPoolDummyAddress = "5kfR2aenWgJ4k5LiC4Nzi2PkBbqKHwufEk";
         nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
