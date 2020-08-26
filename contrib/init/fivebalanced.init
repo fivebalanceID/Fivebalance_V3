@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-#  fivebalanced The fivebalance core server.
+#  fivebalanced The PIVX core server.
 #
 #
 # chkconfig: 345 80 20

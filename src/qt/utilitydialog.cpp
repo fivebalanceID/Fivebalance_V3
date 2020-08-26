@@ -1,6 +1,6 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
-// Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2015-2020 The PIVX developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,11 +8,12 @@
 
 #include "ui_helpmessagedialog.h"
 
-#include "bitcoingui.h"
 #include "clientmodel.h"
 #include "guiconstants.h"
 #include "intro.h"
 #include "guiutil.h"
+
+#include "qt/fivebalance/qtutils.cpp"
 
 #include "clientversion.h"
 #include "init.h"
@@ -28,13 +29,14 @@
 #include <QVBoxLayout>
 
 /** "Help message" or "About" dialog box */
-HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(parent),
+HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(parent, Qt::WindowSystemMenuHint | Qt::WindowTitleHint | Qt::WindowCloseButtonHint),
                                                                     ui(new Ui::HelpMessageDialog)
 {
     ui->setupUi(this);
+    if (parent) this->setStyleSheet(parent->styleSheet());
     GUIUtil::restoreWindowGeometry("nHelpMessageDialogWindow", this->size(), this);
 
-    QString version = tr("Fivebalance Core") + " " + tr("version") + " " + QString::fromStdString(FormatFullVersion());
+    QString version = tr("FIVEBALANCE Core") + " " + tr("version") + " " + QString::fromStdString(FormatFullVersion());
 /* On x86 add a bit specifier to the version so that users can distinguish between
      * 32 and 64 bit builds. On other architectures, 32/64 bit may be more ambigious.
      */
@@ -44,8 +46,10 @@ HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(pare
     version += " " + tr("(%1-bit)").arg(32);
 #endif
 
+    setCssBtnPrimary(ui->pushButtonOk);
+    connect(ui->pushButtonOk, &QPushButton::clicked, this, &HelpMessageDialog::close);
     if (about) {
-        setWindowTitle(tr("About Fivebalance Core"));
+        setWindowTitle(tr("About FIVEBALANCE Core"));
 
         /// HTML-format the license message from the core
         QString licenseInfo = QString::fromStdString(LicenseInfo());
@@ -54,7 +58,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(pare
         // Make URLs clickable
         QRegExp uri("<(.*)>", Qt::CaseSensitive, QRegExp::RegExp2);
         uri.setMinimal(true); // use non-greedy matching
-        licenseInfoHTML.replace(uri, "<a href=\"\\1\">\\1</a>");
+        licenseInfoHTML.replace(uri, "<a style='color: #b088ff;text-decoration:none'  href=\"\\1\">\\1</a>");
         // Replace newlines with HTML breaks
         licenseInfoHTML.replace("\n\n", "<br><br>");
 
@@ -63,8 +67,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(pare
         text = version + "\n" + licenseInfo;
         ui->aboutMessage->setText(version + "<br><br>" + licenseInfoHTML);
         ui->aboutMessage->setWordWrap(true);
-        ui->helpMessage->setVisible(false);	
-        
+        ui->helpMessage->setVisible(false);
     } else {
         setWindowTitle(tr("Command-line options"));
         QString header = tr("Usage:") + "\n" +
@@ -82,6 +85,7 @@ HelpMessageDialog::HelpMessageDialog(QWidget* parent, bool about) : QDialog(pare
         strUsage += HelpMessageOpt("-min", tr("Start minimized").toStdString());
         strUsage += HelpMessageOpt("-rootcertificates=<file>", tr("Set SSL root certificates for payment request (default: -system-)").toStdString());
         strUsage += HelpMessageOpt("-splash", strprintf(tr("Show splash screen on startup (default: %u)").toStdString(), DEFAULT_SPLASHSCREEN));
+        strUsage += HelpMessageOpt("-hidecharts", strprintf(tr("Hide QT staking charts on startup (default: %u)").toStdString(), false));
         QString coreOptions = QString::fromStdString(strUsage);
         text = version + "\n" + header + "\n" + coreOptions;
 
@@ -144,23 +148,18 @@ void HelpMessageDialog::showOrPrint()
 #endif
 }
 
-void HelpMessageDialog::on_okButton_accepted()
-{
-    close();
-}
-
 
 /** "Shutdown" window */
 ShutdownWindow::ShutdownWindow(QWidget* parent, Qt::WindowFlags f) : QWidget(parent, f)
 {
     QVBoxLayout* layout = new QVBoxLayout();
     layout->addWidget(new QLabel(
-        tr("Fivebalance Core is shutting down...") + "<br /><br />" +
+        tr("FIVEBALANCE Core is shutting down...") + "<br /><br />" +
         tr("Do not shut down the computer until this window disappears.")));
     setLayout(layout);
 }
 
-void ShutdownWindow::showShutdownWindow(BitcoinGUI* window)
+void ShutdownWindow::showShutdownWindow(QMainWindow* window)
 {
     if (!window)
         return;

@@ -1,1 +1,2 @@
 contrib/fivebalanced.bash-completion	fivebalanced
+contrib/fivebalance-cli.bash-completion fivebalance-cli

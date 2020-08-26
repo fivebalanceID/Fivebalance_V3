@@ -1,14 +1,14 @@
 Translations
 ============
 
-The Fivebalance Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable. For managing all application translations, Fivebalance Core makes use of the Transifex online translation management tool.
+The FIVEBALANCE Core project has been designed to support multiple localisations. This makes adding new phrases, and completely new languages easily achievable. For managing all application translations, FIVEBALANCE Core makes use of the Transifex online translation management tool.
 
 ### Helping to translate (using Transifex)
 Transifex is setup to monitor the GitHub repo for updates, and when code containing new translations is found, Transifex will process any changes. It may take several hours after a pull-request has been merged, to appear in the Transifex web interface.
 
-Multiple language support is critical in assisting Fivebalance's global adoption, and growth. One of Fivebalance's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
+Multiple language support is critical in assisting FIVEBALANCE's global adoption, and growth. One of FIVEBALANCE's greatest strengths is cross-border money transfers, any help making that easier is greatly appreciated.
 
-See the [Transifex Fivebalance project](https://www.transifex.com/) to assist in translations.
+See the [Transifex FIVEBALANCE project](https://www.transifex.com/fivebalance-project/fivebalance-project-translations/) to assist in translations.
 
 ### Writing code with translations
 We use automated scripts to help extract translations in both Qt, and non-Qt source files. It is rarely necessary to manually edit the files in `src/qt/locale/`. The translation source files must adhere to the following format:
@@ -43,16 +43,14 @@ git commit
 ### Creating a Transifex account
 Visit the [Transifex Signup](https://www.transifex.com/signup/) page to create an account. Take note of your username and password, as they will be required to configure the command-line tool.
 
-You can find the Fivebalance translation project at [https://www.transifex.com/](https://www.transifex.com/).
+You can find the FIVEBALANCE translation project at [https://www.transifex.com/fivebalance-project/fivebalance-project-translations/](https://www.transifex.com/fivebalance-project/fivebalance-project-translations/).
 
 ### Installing the Transifex client command-line tool
-The client it used to fetch updated translations. If you are having problems, or need more details, see [http://docs.transifex.com/developer/client/setup](http://docs.transifex.com/developer/client/setup)
-
-**For Linux and Mac**
+The client is used to fetch updated translations. If you are having problems, or need more details, see [https://docs.transifex.com/client/installing-the-client](https://docs.transifex.com/client/installing-the-client)
 
 `pip install transifex-client`
 
-Setup your transifex client config as follows. Please *ignore the token field*.
+Setup your Transifex client config as follows. Please *ignore the token field*.
 
 ```ini
 nano ~/.transifexrc
@@ -64,21 +62,21 @@ token =
 username = USERNAME
 ```
 
-**For Windows**
-
-Please see [http://docs.transifex.com/developer/client/setup#windows](http://docs.transifex.com/developer/client/setup#windows) for details on installation.
-
-The Transifex Fivebalance project config file is included as part of the repo. It can be found at `.tx/config`, however you shouldn’t need change anything.
+The Transifex FIVEBALANCE project config file is included as part of the repo. It can be found at `.tx/config`, however you shouldn’t need to change anything.
 
 ### Synchronising translations
 To assist in updating translations, we have created a script to help.
 
 1. `python contrib/devtools/update-translations.py`
-2. Update `src/qt/fivebalance_locale.qrc` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(fivebalance_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'`
-3. Update `src/Makefile.qt.include` manually or via
-   `ls src/qt/locale/*ts|xargs -n1 basename|sed 's/\(fivebalance_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'`
-4. `git add` new translations from `src/qt/locale/`
+2. `git add` new translations from `src/qt/locale/`
+3. Update `src/qt/fivebalance_locale.qrc` manually or via
+```bash
+git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(fivebalance_\(.*\)\).ts/<file alias="\2">locale\/\1.qm<\/file>/'
+```
+4. Update `src/Makefile.qt_locale.include` manually or via
+```bash
+git ls-files src/qt/locale/*ts|xargs -n1 basename|sed 's/\(fivebalance_\(.*\)\).ts/  qt\/locale\/\1.ts \\/'
+```
 
 **Do not directly download translations** one by one from the Transifex website, as we do a few post-processing steps before committing the translations.
 
@@ -106,6 +104,6 @@ To create a new language template, you will need to edit the languages manifest 
 **Note:** that the language translation file **must end in `.qm`** (the compiled extension), and not `.ts`.
 
 ### Questions and general assistance
-The Fivebalance Core translation maintainers include *GOAT*. You can find them, and others, in the [Fivebalance Discord](https://discord.gg/RBQHsFC).
+The FIVEBALANCE Core translation maintainers include *Fuzzbawls*. You can find them, and others, in the [FIVEBALANCE Discord](https://discord.fivebalance.org).
 
 Announcements will be posted during application pre-releases to notify translators to check for updates.

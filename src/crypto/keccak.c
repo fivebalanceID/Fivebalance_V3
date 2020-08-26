@@ -52,7 +52,7 @@ extern "C"{
  *
  * Some tests on an Intel Core2 Q6600 (both 64-bit and 32-bit, 32 kB L1
  * code cache), a PowerPC (G3, 32 kB L1 code cache), an ARM920T core
- * (16 kB L1 code cache), and a small MIPS-compatible CPU (Broadcom FBN3302,
+ * (16 kB L1 code cache), and a small MIPS-compatible CPU (Broadcom BCM3302,
  * 8 kB L1 code cache), seem to show that the following are optimal:
  *
  * -- x86, 64-bit: use the 64-bit implementation, unroll 8 rounds,

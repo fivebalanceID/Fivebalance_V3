@@ -1,16 +1,17 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
+// Copyright (c) 2016-2020 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "chainparamsbase.h"
+
 #include "util.h"
+
 #include <assert.h>
-#include "masternode.h"
 
 #include <boost/assign/list_of.hpp>
 
-using namespace boost::assign;
 
 /**
  * Main network
@@ -21,7 +22,7 @@ public:
     CBaseMainParams()
     {
         networkID = CBaseChainParams::MAIN;
-        nRPCPort = MASTERNODE_PORT+1;
+        nRPCPort = 5551;
     }
 };
 static CBaseMainParams mainParams;
@@ -35,7 +36,7 @@ public:
     CBaseTestNetParams()
     {
         networkID = CBaseChainParams::TESTNET;
-        nRPCPort = MASTERNODE_PORT+1001;
+        nRPCPort = 5553;
         strDataDir = "testnet4";
     }
 };
@@ -54,20 +55,6 @@ public:
     }
 };
 static CBaseRegTestParams regTestParams;
-
-/*
- * Unit test
- */
-class CBaseUnitTestParams : public CBaseMainParams
-{
-public:
-    CBaseUnitTestParams()
-    {
-        networkID = CBaseChainParams::UNITTEST;
-        strDataDir = "unittest";
-    }
-};
-static CBaseUnitTestParams unitTestParams;
 
 static CBaseChainParams* pCurrentBaseParams = 0;
 
@@ -88,9 +75,6 @@ void SelectBaseParams(CBaseChainParams::Network network)
         break;
     case CBaseChainParams::REGTEST:
         pCurrentBaseParams = &regTestParams;
-        break;
-    case CBaseChainParams::UNITTEST:
-        pCurrentBaseParams = &unitTestParams;
         break;
     default:
         assert(false && "Unimplemented network");

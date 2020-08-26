@@ -2,6 +2,78 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="en">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <location filename="../fivebalance/forms/addnewaddressdialog.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>New Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>Address</source>
+        <translation type="unfinished">Address</translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <location filename="../fivebalance/forms/addnewcontactdialog.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+240"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-162"/>
+        <source>Edit Contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>Set a label for the selected address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Enter a label for the address (e.g. Exchange)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+67"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/addnewcontactdialog.cpp" line="+48"/>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+67"/>
@@ -80,12 +152,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Fivebalance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your FIVEBALANCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Fivebalance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your FIVEBALANCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -104,7 +176,7 @@
         <translation>&amp;Edit</translation>
     </message>
     <message>
-        <location line="+187"/>
+        <location line="+182"/>
         <source>Export Address List</source>
         <translation>Export Address List</translation>
     </message>
@@ -125,9 +197,27 @@
     </message>
 </context>
 <context>
+    <name>AddressLabelRow</name>
+    <message>
+        <location filename="../fivebalance/forms/addresslabelrow.ui" line="+20"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Bob Allen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AddressTableModel</name>
     <message>
-        <location filename="../addresstablemodel.cpp" line="+198"/>
+        <location filename="../addresstablemodel.cpp" line="+288"/>
         <source>Label</source>
         <translation>Label</translation>
     </message>
@@ -137,75 +227,192 @@
         <translation>Address</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+0"/>
+        <source>Date</source>
+        <translation type="unfinished">Date</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Type</source>
+        <translation type="unfinished">Type</translation>
+    </message>
+    <message>
+        <location line="+38"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
 </context>
 <context>
+    <name>AddressesWidget</name>
+    <message>
+        <location filename="../fivebalance/forms/addresseswidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+342"/>
+        <source>Contact name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Enter address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-322"/>
+        <source>Contacts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+204"/>
+        <source>No contacts yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+170"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/addresseswidget.cpp" line="+87"/>
+        <source>Add new contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Generate a new address to receive tokens.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Invalid Contact Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cannot store your own address as contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Address already stored, label: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>New Contact Stored</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error Storing Contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Contact edited</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Contact edit failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Delete Contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Contact Deleted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error deleting a contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Address copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AskPassphraseDialog</name>
     <message>
-        <location filename="../forms/askpassphrasedialog.ui" line="+26"/>
+        <location filename="../forms/askpassphrasedialog.ui" line="+32"/>
         <source>Passphrase Dialog</source>
         <translation>Passphrase Dialog</translation>
     </message>
     <message>
-        <location line="+30"/>
-        <source>Enter passphrase</source>
-        <translation>Enter passphrase</translation>
+        <location line="+41"/>
+        <location line="+78"/>
+        <location line="+56"/>
+        <location line="+57"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>New passphrase</source>
-        <translation>New passphrase</translation>
+        <location line="+90"/>
+        <source>PushButton</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>Repeat new passphrase</source>
-        <translation>Repeat new passphrase</translation>
-    </message>
-    <message>
-        <location line="+33"/>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>For anonymization and staking only</source>
-        <translation>For anonymization and staking only</translation>
-    </message>
-    <message>
-        <location filename="../askpassphrasedialog.cpp" line="+44"/>
+        <location filename="../askpassphrasedialog.cpp" line="+86"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Encrypt wallet</source>
         <translation>Encrypt wallet</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+4"/>
+        <location line="+10"/>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>This operation needs your wallet passphrase to unlock the wallet.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-4"/>
+        <source>Unlock wallet
+for staking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
         <source>Unlock wallet</source>
         <translation>Unlock wallet</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>This operation needs your wallet passphrase to decrypt the wallet.</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Decrypt wallet</source>
         <translation>Decrypt wallet</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+4"/>
         <source>Change passphrase</source>
         <translation>Change passphrase</translation>
     </message>
@@ -215,62 +422,102 @@
         <translation>Enter the old and new passphrase to the wallet.</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+61"/>
         <source>Confirm wallet encryption</source>
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Fivebalance will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FBNs from being stolen by malware infecting your computer.</source>
+        <location line="+1"/>
+        <source>WARNING</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-8"/>
+        <location line="+0"/>
+        <source>If you encrypt your wallet and lose your passphrase, you will</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>ENCRYPT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+161"/>
+        <source>FIVEBALANCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FBNs from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-162"/>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FBN&lt;/b&gt;!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <location line="+45"/>
+        <location line="+41"/>
+        <location line="+119"/>
         <source>Wallet encrypted</source>
         <translation>Wallet encrypted</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-19"/>
+        <source>WARNING:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The caps lock key is on!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Passphrases do not match!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <location line="+5"/>
-        <location line="+31"/>
+        <location line="-122"/>
         <location line="+4"/>
+        <location line="+130"/>
         <source>Wallet encryption failed</source>
         <translation>Wallet encryption failed</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-7"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
         <translation>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <location line="+35"/>
+        <location line="-130"/>
         <source>The supplied passphrases do not match.</source>
         <translation>The supplied passphrases do not match.</translation>
     </message>
     <message>
-        <location line="-26"/>
+        <location line="-49"/>
+        <source>LOSE ALL OF YOUR COINS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <location line="+8"/>
         <source>Wallet unlock failed</source>
         <translation>Wallet unlock failed</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="-7"/>
+        <location line="+8"/>
         <location line="+8"/>
         <location line="+13"/>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
@@ -286,893 +533,100 @@
         <source>Wallet passphrase was successfully changed.</source>
         <translation>Wallet passphrase was successfully changed.</translation>
     </message>
-    <message>
-        <location line="+43"/>
-        <location line="+24"/>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Warning: The Caps Lock key is on!</translation>
-    </message>
 </context>
 <context>
-    <name>Bip38ToolDialog</name>
+    <name>BanTableModel</name>
     <message>
-        <location filename="../forms/bip38tooldialog.ui" line="+14"/>
-        <source>BIP 38 Tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Enter a Fivebalance Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <location line="+362"/>
-        <source>Address:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-355"/>
-        <source>The Fivebalance address to sign the message with</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Choose previously used address</source>
-        <translation type="unfinished">Choose previously used address</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+A</source>
-        <translation type="unfinished">Alt+A</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Paste address from clipboard</source>
-        <translation type="unfinished">Paste address from clipboard</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+P</source>
-        <translation type="unfinished">Alt+P</translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <location line="+185"/>
-        <source>Passphrase: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-164"/>
-        <location line="+146"/>
-        <source>Encrypted Key:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-124"/>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation type="unfinished">Copy the current signature to the system clipboard</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Sign the message to prove you own this Fivebalance address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Encrypt &amp;Key</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Reset all sign message fields</source>
-        <translation type="unfinished">Reset all sign message fields</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <location line="+139"/>
-        <source>Clear &amp;All</source>
-        <translation type="unfinished">Clear &amp;All</translation>
-    </message>
-    <message>
-        <location line="-80"/>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking &apos;Import Address&apos; will add this private key to the wallet.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>The Fivebalance address the message was signed with</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified Fivebalance address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Decrypt &amp;Key</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Reset all verify message fields</source>
-        <translation type="unfinished">Reset all verify message fields</translation>
-    </message>
-    <message>
-        <location line="+63"/>
-        <source>Decrypted Key:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Import Address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../bip38tooldialog.cpp" line="+31"/>
-        <source>Click &quot;Decrypt Key&quot; to compute key</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+90"/>
-        <source>The entered passphrase is invalid. </source>
+        <location filename="../bantablemodel.cpp" line="+89"/>
+        <source>IP/Netmask</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>The entered address is invalid.</source>
-        <translation type="unfinished">The entered address is invalid.</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <location line="+8"/>
-        <source>Please check the address and try again.</source>
-        <translation type="unfinished">Please check the address and try again.</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>The entered address does not refer to a key.</source>
-        <translation type="unfinished">The entered address does not refer to a key.</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <location line="+57"/>
-        <source>Wallet unlock was cancelled.</source>
-        <translation type="unfinished">Wallet unlock was cancelled.</translation>
-    </message>
-    <message>
-        <location line="-50"/>
-        <source>Private key for the entered address is not available.</source>
-        <translation type="unfinished">Private key for the entered address is not available.</translation>
-    </message>
-    <message>
-        <location line="+33"/>
-        <source>Failed to decrypt.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Data Not Valid.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Please try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Please wait while key is imported</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Key Already Held By Wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Error Adding Key To Wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Successfully Added Private Key To Wallet</source>
+        <source>Banned Until</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>CSRow</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+124"/>
-        <source>Wallet</source>
-        <translation>Wallet</translation>
+        <location filename="../fivebalance/forms/csrow.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Node</source>
-        <translation>Node</translation>
-    </message>
-    <message>
-        <location line="+161"/>
-        <source>&amp;Overview</source>
-        <translation>&amp;Overview</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show general overview of wallet</source>
-        <translation>Show general overview of wallet</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>&amp;Send</source>
-        <translation>&amp;Send</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>&amp;Receive</source>
-        <translation>&amp;Receive</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transactions</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Browse transaction history</source>
-        <translation>Browse transaction history</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Privacy Actions for zFBN</source>
+        <location line="+71"/>
+        <source>Savings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+42"/>
-        <source>E&amp;xit</source>
-        <translation>E&amp;xit</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Quit application</source>
-        <translation>Quit application</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <location line="+2"/>
-        <source>About &amp;Qt</source>
-        <translation>About &amp;Qt</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Show information about Qt</source>
-        <translation>Show information about Qt</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>&amp;Options...</source>
-        <translation>&amp;Options...</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Show / Hide</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show or hide the main Window</source>
-        <translation>Show or hide the main Window</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;Encrypt Wallet...</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Encrypt the private keys that belong to your wallet</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;Backup Wallet...</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Backup wallet to another location</source>
-        <translation>Backup wallet to another location</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;Change Passphrase...</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Change the passphrase used for wallet encryption</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;Unlock Wallet...</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Unlock wallet</source>
-        <translation>Unlock wallet</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;Lock Wallet</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sign &amp;message...</source>
-        <translation>Sign &amp;message...</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;Verify message...</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show diagnostic information</source>
-        <translation>Show diagnostic information</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Debug console</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open debugging console</source>
-        <translation>Open debugging console</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Network Monitor</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show network monitor</source>
-        <translation>Show network monitor</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Peers list</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show peers info</source>
-        <translation>Show peers info</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Wallet &amp;Repair</source>
-        <translation>Wallet &amp;Repair</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show wallet repair options</source>
-        <translation>Show wallet repair options</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Open configuration file</source>
-        <translation>Open configuration file</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Show Automatic &amp;Backups</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show automatically created wallet backups</source>
-        <translation>Show automatically created wallet backups</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Sending addresses...</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Show the list of used sending addresses and labels</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Receiving addresses...</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Show the list of used receiving addresses and labels</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Open &amp;URI...</source>
-        <translation>Open &amp;URI...</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Command-line options</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+438"/>
-        <source>Processed %n blocks of transaction history.</source>
-        <translation>
-            <numerusform>Processed %n block of transaction history.</numerusform>
-            <numerusform>Processed %n blocks of transaction history.</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+32"/>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>Synchronizing additional data: %p%</translation>
-    </message>
-    <message>
-        <location line="-431"/>
-        <source>&amp;File</source>
-        <translation>&amp;File</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>&amp;Settings</source>
-        <translation>&amp;Settings</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>&amp;Tools</source>
-        <translation>&amp;Tools</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>&amp;Help</source>
-        <translation>&amp;Help</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Tabs toolbar</source>
-        <translation>Tabs toolbar</translation>
-    </message>
-    <message>
-        <location line="-413"/>
-        <location line="+858"/>
-        <source>Fivebalance Core</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-675"/>
-        <source>Send coins to a Fivebalance address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Request payments (generates QR codes and fivebalance: URIs)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>&amp;Privacy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>&amp;Masternodes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Browse masternodes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+31"/>
-        <source>&amp;About Fivebalance Core</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show information about Fivebalance Core</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Modify configuration options for Fivebalance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Sign messages with your Fivebalance addresses to prove you own them</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Fivebalance addresses</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;BIP38 tool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;MultiSend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>MultiSend Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Open Masternode configuration file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Open a Fivebalance: URI or payment request</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>&amp;Blockchain explorer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Block explorer window</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Show the Fivebalance Core help message to get a list with possible Fivebalance command-line options</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+204"/>
-        <source>Fivebalance Core client</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message numerus="yes">
-        <location line="+197"/>
-        <source>%n active connection(s) to Fivebalance network</source>
-        <translation type="unfinished">
-            <numerusform></numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>Synchronizing with network...</source>
-        <translation>Synchronizing with network...</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Importing blocks from disk...</source>
-        <translation>Importing blocks from disk...</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Reindexing blocks on disk...</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>No block source available...</source>
-        <translation>No block source available...</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Up to date</source>
-        <translation>Up to date</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+41"/>
-        <source>%n hour(s)</source>
-        <translation>
-            <numerusform>%n hour</numerusform>
-            <numerusform>%n hours</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location line="+2"/>
-        <source>%n day(s)</source>
-        <translation>
-            <numerusform>%n day</numerusform>
-            <numerusform>%n days</numerusform>
-        </translation>
-    </message>
-    <message numerus="yes">
-        <location line="+2"/>
-        <location line="+4"/>
-        <source>%n week(s)</source>
-        <translation>
-            <numerusform>%n week</numerusform>
-            <numerusform>%n weeks</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>%1 and %2</source>
-        <translation>%1 and %2</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+0"/>
-        <source>%n year(s)</source>
-        <translation>
-            <numerusform>%n year</numerusform>
-            <numerusform>%n years</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>%1 behind</source>
-        <translation>%1 behind</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Catching up...</source>
-        <translation>Catching up...</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Last received block was generated %1 ago.</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transactions after this will not yet be visible.</translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Error</source>
-        <translation>Error</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Warning</source>
-        <translation>Warning</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Information</source>
-        <translation>Information</translation>
-    </message>
-    <message>
-        <location line="+69"/>
-        <source>Sent transaction</source>
-        <translation>Sent transaction</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Incoming transaction</source>
-        <translation>Incoming transaction</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Sent MultiSend transaction</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</translation>
-    </message>
-    <message>
-        <location line="+51"/>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <location line="+4"/>
-        <source>Active</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-4"/>
-        <location line="+4"/>
-        <source>Not Active</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+30"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>BlockExplorer</name>
-    <message>
-        <location filename="../forms/blockexplorer.ui" line="+14"/>
-        <source>Blockchain Explorer</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>Back</source>
+        <location line="+20"/>
+        <source>0,00 FBN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+14"/>
-        <source>Forward</source>
+        <source>address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+29"/>
-        <source>Address / Block / Transaction</source>
+        <location line="+20"/>
+        <source>Not Staking</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
-        <source>Search</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+39"/>
-        <source>TextLabel</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../blockexplorer.cpp" line="+476"/>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (fivebalance.conf).</source>
+        <location filename="../fivebalance/csrow.cpp" line="+27"/>
+        <source>Own delegation</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+77"/>
+        <location filename="../clientmodel.cpp" line="+83"/>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+101"/>
-        <source>Network Alert</source>
-        <translation>Network Alert</translation>
     </message>
 </context>
 <context>
     <name>CoinControlDialog</name>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="+48"/>
+        <location filename="../forms/coincontroldialog.ui" line="+202"/>
         <source>Quantity:</source>
         <translation>Quantity:</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+385"/>
         <source>Bytes:</source>
         <translation>Bytes:</translation>
     </message>
     <message>
-        <location line="+45"/>
-        <source>Amount:</source>
-        <translation>Amount:</translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <source>Priority:</source>
-        <translation>Priority:</translation>
-    </message>
-    <message>
-        <location line="+45"/>
+        <location line="-323"/>
         <source>Fee:</source>
         <translation>Fee:</translation>
     </message>
     <message>
-        <location line="-182"/>
+        <location line="-244"/>
         <source>Coin Selection</source>
         <translation>Coin Selection</translation>
     </message>
     <message>
-        <location line="+214"/>
+        <location line="+81"/>
+        <source>Select FBN Outputs to Spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+532"/>
         <source>Dust:</source>
         <translation>Dust:</translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>After Fee:</source>
-        <translation>After Fee:</translation>
-    </message>
-    <message>
-        <location line="+32"/>
+        <location line="+46"/>
         <source>Change:</source>
         <translation>Change:</translation>
     </message>
     <message>
-        <location line="+56"/>
-        <source>(un)select all</source>
-        <translation>(un)select all</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>toggle lock state</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="-209"/>
         <source>Tree mode</source>
         <translation>Tree mode</translation>
     </message>
@@ -1182,17 +636,43 @@ Address: %4
         <translation>List mode</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+13"/>
         <source>(1 locked)</source>
         <translation>(1 locked)</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="-356"/>
+        <location line="+400"/>
         <source>Amount</source>
         <translation>Amount</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="-393"/>
+        <location line="+124"/>
+        <location line="+461"/>
+        <source>0.00 FBN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-523"/>
+        <location line="+385"/>
+        <location line="+92"/>
+        <source>0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-319"/>
+        <location filename="../coincontroldialog.cpp" line="+145"/>
+        <source>Select all</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>Toggle lock state</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+125"/>
         <source>Received with label</source>
         <translation>Received with label</translation>
     </message>
@@ -1202,7 +682,17 @@ Address: %4
         <translation>Received with address</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+175"/>
+        <source>After Fee: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+75"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-245"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -1217,12 +707,7 @@ Address: %4
         <translation>Confirmed</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Priority</source>
-        <translation>Priority</translation>
-    </message>
-    <message>
-        <location filename="../coincontroldialog.cpp" line="+50"/>
+        <location filename="../coincontroldialog.cpp" line="-49"/>
         <source>Copy address</source>
         <translation>Copy address</translation>
     </message>
@@ -1233,12 +718,11 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <location line="+26"/>
         <source>Copy amount</source>
         <translation>Copy amount</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="+1"/>
         <source>Copy transaction ID</source>
         <translation>Copy transaction ID</translation>
     </message>
@@ -1253,47 +737,53 @@ Address: %4
         <translation>Unlock unspent</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>Copy quantity</source>
-        <translation>Copy quantity</translation>
+        <location line="+42"/>
+        <location line="+827"/>
+        <source>Unselect all</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Copy fee</source>
-        <translation>Copy fee</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy after fee</source>
-        <translation>Copy after fee</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy bytes</source>
-        <translation>Copy bytes</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy priority</source>
-        <translation>Copy priority</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy dust</source>
-        <translation>Copy dust</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy change</source>
-        <translation>Copy change</translation>
-    </message>
-    <message>
-        <location line="+156"/>
+        <location line="-697"/>
         <source>Please switch to &quot;List mode&quot; to use this function.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+218"/>
+        <location line="+96"/>
+        <source>Quantity Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Amount Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Fee Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>After Fee Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Bytes Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Dust Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Change Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
         <source>highest</source>
         <translation>highest</translation>
     </message>
@@ -1313,18 +803,12 @@ Address: %4
         <translation>medium-high</translation>
     </message>
     <message>
-        <location line="+202"/>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Can vary +/- %1 duff(s) per input.</translation>
-    </message>
-    <message>
-        <location filename="../forms/coincontroldialog.ui" line="-329"/>
-        <location filename="../coincontroldialog.cpp" line="-200"/>
+        <location line="+2"/>
         <source>medium</source>
         <translation>medium</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+2"/>
+        <location line="+2"/>
         <source>low-medium</source>
         <translation>low-medium</translation>
     </message>
@@ -1349,23 +833,38 @@ Address: %4
         <translation>(%1 locked)</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+56"/>
         <source>none</source>
         <translation>none</translation>
     </message>
     <message>
-        <location line="+126"/>
+        <location line="+132"/>
         <source>yes</source>
         <translation>yes</translation>
     </message>
     <message>
-        <location filename="../forms/coincontroldialog.ui" line="+80"/>
-        <location filename="../coincontroldialog.cpp" line="+0"/>
+        <location line="+30"/>
+        <source>Can vary +/- %1 u%2 per input.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+177"/>
+        <source>delegated to %1 for cold staking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Select All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/coincontroldialog.ui" line="+77"/>
+        <location filename="../coincontroldialog.cpp" line="-263"/>
         <source>no</source>
         <translation>no</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+15"/>
+        <location filename="../coincontroldialog.cpp" line="+14"/>
         <source>This label turns red, if the transaction size is greater than 1000 bytes.</source>
         <translation>This label turns red, if the transaction size is greater than 1000 bytes.</translation>
     </message>
@@ -1396,8 +895,8 @@ Address: %4
         <translation>This label turns red, if any recipient receives an amount smaller than %1.</translation>
     </message>
     <message>
-        <location line="+54"/>
-        <location line="+62"/>
+        <location line="+58"/>
+        <location line="+77"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
@@ -1410,6 +909,426 @@ Address: %4
         <location line="+1"/>
         <source>(change)</source>
         <translation>(change)</translation>
+    </message>
+</context>
+<context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <location filename="../fivebalance/forms/coldstakingwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+341"/>
+        <source>Owner address (optional, if empty a new address will be created)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+217"/>
+        <source>Total Staking:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-471"/>
+        <source>Cold Staking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Staker</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Delegation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+279"/>
+        <source>Delegate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-38"/>
+        <source>Clear All</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Delegated balance history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+168"/>
+        <source>No delegations yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/coldstakingwidget.cpp" line="+797"/>
+        <source>Total Staking: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-507"/>
+        <source>Error loading delegations: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/forms/coldstakingwidget.ui" line="-603"/>
+        <source>You can delegate your FBNs, letting a hot node (24/7 online node)
+stake on your behalf, while you keep the keys securely offline.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+263"/>
+        <source>Enter owner address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-139"/>
+        <source>Accept FBN delegation / Delegate FBN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Cold Staking address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/coldstakingwidget.cpp" line="+18"/>
+        <source>No receive addresses available, you can go to the receive screen and create some there!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+161"/>
+        <source>Cannot send delegation, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-49"/>
+        <source>Cold staking is networkely disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-290"/>
+        <source>Coin Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select %1 outputs to delegate.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Create Cold Staking Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Creates an address to receive delegated coins
+and stake them on their owner&apos;s behalf.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>My Cold Staking Addresses</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>List your own cold staking addresses.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+254"/>
+        <source>Invalid entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Invalid entry, minimum delegable amount is </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Owner address invalid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>ALERT!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delegating to an external owner address!
+
+The delegated coins will NOT be spendable by this wallet.
+Spending these coins will need to be done from the wallet or
+device containing the owner address.
+
+Do you wish to proceed?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Staking address corresponds to this wallet, change it to an external node</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Cannot create transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Coins delegated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>You don&apos;t have any %1 to select.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>URI copied to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Address copied to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Stake</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Blacklist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Edit Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Copy owner
+address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Address copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Edit Cold Address Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Whitelist failed, please check the logs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source> staking!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Blacklist failed, please check the logs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source> blacklisted from staking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Owner address copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Edit Owner Address Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Address label saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error storing address label</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <location filename="../fivebalance/forms/contactdropdownrow.ui" line="+20"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <location filename="../fivebalance/forms/dashboardwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Transactions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+422"/>
+        <source>Staking Rewards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+143"/>
+        <source>Staking statistics</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-558"/>
+        <source>View your account&apos;s history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+357"/>
+        <source>How to get FBN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+500"/>
+        <source>Sort by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Days</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Months</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Years</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Filter by</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-558"/>
+        <source>Amount of FBN and zFBN staked.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/dashboardwidget.cpp" line="+115"/>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/forms/dashboardwidget.ui" line="-100"/>
+        <source>No transactions yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+904"/>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/dashboardwidget.cpp" line="+36"/>
+        <location line="+247"/>
+        <source>You have no staking rewards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-245"/>
+        <source>No charts library</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+245"/>
+        <source>Loading chart..</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+123"/>
+        <location line="+220"/>
+        <location line="+88"/>
+        <source>Error loading chart, invalid show option</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-97"/>
+        <source>Error loading chart, invalid data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+133"/>
+        <source>Error loading chart: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <location filename="../fivebalance/forms/defaultdialog.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+228"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1461,7 +1380,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid Fivebalance address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid FIVEBALANCE address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1481,9 +1400,17 @@ Address: %4
     </message>
 </context>
 <context>
+    <name>ExpandableButton</name>
+    <message>
+        <location filename="../fivebalance/forms/expandablebutton.ui" line="+26"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+</context>
+<context>
     <name>FreespaceChecker</name>
     <message>
-        <location filename="../intro.cpp" line="+70"/>
+        <location filename="../intro.cpp" line="+69"/>
         <source>A new data directory will be created.</source>
         <translation>A new data directory will be created.</translation>
     </message>
@@ -1511,13 +1438,13 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <location filename="../utilitydialog.cpp" line="+37"/>
+        <location filename="../utilitydialog.cpp" line="+39"/>
         <source>version</source>
         <translation>version</translation>
     </message>
     <message>
         <location line="+0"/>
-        <source>Fivebalance Core</source>
+        <source>FIVEBALANCE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1527,8 +1454,8 @@ Address: %4
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <location line="+4"/>
-        <source>About Fivebalance Core</source>
+        <location line="+6"/>
+        <source>About FIVEBALANCE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1562,7 +1489,12 @@ Address: %4
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-3"/>
+        <location line="+1"/>
+        <source>Hide QT staking charts on startup (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-4"/>
         <source>Set language, for example &quot;de_DE&quot; (default: system locale)</source>
         <translation>Set language, for example &quot;de_DE&quot; (default: system locale)</translation>
     </message>
@@ -1576,6 +1508,11 @@ Address: %4
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>Set SSL root certificates for payment request (default: -system-)</translation>
     </message>
+    <message>
+        <location filename="../forms/helpmessagedialog.ui" line="+239"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1585,33 +1522,43 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>Welcome to Fivebalance Core.</source>
+        <location line="+90"/>
+        <source>Welcome to FIVEBALANCE Core.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Fivebalance Core will store its data.</source>
+        <location line="+35"/>
+        <source>As this is the first time the program is launched, you can choose where FIVEBALANCE Core will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Fivebalance Core will download and store a copy of the Fivebalance block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <location line="+18"/>
+        <source>FIVEBALANCE Core will download and store a copy of the FIVEBALANCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+29"/>
         <source>Use the default data directory</source>
         <translation>Use the default data directory</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Use a custom data directory:</source>
-        <translation>Use a custom data directory:</translation>
+        <location line="+23"/>
+        <source>Use a custom data directory</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../intro.cpp" line="+77"/>
-        <source>Fivebalance Core</source>
+        <location line="+251"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../intro.cpp" line="+100"/>
+        <source>FIVEBALANCE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1620,7 +1567,7 @@ Address: %4
         <translation>Error: Specified data directory &quot;%1&quot; cannot be created.</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+26"/>
         <source>Error</source>
         <translation>Error</translation>
     </message>
@@ -1636,376 +1583,551 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
-        <location filename="../forms/masternodelist.ui" line="+14"/>
+        <location filename="../fivebalance/forms/loadingdialog.ui" line="+14"/>
         <source>Form</source>
         <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+18"/>
-        <source>My Masternodes</source>
+        <location line="+69"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Loading</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see &quot;MISSING&quot; in &quot;Status&quot; field.</source>
+        <source>.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <location filename="../fivebalance/forms/lockunlock.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <source>Unlock Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+74"/>
-        <source>Alias</source>
+        <location line="+32"/>
+        <source>Lock Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+29"/>
+        <source>Staking Only</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <location filename="../fivebalance/forms/mnrow.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/mnrow.cpp" line="+24"/>
+        <source>Collateral tx not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Status: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <location filename="../fivebalance/forms/masternodewizarddialog.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+182"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+101"/>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+101"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+116"/>
+        <source>Intro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Name</source>
+        <translation type="unfinished">Name</translation>
+    </message>
+    <message>
+        <location line="+41"/>
         <source>Address</source>
         <translation type="unfinished">Address</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Protocol</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Status</source>
-        <translation type="unfinished">Status</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Active</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Last Seen (UTC)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Pubkey</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>S&amp;tart alias</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Start &amp;all</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Start &amp;MISSING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>&amp;Update status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../masternodelist.cpp" line="+45"/>
-        <source>Start alias</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+189"/>
-        <source>Confirm masternode start</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Are you sure you want to start masternode %1?</source>
+        <location line="+94"/>
+        <source>Create New Masternode Controller</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>Confirm all masternodes start</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a FIVEBALANCE Masternode you must dedicate 1000,000 FBN (the unit of FIVEBALANCE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Are you sure you want to start ALL masternodes?</source>
+        <location line="+89"/>
+        <source>Set Masternode Name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>Set Masternode IP and Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+85"/>
+        <source>Enter port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-226"/>
+        <source>Make sure you have this amount of coins.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+97"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 1000,000 FBN will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node&apos;s name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Enter IP address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+160"/>
+        <source>NEXT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <source>BACK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/masternodewizarddialog.cpp" line="+171"/>
+        <source>address label cannot be empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>IP or port cannot be empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid IP address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Unknown error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Prepare master node failed.
+
+%1
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+30"/>
+        <source>Invalid collateral output index</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+97"/>
+        <source>Master node created! Wait %1 confirmations before starting it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-113"/>
+        <source>Cannot send collateral transaction.
+
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-101"/>
+        <source>walletModel not set</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+141"/>
+        <source>Invalid masternode.conf file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>Command is not available right now</source>
+        <source>Error parsing masternode.conf file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>You can&apos;t use this command until masternode list is synced</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Confirm missing masternodes start</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Are you sure you want to start MISSING masternodes?</source>
+        <location line="-31"/>
+        <source>masternode.conf file doesn&apos;t exists</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <location filename="../forms/multisenddialog.ui" line="+17"/>
-        <source>MultiSend</source>
-        <translation type="unfinished"></translation>
+        <location filename="../fivebalance/forms/masternodeswidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Enter % to Give (1-100)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Enter Address to Send to</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Fivebalance addresses after it matures.
-To Add: enter percentage to give and Fivebalance address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+38"/>
-        <source>Add to MultiSend Vector</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Add</source>
+        <location line="+281"/>
+        <source>Start All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Deactivate MultiSend</source>
+        <source>Start Inactive/s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Deactivate</source>
+        <location line="-240"/>
+        <source>Masternodes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Choose an address from the address book</source>
+        <location line="+7"/>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Alt+A</source>
-        <translation type="unfinished">Alt+A</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Percentage of stake to send</source>
+        <location line="+207"/>
+        <source>Create Masternode Controller</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Percentage:</source>
+        <location line="-52"/>
+        <source>No active Masternode yet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Address to send portion of stake to</source>
+        <location filename="../fivebalance/masternodeswidget.cpp" line="+174"/>
+        <source>Start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Address:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+1"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Activate MultiSend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Activate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>View MultiSend Vector</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>View MultiSend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Send For Stakes</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Send For Masternode Rewards</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../multisenddialog.cpp" line="+92"/>
-        <source>The entered address:
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+20"/>
-        <source>MultiSend Vector
-</source>
+        <location line="+1"/>
+        <source>Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>Removed </source>
+        <source>Please wait until the node is fully synced</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Could not locate address
+        <location line="+11"/>
+        <source>Start Masternode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Are you sure you want to start masternode %1?
 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Cannot edit masternode, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
+Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+44"/>
+        <source>Background task is being executed, please wait</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Start ALL masternodes failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Wallet unlock cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Cannot perform Masternodes start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>%1 Masternodes failed to start, %2 started</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>All Masternodes started!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Cannot show Masternode information, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Masternode data copied to the clipboard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+120"/>
+        <source>Not enough balance to create a masternode, 10,000 %1 required.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-131"/>
+        <source>Remote Masternode Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-246"/>
+        <source>What is a Masternode?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>FAQ explaining what Masternodes are</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>What is a Controller?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>FAQ explaining what is a Masternode Controller</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+244"/>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the fivebalance.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press &quot;start&quot;).
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Delete Masternode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Invalid masternode.conf file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Error parsing masternode.conf file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>masternode.conf file doesn&apos;t exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Cannot create Masternode controller, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Error creating masternode</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MnInfoDialog</name>
     <message>
-        <location filename="../forms/obfuscationconfig.ui" line="+14"/>
-        <source>Configure Obfuscation</source>
+        <location filename="../fivebalance/forms/mninfodialog.ui" line="+20"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+84"/>
+        <source>Masternode Information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+12"/>
-        <source>Basic Privacy</source>
-        <translation type="unfinished">Basic Privacy</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>High Privacy</source>
-        <translation type="unfinished">High Privacy</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Maximum Privacy</source>
-        <translation type="unfinished">Maximum Privacy</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Please select a privacy level.</source>
-        <translation type="unfinished">Please select a privacy level.</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Use 2 separate masternodes to mix funds up to 10000 FBN</source>
+        <location line="+163"/>
+        <source>Public Key:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Use 8 separate masternodes to mix funds up to 10000 FBN</source>
+        <location line="+79"/>
+        <source>Address: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>Use 16 separate masternodes</source>
-        <translation type="unfinished">Use 16 separate masternodes</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>This option is the quickest and will cost about ~0.025 FBN to anonymize 10000 FBN</source>
+        <location line="+45"/>
+        <source>Collaterall tx id:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>This option is moderately fast and will cost about 0.05 FBN to anonymize 10000 FBN</source>
+        <location line="+76"/>
+        <source>Output index:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation type="unfinished">This is the slowest and most secure option. Using maximum anonymity will cost</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>0.1 FBN per 10000 FBN you anonymize.</source>
+        <location line="+7"/>
+        <source>1 Inputs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../obfuscationconfig.cpp" line="+42"/>
-        <location line="+14"/>
-        <location line="+14"/>
-        <source>Obfuscation Configuration</source>
+        <location line="+38"/>
+        <source>Status:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-27"/>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Fivebalance&apos;s configuration screen.</source>
+        <location line="+45"/>
+        <source>Export data to run the Masternode on a remote server</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Fivebalance&apos;s configuration screen.</source>
+        <location filename="../fivebalance/mninfodialog.cpp" line="+27"/>
+        <source>Masternode public key copied</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Fivebalance&apos;s configuration screen.</source>
+        <location line="+1"/>
+        <source>Collateral tx id copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MyAddressRow</name>
+    <message>
+        <location filename="../fivebalance/forms/myaddressrow.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+</context>
+<context>
+    <name>NavMenuWidget</name>
+    <message>
+        <location filename="../fivebalance/forms/navmenuwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+156"/>
+        <source>HOME
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>SEND
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>RECEIVE
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>CONTACTS
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>MASTER
+NODES</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>COLD
+STAKING</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>SETTINGS
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>V 1.0.0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/navmenuwidget.cpp" line="+23"/>
+        <source>v%1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2017,24 +2139,57 @@ Please check the address and try again.</source>
         <translation>Open URI</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+45"/>
         <source>Open payment request from URI or file</source>
         <translation>Open payment request from URI or file</translation>
     </message>
     <message>
-        <location line="+9"/>
-        <source>URI:</source>
-        <translation>URI:</translation>
+        <location line="+26"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+90"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-75"/>
         <source>Select payment request file</source>
         <translation>Select payment request file</translation>
     </message>
     <message>
-        <location filename="../openuridialog.cpp" line="+47"/>
+        <location filename="../openuridialog.cpp" line="+64"/>
         <source>Select payment request file to open</source>
         <translation>Select payment request file to open</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>File not found</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Parsed data too large</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Invalid URI, not starting with &quot;fivebalance&quot; prefix</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <location filename="../fivebalance/forms/optionbutton.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
 </context>
 <context>
@@ -2070,18 +2225,18 @@ Please check the address and try again.</source>
         <translation>(0 = auto, &lt;0 = leave that many cores free)</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+141"/>
         <source>W&amp;allet</source>
         <translation>W&amp;allet</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+53"/>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
         <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the Fivebalance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the FIVEBALANCE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2105,17 +2260,17 @@ Please check the address and try again.</source>
         <translation>Expert</translation>
     </message>
     <message>
-        <location line="-176"/>
-        <source>Automatically start Fivebalance after logging in to the system.</source>
+        <location line="-236"/>
+        <source>Automatically start FIVEBALANCE after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Fivebalance on system login</source>
+        <source>&amp;Start FIVEBALANCE on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+179"/>
+        <location line="+239"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Whether to show coin control features or not.</translation>
     </message>
@@ -2146,7 +2301,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Fivebalance.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting FIVEBALANCE.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2161,7 +2316,27 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <location line="-133"/>
+        <location line="-187"/>
+        <source>Enable automatic minting of FBN units to zFBN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Enable zFBN Automint</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Enable automatic zFBN minting from specific addresses</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Enable Automint Addresses</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
         <source>Percentage of incoming FBN which get automatically converted to zFBN via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2182,8 +2357,13 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+114"/>
-        <source>Connect to the Fivebalance network through a SOCKS5 proxy.</source>
+        <location line="+40"/>
+        <source>Stake split threshold:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+98"/>
+        <source>Connect to the FIVEBALANCE network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2247,12 +2427,12 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>User Interface Theme:</translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Unit to show amounts in:</translation>
+        <location line="+27"/>
+        <source>Unit to show amounts in:</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+10"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
         <translation>Choose the default subdivision unit to show in the interface and when sending coins.</translation>
     </message>
@@ -2263,12 +2443,28 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
     <message>
         <location line="+14"/>
-        <location line="+13"/>
+        <location line="+6"/>
+        <source>Hide empty balances</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Hide orphan stakes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <location line="+10"/>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
         <translation>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="-7"/>
         <source>Third party transaction URLs</source>
         <translation>Third party transaction URLs</translation>
     </message>
@@ -2298,8 +2494,8 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>&amp;Cancel</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+87"/>
-        <source>I don&apos;t care</source>
+        <location filename="../optionsdialog.cpp" line="+88"/>
+        <source>Any</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2308,296 +2504,166 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>default</translation>
     </message>
     <message>
-        <location line="+55"/>
+        <location line="+46"/>
         <source>none</source>
         <translation>none</translation>
     </message>
     <message>
-        <location line="+88"/>
+        <location line="+95"/>
         <source>Confirm options reset</source>
         <translation>Confirm options reset</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+30"/>
+        <location line="+29"/>
         <source>Client restart required to activate changes.</source>
         <translation>Client restart required to activate changes.</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-29"/>
         <source>Client will be shutdown, do you want to proceed?</source>
         <translation>Client will be shutdown, do you want to proceed?</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+31"/>
         <source>This change would require a client restart.</source>
         <translation>This change would require a client restart.</translation>
     </message>
     <message>
-        <location line="+24"/>
+        <location line="+29"/>
         <source>The supplied proxy address is invalid.</source>
         <translation>The supplied proxy address is invalid.</translation>
     </message>
+    <message>
+        <location line="+7"/>
+        <source>The supplied proxy port is invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>FIVEBALANCEGUI</name>
     <message>
-        <location filename="../forms/overviewpage.ui" line="+20"/>
-        <source>Form</source>
-        <translation>Form</translation>
-    </message>
-    <message>
-        <location line="+43"/>
-        <source>FBN Balances</source>
+        <location filename="../fivebalance/fivebalancegui.cpp" line="+69"/>
+        <location line="+298"/>
+        <location line="+69"/>
+        <source>FIVEBALANCE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+259"/>
-        <source>Available:</source>
-        <translation>Available:</translation>
+        <location line="-366"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Wallet</translation>
     </message>
     <message>
-        <location line="+16"/>
-        <location line="+702"/>
-        <source>Your current spendable balance</source>
-        <translation>Your current spendable balance</translation>
+        <location line="+0"/>
+        <source>Node</source>
+        <translation type="unfinished">Node</translation>
     </message>
     <message>
-        <location line="-661"/>
-        <source>Pending:</source>
-        <translation>Pending:</translation>
+        <location line="+100"/>
+        <source>&amp;Show / Hide</source>
+        <translation type="unfinished">&amp;Show / Hide</translation>
     </message>
     <message>
-        <location line="-236"/>
-        <location line="+820"/>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</translation>
+        <location line="+1"/>
+        <source>Show or hide the main Window</source>
+        <translation type="unfinished">Show or hide the main Window</translation>
     </message>
     <message>
-        <location line="-708"/>
-        <location line="+1118"/>
-        <source>Immature:</source>
-        <translation>Immature:</translation>
+        <location line="+2"/>
+        <source>E&amp;xit</source>
+        <translation type="unfinished">E&amp;xit</translation>
     </message>
     <message>
-        <location line="-1147"/>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Staked or masternode rewards that has not yet matured</translation>
+        <location line="+1"/>
+        <source>Quit application</source>
+        <translation type="unfinished">Quit application</translation>
     </message>
     <message>
-        <location line="-153"/>
-        <location line="+1393"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fivebalance network after a connection is established, but this process has not completed yet.</source>
+        <location line="+39"/>
+        <source>FIVEBALANCE Core client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-1348"/>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Unconfirmed transactions to watch-only addresses</translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Staked or masternode rewards in watch-only addresses that has not yet matured</translation>
-    </message>
-    <message>
-        <location line="+42"/>
-        <location line="+807"/>
-        <location line="+255"/>
-        <source>Total:</source>
-        <translation>Total:</translation>
-    </message>
-    <message>
-        <location line="-1001"/>
-        <source>Your current total balance</source>
-        <translation>Your current total balance</translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Current total balance in watch-only addresses</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Watch-only:</source>
-        <translation>Watch-only:</translation>
-    </message>
-    <message>
-        <location line="+51"/>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Your current balance in watch-only addresses</translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <source>Spendable:</source>
-        <translation>Spendable:</translation>
-    </message>
-    <message>
-        <location line="+525"/>
-        <source>Combined Balances (including unconfirmed and immature coins)</source>
-        <translation type="unfinished"></translation>
+        <location line="+166"/>
+        <source>Error</source>
+        <translation type="unfinished">Error</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Combined Balances&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>Warning</source>
+        <translation type="unfinished">Warning</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Information</source>
+        <translation type="unfinished">Information</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>System Message</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+74"/>
-        <source>Total Balance, including unconfirmed and immature coins.</source>
+        <location line="+262"/>
+        <source>Sent MultiSend transaction</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
-        <source>FBN:</source>
-        <translation type="unfinished"></translation>
+        <location line="+0"/>
+        <source>Sent transaction</source>
+        <translation type="unfinished">Sent transaction</translation>
     </message>
     <message>
-        <location line="+35"/>
-        <source>zFBN:</source>
-        <translation type="unfinished"></translation>
+        <location line="+0"/>
+        <source>Incoming transaction</source>
+        <translation type="unfinished">Incoming transaction</translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Current percentage of zFBN.
-If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <location line="+66"/>
-        <source>0 %</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-46"/>
-        <location line="+13"/>
-        <source>Locked FBN or Masternode collaterals. These are excluded from zFBN minting.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-10"/>
-        <location line="+33"/>
-        <location line="+189"/>
-        <location line="+31"/>
-        <location line="+44"/>
-        <source>0.000 000 00 FBN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-284"/>
-        <source>Locked:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <location line="+10"/>
-        <source>Unlocked FBNs. These can be used for zFBN minting.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-7"/>
-        <source>Unlocked:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+77"/>
-        <source>Zerocoin Balance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <location line="+104"/>
-        <source>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zFBN are spendable.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-100"/>
-        <source>Mature:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <location line="+35"/>
-        <source>All available zFBN, unconfirmed and immature zFBN included.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+56"/>
-        <location line="+17"/>
-        <location line="+27"/>
-        <location line="+17"/>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 3 mints of the same denomination after it was minted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-57"/>
-        <source>Unconfirmed:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+127"/>
-        <source>Recent transactions</source>
-        <translation>Recent transactions</translation>
-    </message>
-    <message>
-        <location filename="../overviewpage.cpp" line="+135"/>
         <location line="+1"/>
-        <source>out of sync</source>
-        <translation>out of sync</translation>
-    </message>
-    <message>
-        <location line="+93"/>
-        <source>Current percentage of zFBN.
-If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%).
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
 </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>AutoMint is currently enabled and set to </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>To disable AutoMint add &apos;enablezeromint=0&apos; in fivebalance.conf.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>AutoMint is currently disabled.
-To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1&apos; in fivebalance.conf</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</translation>
     </message>
 </context>
 <context>
     <name>PaymentServer</name>
     <message>
-        <location filename="../paymentserver.cpp" line="+297"/>
-        <location line="+209"/>
+        <location filename="../paymentserver.cpp" line="+285"/>
+        <location line="+201"/>
         <location line="+33"/>
-        <location line="+104"/>
+        <location line="+95"/>
         <location line="+12"/>
         <location line="+14"/>
         <source>Payment request error</source>
         <translation>Payment request error</translation>
     </message>
     <message>
-        <location line="-275"/>
-        <location line="+12"/>
+        <location line="-264"/>
+        <location line="+11"/>
         <location line="+5"/>
         <source>URI handling</source>
         <translation>URI handling</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-15"/>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>Payment request fetch URL is invalid: %1</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+28"/>
         <source>Payment request file handling</source>
         <translation>Payment request file handling</translation>
     </message>
@@ -2607,13 +2673,13 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
         <translation>Invalid payment address %1</translation>
     </message>
     <message>
-        <location line="-108"/>
+        <location line="-101"/>
         <source>Cannot start fivebalance: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Fivebalance address or malformed URI parameters.</source>
+        <location line="+107"/>
+        <source>URI cannot be parsed! This can be caused by an invalid FIVEBALANCE address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2622,7 +2688,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
         <translation>Payment request file cannot be read! This can be caused by an invalid payment request file.</translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+66"/>
         <location line="+8"/>
         <location line="+30"/>
         <source>Payment request rejected</source>
@@ -2654,12 +2720,12 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
         <translation>Requested payment amount of %1 is too small (considered dust).</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+51"/>
         <source>Refund from %1</source>
         <translation>Refund from %1</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+28"/>
         <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
         <translation>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</translation>
     </message>
@@ -2697,7 +2763,7 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
 <context>
     <name>PeerTableModel</name>
     <message>
-        <location filename="../peertablemodel.cpp" line="+113"/>
+        <location filename="../peertablemodel.cpp" line="+116"/>
         <source>Address/Hostname</source>
         <translation>Address/Hostname</translation>
     </message>
@@ -2713,660 +2779,19 @@ To enable AutoMint change &apos;enablezeromint=0&apos; to &apos;enablezeromint=1
     </message>
 </context>
 <context>
-    <name>PrivacyDialog</name>
-    <message>
-        <location filename="../forms/privacydialog.ui" line="+55"/>
-        <source>FBN which were anonymized via Zerocin Protocol</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Zerocoin FBN (zFBN)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>Zerocoin Actions:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fivebalance network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+52"/>
-        <location line="+46"/>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-43"/>
-        <location filename="../privacydialog.cpp" line="+140"/>
-        <source>Mint Zerocoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <location line="+329"/>
-        <location line="+30"/>
-        <source>0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-349"/>
-        <location line="+629"/>
-        <source>zFBN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-622"/>
-        <source>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Available for Minting:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>0.000 000 00 FBN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Reset</source>
-        <translation type="unfinished">Reset</translation>
-    </message>
-    <message>
-        <location line="+26"/>
-        <source>Coin Control...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+36"/>
-        <source>Quantity:</source>
-        <translation type="unfinished">Quantity:</translation>
-    </message>
-    <message>
-        <location line="+22"/>
-        <source>Amount:</source>
-        <translation type="unfinished">Amount:</translation>
-    </message>
-    <message>
-        <location line="+91"/>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>ReScan</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+45"/>
-        <source>zPhr Control</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>zPhr Selected:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+30"/>
-        <source>Quantity Selected:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+37"/>
-        <source>Spend Zerocoin. Without &apos;Pay To:&apos; address creates payments to yourself.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <location filename="../privacydialog.cpp" line="+111"/>
-        <location line="+45"/>
-        <location line="+4"/>
-        <location line="+12"/>
-        <location line="+100"/>
-        <location line="+4"/>
-        <source>Spend Zerocoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Available (mature and spendable) zFBN for spending</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Available Balance:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Available (mature and spendable) zFBN for spending
-
-zFBN are mature when they have more than 20 confirmations AND more than 3 mints of the same denomination after them were minted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <location line="+417"/>
-        <source>0 zFBN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-394"/>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Security Level:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+37"/>
-        <source>Pay &amp;To:</source>
-        <translation type="unfinished">Pay &amp;To:</translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>The Fivebalance address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Choose previously used address</source>
-        <translation type="unfinished">Choose previously used address</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+A</source>
-        <translation type="unfinished">Alt+A</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Paste address from clipboard</source>
-        <translation type="unfinished">Paste address from clipboard</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+P</source>
-        <translation type="unfinished">Alt+P</translation>
-    </message>
-    <message>
-        <location line="+19"/>
-        <source>&amp;Label:</source>
-        <translation type="unfinished">&amp;Label:</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation type="unfinished">Enter a label for this address to add it to the list of used addresses</translation>
-    </message>
-    <message>
-        <location line="+17"/>
-        <source>A&amp;mount:</source>
-        <translation type="unfinished">A&amp;mount:</translation>
-    </message>
-    <message>
-        <location line="+55"/>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Minimize Change</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+52"/>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Zerocoin Stats:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+62"/>
-        <location line="+38"/>
-        <source>Total Balance including unconfirmed and immature zFBN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-35"/>
-        <source>Total Zerocoin  Balance:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+52"/>
-        <source>Denominations with value 1:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 1:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <source>Unconfirmed: less than 20 confirmations
-Immature: confirmed, but less than 3 mints of the same denomination after it was minted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-367"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <location line="+53"/>
-        <source>0 x</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-354"/>
-        <source>Denominations with value 5:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 5:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>Denominations with value 10:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 10:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>Denominations with value 50:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 50:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>Denominations with value 100:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 100:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>Denominations with value 500:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 500:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>Denominations with value 1000:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 1000:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <source>Denominations with value 5000:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Denom. with value 5000:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+106"/>
-        <source>Note: This hidden objects are used for communication between the &apos;Coin Control&apos; dialog and its parent objects. We don&apos;t want to change/reimplement the existing Coin Control, so this objects must be here, even when we don&apos;t use them. No, we don&apos;t like this approach, either.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+100"/>
-        <source>Priority:</source>
-        <translation type="unfinished">Priority:</translation>
-    </message>
-    <message>
-        <location line="+36"/>
-        <source>Fee:</source>
-        <translation type="unfinished">Fee:</translation>
-    </message>
-    <message>
-        <location line="+38"/>
-        <source>Dust:</source>
-        <translation type="unfinished">Dust:</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>no</source>
-        <translation type="unfinished">no</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Bytes:</source>
-        <translation type="unfinished">Bytes:</translation>
-    </message>
-    <message>
-        <location line="+54"/>
-        <source>Insufficient funds!</source>
-        <translation type="unfinished">Insufficient funds!</translation>
-    </message>
-    <message>
-        <location line="+50"/>
-        <location filename="../privacydialog.cpp" line="-379"/>
-        <location line="+1"/>
-        <location line="+469"/>
-        <location line="+1"/>
-        <source>Coins automatically selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+56"/>
-        <source>medium</source>
-        <translation type="unfinished">medium</translation>
-    </message>
-    <message>
-        <location line="+80"/>
-        <source>Coin Control Features</source>
-        <translation type="unfinished">Coin Control Features</translation>
-    </message>
-    <message>
-        <location line="+72"/>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation type="unfinished">If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Custom change address</source>
-        <translation type="unfinished">Custom change address</translation>
-    </message>
-    <message>
-        <location line="+83"/>
-        <source>Amount After Fee:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+40"/>
-        <source>Change:</source>
-        <translation type="unfinished">Change:</translation>
-    </message>
-    <message>
-        <location filename="../privacydialog.cpp" line="-469"/>
-        <source>out of sync</source>
-        <translation type="unfinished">out of sync</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <location line="+100"/>
-        <source>Mint Status: Okay</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-94"/>
-        <source>Copy quantity</source>
-        <translation type="unfinished">Copy quantity</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy amount</source>
-        <translation type="unfinished">Copy amount</translation>
-    </message>
-    <message>
-        <location line="+88"/>
-        <location line="+111"/>
-        <source>Zerocoin functionality is not enabled on the Fivebalance network yet.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-98"/>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Minting </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>Successfully minted </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source> zFBN in </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source> sec. Used denominations:
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+30"/>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
-Please be patient...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <location line="+16"/>
-        <location line="+215"/>
-        <source>Duration: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-231"/>
-        <location line="+16"/>
-        <location line="+215"/>
-        <source> sec.
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-220"/>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+63"/>
-        <source>No &apos;Pay To&apos; address provided, creating local payment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Invalid Fivebalance Address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Invalid Send Amount</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+22"/>
-        <source>Confirm additional Fees</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+25"/>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source> to address </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source> to a newly generated (unused and therefore anonymous) local address &lt;br /&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>with Security Level </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Confirm send coins</source>
-        <translation type="unfinished">Confirm send coins</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
-Please be patient...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Too much inputs (</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>) needed. 
-Maximum allowed: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>
-Either mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <location line="+4"/>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+15"/>
-        <source>zPhr Spend #: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>denomination: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>serial: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Spend is 1 of : </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>value out: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>address: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>zPhr Mint</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Sending successful, return code: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>txid: </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>fee: </source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
     <message>
-        <location filename="../bitcoinunits.cpp" line="+252"/>
+        <location filename="../bitcoinunits.cpp" line="+280"/>
         <source>Amount</source>
         <translation>Amount</translation>
     </message>
     <message>
-        <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a Fivebalance address (e.g. %1)</source>
+        <location filename="../guiutil.cpp" line="+140"/>
+        <source>Enter FIVEBALANCE address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+776"/>
+        <location line="+790"/>
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -3382,11 +2807,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+2"/>
+        <location line="+40"/>
         <source>%1 s</source>
         <translation>%1 s</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="-25"/>
         <source>NETWORK</source>
         <translation>NETWORK</translation>
     </message>
@@ -3415,28 +2841,253 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <location filename="../receiverequestdialog.cpp" line="+35"/>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Save Image...</translation>
+        <location filename="../fivebalance.cpp" line="+518"/>
+        <source>A fatal error occurred. FIVEBALANCE can no longer continue safely and will quit.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;Copy Image</translation>
+        <location line="+73"/>
+        <location line="+7"/>
+        <location line="+13"/>
+        <location line="+19"/>
+        <source>FIVEBALANCE Core</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+31"/>
-        <source>Save QR Code</source>
-        <translation>Save QR Code</translation>
+        <location line="-38"/>
+        <source>Error: Specified data directory &quot;%1&quot; does not exist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>FIVEBALANCE Core didn&apos;t yet exit safely...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../addresstablemodel.cpp" line="-232"/>
+        <source>Contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../fivebalance/qtutils.cpp" line="+136"/>
+        <source>Receiving</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../fivebalance/qtutils.cpp" line="+3"/>
+        <source>Delegator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../fivebalance/qtutils.cpp" line="+1"/>
+        <source>Delegable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <location filename="../fivebalance/qtutils.cpp" line="-2"/>
+        <source>Cold Staking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Cold Staking Contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Hidden</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unknown</source>
+        <translation type="unfinished">Unknown</translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/qtutils.cpp" line="-3"/>
+        <location line="+22"/>
+        <source>All</source>
+        <translation type="unfinished">All</translation>
+    </message>
+    <message>
+        <location line="-20"/>
+        <source>Contacts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Staking Contacts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Date desc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Date asc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Amount desc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Amount asc</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Received</source>
+        <translation type="unfinished">Received</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sent</source>
+        <translation type="unfinished">Sent</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Mined</source>
+        <translation type="unfinished">Mined</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Minted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>MN reward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>To yourself</source>
+        <translation type="unfinished">To yourself</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Cold stakes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Hot stakes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delegated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Delegations</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+84"/>
+        <source>by Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>by Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>by Date</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/dashboardwidget.cpp" line="-507"/>
+        <source>Jan</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+0"/>
-        <source>PNG Image (*.png)</source>
-        <translation>PNG Image (*.png)</translation>
+        <source>Feb</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Mar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Apr</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>May</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Jun</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Jul</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Aug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Sep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Oct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Nov</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Dec</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/coldstakingwidget.cpp" line="-707"/>
+        <source>Address with no label</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3457,12 +3108,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>General</translation>
     </message>
     <message>
-        <location line="+164"/>
+        <location line="+152"/>
         <source>Name</source>
         <translation>Name</translation>
     </message>
     <message>
-        <location line="-157"/>
+        <location line="-145"/>
         <source>Client name</source>
         <translation>Client name</translation>
     </message>
@@ -3470,48 +3121,56 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <location line="+10"/>
         <location line="+23"/>
         <location line="+26"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+20"/>
+        <location line="+30"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+36"/>
+        <location line="+23"/>
+        <location line="+20"/>
+        <location line="+516"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
+        <location line="+23"/>
         <location line="+26"/>
         <location line="+23"/>
-        <location line="+23"/>
-        <location line="+36"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+36"/>
-        <location line="+23"/>
-        <location line="+454"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+23"/>
-        <location line="+91"/>
+        <location line="+78"/>
+        <location line="+29"/>
+        <location line="+29"/>
+        <location line="+29"/>
         <source>N/A</source>
         <translation>N/A</translation>
     </message>
     <message>
-        <location line="-913"/>
+        <location line="-1164"/>
         <source>Number of connections</source>
         <translation>Number of connections</translation>
     </message>
     <message>
-        <location line="+134"/>
+        <location line="+148"/>
         <source>&amp;Open</source>
         <translation>&amp;Open</translation>
     </message>
     <message>
-        <location line="-193"/>
+        <location line="-221"/>
         <source>Startup time</source>
         <translation>Startup time</translation>
     </message>
     <message>
-        <location line="+29"/>
+        <location line="+43"/>
         <source>Network</source>
         <translation>Network</translation>
     </message>
@@ -3521,52 +3180,57 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Last block time</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+56"/>
         <source>Debug log file</source>
         <translation>Debug log file</translation>
     </message>
     <message>
-        <location line="-258"/>
-        <source>Using OpenSSL version</source>
-        <translation>Using OpenSSL version</translation>
-    </message>
-    <message>
-        <location line="+52"/>
+        <location line="-234"/>
         <source>Build date</source>
         <translation>Build date</translation>
     </message>
     <message>
-        <location line="+141"/>
+        <location line="+155"/>
         <source>Current number of blocks</source>
         <translation>Current number of blocks</translation>
     </message>
     <message>
-        <location line="-216"/>
+        <location line="-204"/>
         <source>Client version</source>
         <translation>Client version</translation>
     </message>
     <message>
-        <location line="+49"/>
+        <location line="+23"/>
         <source>Using BerkeleyDB version</source>
         <translation>Using BerkeleyDB version</translation>
     </message>
     <message>
-        <location line="+160"/>
+        <location line="+174"/>
         <source>Block chain</source>
         <translation>Block chain</translation>
     </message>
     <message>
-        <location line="+79"/>
-        <source>Open the Fivebalance debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <location line="+93"/>
+        <source>Open the FIVEBALANCE debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-108"/>
+        <location line="-122"/>
         <source>Number of Masternodes</source>
         <translation>Number of Masternodes</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="-73"/>
+        <source>Data Directory</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+155"/>
+        <source>Last block hash</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+54"/>
         <source>&amp;Console</source>
         <translation>&amp;Console</translation>
     </message>
@@ -3606,14 +3270,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>&amp;Peers</translation>
     </message>
     <message>
-        <location line="+41"/>
-        <location filename="../rpcconsole.cpp" line="+263"/>
-        <location line="+481"/>
+        <location line="+50"/>
+        <source>Banned peers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <location filename="../rpcconsole.cpp" line="+317"/>
+        <location line="+723"/>
         <source>Select a peer to view detailed information.</source>
         <translation>Select a peer to view detailed information.</translation>
     </message>
     <message>
         <location line="+25"/>
+        <source>Whitelisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
         <source>Direction</source>
         <translation>Direction</translation>
     </message>
@@ -3633,17 +3307,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Services</translation>
     </message>
     <message>
-        <location line="+23"/>
-        <source>Starting Height</source>
-        <translation>Starting Height</translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <source>Sync Height</source>
-        <translation>Sync Height</translation>
-    </message>
-    <message>
-        <location line="+23"/>
+        <location line="+92"/>
         <source>Ban Score</source>
         <translation>Ban Score</translation>
     </message>
@@ -3678,22 +3342,67 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Ping Time</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+89"/>
         <source>&amp;Wallet Repair</source>
         <translation>&amp;Wallet Repair</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+347"/>
         <source>Delete local Blockchain Folders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="-309"/>
         <source>Wallet In Use:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="-334"/>
+        <source>Starting Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Synced Headers</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Synced Blocks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+184"/>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Ping Wait</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Time Offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+104"/>
+        <source>Custom Backup Path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Custom zFBN Backup Path:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Custom Backups Threshold:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
         <source>Salvage wallet</source>
         <translation>Salvage wallet</translation>
     </message>
@@ -3753,7 +3462,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-246"/>
+        <location line="-333"/>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</translation>
     </message>
@@ -3763,7 +3472,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Wallet repair options.</translation>
     </message>
     <message>
-        <location line="+199"/>
+        <location line="+286"/>
         <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself!)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3773,7 +3482,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Rebuild index</translation>
     </message>
     <message>
-        <location filename="../rpcconsole.cpp" line="-206"/>
+        <location filename="../rpcconsole.cpp" line="-382"/>
         <source>In:</source>
         <translation>In:</translation>
     </message>
@@ -3783,12 +3492,50 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Out:</translation>
     </message>
     <message>
-        <location line="-36"/>
-        <source>Welcome to the Fivebalance RPC console.</source>
+        <location line="-39"/>
+        <source>Welcome to the FIVEBALANCE RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-66"/>
+        <location line="-209"/>
+        <source>&amp;Disconnect Node</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <location line="+1"/>
+        <source>Ban Node for</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-3"/>
+        <source>1 &amp;hour</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 &amp;day</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 &amp;week</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>1 &amp;year</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>&amp;Unban Node</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+96"/>
         <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3813,9 +3560,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+63"/>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</translation>
+        <location line="+70"/>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3823,7 +3570,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</translation>
     </message>
     <message>
-        <location line="+138"/>
+        <location line="+2"/>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+143"/>
         <source>%1 B</source>
         <translation>%1 B</translation>
     </message>
@@ -3843,7 +3595,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>%1 GB</translation>
     </message>
     <message>
-        <location line="+128"/>
+        <location line="+123"/>
+        <source>(node id: %1)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -3854,7 +3611,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>never</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+9"/>
         <source>Inbound</source>
         <translation>Inbound</translation>
     </message>
@@ -3864,199 +3621,169 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Outbound</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+2"/>
+        <source>Yes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>No</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <location line="+6"/>
         <source>Unknown</source>
         <translation>Unknown</translation>
     </message>
-    <message>
-        <location line="+2"/>
-        <location line="+1"/>
-        <source>Fetching...</source>
-        <translation>Fetching...</translation>
-    </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveDialog</name>
     <message>
-        <location filename="../forms/receivecoinsdialog.ui" line="+34"/>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>R&amp;euse an existing receiving address (not recommended)</translation>
-    </message>
-    <message>
-        <location line="+17"/>
-        <source>&amp;Message:</source>
-        <translation>&amp;Message:</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <location line="+21"/>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>An optional label to associate with the new receiving address.</translation>
-    </message>
-    <message>
-        <location line="-37"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fivebalance network.</source>
+        <location filename="../fivebalance/forms/receivedialog.ui" line="+14"/>
+        <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Fivebalance network.</source>
+        <location line="+81"/>
+        <source>My Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</translation>
+        <location line="+173"/>
+        <source>COPY</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <location line="+22"/>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>An optional amount to request. Leave this empty or zero to not request a specific amount.</translation>
-    </message>
-    <message>
-        <location line="-19"/>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Amount:</translation>
-    </message>
-    <message>
-        <location line="+34"/>
-        <source>&amp;Request payment</source>
-        <translation>&amp;Request payment</translation>
-    </message>
-    <message>
-        <location line="+17"/>
-        <source>Clear all fields of the form.</source>
-        <translation>Clear all fields of the form.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Clear</source>
-        <translation>Clear</translation>
-    </message>
-    <message>
-        <location line="+75"/>
-        <source>Requested payments history</source>
-        <translation>Requested payments history</translation>
-    </message>
-    <message>
-        <location line="+62"/>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Show the selected request (does the same as double clicking an entry)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Show</source>
-        <translation>Show</translation>
-    </message>
-    <message>
-        <location line="+17"/>
-        <source>Remove the selected entries from the list</source>
-        <translation>Remove the selected entries from the list</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Remove</source>
-        <translation>Remove</translation>
-    </message>
-    <message>
-        <location filename="../receivecoinsdialog.cpp" line="+38"/>
-        <source>Copy label</source>
-        <translation>Copy label</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy message</source>
-        <translation>Copy message</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy amount</source>
-        <translation>Copy amount</translation>
+        <location line="-16"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>ReceiveRequestDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <location filename="../forms/receiverequestdialog.ui" line="+29"/>
-        <source>QR Code</source>
-        <translation>QR Code</translation>
+        <location filename="../fivebalance/forms/receivewidget.ui" line="+20"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+46"/>
-        <source>Copy &amp;URI</source>
-        <translation>Copy &amp;URI</translation>
+        <location filename="../fivebalance/receivewidget.cpp" line="+240"/>
+        <source>No address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/forms/receivewidget.ui" line="+61"/>
+        <source>Scan the QR code or copy the address to receive FBN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+188"/>
+        <source>Add Label</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Copy &amp;Address</source>
-        <translation>Copy &amp;Address</translation>
+        <source>Generate Address</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>&amp;Save Image...</source>
-        <translation>&amp;Save Image...</translation>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../receiverequestdialog.cpp" line="+63"/>
-        <source>Request payment to %1</source>
-        <translation>Request payment to %1</translation>
+        <location line="-215"/>
+        <source>Receive</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Payment information</source>
-        <translation>Payment information</translation>
+        <location filename="../fivebalance/receivewidget.cpp" line="-186"/>
+        <source>My Addresses</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Address</source>
-        <translation>Address</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Amount</source>
-        <translation>Amount</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Message</source>
-        <translation>Message</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resulting URI too long, try to reduce the text for label / message.</translation>
+        <source>List your own addresses</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Error encoding URI into QR Code.</translation>
+        <source>Create Request</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Request payment with a fixed amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+78"/>
+        <location line="+12"/>
+        <source>No available address, try unlocking the wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-11"/>
+        <location line="+12"/>
+        <source>Error generating address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>Edit Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Edit Address Label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Address label saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error storing address label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Cannot create new address, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>New address created</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Address copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>URI copied to clipboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Address copied to clipboard</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
-        <location filename="../recentrequeststablemodel.cpp" line="+27"/>
+        <location filename="../recentrequeststablemodel.cpp" line="+29"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -4071,17 +3798,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Message</translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+0"/>
+        <source>Address</source>
+        <translation type="unfinished">Address</translation>
+    </message>
+    <message>
+        <location line="+89"/>
         <source>Amount</source>
         <translation>Amount</translation>
     </message>
     <message>
-        <location line="-50"/>
+        <location line="-52"/>
         <source>(no label)</source>
         <translation>(no label)</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>(no message)</source>
         <translation>(no message)</translation>
     </message>
@@ -4092,543 +3824,2121 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+231"/>
-        <location line="+25"/>
-        <location line="+397"/>
-        <source>Send Coins</source>
-        <translation>Send Coins</translation>
+        <location filename="../fivebalance/forms/requestdialog.ui" line="+14"/>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+76"/>
-        <source>Coin Control Features</source>
-        <translation>Coin Control Features</translation>
+        <location line="+242"/>
+        <source>Amount</source>
+        <translation type="unfinished">Amount</translation>
     </message>
     <message>
-        <location line="+49"/>
-        <source>Insufficient funds!</source>
-        <translation>Insufficient funds!</translation>
+        <location line="+74"/>
+        <source>FBN</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+89"/>
-        <source>Quantity:</source>
-        <translation>Quantity:</translation>
+        <location line="-117"/>
+        <source>Instead of sharing only a FIVEBALANCE address, you can create a payment request, bundling up more information</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+35"/>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <location line="+332"/>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+48"/>
-        <source>Amount:</source>
-        <translation>Amount:</translation>
-    </message>
-    <message>
-        <location line="+32"/>
-        <source>Priority:</source>
-        <translation>Priority:</translation>
+        <location line="+53"/>
+        <source>COPY ADDRESS</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>medium</source>
-        <translation>medium</translation>
+        <source>COPY URL</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+35"/>
-        <source>Fee:</source>
-        <translation>Fee:</translation>
+        <location line="+57"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+32"/>
-        <source>Dust:</source>
-        <translation>Dust:</translation>
+        <location line="-286"/>
+        <source>Label</source>
+        <translation type="unfinished">Label</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>no</source>
-        <translation>no</translation>
+        <location line="+61"/>
+        <source>Description (optional)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+35"/>
-        <source>After Fee:</source>
-        <translation>After Fee:</translation>
+        <location line="-348"/>
+        <source>New Payment Request</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+32"/>
-        <source>Change:</source>
-        <translation>Change:</translation>
+        <location line="+306"/>
+        <source>Enter a label for the address</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+44"/>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</translation>
+        <location line="+61"/>
+        <source>Enter description</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Custom change address</source>
-        <translation>Custom change address</translation>
+        <location filename="../fivebalance/requestdialog.cpp" line="+49"/>
+        <source>Error</source>
+        <translation type="unfinished">Error</translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/forms/requestdialog.ui" line="+222"/>
+        <source>GENERATE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/requestdialog.cpp" line="+27"/>
+        <source>Creates an address to receive coin delegations and be able to stake them.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>New Cold Staking Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Amount (optional)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+20"/>
-        <source>Split UTXO</source>
+        <source>Address label cannot be empty</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source># of outputs</source>
+        <location line="+6"/>
+        <source>Invalid amount</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <source>UTXO Size:</source>
+        <location line="+17"/>
+        <source>Request for </source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>0 FBN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+193"/>
-        <source>Transaction Fee:</source>
-        <translation>Transaction Fee:</translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Choose...</source>
-        <translation>Choose...</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>collapse fee-settings</source>
-        <translation>collapse fee-settings</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Minimize</source>
-        <translation>Minimize</translation>
+        <source>Cold Staking Address Generated</source>
+        <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>SendChangeAddressDialog</name>
     <message>
-        <location line="+81"/>
-        <source>per kilobyte</source>
-        <translation>per kilobyte</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>total at least</source>
-        <translation>total at least</translation>
-    </message>
-    <message>
-        <location line="+46"/>
-        <source>(read the tooltip)</source>
-        <translation>(read the tooltip)</translation>
-    </message>
-    <message>
-        <location line="+228"/>
-        <source>Custom:</source>
-        <translation>Custom:</translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(Smart fee not initialized yet. This usually takes a few blocks...)</translation>
-    </message>
-    <message>
-        <location line="-155"/>
-        <source>Confirmation time:</source>
-        <translation>Confirmation time:</translation>
-    </message>
-    <message>
-        <location line="-947"/>
-        <source>Open Coin Control...</source>
+        <location filename="../fivebalance/forms/sendchangeaddressdialog.ui" line="+14"/>
+        <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Coins automatically selected</source>
+        <location line="+238"/>
+        <location filename="../fivebalance/sendchangeaddressdialog.cpp" line="+64"/>
+        <source>CANCEL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+772"/>
-        <source>If the custom fee is set to 1000 uFBNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uFBNs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uFBNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <location line="-157"/>
+        <source>Custom Change Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>If the custom fee is set to 1000 uFBNs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uFBNs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uFBNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <location line="+72"/>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; FIVEBALANCE address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+101"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/sendchangeaddressdialog.cpp" line="-17"/>
+        <source>RESET</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+33"/>
-        <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Fivebalance transactions than the network can process.</source>
+        <source>Invalid address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+163"/>
-        <source>normal</source>
-        <translation>normal</translation>
+        <location line="+2"/>
+        <source>Cannot use cold staking addresses for change</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SendCustomFeeDialog</name>
+    <message>
+        <location filename="../fivebalance/forms/sendcustomfeedialog.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+20"/>
-        <source>fast</source>
-        <translation>fast</translation>
-    </message>
-    <message>
-        <location line="+28"/>
+        <location line="+190"/>
         <source>Recommended</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+73"/>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Send as zero-fee transaction if possible</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>(confirmation may take longer)</source>
-        <translation>(confirmation may take longer)</translation>
-    </message>
-    <message>
-        <location line="+67"/>
-        <source>Confirm the send action</source>
-        <translation>Confirm the send action</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>S&amp;end</source>
-        <translation>S&amp;end</translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <source>Clear all fields of the form.</source>
-        <translation>Clear all fields of the form.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Send to multiple recipients at once</source>
-        <translation>Send to multiple recipients at once</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Add &amp;Recipient</source>
-        <translation>Add &amp;Recipient</translation>
-    </message>
-    <message>
-        <location line="+35"/>
-        <source>Anonymized FBN</source>
+        <location line="+86"/>
+        <source>FBN/kilobyte</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+16"/>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Balance:</source>
-        <translation>Balance:</translation>
-    </message>
-    <message>
-        <location filename="../sendcoinsdialog.cpp" line="-571"/>
-        <source>Copy quantity</source>
-        <translation>Copy quantity</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy amount</source>
-        <translation>Copy amount</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy fee</source>
-        <translation>Copy fee</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy after fee</source>
-        <translation>Copy after fee</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy bytes</source>
-        <translation>Copy bytes</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy priority</source>
-        <translation>Copy priority</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy dust</source>
-        <translation>Copy dust</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy change</source>
-        <translation>Copy change</translation>
-    </message>
-    <message>
-        <location line="+143"/>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
+        <location line="-63"/>
+        <source>0.00 KB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
+        <location line="-69"/>
+        <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
-        <location line="+3"/>
-        <source>using</source>
-        <translation>using</translation>
-    </message>
-    <message>
-        <location line="-3"/>
-        <source>anonymous funds</source>
-        <translation>anonymous funds</translation>
-    </message>
-    <message>
-        <location line="+622"/>
-        <source>Warning: Invalid Fivebalance address</source>
+        <location line="+102"/>
+        <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-619"/>
-        <source>any available funds (not recommended)</source>
-        <translation>any available funds (not recommended)</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>and SwiftTX</source>
-        <translation>and SwiftTX</translation>
-    </message>
-    <message>
-        <location line="+23"/>
-        <location line="+4"/>
-        <location line="+4"/>
-        <location line="+3"/>
-        <source>%1 to %2</source>
-        <translation>%1 to %2</translation>
-    </message>
-    <message>
-        <location line="+51"/>
-        <source>Are you sure you want to send?</source>
-        <translation>Are you sure you want to send?</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>are added as transaction fee</source>
-        <translation>are added as transaction fee</translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <location line="+19"/>
-        <source>Confirm send coins</source>
-        <translation>Confirm send coins</translation>
-    </message>
-    <message>
-        <location line="+230"/>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>A fee %1 times higher than %2 per kB is considered an insanely high fee.</translation>
-    </message>
-    <message numerus="yes">
-        <location line="+114"/>
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation>
-            <numerusform>Estimated to begin confirmation within %n block.</numerusform>
-            <numerusform>Estimated to begin confirmation within %n blocks.</numerusform>
-        </translation>
-    </message>
-    <message>
-        <location line="-145"/>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>The recipient address is not valid, please recheck.</translation>
-    </message>
-    <message>
-        <location line="-291"/>
-        <source> split into %1 outputs using the UTXO splitter.</source>
+        <location line="+79"/>
+        <source>CANCEL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+89"/>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location line="+205"/>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>The amount to pay must be larger than 0.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>The amount exceeds your balance.</source>
-        <translation>The amount exceeds your balance.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>The total exceeds your balance when the %1 transaction fee is included.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Duplicate address found, can only send to each address once per send operation.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Transaction creation failed!</source>
-        <translation>Transaction creation failed!</translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</translation>
-    </message>
-    <message>
-        <location line="+8"/>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Error: The wallet was unlocked only to anonymize coins.</translation>
-    </message>
-    <message>
-        <location line="+16"/>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
+        <location line="-244"/>
+        <source>Customize Fee</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+84"/>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Pay only the minimum fee of %1</translation>
+        <location filename="../fivebalance/sendcustomfeedialog.cpp" line="+35"/>
+        <source>Normal</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+166"/>
-        <source>Warning: Unknown change address</source>
-        <translation>Warning: Unknown change address</translation>
+        <location line="+1"/>
+        <source>Slow</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>(no label)</source>
-        <translation>(no label)</translation>
+        <location line="+1"/>
+        <source>Fast</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/forms/sendcustomfeedialog.ui" line="+260"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/sendcustomfeedialog.cpp" line="+89"/>
+        <source>Fee too high. Must be below: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Fee too low. Must be at least: %1</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsEntry</name>
+    <name>SendMultiRow</name>
     <message>
-        <location filename="../forms/sendcoinsentry.ui" line="+21"/>
-        <source>This is a normal payment.</source>
-        <translation>This is a normal payment.</translation>
+        <location filename="../fivebalance/forms/sendmultirow.ui" line="+26"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+15"/>
-        <source>Pay &amp;To:</source>
-        <translation>Pay &amp;To:</translation>
+        <location line="+118"/>
+        <source>Enter address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+152"/>
+        <source>Address label (optional)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Enter label</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SendWidget</name>
+    <message>
+        <location filename="../fivebalance/send.cpp" line="+137"/>
+        <source>Total remaining from the selected UTXO</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+324"/>
+        <source>Warning!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The change address doesn&apos;t belong to this wallet.
+
+Do you want to continue?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+272"/>
+        <source>Customize Fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-491"/>
+        <source>Maximum amount of outputs reached</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Invalid entry, previous entries must be valid before add a new one</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The Fivebalance address to send the payment to</source>
+        <source>Invalid entry</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>No set recipients</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Choose previously used address</source>
-        <translation>Choose previously used address</translation>
+        <source>Cannot send, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Cannot create transaction.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>WARNING:
+Transaction spends a cold-stake delegation, voiding it.
+These coins will no longer be cold-staked.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Transaction sent</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+32"/>
+        <source>Address label update failed for address: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Invalid URI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid address in URI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+247"/>
+        <source>Custom Fee %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-674"/>
+        <source>Coin Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Select the source of the coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Change Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Customize the change address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Open URI</source>
+        <translation type="unfinished">Open URI</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Parse a payment request</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>Unlocked remaining</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+390"/>
+        <source>You don&apos;t have any %1 to select.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Save contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Address field is empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Cannot store your own address as contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Update Contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Create New Contact</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>New Contact Stored</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Error Storing Contact</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsBackupWallet</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsbackupwallet.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+147"/>
+        <source>Change Wallet Passphrase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-68"/>
+        <source>Where</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-31"/>
+        <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <location filename="../fivebalance/settings/settingsbackupwallet.cpp" line="+55"/>
+        <source>Select folder...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+53"/>
+        <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
+Remember to write it down and store it safely, otherwise you might lose access to your funds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Change Passphrase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-172"/>
+        <location filename="../fivebalance/settings/settingsbackupwallet.cpp" line="-7"/>
+        <source>Backup Wallet</source>
+        <translation type="unfinished">Backup Wallet</translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsbackupwallet.cpp" line="+1"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="unfinished">Wallet Data (*.dat)</translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Backup created</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Backup creation failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Please select a folder to export the backup first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsBitToolWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsbittoolwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+459"/>
+        <source>Import Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-408"/>
+        <source>BIP38 Tool</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Paste address from clipboard</source>
-        <translation>Paste address from clipboard</translation>
+        <source>Encrypt your FIVEBALANCE addresses (key pair actually) using BIP38 encryption.
+Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <location line="+65"/>
+        <source>Encrypt</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <location line="+524"/>
-        <location line="+536"/>
-        <source>Remove this entry</source>
-        <translation>Remove this entry</translation>
+        <location line="+28"/>
+        <source>Decrypt</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-1044"/>
-        <source>&amp;Label:</source>
-        <translation>&amp;Label:</translation>
+        <location line="+105"/>
+        <source>Encrypted key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Enter a encrypted key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <location line="+407"/>
+        <source>Passphrase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-327"/>
+        <source>Decrypted address result</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Decrypted Address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+139"/>
+        <source>DECRYPT KEY</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>FIVEBALANCE address</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Enter a label for this address to add it to the list of used addresses</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <location line="+521"/>
-        <location line="+536"/>
-        <source>A&amp;mount:</source>
-        <translation>A&amp;mount:</translation>
-    </message>
-    <message>
-        <location line="-1041"/>
-        <source>Message:</source>
-        <translation>Message:</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>A message that was attached to the Fivebalance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fivebalance network.</source>
+        <source>Enter address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+426"/>
-        <source>This is an unverified payment request.</source>
-        <translation>This is an unverified payment request.</translation>
+        <location line="+80"/>
+        <source>Enter passphrase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+67"/>
+        <location line="+13"/>
+        <source>Encrypted Key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+101"/>
+        <source>ENCRYPT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-38"/>
+        <source>CLEAR ALL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-550"/>
+        <source>Enter a passphrase</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+202"/>
+        <source>CLEAR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsbittoolwidget.cpp" line="+142"/>
+        <source>The entered passphrase is invalid. </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>The entered address is invalid.</source>
+        <translation type="unfinished">The entered address is invalid.</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+8"/>
+        <source>Please check the address and try again.</source>
+        <translation type="unfinished">Please check the address and try again.</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The entered address does not refer to a key.</source>
+        <translation type="unfinished">The entered address does not refer to a key.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <location line="+113"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation type="unfinished">Wallet unlock was cancelled.</translation>
+    </message>
+    <message>
+        <location line="-106"/>
+        <source>Private key for the entered address is not available.</source>
+        <translation type="unfinished">Private key for the entered address is not available.</translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Address encrypted.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+67"/>
+        <source>Failed to decrypt.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Data Not Valid.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Please wait while key is imported</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Cannot import address, key already held by the wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Error adding key to the wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Successfully added private key to the wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsconsolewidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsconsolewidget.cpp" line="+261"/>
+        <source>Console input</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsconsolewidget.ui" line="+29"/>
+        <source>Open Debug File</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Command Line Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+124"/>
+        <source>Clear history</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsconsolewidget.cpp" line="+13"/>
+        <source>Cannot open debug file.
+Verify that you have installed a predetermined text editor.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+146"/>
+        <source>Welcome to the FIVEBALANCE RPC console.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation type="unfinished">Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsdisplayoptionswidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+194"/>
+        <source>Hide stake charts in the dashboard</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+91"/>
+        <location filename="../fivebalance/settings/settingsdisplayoptionswidget.cpp" line="+92"/>
+        <source>Reset to default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Discard changes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-250"/>
+        <source>Display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Customize the display view options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Unit to show amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+40"/>
+        <source>Decimal digits</source>
+        <translation type="unfinished">Decimal digits</translation>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>Third party transactions URLs</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-15"/>
+        <source>Hide empty balances</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsdisplayoptionswidget.cpp" line="-1"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>default</source>
+        <translation type="unfinished">default</translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>Options reset succeed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsExportCSV</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsexportcsv.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Export Accounting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Export your wallet&apos;s accounting data to a csv file.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Where</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+58"/>
+        <location line="+115"/>
+        <location filename="../fivebalance/settings/settingsexportcsv.cpp" line="+70"/>
+        <location line="+7"/>
+        <source>Select folder...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-48"/>
+        <source>Export Address Book</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsexportcsv.cpp" line="-16"/>
+        <source>Export CSV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Export Address List</source>
+        <translation type="unfinished">Export Address List</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>FIVEBALANCE_tx_csv_export(*.csv)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>FIVEBALANCE_addresses_csv_export(*.csv)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <location line="+72"/>
+        <source>Please select a folder to export the csv file first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <source>Confirmed</source>
+        <translation type="unfinished">Confirmed</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Watch-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Date</source>
+        <translation type="unfinished">Date</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Type</source>
+        <translation type="unfinished">Type</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Label</source>
+        <translation type="unfinished">Label</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Address</source>
+        <translation type="unfinished">Address</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Exporting Successful
+The transaction history was successfully saved to %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Exporting Failed
+There was an error trying to save the transaction history to %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>No available addresses to export under the selected filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Exporting Successful
+The address book was successfully saved to %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Exporting Failed
+There was an error trying to save the address list to %1. Please try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsfaqwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+152"/>
+        <source>1) What is FIVEBALANCE?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>2) Why are my FBN unspendable?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+148"/>
+        <source>https://PIVX.org/</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+135"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <location line="+532"/>
-        <source>Pay To:</source>
-        <translation>Pay To:</translation>
+        <source>What is FIVEBALANCE?</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-498"/>
-        <location line="+536"/>
-        <source>Memo:</source>
-        <translation>Memo:</translation>
+        <location line="+26"/>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
+                           FIVEBALANCE is a form of digital online money using blockchain technology
+                           that can be easily transferred globally, instantly, and with near
+                           zero fees.  FIVEBALANCE incorporates market leading security &amp;
+                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
+                           to implement ZeroCoin(zFBN) and Zerocoin staking.
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+                           FIVEBALANCE utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of FIVEBALANCE to participate in earning block rewards
+                           while securing the network with full node wallets, as well as to
+                           run Masternodes to create and vote on proposals.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Why are my FBN unspendable?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
+                           Newly received FIVEBALANCE requires 6 confirmations on the network
+                           to become eligible for spending which can take ~6 minutes.
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+                           Your FIVEBALANCE wallet also needs to be completely synchronized
+                           to see and spend balances on the network.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>3</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>How do I stake FBN?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You must have a balance of FIVEBALANCE with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (fivebalance-cli); the command &lt;span style=&quot; font-style:italic;&quot;&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>4</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+99"/>
+        <source>5</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <source>6</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-212"/>
+        <source>Where should I go if I need support?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
+                           We have support channels in most of our official chat groups, for example
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://discord.PIVX.org&apos;&gt;
+                           #support in our Discord&lt;/a&gt;.
+                           If you prefer to submit a ticket, You can do so at
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://PIVX.freshdesk.com&apos;&gt;
+                           our Freshdesk support site&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>What is a Masternode?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+131"/>
+        <source>What is a Masternode Controller?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;A Masternode Controller wallet is where the 1000,000 FBN collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-131"/>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
+                           A masternode is a computer running a full node FIVEBALANCE core wallet with a
+                           requirement of 1000,000 FBN secured collateral to provide extra services
+                           to the network and in return, receive a portion of the block reward
+                           regularly.  These services include:
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+
+                           &lt;ul&gt;
+                           &lt;li&gt;Instant transactions (SwiftX)&lt;/li&gt;
+                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
+                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
+                           &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
+                           &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
+                           &lt;/ul&gt;
+
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+                           For providing such services, masternodes are also paid a certain portion
+                           of reward for each block. This can serve as a passive income to the
+                           masternode owners minus their running cost.
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+
+                           Masternode Perks:
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;Participate in FIVEBALANCE Governance&lt;/li&gt;
+                           &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
+                           &lt;li&gt;Commodity option for future sale&lt;/li&gt;
+                           &lt;li&gt;Help secure the FIVEBALANCE network&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+
+                           Requirements:
+                           &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
+                           &lt;ul&gt;
+                           &lt;li&gt;1000,000 FBN per single Masternode instance&lt;/li&gt;
+                           &lt;li&gt;Must be stored in a core wallet&lt;/li&gt;
+                           &lt;li&gt;Need dedicated IP address&lt;/li&gt;
+                           &lt;li&gt;Masternode wallet to remain online&lt;/li&gt;
+                           &lt;/ul&gt;
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-856"/>
+        <source>Frequently Asked Questions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+158"/>
+        <source>3) How do I stake FBN?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>4) Where I should go if I need support?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>5) What is a Masternode?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>6) What is a Masternode Controller?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>You can read more here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-238"/>
+        <source>Exit</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsinformationwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+102"/>
+        <source>Network Monitor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-56"/>
-        <source>This is a verified payment request.</source>
-        <translation>This is a verified payment request.</translation>
+        <source>Information</source>
+        <translation type="unfinished">Information</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+31"/>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Enter a label for this address to add it to your address book</translation>
+        <location line="+161"/>
+        <source>General</source>
+        <translation type="unfinished">General</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Client Version:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+78"/>
+        <source>BerkeleyDB version:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Datadir:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Startup time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+104"/>
+        <source>Connections:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Number of Masternodes:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>Current number of blocks:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+39"/>
+        <source>Last block time:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+52"/>
+        <source>Last block hash:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+63"/>
+        <source>Current number of transactions:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-493"/>
+        <source>User Agent:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+161"/>
+        <source>Network</source>
+        <translation type="unfinished">Network</translation>
+    </message>
+    <message>
+        <location line="+24"/>
+        <source>Name:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+130"/>
+        <source>Blockchain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+154"/>
+        <source>Memory Pool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsinformationwidget.cpp" line="+72"/>
+        <source>Main</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsinformationwidget.ui" line="-587"/>
+        <source>Wallet Conf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-28"/>
+        <source>Backups</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsinformationwidget.cpp" line="+22"/>
+        <source>No information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Unable to open backups folder</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Unable to open fivebalance.conf with default application</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>In:</source>
+        <translation type="unfinished">In:</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Out:</source>
+        <translation type="unfinished">Out:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsmainoptionswidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+278"/>
+        <source>Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Customize the application window options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>Reset to default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Discard changes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-381"/>
+        <source>Main</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Customize the main application options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+77"/>
+        <source>Size of database cache</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <source>Number of script verification threads</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsmainoptionswidget.cpp" line="+57"/>
+        <source>Start FIVEBALANCE on system login</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsmainoptionswidget.ui" line="+130"/>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Minimize on close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsmainoptionswidget.cpp" line="+30"/>
+        <source>Reset Options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>You are just about to reset the app&apos;s options to the default values.
+
+Are you sure?
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Options reset succeed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsmultisenddialog.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+81"/>
+        <source>Transaction Details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+110"/>
+        <location line="+64"/>
+        <location line="+58"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsmultisenddialog.cpp" line="+24"/>
+        <source>New recipient for multisend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Address Label (optional)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Enter label to be saved with this address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Percentage</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingsmultisendwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <location line="+7"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+228"/>
+        <source>N/A</source>
+        <translation type="unfinished">N/A</translation>
+    </message>
+    <message>
+        <location line="+50"/>
+        <location line="+29"/>
+        <source>CheckBox</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingsmultisendwidget.cpp" line="+164"/>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FIVEBALANCE addresses after it matures.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Disable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>No active recipient yet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Send stakes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Send masternode rewards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>ADD RECIPIENT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>CLEAR ALL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Clear succeed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Clear all failed, could not locate address in wallet file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+14"/>
+        <source>Cannot add multisend recipient, wallet locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+22"/>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Invalid percentage, please enter values from 1 to 100.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Error saving  MultiSend, failed saving properties to the database.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Unable to activate MultiSend, no available recipients</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Unable to activate MultiSend
+Check one or both of the check boxes to send on stake and/or masternode rewards</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>MultiSend activated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>First multiSend address invalid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>MultiSend deactivated</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingssignmessagewidgets.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+64"/>
+        <source>Sign/Verify Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+87"/>
+        <source>Sign</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Verify</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+167"/>
+        <source>Write message here...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingssignmessagewidgets.cpp" line="+47"/>
+        <source>Select mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingssignmessagewidgets.ui" line="-19"/>
+        <source>Message</source>
+        <translation type="unfinished">Message</translation>
+    </message>
+    <message>
+        <location line="-62"/>
+        <source>FIVEBALANCE address or contact label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Enter address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+126"/>
+        <location line="+13"/>
+        <source>Signature</source>
+        <translation type="unfinished">Signature</translation>
+    </message>
+    <message>
+        <location line="+88"/>
+        <location filename="../fivebalance/settings/settingssignmessagewidgets.cpp" line="+64"/>
+        <source>SIGN</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <source>CLEAR ALL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingssignmessagewidgets.cpp" line="-1"/>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation type="unfinished">Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>VERIFY</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+48"/>
+        <location line="+55"/>
+        <source>The entered address is invalid.</source>
+        <translation type="unfinished">The entered address is invalid.</translation>
+    </message>
+    <message>
+        <location line="-55"/>
+        <location line="+8"/>
+        <location line="+47"/>
+        <location line="+7"/>
+        <source>Please check the address and try again.</source>
+        <translation type="unfinished">Please check the address and try again.</translation>
+    </message>
+    <message>
+        <location line="-54"/>
+        <location line="+54"/>
+        <source>The entered address does not refer to a key.</source>
+        <translation type="unfinished">The entered address does not refer to a key.</translation>
+    </message>
+    <message>
+        <location line="-47"/>
+        <source>Wallet unlock was cancelled.</source>
+        <translation type="unfinished">Wallet unlock was cancelled.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Private key for the entered address is not available.</source>
+        <translation type="unfinished">Private key for the entered address is not available.</translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Message signing failed.</source>
+        <translation type="unfinished">Message signing failed.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Message signed.</source>
+        <translation type="unfinished">Message signed.</translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>The signature could not be decoded.</source>
+        <translation type="unfinished">The signature could not be decoded.</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+12"/>
+        <source>Please check the signature and try again.</source>
+        <translation type="unfinished">Please check the signature and try again.</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>The signature did not match the message digest.</source>
+        <translation type="unfinished">The signature did not match the message digest.</translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <source>Message verification failed.</source>
+        <translation type="unfinished">Message verification failed.</translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Message verified.</source>
+        <translation type="unfinished">Message verified.</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingswalletoptionswidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+440"/>
+        <source>Reset to default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Discard changes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-405"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Wallet</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Customize the internal wallet options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+35"/>
+        <source>Stake split threshold</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Spend unconfirmed change</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+71"/>
+        <location filename="../fivebalance/settings/settingswalletoptionswidget.cpp" line="+38"/>
+        <source>Network</source>
+        <translation type="unfinished">Network</translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Customize the node network options</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Connect through SOCKS5 proxy (default proxy)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>Proxy IP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+46"/>
+        <source>Port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+19"/>
+        <source>Enter port</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-46"/>
+        <source>Enter proxy IP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-69"/>
+        <source>Map port using UPnP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Allow incoming connections</source>
+        <translation type="unfinished">Allow incoming connections</translation>
+    </message>
+    <message>
+        <location line="+206"/>
+        <source>SAVE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingswalletoptionswidget.cpp" line="+28"/>
+        <source>Options reset succeed</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingswalletrepairwidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+94"/>
+        <location filename="../fivebalance/settings/settingswalletrepairwidget.cpp" line="+22"/>
+        <source>Wallet Repair</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+331"/>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-324"/>
+        <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Salvage wallet</source>
+        <translation type="unfinished">Salvage wallet</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation type="unfinished">Attempt to recover private keys from a corrupt wallet.dat</translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Rescan blockchain file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Rescan the blockchain for missing wallet transactions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Recover transactions 1</source>
+        <translation type="unfinished">Recover transactions 1</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Recover transactions from blockchain (keep-meta-data, e.g. account owner)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Recover transactions 2</source>
+        <translation type="unfinished">Recover transactions 2</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Recover transactions from blockchain (drop meta-data)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Upgrade wallet format</source>
+        <translation type="unfinished">Upgrade wallet format</translation>
+    </message>
+    <message>
+        <location line="+65"/>
+        <source>Rebuild index</source>
+        <translation type="unfinished">Rebuild index</translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>Rebuild blockchain index from current blk000???.dat files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+56"/>
+        <source>Delete local blockchain</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+15"/>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingswalletrepairwidget.cpp" line="+63"/>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Confirm resync Blockchain</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <location filename="../fivebalance/settings/forms/settingswidget.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+255"/>
+        <source>Wallet Data</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <location line="+321"/>
+        <source>Wallet</source>
+        <translation type="unfinished">Wallet</translation>
+    </message>
+    <message>
+        <location line="-293"/>
+        <source>Multisend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Export Accounting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Tools</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>Sign/Verify Message</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>BIP38 Tool</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Options</source>
+        <translation type="unfinished">Options</translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Main</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Display</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Debug</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>Information</source>
+        <translation type="unfinished">Information</translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>Console</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Wallet Repair</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+54"/>
+        <source>FAQ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+31"/>
+        <source>About FIVEBALANCE</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-870"/>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/settings/settingswidget.cpp" line="+222"/>
+        <source>Confirm options reset</source>
+        <translation type="unfinished">Confirm options reset</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Client restart required to activate changes.</source>
+        <translation type="unfinished">Client restart required to activate changes.</translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation type="unfinished">Client will be shutdown, do you want to proceed?</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Stake Split too low, it shall be either &gt;= %1 or equal to 0 (to disable stake splitting)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Restart required</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Your wallet needs to be restarted to apply the changes
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Restart Now</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Restart Later</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Options will be applied on next wallet restart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Options stored</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Options store failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+155"/>
+        <source>Discard Unsaved Changes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>You are just about to discard all of your unsaved options.
+
+Are you sure?
+</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <location filename="../utilitydialog.cpp" line="+75"/>
-        <source>Fivebalance Core is shutting down...</source>
+        <location filename="../utilitydialog.cpp" line="+71"/>
+        <source>FIVEBALANCE Core is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4638,224 +5948,340 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SnackBar</name>
     <message>
-        <location filename="../forms/signverifymessagedialog.ui" line="+14"/>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signatures - Sign / Verify a Message</translation>
+        <location filename="../fivebalance/forms/snackbar.ui" line="+26"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="+13"/>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;Sign Message</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
-    </message>
-    <message>
-        <location line="+18"/>
-        <source>The Fivebalance address to sign the message with</source>
+        <location line="+51"/>
+        <source>Contact Stored</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>Splash</name>
     <message>
-        <location line="+7"/>
-        <location line="+210"/>
-        <source>Choose previously used address</source>
-        <translation>Choose previously used address</translation>
+        <location filename="../fivebalance/forms/splash.ui" line="+26"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
     <message>
-        <location line="-200"/>
-        <location line="+210"/>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <location line="-200"/>
-        <source>Paste address from clipboard</source>
-        <translation>Paste address from clipboard</translation>
-    </message>
-    <message>
-        <location line="+10"/>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Enter the message you want to sign here</source>
-        <translation>Enter the message you want to sign here</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Signature</source>
-        <translation>Signature</translation>
-    </message>
-    <message>
-        <location line="+27"/>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Copy the current signature to the system clipboard</translation>
-    </message>
-    <message>
-        <location line="+21"/>
-        <source>Sign the message to prove you own this Fivebalance address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+106"/>
-        <source>The Fivebalance address the message was signed with</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Fivebalance address</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-140"/>
-        <source>Sign &amp;Message</source>
-        <translation>Sign &amp;Message</translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Reset all sign message fields</source>
-        <translation>Reset all sign message fields</translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <location line="+143"/>
-        <source>Clear &amp;All</source>
-        <translation>Clear &amp;All</translation>
+        <source>Loading…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-84"/>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verify Message</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</translation>
-    </message>
-    <message>
-        <location line="+61"/>
-        <source>Verify &amp;Message</source>
-        <translation>Verify &amp;Message</translation>
-    </message>
-    <message>
-        <location line="+14"/>
-        <source>Reset all verify message fields</source>
-        <translation>Reset all verify message fields</translation>
-    </message>
-    <message>
-        <location filename="../signverifymessagedialog.cpp" line="+30"/>
-        <source>Click &quot;Sign Message&quot; to generate signature</source>
-        <translation>Click &quot;Sign Message&quot; to generate signature</translation>
-    </message>
-    <message>
-        <location line="+80"/>
-        <location line="+73"/>
-        <source>The entered address is invalid.</source>
-        <translation>The entered address is invalid.</translation>
-    </message>
-    <message>
-        <location line="-73"/>
-        <location line="+7"/>
-        <location line="+66"/>
-        <location line="+7"/>
-        <source>Please check the address and try again.</source>
-        <translation>Please check the address and try again.</translation>
-    </message>
-    <message>
-        <location line="-73"/>
-        <location line="+73"/>
-        <source>The entered address does not refer to a key.</source>
-        <translation>The entered address does not refer to a key.</translation>
-    </message>
-    <message>
-        <location line="-66"/>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Wallet unlock was cancelled.</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Private key for the entered address is not available.</source>
-        <translation>Private key for the entered address is not available.</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Message signing failed.</source>
-        <translation>Message signing failed.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Message signed.</source>
-        <translation>Message signed.</translation>
-    </message>
-    <message>
-        <location line="+53"/>
-        <source>The signature could not be decoded.</source>
-        <translation>The signature could not be decoded.</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <location line="+12"/>
-        <source>Please check the signature and try again.</source>
-        <translation>Please check the signature and try again.</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>The signature did not match the message digest.</source>
-        <translation>The signature did not match the message digest.</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Message verification failed.</source>
-        <translation>Message verification failed.</translation>
-    </message>
-    <message>
-        <location line="+5"/>
-        <source>Message verified.</source>
-        <translation>Message verified.</translation>
+        <location filename="../fivebalance/splash.cpp" line="+30"/>
+        <source>FIVEBALANCE Core</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <location filename="../splashscreen.cpp" line="+36"/>
-        <source>Fivebalance Core</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Version %1</source>
-        <translation>Version %1</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The Bitcoin Core developers</source>
-        <translation>The Bitcoin Core developers</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The Dash Core developers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>The Fivebalance Core developers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../networkstyle.cpp" line="+19"/>
+        <location filename="../networkstyle.cpp" line="+20"/>
         <source>[testnet]</source>
         <translation>[testnet]</translation>
     </message>
 </context>
 <context>
+    <name>TooltipMenu</name>
+    <message>
+        <location filename="../fivebalance/forms/tooltipmenu.ui" line="+26"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>Copy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>Last</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <location filename="../fivebalance/forms/topbar.ui" line="+26"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+309"/>
+        <location filename="../fivebalance/topbar.cpp" line="+635"/>
+        <source>Available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Pending</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Immature</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/topbar.cpp" line="-362"/>
+        <location line="+328"/>
+        <source>Wallet Unlocked for staking</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-298"/>
+        <source>Error generating address</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Address Copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Staking active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Staking not active</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+31"/>
+        <source>%n active connection(s)</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+34"/>
+        <source>Synchronized - Block: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message numerus="yes">
+        <location line="+35"/>
+        <source>%n hour(s)</source>
+        <translation type="unfinished">
+            <numerusform>%n hour</numerusform>
+            <numerusform>%n hours</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+2"/>
+        <source>%n day(s)</source>
+        <translation type="unfinished">
+            <numerusform>%n day</numerusform>
+            <numerusform>%n days</numerusform>
+        </translation>
+    </message>
+    <message numerus="yes">
+        <location line="+2"/>
+        <location line="+5"/>
+        <source>%n week(s)</source>
+        <translation type="unfinished">
+            <numerusform>%n week</numerusform>
+            <numerusform>%n weeks</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="-1"/>
+        <source>%1 and %2</source>
+        <translation type="unfinished">%1 and %2</translation>
+    </message>
+    <message numerus="yes">
+        <location line="+0"/>
+        <source>%n year(s)</source>
+        <translation type="unfinished">
+            <numerusform>%n year</numerusform>
+            <numerusform>%n years</numerusform>
+        </translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Wallet Upgrade</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Upgrading to HD wallet will improve
+the wallet&apos;s reliability and security.
+
+
+NOTE: after the upgrade, a new
+backup will be created.
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+5"/>
+        <source>Upgrade Wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Wallet unlock cancelled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+49"/>
+        <source>Tor Active: %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-491"/>
+        <location line="+496"/>
+        <source>Tor Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-506"/>
+        <source>FAQ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Upgrade to HD Wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>No Connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Staking Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Cold Staking Disabled</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source> %54 Synchronizing..</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+6"/>
+        <location line="+43"/>
+        <source>Light Theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-40"/>
+        <location line="+43"/>
+        <source>Dark Theme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-28"/>
+        <source>Wallet Locked </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+118"/>
+        <location line="+363"/>
+        <source>Wallet Locked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-347"/>
+        <location line="+355"/>
+        <source>Wallet Unlocked</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-12"/>
+        <source>Wallet Unencrypted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+42"/>
+        <source>Available (Locked included)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>The wallet has been successfully upgraded to HD.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>It is advised to make a backup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>Do you wish to backup now?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Backup Wallet</source>
+        <translation type="unfinished">Backup Wallet</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Wallet Data (*.dat)</source>
+        <translation type="unfinished">Wallet Data (*.dat)</translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Backup created</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <location line="+2"/>
+        <source>Backup creation failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+0"/>
+        <source>no file selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Wallet upgraded successfully, but no backup created.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>WARNING: remember to make a copy of your wallet.dat file!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <location line="+21"/>
+        <source>Upgrade Wallet Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>TrafficGraphWidget</name>
     <message>
-        <location filename="../trafficgraphwidget.cpp" line="+78"/>
+        <location filename="../trafficgraphwidget.cpp" line="+80"/>
         <source>KB/s</source>
         <translation>KB/s</translation>
     </message>
@@ -4863,7 +6289,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>TransactionDesc</name>
     <message numerus="yes">
-        <location filename="../transactiondesc.cpp" line="+33"/>
+        <location filename="../transactiondesc.cpp" line="+32"/>
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Open for %n more block</numerusform>
@@ -4877,29 +6303,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+8"/>
-        <location line="+11"/>
-        <location line="+10"/>
-        <location line="+12"/>
         <source>conflicted</source>
         <translation>conflicted</translation>
     </message>
     <message>
-        <location line="-31"/>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (verified via swifttx)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/confirmed (verified via swifttx)</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 confirmations (verified via swifttx)</translation>
-    </message>
-    <message>
-        <location line="+29"/>
+        <location line="+31"/>
         <source>%1/offline</source>
         <translation>%1/offline</translation>
     </message>
@@ -4909,38 +6317,53 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>%1/unconfirmed</translation>
     </message>
     <message>
-        <location line="-10"/>
-        <location line="+12"/>
+        <location line="-7"/>
+        <location line="+9"/>
         <source>%1 confirmations</source>
         <translation>%1 confirmations</translation>
     </message>
     <message>
-        <location line="-26"/>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</translation>
+        <location line="-28"/>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (SwiftTX verification failed)</translation>
+        <location line="+4"/>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/confirmed (SwiftTX verification failed)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+2"/>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
         <source>Status</source>
         <translation>Status</translation>
     </message>
@@ -5083,12 +6506,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Merchant</translation>
     </message>
     <message>
-        <location line="+6"/>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</translation>
-    </message>
-    <message>
-        <location line="+7"/>
+        <location line="+13"/>
         <source>Debug information</source>
         <translation>Debug information</translation>
     </message>
@@ -5121,22 +6539,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <location filename="../forms/transactiondescdialog.ui" line="+14"/>
-        <source>Transaction details</source>
-        <translation>Transaction details</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>This pane shows a detailed description of the transaction</translation>
-    </message>
-</context>
-<context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+213"/>
+        <location filename="../transactiontablemodel.cpp" line="+314"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -5151,7 +6556,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Address</translation>
     </message>
     <message numerus="yes">
-        <location line="+57"/>
+        <location line="+69"/>
         <source>Open for %n more block(s)</source>
         <translation>
             <numerusform>Open for %n more block</numerusform>
@@ -5214,28 +6619,28 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Received from</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Received via Obfuscation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Obfuscation Denominate</source>
+        <location line="+7"/>
+        <source>%1 Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Obfuscation Collateral Payment</source>
+        <source>z%1 Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Obfuscation Make Collateral Inputs</source>
+        <source>%1 Cold Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Obfuscation Create Denominations</source>
+        <source>%1 Stake on behalf of</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Stake delegation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5244,18 +6649,18 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sent to</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-42"/>
         <source>Orphan Block - Generated but not accepted. This does not impact your holdings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+44"/>
         <source>Payment to yourself</source>
         <translation>Payment to yourself</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Minted</source>
+        <location line="+15"/>
+        <source>Stake delegation spent by</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5264,52 +6669,52 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Mined</translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Obfuscated</source>
-        <translation>Obfuscated</translation>
-    </message>
-    <message>
         <location line="+2"/>
-        <source>Converted Phr to zPhr</source>
+        <source>Converted %1 to z%1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zPhr</source>
+        <source>Spent z%1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received Phr from zPhr</source>
+        <source>Received %1 from z%1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zPhr from zPhr Spend</source>
+        <source>Minted Change as z%1 from z%1 Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zPhr to Phr</source>
+        <source>Converted z%1 to %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+32"/>
         <source>watch-only</source>
         <translation>watch-only</translation>
     </message>
     <message>
-        <location line="+22"/>
-        <source>zPhr Accumulator</source>
+        <location line="+20"/>
+        <source>Anonymous</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+14"/>
+        <source>No information</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>(n/a)</source>
         <translation>(n/a)</translation>
     </message>
     <message>
-        <location line="+200"/>
+        <location line="+210"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>Transaction status. Hover over this field to show number of confirmations.</translation>
     </message>
@@ -5340,361 +6745,252 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <location filename="../transactionview.cpp" line="+68"/>
-        <location line="+17"/>
-        <source>All</source>
-        <translation>All</translation>
+        <location filename="../fivebalance/forms/sendconfirmdialog.ui" line="+26"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+90"/>
+        <location filename="../fivebalance/sendconfirmdialog.cpp" line="+72"/>
+        <source>Transaction Details</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+418"/>
+        <source>Total amount</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+117"/>
+        <source>Previous Transaction</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-16"/>
-        <source>Today</source>
-        <translation>Today</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>This week</source>
-        <translation>This week</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>This month</source>
-        <translation>This month</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Last month</source>
-        <translation>Last month</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>This year</source>
-        <translation>This year</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Range...</source>
-        <translation>Range...</translation>
-    </message>
-    <message>
-        <location line="+12"/>
-        <source>Most Common</source>
-        <translation>Most Common</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Received with</source>
-        <translation>Received with</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Sent to</source>
-        <translation>Sent to</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Obfuscated</source>
-        <translation>Obfuscated</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Obfuscation Make Collateral Inputs</source>
+        <source>Output Index</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Obfuscation Create Denominations</source>
+        <location line="+167"/>
+        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Obfuscation Denominate</source>
+        <location line="+103"/>
+        <source>May 25, 2017</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Obfuscation Collateral Payment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>To yourself</source>
-        <translation>To yourself</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Mined</source>
-        <translation>Mined</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Minted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Masternode Reward</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Received Phr from zPhr</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Zerocoin Mint</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Zerocoin Spend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Zerocoin Spend to Self</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Other</source>
-        <translation>Other</translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Enter address or label to search</source>
-        <translation>Enter address or label to search</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Min amount</source>
-        <translation>Min amount</translation>
-    </message>
-    <message>
-        <location line="+36"/>
-        <source>Copy address</source>
-        <translation>Copy address</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy label</source>
-        <translation>Copy label</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy amount</source>
-        <translation>Copy amount</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy transaction ID</source>
-        <translation>Copy transaction ID</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Edit label</source>
-        <translation>Edit label</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Show transaction details</source>
-        <translation>Show transaction details</translation>
-    </message>
-    <message>
-        <location line="+195"/>
-        <source>Export Transaction History</source>
-        <translation>Export Transaction History</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Comma separated file (*.csv)</translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Confirmed</source>
-        <translation>Confirmed</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Watch-only</source>
-        <translation>Watch-only</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Date</source>
-        <translation>Date</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Type</source>
-        <translation>Type</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Label</source>
-        <translation>Label</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Address</source>
-        <translation>Address</translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="-621"/>
         <source>ID</source>
-        <translation>ID</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+10"/>
-        <source>Exporting Failed</source>
-        <translation>Exporting Failed</translation>
+        <location line="+101"/>
+        <source>Sending to</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>There was an error trying to save the transaction history to %1.</translation>
+        <location line="+168"/>
+        <source>Coin inputs</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-4"/>
-        <source>Exporting Successful</source>
-        <translation>Exporting Successful</translation>
+        <location line="+146"/>
+        <source>Fee</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>The transaction history was successfully saved to %1.</translation>
+        <location line="+34"/>
+        <source>Size</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+121"/>
-        <source>Range:</source>
-        <translation>Range:</translation>
+        <location line="+62"/>
+        <source>Change address</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>to</source>
-        <translation>to</translation>
+        <location line="+42"/>
+        <source>Spendable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Confirmations</source>
+        <translation type="unfinished">Confirmations</translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>Status</source>
+        <translation type="unfinished">Status</translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Date</source>
+        <translation type="unfinished">Date</translation>
+    </message>
+    <message>
+        <location line="+55"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+51"/>
+        <source>CANCEL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+16"/>
+        <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/sendconfirmdialog.cpp" line="-21"/>
+        <source>Confirm Your Transaction</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>SEND</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>ID copied</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Delegating to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+79"/>
+        <source>Unknown</source>
+        <translation type="unfinished">Unknown</translation>
     </message>
 </context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
+    <name>TxRow</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+102"/>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Unit to show amounts in. Click to select another unit.</translation>
-    </message>
-</context>
-<context>
-    <name>WalletFrame</name>
-    <message>
-        <location filename="../walletframe.cpp" line="+25"/>
-        <source>No wallet has been loaded.</source>
-        <translation>No wallet has been loaded.</translation>
+        <location filename="../fivebalance/forms/txrow.ui" line="+20"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
     </message>
 </context>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+310"/>
-        <location line="+9"/>
-        <location line="+9"/>
+        <location filename="../walletmodel.cpp" line="+491"/>
+        <location line="+20"/>
+        <location line="+10"/>
         <source>Send Coins</source>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <location line="-18"/>
-        <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 FBN.</source>
+        <location line="-30"/>
+        <location line="+20"/>
+        <source>SwiftX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 %2.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+10"/>
+        <source>Transaction creation failed!
+%1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>The size of the transaction is too big.
+Select fewer inputs with coin control.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>WalletView</name>
+    <name>WelcomeContentWidget</name>
     <message>
-        <location filename="../walletview.cpp" line="+50"/>
-        <source>&amp;Export</source>
-        <translation>&amp;Export</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Export the data in the current tab to a file</translation>
-    </message>
-    <message>
-        <location line="+9"/>
-        <source>Selected amount:</source>
-        <translation>Selected amount:</translation>
-    </message>
-    <message>
-        <location line="+249"/>
-        <source>Backup Wallet</source>
-        <translation>Backup Wallet</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Wallet Data (*.dat)</translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Backup Failed</source>
-        <translation>Backup Failed</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>There was an error trying to save the wallet data to %1.</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Backup Successful</source>
-        <translation>Backup Successful</translation>
-    </message>
-    <message>
-        <location line="+0"/>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>The wallet data was successfully saved to %1.</translation>
-    </message>
-</context>
-<context>
-    <name>ZPhrControlDialog</name>
-    <message>
-        <location filename="../forms/zphrcontroldialog.ui" line="+20"/>
-        <source>Select zPhr to Spend</source>
+        <location filename="../fivebalance/forms/welcomecontentwidget.ui" line="+244"/>
+        <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+11"/>
-        <source>Quantity</source>
+        <location line="+86"/>
+        <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+7"/>
-        <location line="+14"/>
-        <source>0</source>
+        <location line="+86"/>
+        <source>3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-7"/>
-        <source>zPhr</source>
+        <location line="+86"/>
+        <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+14"/>
-        <source>Select/Deselect All</source>
+        <location line="+114"/>
+        <source>Language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+50"/>
-        <source>Is Spendable</source>
+        <location line="+44"/>
+        <source>Welcome</source>
+        <translation type="unfinished">Welcome</translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Privacy</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+41"/>
+        <source>Masternodes</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+108"/>
+        <source>Select your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+89"/>
+        <source>Welcome to
+FIVEBALANCE Core Wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+27"/>
+        <source>FIVEBALANCE is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+93"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - FIVEBALANCE believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+83"/>
+        <source>The masternode network is FIVEBALANCE&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-103"/>
+        <source>How FIVEBALANCE respects your privacy?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+80"/>
+        <source>What is a Masternode?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../fivebalance/welcomecontentwidget.cpp" line="+178"/>
+        <source>default</source>
+        <translation type="unfinished">default</translation>
     </message>
 </context>
 <context>
@@ -5705,17 +7001,12 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation type="unfinished">Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation type="unfinished">An error occurred while setting up the RPC address %s port %u for listening: %s</translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
         <translation type="unfinished">Bind to given address and always listen on it. Use [host]:port notation for IPv6</translation>
     </message>
@@ -5731,12 +7022,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Cannot obtain a lock on data directory %s. Fivebalance Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. FIVEBALANCE Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5745,7 +7031,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished">Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation type="unfinished">Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</translation>
     </message>
@@ -5761,26 +7047,26 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
-        <source>Disable all Fivebalance specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation type="unfinished">Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+19"/>
+        <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Enable spork administration functionality with the appropriate private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation type="unfinished">Enable swifttx, show confirmations for locked transactions (bool, default: %s)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
         <translation type="unfinished">Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</translation>
     </message>
@@ -5790,12 +7076,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished">Error: Listening for incoming connections failed (listen returned error %s)</translation>
     </message>
     <message>
-        <location line="+11"/>
+        <location line="+2"/>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</source>
         <translation type="unfinished">Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</translation>
     </message>
     <message>
         <location line="+3"/>
+        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation type="unfinished">Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</translation>
     </message>
@@ -5810,24 +7106,9 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished">Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Fees (in FBN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Fees (in FBN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+14"/>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation type="unfinished">Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation type="unfinished">Found unconfirmed denominated outputs, will wait till they confirm to continue.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -5835,22 +7116,22 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished">If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
         <translation type="unfinished">In this mode -genproclimit controls how many blocks are generated immediately.</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+3"/>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation type="unfinished">Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least the minrelay fee of %s to prevent stuck transactions)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
         <translation type="unfinished">Log transaction priority and fee per kB when mining blocks (default: %u)</translation>
     </message>
@@ -5861,36 +7142,36 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+3"/>
+        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
         <translation type="unfinished">Maximum size of data in data carrier transactions we relay and mine (default: %u)</translation>
     </message>
     <message>
         <location line="+3"/>
+        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
         <translation type="unfinished">Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: %u)</source>
         <translation type="unfinished">Number of seconds to keep misbehaving peers from reconnecting (default: %u)</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation type="unfinished">Output debugging information (default: %u, supplying &lt;category&gt; is optional)</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation type="unfinished">Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</translation>
-    </message>
-    <message>
-        <location line="+3"/>
+        <location line="+8"/>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5925,62 +7206,37 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation type="unfinished">Show N confirmations for a successfully locked transaction (0-9999, default: %u)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+10"/>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation type="unfinished">SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</translation>
+        <location line="+5"/>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer&apos;s date and time being set incorrectly. Only rebuild the block database if you are sure that your computer&apos;s date and time are correct</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation type="unfinished">This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>To use fivebalanced, or the -server option to fivebalance-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=fivebalancerpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@foo.com
-</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+13"/>
-        <source>Unable to bind to %s on this computer. Fivebalance Core is probably already running.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 FBN.</source>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 FBN.</source>
+        <source>Unable to bind to %s on this computer. FIVEBALANCE Core is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+2"/>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
         <translation type="unfinished">Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="+6"/>
         <source>Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation type="unfinished">Warning: -maxtxfee is set very high! Fees this large could be paid on a single transaction.</translation>
     </message>
@@ -5991,7 +7247,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Fivebalance Core will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong FIVEBALANCE Core will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6031,11 +7287,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>(30001 could be used only on mainnet)</source>
-        <translation type="unfinished">(30001 could be used only on mainnet)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>(default: %s)</source>
         <translation type="unfinished">(default: %s)</translation>
     </message>
@@ -6045,19 +7296,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">(default: 1)</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>(must be 30001 for mainnet)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+2"/>
+        <location line="+3"/>
         <source>Accept command line and JSON-RPC commands</source>
         <translation type="unfinished">Accept command line and JSON-RPC commands</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation type="unfinished">Accept connections from outside (default: 1 if no -proxy or -connect)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6065,12 +7306,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Accept public REST requests (default: %u)</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation type="unfinished">Acceptable ciphers (default: %s)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation type="unfinished">Add a node to connect to and attempt to keep the connection open</translation>
     </message>
@@ -6080,14 +7316,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Allow DNS lookups for -addnode, -seednode and -connect</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Already have that input.</source>
-        <translation type="unfinished">Already have that input.</translation>
+        <location line="+2"/>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation type="unfinished">Always query for peer addresses via DNS lookup (default: %u)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
-        <translation type="unfinished">Always query for peer addresses via DNS lookup (default: %u)</translation>
+        <source>Append comment to the user agent string</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -6105,62 +7341,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Block creation options:</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Calculating missing accumulators...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Can&apos;t denominate: no compatible inputs left.</source>
-        <translation type="unfinished">Can&apos;t denominate: no compatible inputs left.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Can&apos;t find random Masternode.</source>
-        <translation type="unfinished">Can&apos;t find random Masternode.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Can&apos;t mix while sync in progress.</source>
-        <translation type="unfinished">Can&apos;t mix while sync in progress.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Cannot downgrade wallet</source>
         <translation type="unfinished">Cannot downgrade wallet</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Cannot resolve -bind address: &apos;%s&apos;</source>
-        <translation type="unfinished">Cannot resolve -bind address: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Cannot resolve -externalip address: &apos;%s&apos;</source>
-        <translation type="unfinished">Cannot resolve -externalip address: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Cannot resolve -whitebind address: &apos;%s&apos;</source>
-        <translation type="unfinished">Cannot resolve -whitebind address: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Cannot write default address</source>
-        <translation type="unfinished">Cannot write default address</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Collateral not valid.</source>
-        <translation type="unfinished">Collateral not valid.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Connect only to the specified node(s)</source>
-        <translation type="unfinished">Connect only to the specified node(s)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+4"/>
         <source>Connect through SOCKS5 proxy</source>
         <translation type="unfinished">Connect through SOCKS5 proxy</translation>
     </message>
@@ -6186,18 +7372,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The Fivebalance Core Developers</source>
+        <source>Copyright (C) 2015-%i The FIVEBALANCE Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Corrupted block database detected</source>
         <translation type="unfinished">Corrupted block database detected</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation type="unfinished">Could not parse -rpcbind value %s as network address</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6210,7 +7391,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Debugging/Testing options:</translation>
     </message>
     <message>
-        <location line="+2"/>
+        <location line="+1"/>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6240,24 +7426,19 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Done loading</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
+        <location line="+2"/>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+3"/>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation type="unfinished">Enable the client to act as a masternode (0-1, default: %u)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Entries are full.</source>
-        <translation type="unfinished">Entries are full.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Error connecting to Masternode.</source>
-        <translation type="unfinished">Error connecting to Masternode.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6286,7 +7467,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Fivebalance Core</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of FIVEBALANCE Core</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6301,8 +7482,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error recovering public key.</source>
-        <translation type="unfinished">Error recovering public key.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6311,21 +7492,21 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+        <source>Error: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
         <translation type="unfinished">Error: A fatal internal error occured, see debug.log for details</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Error: Can&apos;t select current denominated inputs</source>
-        <translation type="unfinished">Error: Can&apos;t select current denominated inputs</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Error: Disk space is low!</source>
         <translation type="unfinished">Error: Disk space is low!</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Error: Unsupported argument -tor found, use -onion.</source>
         <translation type="unfinished">Error: Unsupported argument -tor found, use -onion.</translation>
     </message>
@@ -6335,44 +7516,19 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Error: Wallet locked, unable to create transaction!</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation type="unfinished">Failed to listen on any port. Use -listen=0 if you want this.</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Failed to read block</source>
-        <translation type="unfinished">Failed to read block</translation>
-    </message>
-    <message>
-        <location line="+2"/>
-        <source>Fee (in FBN/kB) to add to transactions you send (default: %s)</source>
+        <location line="+1"/>
+        <source>Failed to parse host:port string</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Finalizing transaction.</source>
-        <translation type="unfinished">Finalizing transaction.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+6"/>
         <source>Force safe mode (default: %u)</source>
         <translation type="unfinished">Force safe mode (default: %u)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation type="unfinished">Found enough users, signing ( waiting %s )</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Found enough users, signing ...</source>
-        <translation type="unfinished">Found enough users, signing ...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6406,16 +7562,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Incompatible mode.</source>
-        <translation type="unfinished">Incompatible mode.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Incompatible version.</source>
-        <translation type="unfinished">Incompatible version.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation type="unfinished">Incorrect or no genesis block found. Wrong datadir for network?</translation>
     </message>
@@ -6426,13 +7572,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Fivebalance Core is shutting down.</source>
+        <source>Initialization sanity check failed. FIVEBALANCE Core is shutting down.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Input is not valid.</source>
-        <translation type="unfinished">Input is not valid.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6445,44 +7586,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Insufficient funds.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Invalid -onion address or hostname: &apos;%s&apos;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Invalid -proxy address or hostname: &apos;%s&apos;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished">Invalid amount for -maxtxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished">Invalid amount for -minrelaytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished">Invalid amount for -mintxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</source>
         <translation type="unfinished">Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos; (must be at least %s)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
-        <translation type="unfinished">Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6500,27 +7611,37 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Invalid netmask specified in -whitelist: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation type="unfinished">Invalid port detected in masternode.conf</translation>
+        <location line="+49"/>
+        <source>Recalculating FBN supply...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Reindexing zerocoin database...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Invalid private key.</source>
-        <translation type="unfinished">Invalid private key.</translation>
+        <source>Reindexing zerocoin failed</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Invalid script detected.</source>
-        <translation type="unfinished">Invalid script detected.</translation>
+        <location line="+9"/>
+        <source>Selected coins value is less than payment target</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-174"/>
+        <location line="+25"/>
+        <source>SwiftX options:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-231"/>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="-153"/>
+        <location line="-188"/>
         <source> mints deleted
 </source>
         <translation type="unfinished"></translation>
@@ -6537,37 +7658,47 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+44"/>
-        <source>Enable automatic wallet backups triggered after each zPhr minting (0-1, default: %u)</source>
+        <location line="+42"/>
+        <source>Disable all FIVEBALANCE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+20"/>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+4"/>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+32"/>
-        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <location line="+18"/>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+26"/>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
+        <location line="+3"/>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+97"/>
+        <location line="+14"/>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+59"/>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+9"/>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
         <source>&lt;category&gt; can be:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6577,12 +7708,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+25"/>
-        <source>Delete blockchain folders and resync from scratch</source>
+        <location line="+5"/>
+        <source>Cannot create public spend input</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+18"/>
         <source>Display the stake modifier calculations in the debug.log file.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6592,17 +7723,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Enable publish hash block in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6612,12 +7738,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6627,42 +7748,52 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Failed to read block index</source>
+        <location line="+16"/>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Failed to write block index</source>
+        <location line="+3"/>
+        <source>Error: No valid utxo!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+4"/>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Failed to parse public spend</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to select a zerocoin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+17"/>
+        <source>Invalid amount for -%s=&lt;amount&gt;: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation type="unfinished">Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Last Obfuscation was too recent.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Less than 3 mints added, unable to create spend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation type="unfinished">Limit size of signature cache to &lt;n&gt; entries (default: %u)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+4"/>
         <source>Line: %d</source>
         <translation type="unfinished">Line: %d</translation>
     </message>
@@ -6680,6 +7811,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <location line="+1"/>
         <source>Loading addresses...</source>
         <translation type="unfinished">Loading addresses...</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Loading banlist...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6708,23 +7844,28 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation type="unfinished">Loading wallet... (%3.2f %%)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Loading wallet...</source>
         <translation type="unfinished">Loading wallet...</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Lock is already in place.</source>
-        <translation type="unfinished">Lock is already in place.</translation>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation type="unfinished">Lock masternodes from masternode configuration file (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Lookup(): Invalid -proxy address or hostname: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>MNs synchronization pending...</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6737,17 +7878,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Masternode options:</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Masternode queue is full.</source>
-        <translation type="unfinished">Masternode queue is full.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Masternode:</source>
-        <translation type="unfinished">Masternode:</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation type="unfinished">Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</translation>
     </message>
@@ -6758,53 +7889,18 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Missing input transaction information.</source>
-        <translation type="unfinished">Missing input transaction information.</translation>
+        <source>Mint did not make it into blockchain</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Mixing in progress...</source>
-        <translation type="unfinished">Mixing in progress...</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Need to specify a port with -whitebind: &apos;%s&apos;</source>
         <translation type="unfinished">Need to specify a port with -whitebind: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>No Masternodes detected.</source>
-        <translation type="unfinished">No Masternodes detected.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>No compatible Masternode found.</source>
-        <translation type="unfinished">No compatible Masternode found.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>No funds detected in need of denominating.</source>
-        <translation type="unfinished">No funds detected in need of denominating.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>No matching denominations found for mixing.</source>
-        <translation type="unfinished">No matching denominations found for mixing.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Node relay options:</source>
         <translation type="unfinished">Node relay options:</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Non-standard public key detected.</source>
-        <translation type="unfinished">Non-standard public key detected.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Not compatible with existing transactions.</source>
-        <translation type="unfinished">Not compatible with existing transactions.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6813,27 +7909,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Not in the Masternode list.</source>
-        <translation type="unfinished">Not in the Masternode list.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation type="unfinished">Number of automatic wallet backups (default: 10)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Obfuscation is idle.</source>
+        <source>Number of custom location backups to retain (default: %d)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Obfuscation request complete:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Obfuscation request incomplete:</source>
+        <source>On first run, create a legacy wallet instead of a HD wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6858,16 +7944,217 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
+        <source>Peers are being disconnected due time differences.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+73"/>
+        <source>Unable to find transaction containing mint %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+11"/>
+        <source>Use block spam filter (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>isValid(): Invalid -proxy address or hostname: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-105"/>
         <source>Preparing for resync...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location line="-368"/>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+21"/>
+        <source>Do not accept transactions if any ancestor would have &lt;n&gt; or more in-mempool descendants (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Do not accept transactions if any ancestor would have more than &lt;n&gt; kilobytes of in-mempool descendants (default: %u).</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Do not accept transactions if number of in-mempool ancestors is &lt;n&gt; or more (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Do not accept transactions whose size with all in-mempool ancestors exceeds &lt;n&gt; kilobytes (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Fees (in %s/Kb) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Fees (in %s/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+37"/>
+        <source>Minimum positive amount (in FBN) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong FIVEBALANCE Core will not work properly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+25"/>
+        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+28"/>
+        <source>WARNING: The transaction has been signed and recorded, so the wallet will try to re-send it. Use &apos;abandontransaction&apos; to cancel it. (txid: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+36"/>
+        <source>(must be %d for %s-net)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Active Masternode not initialized.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Allows deprecated RPC method(s) to be used</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Can&apos;t generate a change-address key. Please call keypoolrefill first.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Cannot resolve -%s address: &apos;%s&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location line="+1"/>
+        <source>Cannot upgrade to HD wallet (already running HD support). Version: %d</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Change index out of range</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+38"/>
+        <source>Error: -listen must be true if -masternode is set.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Error: -maxmempool must be at least %d MB</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Error: Invalid port %d for running a masternode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Failed to accept tx in the memory pool (reason: %s)
+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+8"/>
+        <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+13"/>
+        <source>Invalid -masternodeaddr address: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid -masternodeaddr port %d, only %d is supported on %s-net.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+7"/>
+        <source>Invalid port %d detected in masternode.conf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Invalid status error.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Keypool ran out, please call keypoolrefill first, or unlock the wallet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Limit size of signature cache to &lt;n&gt; MiB (default: %u)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+18"/>
+        <source>Masternodes are required to run on port %d for %s-net</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+4"/>
+        <source>Need destination or change address because change is not exact</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+2"/>
+        <source>No error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+12"/>
         <source>Prepend debug output with timestamp (default: %u)</source>
         <translation type="unfinished">Prepend debug output with timestamp (default: %u)</translation>
     </message>
@@ -6878,18 +8165,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation type="unfinished">RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</translation>
+        <source>Pubcoin not found in mint tx</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>RPC server options:</source>
         <translation type="unfinished">RPC server options:</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation type="unfinished">RPC support for HTTP persistent connections (default: %d)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -6907,22 +8189,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Rebuild block chain index from current blk000??.dat files</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Recalculating coin supply may take 30-60 minutes...</source>
+        <location line="+2"/>
+        <source>Reindex the %s and z%s money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Recalculating supply statistics may take 30-60 minutes...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation type="unfinished">Receive and display P2P network alerts (default: %u)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+3"/>
         <source>Relay and mine data carrier transactions (default: %u)</source>
         <translation type="unfinished">Relay and mine data carrier transactions (default: %u)</translation>
     </message>
@@ -6962,29 +8234,9 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Run in the background as a daemon and accept commands</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation type="unfinished">Send transactions as zero-fee transactions if possible (default: %u)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Server certificate file (default: %s)</source>
-        <translation type="unfinished">Server certificate file (default: %s)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Server private key (default: %s)</source>
-        <translation type="unfinished">Server private key (default: %s)</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Session not complete!</source>
-        <translation type="unfinished">Session not complete!</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Session timed out.</source>
-        <translation type="unfinished">Session timed out.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7043,16 +8295,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Signing failed.</source>
-        <translation type="unfinished">Signing failed.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Signing timed out.</source>
-        <translation type="unfinished">Signing timed out.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Signing transaction failed</source>
         <translation type="unfinished">Signing transaction failed</translation>
     </message>
@@ -7093,6 +8335,11 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+        <source>Spend Valid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
         <translation type="unfinished">Spend unconfirmed change when sending transactions (default: %u)</translation>
     </message>
@@ -7107,27 +8354,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished">Stop running after importing blocks from disk (default: %u)</translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation type="unfinished">Submitted following entries to masternode: %u / %d</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation type="unfinished">Submitted to masternode, waiting for more entries ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation type="unfinished">Submitted to masternode, waiting in queue %s</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>SwiftTX options:</source>
-        <translation type="unfinished">SwiftTX options:</translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Synchronization failed</source>
         <translation type="unfinished">Synchronization failed</translation>
     </message>
@@ -7135,11 +8362,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <location line="+1"/>
         <source>Synchronization finished</source>
         <translation type="unfinished">Synchronization finished</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Synchronization pending...</source>
-        <translation type="unfinished">Synchronization pending...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7163,6 +8385,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+        <source>Syncing zFBN wallet...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>The threshold value cannot be less than %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>This help message</source>
         <translation type="unfinished">This help message</translation>
     </message>
@@ -7178,13 +8410,23 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>This is not a Masternode.</source>
-        <translation type="unfinished">This is not a Masternode.</translation>
+        <source>This is not a masternode. &apos;local&apos; option disabled.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>This is not a masternode.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation type="unfinished">Threshold for disconnecting misbehaving peers (default: %u)</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Too many spends needed</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7194,6 +8436,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     <message>
         <location line="+1"/>
         <source>Tor control port to use if onion listening enabled (default: %s)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transaction Created</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Transaction Mint Started</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7208,18 +8460,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Transaction created successfully.</source>
-        <translation type="unfinished">Transaction created successfully.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Transaction fees are too high.</source>
-        <translation type="unfinished">Transaction fees are too high.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Transaction not valid.</source>
-        <translation type="unfinished">Transaction not valid.</translation>
+        <source>Transaction canceled.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7233,13 +8475,23 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Transmitting final transaction.</source>
-        <translation type="unfinished">Transmitting final transaction.</translation>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation type="unfinished">Unable to bind to %s on this computer (bind returned error %s)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unable to generate initial key</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>Unable to generate keys</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7248,23 +8500,23 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation type="unfinished">Unknown network specified in -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Unknown state: id = %u</source>
-        <translation type="unfinished">Unknown state: id = %u</translation>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Upgrade wallet to latest format</source>
         <translation type="unfinished">Upgrade wallet to latest format</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation type="unfinished">Use OpenSSL (https) for JSON-RPC connections</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7282,9 +8534,14 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>Use the test network</source>
         <translation type="unfinished">Use the test network</translation>
+    </message>
+    <message>
+        <location line="+1"/>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7293,7 +8550,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Value more than Obfuscation pool maximum allows.</source>
+        <source>Value is below the smallest available denomination (= 1) of zFBN</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7313,12 +8570,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet is locked.</source>
-        <translation type="unfinished">Wallet is locked.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Fivebalance Core to complete</source>
+        <source>Wallet needed to be rewritten: restart FIVEBALANCE Core to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7353,23 +8605,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Will retry...</source>
-        <translation type="unfinished">Will retry...</translation>
+        <source>You don&apos;t have enough Zerocoins in your wallet</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation type="unfinished">You need to rebuild the database using -reindex to change -txindex</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Your entries added successfully.</source>
-        <translation type="unfinished">Your entries added successfully.</translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation type="unfinished">Your transaction was accepted into the pool!</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -7383,16 +8625,16 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
+        <source>Zerocoin minting available only on regtest</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+1"/>
         <source>Zerocoin options:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>failed to validate zerocoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
+        <location line="+2"/>
         <source>on startup</source>
         <translation type="unfinished">on startup</translation>
     </message>
@@ -7400,6 +8642,65 @@ for example: alertnotify=echo %%s | mail -s &quot;Fivebalance Alert&quot; admin@
         <location line="+1"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation type="unfinished">wallet.dat corrupt, salvage failed</translation>
+    </message>
+</context>
+<context>
+    <name>send</name>
+    <message>
+        <location filename="../fivebalance/forms/send.ui" line="+14"/>
+        <source>Form</source>
+        <translation type="unfinished">Form</translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <location line="+515"/>
+        <source>Send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-505"/>
+        <source>Send public coins (FBN)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+60"/>
+        <source>FIVEBALANCE address or contact label</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+23"/>
+        <source>Amount</source>
+        <translation type="unfinished">Amount</translation>
+    </message>
+    <message>
+        <location line="+134"/>
+        <source>Customize fee</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+29"/>
+        <source>Clear all</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+26"/>
+        <source>Add recipient</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+104"/>
+        <source>Total to send</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+236"/>
+        <source>Reset to default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="-418"/>
+        <source>Include delegated</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

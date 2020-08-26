@@ -1,2 +1,3 @@
 usr/local/bin/fivebalanced usr/bin
 usr/local/bin/fivebalance-cli usr/bin
+debian/examples/fivebalance.conf etc/fivebalance

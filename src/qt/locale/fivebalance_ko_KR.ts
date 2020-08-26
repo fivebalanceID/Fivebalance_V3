@@ -1,5 +1,57 @@
 <TS language="ko_KR" version="2.1">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>누르기</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>Edit Contact</source>
+        <translation>연락처 수정</translation>
+    </message>
+    <message>
+        <source>Set a label for the selected address</source>
+        <translation>선택된 주소에 라벨 설정하기</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation>선택된 주소의 라벨 변경:
+%1</translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
@@ -39,19 +91,19 @@
     </message>
     <message>
         <source>C&amp;lose</source>
-        <translation>닫&amp;기</translation>
+        <translation>&amp;닫기</translation>
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>전송할 주소를 선택해주세요.</translation>
+        <translation>송금할 주소를 선택해주세요.</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>전송 받을 주소를 선택해주세요.</translation>
+        <translation>입금 받을 주소를 선택해주세요.</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
-        <translation>선&amp;택</translation>
+        <translation>&amp;선택</translation>
     </message>
     <message>
         <source>Sending addresses</source>
@@ -59,15 +111,15 @@
     </message>
     <message>
         <source>Receiving addresses</source>
-        <translation>받는 주소</translation>
+        <translation>받을 주소</translation>
     </message>
     <message>
-        <source>These are your Fivebalance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 전송할 Fivebalance 주소입니다. 송금하기 전 항상 금액과 전송할 주소를 확인해주세요.</translation>
+        <source>These are your FIVEBALANCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>이 주소들은 송금할 FIVEBALANCE 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your Fivebalance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 전송 받을 Fivebalance 주소입니다. 각 트랜잭션별로 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <source>These are your FIVEBALANCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>이 주소들은 입금 받을 FIVEBALANCE 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -99,6 +151,21 @@
     </message>
 </context>
 <context>
+    <name>AddressLabelRow</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>밥 앨런</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
+    </message>
+</context>
+<context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
@@ -109,8 +176,101 @@
         <translation>주소</translation>
     </message>
     <message>
+        <source>Date</source>
+        <translation>날짜</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>분류</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(라벨 없음)</translation>
+    </message>
+</context>
+<context>
+    <name>AddressesWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Contact name</source>
+        <translation>연락처 이름</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>주소 입력</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>연락처</translation>
+    </message>
+    <message>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation>옆에 있는 옵션 메뉴에서 새로운 주소를 추가할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>No contacts yet</source>
+        <translation>연락처가 비어 있습니다.</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Invalid Contact Address</source>
+        <translation>연락처 주소가 잘못 되었습니다.</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>자신의 주소는 연락처로 저장할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Address already stored, label: %1</source>
+        <translation>이미 저장된 주소입니다. 라벨: %1</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>새로운 주소가 저장되었습니다.</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>연락처 저장 오류</translation>
+    </message>
+    <message>
+        <source>Contact edited</source>
+        <translation>연락처 수정</translation>
+    </message>
+    <message>
+        <source>Contact edit failed</source>
+        <translation>연락처 수정이 실패하였습니다.</translation>
+    </message>
+    <message>
+        <source>Delete Contact</source>
+        <translation>연락처 삭제</translation>
+    </message>
+    <message>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation>%1
+
+위 주소를 삭제하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Contact Deleted</source>
+        <translation>연락처가 삭제되었습니다</translation>
+    </message>
+    <message>
+        <source>Error deleting a contact</source>
+        <translation>연락처 삭제 오류</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>주소가 복사되었습니다.</translation>
     </message>
 </context>
 <context>
@@ -120,24 +280,12 @@
         <translation>암호 대화상자</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>암호 입력</translation>
+        <source>TextLabel</source>
+        <translation>텍스트라벨</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>새로운 암호</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>새로운 암호 확인</translation>
-    </message>
-    <message>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>운영체제 계정이 손상되었을 때 일반적인 송금을 비활성화 합니다. 실질적인 보안을 제공하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>For anonymization and staking only</source>
-        <translation>익명화 및 스테이킹 전용</translation>
+        <source>PushButton</source>
+        <translation>누르기</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
@@ -150,6 +298,11 @@
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>이 작업은 지갑의 암호를 풀어 지갑을 잠금해제를 진행해야 합니다.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet
+for staking</source>
+        <translation>스테이킹 위해 지갑 열기</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -176,16 +329,28 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Fivebalance will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FBNs from being stolen by malware infecting your computer.</source>
-        <translation>Fivebalance는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 FBNs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>WARNING</source>
+        <translation>경고</translation>
+    </message>
+    <message>
+        <source>If you encrypt your wallet and lose your passphrase, you will</source>
+        <translation>지갑 암호화 후 암호를 분실하게 되면</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>암호화</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FBNs from being stolen by malware infecting your computer.</source>
+        <translation>FIVEBALANCE는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 FBNs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
-    </message>
-    <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FBN&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 FBN를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -198,6 +363,10 @@
     <message>
         <source>Wallet encryption failed</source>
         <translation>지갑 암호화 실패</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>선택</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
@@ -223,649 +392,50 @@
         <source>Wallet passphrase was successfully changed.</source>
         <translation>지갑 암호가 변경되었습니다.</translation>
     </message>
+</context>
+<context>
+    <name>BanTableModel</name>
     <message>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>경고: Caps Lock 키가 켜져있습니다!</translation>
+        <source>IP/Netmask</source>
+        <translation>IP/Netmask</translation>
+    </message>
+    <message>
+        <source>Banned Until</source>
+        <translation>까지 제한됨</translation>
     </message>
 </context>
 <context>
-    <name>Bip38ToolDialog</name>
+    <name>CSRow</name>
     <message>
-        <source>BIP 38 Tool</source>
-        <translation>BIP 38 도구</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;BIP 38 암호화</translation>
+        <source>Savings</source>
+        <translation>계좌</translation>
     </message>
     <message>
-        <source>Enter a Fivebalance Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38을 사용하여 암호화 할 Fivebalance 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
+        <source>0,00 FBN</source>
+        <translation>0,00 FBN</translation>
     </message>
     <message>
-        <source>Address:</source>
-        <translation>주소:</translation>
+        <source>address</source>
+        <translation>주소</translation>
     </message>
     <message>
-        <source>The Fivebalance address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 Fivebalance 주소</translation>
+        <source>Not Staking</source>
+        <translation>스테이킹 비활성 상태</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>이전에 사용한 주소 선택</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>클립보드에서 주소 붙여 넣기</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Passphrase: </source>
-        <translation>암호:</translation>
-    </message>
-    <message>
-        <source>Encrypted Key:</source>
-        <translation>암호화된 키:</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>현재 서명을 시스템 클립 보드에 복사</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this Fivebalance address</source>
-        <translation>이 Fivebalance 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>암호화 &amp; 키</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>모든 서명 메세지 입력 지우기</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>전체 &amp;지우기</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 암호화 해제</translation>
-    </message>
-    <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>BIP 38 암호화 된 개인 키를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 키를 암호해제 후 '주소 가져오기'를 클릭하면 개인 키가 지갑에 추가됩니다.</translation>
-    </message>
-    <message>
-        <source>The Fivebalance address the message was signed with</source>
-        <translation>메세지에 서명된 Fivebalance 주소</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Fivebalance address</source>
-        <translation>메세지가 지정된 Fivebalance 주소로 서명되었는지 확인해주세요</translation>
-    </message>
-    <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>암호해제 &amp;키</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>모든 확인 메세지 영역 지우기</translation>
-    </message>
-    <message>
-        <source>Decrypted Key:</source>
-        <translation>암호해제된 키</translation>
-    </message>
-    <message>
-        <source>Import Address</source>
-        <translation>주소 가져오기</translation>
-    </message>
-    <message>
-        <source>Click "Decrypt Key" to compute key</source>
-        <translation>"키 암호해제"를 클릭하여 키를 입력해주세요.</translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>입력한 암호 문구가 잘못되었습니다.</translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>사용가능: 0-9,a-z,A-Z,</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>입력한 주소가 올바르지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>주소를 다시 확인해주세요.</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>입력한 주소가 키를 참조하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>지갑 잠금 해제가 취소되었습니다.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>입력한 주소의 개인 키를 사용할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>암호해제에 실패하였습니다.</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>키와 암호를 확인하고 다시 시도해주세요.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>데이터가 올바르지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>다시 시도해주세요.</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>키를 가져오는 동안 기다려주세요.</translation>
-    </message>
-    <message>
-        <source>Key Already Held By Wallet</source>
-        <translation>이미 지갑에서 사용된 키</translation>
-    </message>
-    <message>
-        <source>Error Adding Key To Wallet</source>
-        <translation>지갑에 키를 추가하는 도중 에러가 발생했습니다</translation>
-    </message>
-    <message>
-        <source>Successfully Added Private Key To Wallet</source>
-        <translation>지갑에 개인 키를 추가하였습니다.</translation>
-    </message>
-</context>
-<context>
-    <name>BitcoinGUI</name>
-    <message>
-        <source>Wallet</source>
-        <translation>지갑</translation>
-    </message>
-    <message>
-        <source>Node</source>
-        <translation>노드</translation>
-    </message>
-    <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;개요</translation>
-    </message>
-    <message>
-        <source>Show general overview of wallet</source>
-        <translation>지갑의 일반적인 개요 표시</translation>
-    </message>
-    <message>
-        <source>&amp;Send</source>
-        <translation>&amp;전송</translation>
-    </message>
-    <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;받기</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;트랜잭션</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>트랜잭션 내역 보기</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>종&amp;료</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>어플리케이션 종료</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>&amp;Qt 정보</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Qt에 대한 정보 표시</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;옵션...</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;보이기 / 숨기기</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>기본 창 보이기 또는 숨기기</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>&amp;지갑 암호화...</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>지갑 개인 키 암호화</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>&amp;지갑 백업</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>다른 위치에 지갑 백업</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>&amp;암호 변경...</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>지갑 암호화에 사용되는 암호 변경</translation>
-    </message>
-    <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>&amp;지갑 잠금해제...</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>지갑 잠금해제</translation>
-    </message>
-    <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>&amp;지갑 잠금</translation>
-    </message>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>메세지 &amp;서명...</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>&amp;메시지 확인...</translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;정보</translation>
-    </message>
-    <message>
-        <source>Show diagnostic information</source>
-        <translation>진단 정보 표시</translation>
-    </message>
-    <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;디버그 콘솔</translation>
-    </message>
-    <message>
-        <source>Open debugging console</source>
-        <translation>디버깅 콘솔 열기</translation>
-    </message>
-    <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;네트워크 모니터</translation>
-    </message>
-    <message>
-        <source>Show network monitor</source>
-        <translation>네트워크 모니터 표시</translation>
-    </message>
-    <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;피어 목록</translation>
-    </message>
-    <message>
-        <source>Show peers info</source>
-        <translation>피어 정보 표시</translation>
-    </message>
-    <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>지갑 &amp;복구</translation>
-    </message>
-    <message>
-        <source>Show wallet repair options</source>
-        <translation>지갑 복구 옵션 표시</translation>
-    </message>
-    <message>
-        <source>Open configuration file</source>
-        <translation>구성 파일 열기</translation>
-    </message>
-    <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>자동 &amp;백업 폴더 열기</translation>
-    </message>
-    <message>
-        <source>Show automatically created wallet backups</source>
-        <translation>자동 생성된 지갑 백업 표시</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;주소 보내는중...</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>전송 된 주소 및 라벨 목록 표시</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;받는 주소...</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>입금 된 주소 및 라벨 목록 표시</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>&amp;URI 열기...</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;명령행 옵션</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>트랜잭션 기록의 %n 블록을 처리함</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>추가 데이터 동기화: %p%</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;파일</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;설정</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;도구</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;도움말</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>탭 도구 모음</translation>
-    </message>
-    <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
-    </message>
-    <message>
-        <source>Send coins to a Fivebalance address</source>
-        <translation>Fivebalance 주소로 전송하기</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and fivebalance: URIs)</source>
-        <translation>결제 요청 (QR 코드 및 fivebalance: URI 생성)</translation>
-    </message>
-    <message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;프라이버시</translation>
-    </message>
-    <message>
-        <source>Privacy Action for zFBN and Obfuscation</source>
-        <translation>zFBN와 난독화를 위한 프라이버스 작업</translation>
-    </message>
-    <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;마스터노드</translation>
-    </message>
-    <message>
-        <source>Browse masternodes</source>
-        <translation>마스터노드 검색</translation>
-    </message>
-    <message>
-        <source>&amp;About Fivebalance Core</source>
-        <translation>Fivebalance Core &amp;정보</translation>
-    </message>
-    <message>
-        <source>Show information about Fivebalance Core</source>
-        <translation>Fivebalance Core에 대한 정보 표시</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Fivebalance</source>
-        <translation>Fivebalance에 대한 구성 옵션 수정</translation>
-    </message>
-    <message>
-        <source>Sign messages with your Fivebalance addresses to prove you own them</source>
-        <translation>Fivebalance 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Fivebalance addresses</source>
-        <translation>메시지가 지정된 Fivebalance 주소로 서명되었는지 확인합니다.</translation>
-    </message>
-    <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP38 도구</translation>
-    </message>
-    <message>
-        <source>Encrypt and decrypt private keys using a passphrase</source>
-        <translation>암호를 사용하여 개인 키 암호화 및 암호해제</translation>
-    </message>
-    <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;다중전송</translation>
-    </message>
-    <message>
-        <source>MultiSend Settings</source>
-        <translation>다중전송 설정</translation>
-    </message>
-    <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>지갑 &amp;구성 파일 열기</translation>
-    </message>
-    <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>&amp;마스터노드 구성 파일 열기</translation>
-    </message>
-    <message>
-        <source>Open Masternode configuration file</source>
-        <translation>마스터노드 구성 파일 열기</translation>
-    </message>
-    <message>
-        <source>Open a Fivebalance: URI or payment request</source>
-        <translation>Fivebalance: URI 또는 ​​결제 요청 열기</translation>
-    </message>
-    <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;블록체인 탐색기</translation>
-    </message>
-    <message>
-        <source>Block explorer window</source>
-        <translation>블록 탐색 창</translation>
-    </message>
-    <message>
-        <source>Show the Fivebalance Core help message to get a list with possible Fivebalance command-line options</source>
-        <translation>Fivebalance Core 도움말 메세지를 표시하여 사용 가능한 Fivebalance 명령행 옵션 목록 표시</translation>
-    </message>
-    <message>
-        <source>Fivebalance Core client</source>
-        <translation>Fivebalance Core 클라이언트</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Fivebalance network</source>
-        <translation><numerusform>%n 개 Fivebalance 네트웍에 연결</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>네트워크 동기화중...</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>디스크에서 블록 가져오기...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>디스크 블록 재색인...</translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation>사용 가능한 블록 소스 없음...</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>최신</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n 시간</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n 일</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n 주</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 그리고 %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n 년</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 남음</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>동기화 중...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>마지막으로 받은 블록이 %1 전에 생성되었습니다.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>이후의 트랜잭션은 아직 표시되지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>에러</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>경고</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>정보</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>보낸 트랜잭션</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>받은 트랜잭션</translation>
-    </message>
-    <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>다중 트랜잭션 전송</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>날짜: %1
-금액: %2
-유형: %3
-주소: %4
-</translation>
-    </message>
-    <message>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation>스테이킹 활성화
-다중전송: %1</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>활성</translation>
-    </message>
-    <message>
-        <source>Not Active</source>
-        <translation>비활성</translation>
-    </message>
-    <message>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation>스테이킹이 활성화 되지 않음
-다중전송: %1</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>현재 지갑은 &lt;b&gt;암호화되어 &lt;b&gt;잠금해제되었습니다.</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>지갑은 &lt;b&gt;암호화&lt;/b&gt;되어 있으며 현재 익명화 및 스테이킹만을 위해 &lt;b&gt;잠금해제&lt;/b&gt; 되었습니다.</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>지갑은 &lt;b&gt;암호화&lt;/ b&gt;되어 있으며 현재 &lt;b&gt;잠겨 있습니다&lt;/ b&gt;.</translation>
-    </message>
-</context>
-<context>
-    <name>BlockExplorer</name>
-    <message>
-        <source>Blockchain Explorer</source>
-        <translation>블록체인 탐색기</translation>
-    </message>
-    <message>
-        <source>Back</source>
-        <translation>뒤로</translation>
-    </message>
-    <message>
-        <source>Forward</source>
-        <translation>앞으로</translation>
-    </message>
-    <message>
-        <source>Address / Block / Transaction</source>
-        <translation>주소 / 블록 / 트랜잭션</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation>검색</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>텍스트라벨</translation>
-    </message>
-    <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (fivebalance.conf).</source>
-        <translation>모든 트랜잭션이 표시되지는 않습니다. 모든 트랜잭션을 보려면 구성 파일 (fivebalance.conf)에 txindex = 1을 설정해야합니다.</translation>
+        <source>Own delegation</source>
+        <translation>오너 위임</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
-        <translation>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</translation>
-    </message>
-    <message>
-        <source>Network Alert</source>
-        <translation>네트워크 알림</translation>
+        <translation>전체 : %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / 미확인: %5)</translation>
     </message>
 </context>
 <context>
@@ -876,15 +446,7 @@ Address: %4
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>금액:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>우선 순위:</translation>
+        <translation>바이트:</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -895,24 +457,16 @@ Address: %4
         <translation>코인 선택</translation>
     </message>
     <message>
+        <source>Select FBN Outputs to Spend</source>
+        <translation>사용할 FBN 아웃풋 선택</translation>
+    </message>
+    <message>
         <source>Dust:</source>
         <translation>현금:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>이후 수수료:</translation>
-    </message>
-    <message>
         <source>Change:</source>
         <translation>잔돈:</translation>
-    </message>
-    <message>
-        <source>(un)select all</source>
-        <translation>모두 선택(해제)</translation>
-    </message>
-    <message>
-        <source>toggle lock state</source>
-        <translation>토글 잠금상태</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -931,12 +485,36 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
+        <source>0.00 FBN</source>
+        <translation>0.00 FBN</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>모두 선택</translation>
+    </message>
+    <message>
+        <source>Toggle lock state</source>
+        <translation>토글 잠금상태 </translation>
+    </message>
+    <message>
         <source>Received with label</source>
         <translation>수신 된 라벨</translation>
     </message>
     <message>
         <source>Received with address</source>
         <translation>수신 된 주소</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>수수료 이후:</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>선택</translation>
     </message>
     <message>
         <source>Date</source>
@@ -948,11 +526,7 @@ Address: %4
     </message>
     <message>
         <source>Confirmed</source>
-        <translation>확정</translation>
-    </message>
-    <message>
-        <source>Priority</source>
-        <translation>우선 사항</translation>
+        <translation>확정됨</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -979,76 +553,76 @@ Address: %4
         <translation>잠금해제되지 않음</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>수량 복사</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>수수료 복사</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>이용 수수료 복사</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Bytes 복사</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>우선 사항 복사</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>현금 복사</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>변경 복사</translation>
+        <source>Unselect all</source>
+        <translation>모두 선택 해제</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>이 기능을 사용하려면 "목록 모드"로 전환하십시오.</translation>
     </message>
     <message>
+        <source>Quantity Copied</source>
+        <translation>수량 복사됨</translation>
+    </message>
+    <message>
+        <source>Amount Copied</source>
+        <translation>액수 복사됨</translation>
+    </message>
+    <message>
+        <source>Fee Copied</source>
+        <translation>수수료 복사됨</translation>
+    </message>
+    <message>
+        <source>After Fee Copied</source>
+        <translation>수수료 이후 복사됨</translation>
+    </message>
+    <message>
+        <source>Bytes Copied</source>
+        <translation>Bytes 복사됨</translation>
+    </message>
+    <message>
+        <source>Dust Copied</source>
+        <translation>Dust 복사됨</translation>
+    </message>
+    <message>
+        <source>Change Copied</source>
+        <translation>잔돈 복사됨</translation>
+    </message>
+    <message>
         <source>highest</source>
-        <translation>최고</translation>
+        <translation>9 최고</translation>
     </message>
     <message>
         <source>higher</source>
-        <translation>매우 높음</translation>
+        <translation>8 매우 높음</translation>
     </message>
     <message>
         <source>high</source>
-        <translation>높음</translation>
+        <translation>7 높음</translation>
     </message>
     <message>
         <source>medium-high</source>
-        <translation>중간 높음</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>입력당 +/- %1 금액(s)을 변경할 수 있습니다.</translation>
+        <translation>6 약간 높음</translation>
     </message>
     <message>
         <source>medium</source>
-        <translation>중간</translation>
+        <translation>5 중간</translation>
     </message>
     <message>
         <source>low-medium</source>
-        <translation>중간 낮음</translation>
+        <translation>4 낮은 중간</translation>
     </message>
     <message>
         <source>low</source>
-        <translation>낮음</translation>
+        <translation>3 낮음</translation>
     </message>
     <message>
         <source>lower</source>
-        <translation>매우 낮음</translation>
+        <translation>2 매우 낮음</translation>
     </message>
     <message>
         <source>lowest</source>
-        <translation>최저</translation>
+        <translation>1 최저</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
@@ -1061,6 +635,14 @@ Address: %4
     <message>
         <source>yes</source>
         <translation>예</translation>
+    </message>
+    <message>
+        <source>delegated to %1 for cold staking</source>
+        <translation>콜드 스테이킹 주소 %1 로 위임 됨</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>모두 선택</translation>
     </message>
     <message>
         <source>no</source>
@@ -1104,6 +686,317 @@ Address: %4
     </message>
 </context>
 <context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Owner address (optional, if empty a new address will be created)</source>
+        <translation>오너 주소 (선택과목, 입력 하지 않을경우 새로운 주소가 생성됨)</translation>
+    </message>
+    <message>
+        <source>Total Staking:</source>
+        <translation>스테이킹 총 액수</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>콜드 스테이킹</translation>
+    </message>
+    <message>
+        <source>Staker</source>
+        <translation>스테이커</translation>
+    </message>
+    <message>
+        <source>Delegation</source>
+        <translation>위임</translation>
+    </message>
+    <message>
+        <source>Delegate</source>
+        <translation>위임 함</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>전체 지우기</translation>
+    </message>
+    <message>
+        <source>Delegated balance history</source>
+        <translation>위임된 액수 기록</translation>
+    </message>
+    <message>
+        <source>No delegations yet</source>
+        <translation>아직 위임된 액수가 없습니다</translation>
+    </message>
+    <message>
+        <source>Total Staking: %1</source>
+        <translation>스테이킹 총 액수: %1</translation>
+    </message>
+    <message>
+        <source>Error loading delegations: %1</source>
+        <translation>위임 데이터 로딩 에러: %1</translation>
+    </message>
+    <message>
+        <source>You can delegate your FBNs, letting a hot node (24/7 online node)
+stake on your behalf, while you keep the keys securely offline.</source>
+        <translation>안전히 개인 프라이빗 키를 오프라인으로 보관한 상태로, 가지고 계신 FBN 를 매일 24시간 온라인으로 돌아가는 핫 노드로 위임하여, 대신 스테이킹을 하게 할수 있습니다. </translation>
+    </message>
+    <message>
+        <source>Enter owner address</source>
+        <translation>Owner 주소 입력</translation>
+    </message>
+    <message>
+        <source>Accept FBN delegation / Delegate FBN</source>
+        <translation>FBN 위임권 수락하기 / FBN 위임 하기</translation>
+    </message>
+    <message>
+        <source>Cold Staking address</source>
+        <translation>콜드 스테이킹 주소</translation>
+    </message>
+    <message>
+        <source>No receive addresses available, you can go to the receive screen and create some there!</source>
+        <translation>존재하는 입금 주소가 없습니다. 입금 화면에서 생성 하실수 있습니다.</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>존재하는 연락처가 없습니다. 연락처 화면에서 추가 하실수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Cannot send delegation, wallet locked</source>
+        <translation>위임을 할수가 없습니다. 지갑이 잠겨 있습니다.</translation>
+    </message>
+    <message>
+        <source>Cold staking is networkely disabled</source>
+        <translation>콜드 스테이킹 네트워크가 비활성화 된 상태입니다.</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>코인 설정</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>잘못된 입력</translation>
+    </message>
+    <message>
+        <source>Invalid entry, minimum delegable amount is </source>
+        <translation>유효한 입력이 아닙니다. 최소 위임 액수: </translation>
+    </message>
+    <message>
+        <source>Owner address invalid</source>
+        <translation>유효한 오너 주소가 아닙니다.</translation>
+    </message>
+    <message>
+        <source>ALERT!</source>
+        <translation>경보!</translation>
+    </message>
+    <message>
+        <source>Delegating to an external owner address!
+
+The delegated coins will NOT be spendable by this wallet.
+Spending these coins will need to be done from the wallet or
+device containing the owner address.
+
+Do you wish to proceed?</source>
+        <translation>지갑 밖의 오너 주소로 위임을 선택 하셨습니다.
+
+위임된 코인들은 이 지갑에서 더 이상 전송이 불가해집니다.
+위임된 코인들의 사용/전송권은 위임된 오너 주소를 보유하고 있는 지갑으로 넘어갑니다.
+
+계속 진행 하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Staking address corresponds to this wallet, change it to an external node</source>
+        <translation>스테이킹 주소가 이 지갑과 일치합니다. 스테이킹 주소를 외부 노드로 변경하십시오.</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>전송 불가</translation>
+    </message>
+    <message>
+        <source>Coins delegated</source>
+        <translation>위임된 코인</translation>
+    </message>
+    <message>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>명령을 수행할 수 없습니다. 지갑이 잠겨 있습니다.</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URI가 클립보드에 복사되었습니다.</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>주소가 클립보드에 복사됨</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>수정</translation>
+    </message>
+    <message>
+        <source>Stake</source>
+        <translation>스테이크</translation>
+    </message>
+    <message>
+        <source>Blacklist</source>
+        <translation>블랙리스트</translation>
+    </message>
+    <message>
+        <source>Edit Label</source>
+        <translation>라벨 수정하기</translation>
+    </message>
+    <message>
+        <source>Copy owner
+address</source>
+        <translation>소유자 복사
+주소</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>주소가 복사되었습니다.</translation>
+    </message>
+    <message>
+        <source>Edit Cold Address Label</source>
+        <translation>콜드 주소 라벨 수정하기</translation>
+    </message>
+    <message>
+        <source>Whitelist failed, please check the logs</source>
+        <translation>화이트 리스트 설정 실패, 로그를 확인해주세요.</translation>
+    </message>
+    <message>
+        <source> staking!</source>
+        <translation>스테이킹!</translation>
+    </message>
+    <message>
+        <source>Blacklist failed, please check the logs</source>
+        <translation>블랙리스트 설정 실패, 로그를 확인해주세요.</translation>
+    </message>
+    <message>
+        <source> blacklisted from staking</source>
+        <translation>블랙리스트 처리됨</translation>
+    </message>
+    <message>
+        <source>Owner address copied</source>
+        <translation>소유자 주소 복사됨</translation>
+    </message>
+    <message>
+        <source>Edit Owner Address Label</source>
+        <translation>소유자 주소 라벨 수정하기</translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>주소 라벨이 저장됨</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>주소 라벨 저장 오류</translation>
+    </message>
+</context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Transactions</source>
+        <translation>전송</translation>
+    </message>
+    <message>
+        <source>Staking Rewards</source>
+        <translation>스테이킹 보상</translation>
+    </message>
+    <message>
+        <source>Staking statistics</source>
+        <translation>스테이킹 통계</translation>
+    </message>
+    <message>
+        <source>Sort by</source>
+        <translation>정렬</translation>
+    </message>
+    <message>
+        <source>Days</source>
+        <translation>일</translation>
+    </message>
+    <message>
+        <source>Months</source>
+        <translation>월</translation>
+    </message>
+    <message>
+        <source>Years</source>
+        <translation>연도</translation>
+    </message>
+    <message>
+        <source>Filter by</source>
+        <translation>Filter by</translation>
+    </message>
+    <message>
+        <source>Amount of FBN and zFBN staked.</source>
+        <translation>스테이킹 된 FBN와 zFBN 양</translation>
+    </message>
+    <message>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation>정확한 잔액을 보기 위해 지갑이 완전히 동기화될 때까지 기다려주세요.</translation>
+    </message>
+    <message>
+        <source>No transactions yet</source>
+        <translation>아직 전송기록 없음</translation>
+    </message>
+    <message>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation>지갑 오른쪽 상단의 상태 표시 줄에서 스테이킹 활동을 확인할 수 있습니다. 지갑에서 사용하지 않은 잔액에 대한 컨펌이 충분하고, 지갑이 동기화되면 자동으로 시작됩니다.</translation>
+    </message>
+    <message>
+        <source>You have no staking rewards</source>
+        <translation>스테이킹된 보상이 없습니다.</translation>
+    </message>
+    <message>
+        <source>No charts library</source>
+        <translation>차트 라이브러리 없음</translation>
+    </message>
+    <message>
+        <source>Loading chart..</source>
+        <translation>차트를 불러오는 중입니다..</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid show option</source>
+        <translation>차트 로딩 에러, 보기 옵션이 없습니다.</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid data</source>
+        <translation>차트 로딩 오류, 유효하지 않은 데이터</translation>
+    </message>
+    <message>
+        <source>Error loading chart: %1</source>
+        <translation>차트 로딩 에러: %1</translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>선택</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+</context>
+<context>
     <name>EditAddressDialog</name>
     <message>
         <source>Edit Address</source>
@@ -1131,7 +1024,7 @@ Address: %4
     </message>
     <message>
         <source>New sending address</source>
-        <translation>새로운 발신 주소</translation>
+        <translation>새로운 보내는 주소</translation>
     </message>
     <message>
         <source>Edit receiving address</source>
@@ -1142,8 +1035,8 @@ Address: %4
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Fivebalance address.</source>
-        <translation>입력된 주소 "%1"는 올바른 Fivebalance 주소가 아닙니다.</translation>
+        <source>The entered address "%1" is not a valid FIVEBALANCE address.</source>
+        <translation>입력된 주소 "%1"는 올바른 FIVEBALANCE 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1156,6 +1049,13 @@ Address: %4
     <message>
         <source>New key generation failed.</source>
         <translation>새로운 키 생성에 실패하였습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>ExpandableButton</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
 </context>
 <context>
@@ -1188,16 +1088,16 @@ Address: %4
         <translation>버전</translation>
     </message>
     <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Fivebalance Core</source>
-        <translation>Fivebalance Core 정보</translation>
+        <source>About FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core 정보</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1224,6 +1124,10 @@ Address: %4
         <translation>실행시 초기화면 표시 (기본: %u)</translation>
     </message>
     <message>
+        <source>Hide QT staking charts on startup (default: %u)</source>
+        <translation>시작시 QT 스테이킹 차트 숨김 (기본값: %u)</translation>
+    </message>
+    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>언어 설정 예시 "de_DE" (기본값: 시스템 언어)</translation>
     </message>
@@ -1235,6 +1139,10 @@ Address: %4
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>결제 요청에 대한 SSL 루트 인증서 설정 (기본값: -system-)</translation>
     </message>
+    <message>
+        <source>OK</source>
+        <translation>선택</translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1243,28 +1151,36 @@ Address: %4
         <translation>환영합니다</translation>
     </message>
     <message>
-        <source>Welcome to Fivebalance Core.</source>
-        <translation>Fivebalance Core에 오신 것을 환영합니다.</translation>
+        <source>Welcome to FIVEBALANCE Core.</source>
+        <translation>FIVEBALANCE Core에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Fivebalance Core will store its data.</source>
-        <translation>이 프로그램이 처음 실행되었으므로 Fivebalance Core가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
+        <source>As this is the first time the program is launched, you can choose where FIVEBALANCE Core will store its data.</source>
+        <translation>이 프로그램이 처음 실행되었으므로 FIVEBALANCE Core가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Fivebalance Core will download and store a copy of the Fivebalance block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Fivebalance Core는 Fivebalance 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>FIVEBALANCE Core will download and store a copy of the FIVEBALANCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>FIVEBALANCE Core는 FIVEBALANCE 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>기본 데이터 디렉토리 사용</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>사용자 지정 데이터 디렉토리 사용:</translation>
+        <source>Use a custom data directory</source>
+        <translation>사용자 지정 데이터 디렉토리 사용</translation>
     </message>
     <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>선택</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1284,312 +1200,393 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>나의 마스터노드</translation>
+        <source>TextLabel</source>
+        <translation>텍스트라벨</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>참고: </translation>
+        <source>Loading</source>
+        <translation>불러오는 중</translation>
     </message>
     <message>
-        <source>Alias</source>
-        <translation>별명</translation>
+        <source>.</source>
+        <translation>.</translation>
+    </message>
+</context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Unlock Wallet</source>
+        <translation>지갑 잠금 해제</translation>
+    </message>
+    <message>
+        <source>Lock Wallet</source>
+        <translation>지갑 잠금</translation>
+    </message>
+    <message>
+        <source>Staking Only</source>
+        <translation>스테이킹만 진행</translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    </context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Intro</source>
+        <translation>Intro</translation>
+    </message>
+    <message>
+        <source>Name</source>
+        <translation>이름</translation>
     </message>
     <message>
         <source>Address</source>
         <translation>주소</translation>
     </message>
     <message>
-        <source>Protocol</source>
-        <translation>프로토콜</translation>
+        <source>Create New Masternode Controller</source>
+        <translation>새로운 마스터노드 컨트롤러 만들기</translation>
     </message>
     <message>
-        <source>Status</source>
-        <translation>상태</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a FIVEBALANCE Masternode you must dedicate 1000,000 FBN (the unit of FIVEBALANCE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FIVEBALANCE 마스터노드를 생성하기 위해서는 1000,000 FBN (FIVEBALANCE 단위)를 네트워크에 예치해야 합니다. (예치한 코인은 계속 본인의 소유입니다.) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;언제든지 노드를 비활성화 시키고 코인을 잠금해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>활성</translation>
+        <source>Set Masternode Name</source>
+        <translation>마스터노드 이름 설정</translation>
     </message>
     <message>
-        <source>Last Seen (UTC)</source>
-        <translation>최근 본 (UTC)</translation>
+        <source>Set Masternode IP and Port</source>
+        <translation>마스터노드 IP와 Port 설정</translation>
     </message>
     <message>
-        <source>Pubkey</source>
-        <translation>공개키</translation>
+        <source>Enter port</source>
+        <translation>Port 입력</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>별명 시&amp;작</translation>
+        <source>Make sure you have this amount of coins.</source>
+        <translation>이만큼의 코인을 보유하고 있는지 확인하십시오.</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>&amp;전체 시작</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 1000,000 FBN will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;1000,000 FBN의 트랜잭션은&lt;/p&gt;&lt;p&gt;지갑의 새로운 빈 주소로 만들어질 것입니다.&lt;/p&gt;&lt;p&gt;그 주소는 마스터노드 이름에 따라 레이블링됩니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>시작 &amp;종료</translation>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation>항상 온라인 상태인 실제 마스터노드의 주소</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>&amp;업데이트 상태</translation>
+        <source>Enter IP address</source>
+        <translation>IP 주소 입력</translation>
     </message>
     <message>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation>상태가 (초) 단위로 자동 업데이트됩니다:</translation>
+        <source>NEXT</source>
+        <translation>다음</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>BACK</source>
+        <translation>이전</translation>
     </message>
     <message>
-        <source>Start alias</source>
-        <translation>별명 시작</translation>
+        <source>address label cannot be empty</source>
+        <translation>주소 라벨은 비어있으면 안됩니다.</translation>
     </message>
     <message>
-        <source>Confirm masternode start</source>
-        <translation>마스터노드 시작 확인</translation>
+        <source>IP or port cannot be empty</source>
+        <translation>IP 혹은 Port 는 비울 수 없습니다.</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?</source>
-        <translation>마스터노드 %1을 시작하시겠습니까?</translation>
+        <source>Invalid IP address</source>
+        <translation>유효하지 않은 IP 주소 임</translation>
     </message>
     <message>
-        <source>Confirm all masternodes start</source>
-        <translation>모든 마스터노드 시작 확인</translation>
+        <source>Prepare master node failed.
+
+%1
+</source>
+        <translation>마스터노드 실패에 대비하십시오.
+
+%1
+</translation>
     </message>
     <message>
-        <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>모든 마스터노드를 시작하시겠습니까?</translation>
+        <source>Invalid collateral output index</source>
+        <translation>유효하지 않은 collateral output index</translation>
     </message>
     <message>
-        <source>Command is not available right now</source>
-        <translation>현재 명령을 사용할 수 없습니다.</translation>
+        <source>Master node created! Wait %1 confirmations before starting it.</source>
+        <translation>마스터노드가 생성되었습니다! 마스터노드를 시작하기 위해 %1 컨펌을 기다려야합니다.</translation>
     </message>
     <message>
-        <source>You can't use this command until masternode list is synced</source>
-        <translation>마스터노드 목록이 동기화 될 때까지이 명령을 사용할 수 없습니다.</translation>
+        <source>Cannot send collateral transaction.
+
+%1</source>
+        <translation>담보하려는 트랜잭션을 보낼 수 없습니다.
+
+%1</translation>
     </message>
     <message>
-        <source>Confirm missing masternodes start</source>
-        <translation>누락된 마스터노드 확인 시작</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>masternode.conf 파일이 유효하지 않습니다.</translation>
     </message>
     <message>
-        <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>누락된 마스터노드를 시작하시겠습니까?</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>masternode.conf 파일 문법 오류</translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>masternode.conf 파일이 생성되지 않았습니다.</translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <source>MultiSend</source>
-        <translation>다중전송</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation>1 - 100의 정수 입력</translation>
+        <source>Start All</source>
+        <translation>모두 시작</translation>
     </message>
     <message>
-        <source>Enter % to Give (1-100)</source>
-        <translation>부여할 % 입력 (1-100)</translation>
+        <source>Start Inactive/s</source>
+        <translation>비활성화된 노드 시작</translation>
     </message>
     <message>
-        <source>Enter Address to Send to</source>
-        <translation>보낼 주소 입력</translation>
+        <source>Masternodes</source>
+        <translation>마스터노드</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Fivebalance addresses after it matures.
-To Add: enter percentage to give and Fivebalance address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>다중전송을 사용하면 성취 한 뒤 다른 Fivebalance 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
-추가하려면 : 부여 할 백분율과 다중전송 벡터에 추가 할 Fivebalance 주소를 입력하십시오.
-삭제하려면 삭제할 주소를 입력하고 삭제를 누릅니다.
-활성화를 클릭하지 않으면 다중전송이 활성화되지 않습니다.</translation>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
+        <translation>풀 노드를 통해 인센티브를 받는 노드 운영자들은, 핵심 합의 기능들을 수행하며,
+정기적인 보상을 받는 재무 시스템에 투표할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Add to MultiSend Vector</source>
-        <translation>다중전송 벡터 추가</translation>
+        <source>Create Masternode Controller</source>
+        <translation>마스터노드 컨트롤러 생성</translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation>추가</translation>
+        <source>No active Masternode yet</source>
+        <translation>활성화된 마스터노드가 없습니다.</translation>
     </message>
     <message>
-        <source>Deactivate MultiSend</source>
-        <translation>다중전송 비활성화</translation>
-    </message>
-    <message>
-        <source>Deactivate</source>
-        <translation>비활성화</translation>
-    </message>
-    <message>
-        <source>Choose an address from the address book</source>
-        <translation>주소록에서 주소 선택</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Percentage of stake to send</source>
-        <translation>전송할 스테이크 비율</translation>
-    </message>
-    <message>
-        <source>Percentage:</source>
-        <translation>백분율:</translation>
-    </message>
-    <message>
-        <source>Address to send portion of stake to</source>
-        <translation>스테이크 일부를 보낼 주소</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>주소:</translation>
-    </message>
-    <message>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation>다중전송 벡터에서 주소 삭제</translation>
+        <source>Start</source>
+        <translation>시작</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>삭제</translation>
     </message>
     <message>
-        <source>Activate MultiSend</source>
-        <translation>다중전송 활성화</translation>
+        <source>Info</source>
+        <translation>정보</translation>
     </message>
     <message>
-        <source>Activate</source>
-        <translation>활성화</translation>
+        <source>Please wait until the node is fully synced</source>
+        <translation>노드가 완전히 동기화될 때까지 기다려주세요.</translation>
     </message>
     <message>
-        <source>View MultiSend Vector</source>
-        <translation>다중전송 벡터 보기</translation>
+        <source>Start Masternode</source>
+        <translation>마스터노드 시작</translation>
     </message>
     <message>
-        <source>View MultiSend</source>
-        <translation>다중전송 보기</translation>
-    </message>
-    <message>
-        <source>Send For Stakes</source>
-        <translation>스테이크를 위한 전송</translation>
-    </message>
-    <message>
-        <source>Send For Masternode Rewards</source>
-        <translation>마스터노드 보상 전송</translation>
-    </message>
-    <message>
-        <source>The entered address:
+        <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>입력된 주소:
+        <translation>마스터노드 %1을 시작하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Cannot edit masternode, wallet locked</source>
+        <translation>지갑이 잠겨, 마스터노드 수정을 할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
+Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
+        <translation>담보 거래가 아직 네트워크에 의해 컨펌되지 않았기 때문에 마스터노드를 시작할 수 없습니다.
+몇 분 더 기다려주십시오. (마스터노드 담보 거래가 완료되려면 %1 컨펌이 필요합니다.)</translation>
+    </message>
+    <message>
+        <source>Background task is being executed, please wait</source>
+        <translation>백그라운드 작업이 실행 중입니다. 기다려 주십시오.</translation>
+    </message>
+    <message>
+        <source>Start ALL masternodes failed</source>
+        <translation>실패한 모든 마스터노드 시작</translation>
+    </message>
+    <message>
+        <source>Wallet unlock cancelled</source>
+        <translation>지갑 열기 취소됨</translation>
+    </message>
+    <message>
+        <source>Cannot perform Masternodes start</source>
+        <translation>마스터노드 시작을 실행할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>%1 Masternodes failed to start, %2 started</source>
+        <translation>%1 마스터노드 시작 실패, %2 마스터노드 시작됨</translation>
+    </message>
+    <message>
+        <source>All Masternodes started!</source>
+        <translation>마스터노드 모두 시작!</translation>
+    </message>
+    <message>
+        <source>Cannot show Masternode information, wallet locked</source>
+        <translation>마스터노드 정보를 볼 수 없습니다. 지갑이 잠겨 있습니다.</translation>
+    </message>
+    <message>
+        <source>Masternode data copied to the clipboard.</source>
+        <translation>마스터노드 정보가 클립보드에 복사되었습니다.</translation>
+    </message>
+    <message>
+        <source>Remote Masternode Data</source>
+        <translation>마스터노드 데이터 원격 조종</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>마스터로드란?</translation>
+    </message>
+    <message>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the fivebalance.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press "start").
+</source>
+        <translation>리모트 서버에서 마스터노드를 실행하기 위해 필요한 데이터를
+클립보드로 내보내려고 합니다.
+
+
+그 데이터를 리모트 서버의 fivebalance.conf 파일에
+붙여넣고 시작합니다. 그리고 컨트롤러 지갑에서 마스터노드를
+시작합니다. (리스트에서 마스터노드를 선택하고 "시작"을 누르십시오.)
 </translation>
     </message>
     <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>올바르지 않습니다.
-주소를 확인하고 다시 시도해주세요.</translation>
+        <source>Delete Masternode</source>
+        <translation>마스터노드 삭제</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
-</source>
-        <translation>다중전송 벡터의 총 금액이 스테이크 보상 금액의 100 % 이상입니다
-</translation>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation>마스터노드를 삭제하려고 합니다:
+%1
+삭제하시겠습니까?</translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>퍼센트로 1 - 100을 입력하십시오.</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>masternode.conf 파일이 유효하지 않습니다.</translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>다중전송 벡터
-</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>masternode.conf 파일 문법 오류</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>제거됨</translation>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>masternode.conf 파일이 생성되지 않았습니다.</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>주소를 찾을 수 없습니다
-</translation>
+        <source>Cannot create Masternode controller, wallet locked</source>
+        <translation>마스터노드 컨트롤러를 생성할 수 없습니다. 지갑이 잠겨 있습니다.</translation>
+    </message>
+    <message>
+        <source>Error creating masternode</source>
+        <translation>마스터노드 생성 오류</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MnInfoDialog</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>난독화 구성</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>기본 익명</translation>
+        <source>Masternode Information</source>
+        <translation>마스터노드 정보</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>높은 익명</translation>
+        <source>Public Key:</source>
+        <translation>공개 키 : </translation>
     </message>
     <message>
-        <source>Maximum Privacy</source>
-        <translation>최고 익명</translation>
+        <source>Address: </source>
+        <translation>주소:</translation>
     </message>
     <message>
-        <source>Please select a privacy level.</source>
-        <translation>익명화 레벨을 선택해주세요.</translation>
+        <source>Collaterall tx id:</source>
+        <translation>담보 tx id:</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 FBN</source>
-        <translation>2개의 개별 마스터노드를 이용하여 최대 10000 FBN 를 섞을 수 있습니다.</translation>
+        <source>Output index:</source>
+        <translation>Output index:</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 FBN</source>
-        <translation>8개의 개별 마스터노드를 이용하여 최대 10000 FBN 를 섞을 수 있습니다.</translation>
+        <source>1 Inputs</source>
+        <translation>1 Inputs</translation>
     </message>
     <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>16개의 개별 마스터노드를 사용</translation>
+        <source>Status:</source>
+        <translation>상태:</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 FBN to anonymize 10000 FBN</source>
-        <translation>이 옵션은 가장 빠르게 전송되며 10000 FBN 익명화에 약 ~0.025 FBN의 비용이 들어갑니다.</translation>
+        <source>Export data to run the Masternode on a remote server</source>
+        <translation>마스터노드를 원격 서버에 운용하기 위한 정보 추출</translation>
+    </message>
+    </context>
+<context>
+    <name>MyAddressRow</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+</context>
+<context>
+    <name>NavMenuWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 FBN to anonymize 10000 FBN</source>
-        <translation>이 옵션은 중간 정도의 속도로 전송되며 10000 FBN 익명화에 약 0.05 FBN의 비용이 들어갑니다.</translation>
+        <source>V 1.0.0</source>
+        <translation>V.1.0.0</translation>
     </message>
     <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>이것은 가장 느리고 안전한 옵션입니다. 최고 익명성을 사용하면 비용이 발생합니다.</translation>
-    </message>
-    <message>
-        <source>0.1 FBN per 10000 FBN you anonymize.</source>
-        <translation>10000 FBN 익명화에 0.1 FBN 가 듭니다.</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>난독화 구성</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Fivebalance's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) Fivebalance의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Fivebalance's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) Fivebalance의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Fivebalance's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) Fivebalance의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <source>v%1</source>
+        <translation>v%1</translation>
     </message>
 </context>
 <context>
@@ -1603,8 +1600,16 @@ Please check the address and try again.</source>
         <translation>URI 또는 파일에서 결제 요청 열기</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
+        <source>TextLabel</source>
+        <translation>텍스트라벨</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>선택</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1613,6 +1618,25 @@ Please check the address and try again.</source>
     <message>
         <source>Select payment request file to open</source>
         <translation>열려고하는 결제 요청 파일을 선택해주세요</translation>
+    </message>
+    <message>
+        <source>File not found</source>
+        <translation>파일을 찾을 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Parsed data too large</source>
+        <translation>구문 분석된 데이터가 너무 큽니다.</translation>
+    </message>
+    <message>
+        <source>Invalid URI, not starting with "fivebalance" prefix</source>
+        <translation>"fivebalance"로 시작하지 않아 유효하지 않은 URI</translation>
+    </message>
+</context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
 </context>
 <context>
@@ -1647,11 +1671,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>확인되지 않은 변경사항을 사용하지 않도록 설정하면 해당 트랜잭션에 하나 이상의 컨펌이 진행되야&lt;br/&gt;트랜잭션에 변경사항을 적용할 수 있습니다.&lt;br/&gt;또한 이것은 잔액 계산 방식에도 영향을 줍니다.</translation>
+        <translation>확인되지 않은 잔엑을 사용하지 않도록 설정하면 해당 트랜잭션에 하나 이상의 컨펌이 진행되야&lt;br/&gt;트랜잭션의 잔액을 전송할 수 있습니다.&lt;br/&gt;또한 이것은 잔액 계산 방식에도 영향을 줍니다.</translation>
     </message>
     <message>
-        <source>Automatically open the Fivebalance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>라우터에서 Fivebalance 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
+        <source>Automatically open the FIVEBALANCE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>라우터에서 FIVEBALANCE 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1694,12 @@ Please check the address and try again.</source>
         <translation>전문적</translation>
     </message>
     <message>
-        <source>Automatically start Fivebalance after logging in to the system.</source>
-        <translation>시스템 로그인 후 Fivebalance을 자동으로 시작합니다.</translation>
+        <source>Automatically start FIVEBALANCE after logging in to the system.</source>
+        <translation>시스템 로그인 후 FIVEBALANCE을 자동으로 시작합니다.</translation>
     </message>
     <message>
-        <source>&amp;Start Fivebalance on system login</source>
-        <translation>&amp;시스템 로그인시 Fivebalance 시작</translation>
+        <source>&amp;Start FIVEBALANCE on system login</source>
+        <translation>&amp;시스템 로그인시 FIVEBALANCE 시작</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1695,15 +1719,15 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>&amp;Spend unconfirmed change</source>
-        <translation>&amp;확인되지 않은 변경사항 전송</translation>
+        <translation>&amp;확인되지 않은 잔돈 전송</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;네트워크</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Fivebalance.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 Fivebalance을 다시 시작한 후에 적용됩니다.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting FIVEBALANCE.</source>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 FIVEBALANCE을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1716,12 +1740,28 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
+        <source>Enable automatic minting of FBN units to zFBN</source>
+        <translation>보상받은 FBN를 zFBN로 자동변환 활성화</translation>
+    </message>
+    <message>
+        <source>Enable zFBN Automint</source>
+        <translation>zFBN 자동생성 활성화</translation>
+    </message>
+    <message>
+        <source>Enable automatic zFBN minting from specific addresses</source>
+        <translation>특정 주소들로부터 자동으로 zFBN 민트되는 것을 허용</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Automint 주소 사용</translation>
+    </message>
+    <message>
         <source>Percentage of incoming FBN which get automatically converted to zFBN via Zerocoin Protocol (min: 10%)</source>
-        <translation>FBN수신시 자동변환 zFBN 퍼센트 (최소값:10%)</translation>
+        <translation>FBN수신시 자동변환 zFBN 비율 (최소값:10%)</translation>
     </message>
     <message>
         <source>Percentage of autominted zFBN</source>
-        <translation>자동 변환되는 zFBN 퍼센트</translation>
+        <translation>자동 변환되는 zFBN 비율</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough FBN for this denomination is available</source>
@@ -1732,8 +1772,12 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>선호하는 자동생성 zFBN 디노미네이션 </translation>
     </message>
     <message>
-        <source>Connect to the Fivebalance network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 프록시를 통해 Fivebalance 네트워크에 연결해주세요.</translation>
+        <source>Stake split threshold:</source>
+        <translation>Stake split threshold:</translation>
+    </message>
+    <message>
+        <source>Connect to the FIVEBALANCE network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5 프록시를 통해 FIVEBALANCE 네트워크에 연결해주세요.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1784,8 +1828,8 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>사용자 인터페이스 테마:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;금액을 표시 할 단위:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>금액을 표시할 단위:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1794,6 +1838,18 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     <message>
         <source>Decimal digits</source>
         <translation>10진수</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>빈 계좌 숨기기</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>트랜잭션 내역에서 고아 스테이크를 숨기기</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>고아 스테이크 숨기기</translation>
     </message>
     <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -1824,8 +1880,8 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>&amp;취소</translation>
     </message>
     <message>
-        <source>I don't care</source>
-        <translation>없음</translation>
+        <source>Any</source>
+        <translation>어떤</translation>
     </message>
     <message>
         <source>default</source>
@@ -1855,104 +1911,88 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <source>The supplied proxy address is invalid.</source>
         <translation>프록시 주소가 잘못되었습니다.</translation>
     </message>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>제공된 프록시 포트가 유효하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>제공된 프록시 설정이 유효하지 않습니다.</translation>
+    </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>FIVEBALANCEGUI</name>
     <message>
-        <source>Form</source>
-        <translation>Form</translation>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
-        <source>FBN Balances</source>
-        <translation>FBN 잔액</translation>
+        <source>Wallet</source>
+        <translation>지갑</translation>
     </message>
     <message>
-        <source>Available:</source>
-        <translation>사용가능:</translation>
+        <source>Node</source>
+        <translation>노드</translation>
     </message>
     <message>
-        <source>Your current spendable balance</source>
-        <translation>현재 출금 가능한 잔액</translation>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;보이기 / 숨기기</translation>
     </message>
     <message>
-        <source>Pending:</source>
-        <translation>대기중:</translation>
+        <source>Show or hide the main Window</source>
+        <translation>기본 창 보이기 또는 숨기기</translation>
     </message>
     <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>아직 승인되지 않아 사용할 수 없으며, 잔고에 포함되지 않은 총 트랜잭션</translation>
+        <source>E&amp;xit</source>
+        <translation>종&amp;료</translation>
     </message>
     <message>
-        <source>Immature:</source>
-        <translation>미완료:</translation>
+        <source>Quit application</source>
+        <translation>어플리케이션 종료</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>아직 완료되지 않은 스테이크 및 마스터노드 보상</translation>
+        <source>FIVEBALANCE Core client</source>
+        <translation>FIVEBALANCE Core 클라이언트</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fivebalance network after a connection is established, but this process has not completed yet.</source>
-        <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 Fivebalance 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
+        <source>Error</source>
+        <translation>에러</translation>
     </message>
     <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>읽기 전용 주소의 미승인 트랜잭션</translation>
+        <source>Warning</source>
+        <translation>경고</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>완료되지 않은 읽기 전용 주소의 스테이크 및 마스터노드 보상</translation>
+        <source>Information</source>
+        <translation>정보</translation>
     </message>
     <message>
-        <source>Total:</source>
-        <translation>총:</translation>
+        <source>System Message</source>
+        <translation>시스템 메세지</translation>
     </message>
     <message>
-        <source>Your current total balance</source>
-        <translation>현재 소지하고 있는 총 잔액</translation>
+        <source>Sent MultiSend transaction</source>
+        <translation>멀티 전송 방식으로 보냄</translation>
     </message>
     <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>현재 읽기 전용 주소의 총 잔액</translation>
+        <source>Sent transaction</source>
+        <translation>보낸 내역</translation>
     </message>
     <message>
-        <source>Watch-only:</source>
-        <translation>읽기 전용:</translation>
+        <source>Incoming transaction</source>
+        <translation>받은 내역</translation>
     </message>
     <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>읽기 전용 주소의 현재 잔액</translation>
-    </message>
-    <message>
-        <source>Spendable:</source>
-        <translation>출금 가능 액수:</translation>
-    </message>
-    <message>
-        <source>Combined Balances (including immature coins)</source>
-        <translation>전체 잔액 (대기중 코인 포함)</translation>
-    </message>
-    <message>
-        <source>FBN:</source>
-        <translation>FBN:</translation>
-    </message>
-    <message>
-        <source>zFBN:</source>
-        <translation>zFBN:</translation>
-    </message>
-    <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
-        <source>Zerocoin Balance</source>
-        <translation>제로코인 잔액</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>최근 트랜잭션</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>동기화되지 않음</translation>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation>날짜: %1
+금액: %2
+유형: %3
+주소: %4
+</translation>
     </message>
 </context>
 <context>
@@ -1979,11 +2019,11 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
     <message>
         <source>Cannot start fivebalance: click-to-pay handler</source>
-        <translation>Fivebalance을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>FIVEBALANCE을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Fivebalance address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이는 잘못된 Fivebalance 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid FIVEBALANCE address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이는 잘못된 FIVEBALANCE 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2062,471 +2102,14 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
 </context>
 <context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>FBN which were anonymized via Zerocin Protocol</source>
-        <translation>제로코인 프로토콜을 통해 익명화된 FBN</translation>
-    </message>
-    <message>
-        <source>Zerocoin FBN (zFBN)</source>
-        <translation>제로코인 FBN (zFBN)</translation>
-    </message>
-    <message>
-        <source>Zerocoin Actions:</source>
-        <translation>제로코인 관리:</translation>
-    </message>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fivebalance network after a connection is established, but this process has not completed yet.</source>
-        <translation>표시된 정보가 오래되었을 수 있습니다. 연결이 완료되면 지갑이 Fivebalance 네트워크와 자동으로 동기화될 예정이지만, 아직 해당 프로세스가 완료되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>zFBN로 변환할 FBN 수량을 입력하세요.</translation>
-    </message>
-    <message>
-        <source>Mint Zerocoin</source>
-        <translation>제로코인 생성</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zFBN</source>
-        <translation>zFBN</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>생성 가능한 수량 :</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 FBN</source>
-        <translation>0.000 000 00 FBN</translation>
-    </message>
-    <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>제로코인 지갑 DB 재설정. 블록 체인에 포함시키지 않은 트랜잭션을 삭제합니다.</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>초기화</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>코인 컨트롤...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>수량:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>금액:</translation>
-    </message>
-    <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>제로코인 생성과 메타데이타를 위해 블록체인을 다시 스캔합니다.</translation>
-    </message>
-    <message>
-        <source>ReScan</source>
-        <translation>다시 스캔</translation>
-    </message>
-    <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>마지막 발행 이후 상태나 메세지</translation>
-    </message>
-    <message>
-        <source>zPhr Control</source>
-        <translation>zFBN 설정</translation>
-    </message>
-    <message>
-        <source>zPhr Selected:</source>
-        <translation>선택한 zFBN : </translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>선택된 수량 :</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>제로코인 전송 'Pay To :' 주소가 없으면 자신에게 지불합니다.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin</source>
-        <translation>제로코인 보내기</translation>
-    </message>
-    <message>
-        <source>Available Balance:</source>
-        <translation>가능한 잔액:</translation>
-    </message>
-    <message>
-        <source>0 zFBN</source>
-        <translation>0 zFBN</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>제로코인 전송 시큐리티 레벨.  높을수록 좋지만, 시간과 많은 자원이 필요합니다.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>시큐리티 레벨:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>시큐리티 레벨 1 - 100 (기본값: 42)</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>지불 &amp;대상:</translation>
-    </message>
-    <message>
-        <source>The Fivebalance address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>FBN를 전송할 Fivebalance 주소입니다. 비어있을 때 자신에게 지불할 주소를 생성합니다.</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>이전에 사용한 주소 선택</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>클립보드에서 주소 붙여 넣기</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;라벨:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>이 주소의 라벨을 입력하여 사용된 주소 목록에 추가하십시오</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>금&amp;액:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>잔돈을 제로코인으로 변환 (추가 요금이 부과될 수 있음)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>이 옵션을 선택하면, 사용한 디노미네이션의 수를 최소화하는 대신 남는 잔돈을 최소화합니다.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>잔돈 최소화하기</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>사용가능한 제로코인 정보</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>제로코인 상태 :</translation>
-    </message>
-    <message>
-        <source>Available Funds</source>
-        <translation>사용가는한 펀드</translation>
-    </message>
-    <message>
-        <source>Available Zerocoin  Balance:</source>
-        <translation>사용가능한 제로코인 잔액:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>디노미네이션 값 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Denom. 값 1:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation>0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>디노미네이션 값 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Denom. 값 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>디노미네이션  값 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Denom. 값 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>디노미네이션 값 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Denom. 값 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>디노미네이션 값 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Denom. 값 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>디노미네이션 값 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Denom. 값 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>디노미네이션 값 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Denom. 값 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>디노미네이션 값 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Denom. 값 5000:</translation>
-    </message>
-    <message>
-        <source>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</source>
-        <translation>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>우선 순위:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>수수료:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>현금:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>아니오</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>자금이 충분하지 않습니다!</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>코인 자동으로 선택됨</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>중간</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>코인 제어 기능</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>이 옵션이 활성화되었지만, 변경 주소가 비어있거나 유효하지 않은 경우 변경사항은 새로 생성된 주소로 전송됩니다.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>커스텀 주소 변경</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>수수료 차감 금액:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>변경:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>동기화되지 않음</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>생성 상태 : Okay</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>수량 복사</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>금액 복사</translation>
-    </message>
-    <message>
-        <source>Zerocoin functionality is not enabled on the Fivebalance network yet.</source>
-        <translation>제로 코인 기능 상태가 Fivebalance 네트워크 상에서 이루어지지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Error : 지갑이 잠겨있습니다. 먼저 지갑을 열어주세요.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Message: 0 이상의 수량을 입력하세요.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>생성중입니다.</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>성공적으로 발행됨</translation>
-    </message>
-    <message>
-        <source> zFBN in </source>
-        <translation> zFBN in </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation> 초. 사용된 디노미네이션:
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
-Please be patient...</source>
-        <translation>제로코인 생성 초기화 진행중... : 전체 블록체인을 다시 검색합니다. 하드웨어에 따라 최대 30분이 걸릴수 있습니다.
-기다려주세요...</translation>
-    </message>
-    <message>
-        <source>Duration: </source>
-        <translation>경과시간:</translation>
-    </message>
-    <message>
-        <source> sec.
-</source>
-        <translation>초.
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>전송된 제로코인 리셋 시작중...</translation>
-    </message>
-    <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>주소를 입력하지 않아, 신규 주소를 생성합니다.</translation>
-    </message>
-    <message>
-        <source>Invalid Fivebalance Address</source>
-        <translation>잘못된 Fivebalance 주소</translation>
-    </message>
-    <message>
-        <source>Invalid Send Amount</source>
-        <translation>잘못된 전송 수량</translation>
-    </message>
-    <message>
-        <source>Confirm additional Fees</source>
-        <translation>추가 수수료 확인</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>정말로 보내시겠습니까?&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source> to address </source>
-        <translation>주소로</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
-        <translation>새로 생성된 개인 지갑 주소(미사용된 익명의) &lt;br /&gt; 로</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>시큐리티 레벨</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>코인 전송 확인</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
-Please be patient...</source>
-        <translation>제로코인 전송중입니다.
-시큐리티 레벨과 여러분의 하드웨어에 따라 수 분이 걸립니다.
-조금만 기다려주세요...</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>제로코인 송금 실패 상태 =</translation>
-    </message>
-    <message>
-        <source>zPhr Spend #: </source>
-        <translation>zPhr 송금 #: </translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>디노미네이션: </translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>시리얼:</translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>Spend is 1 of : </translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>출력 값:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>주소:</translation>
-    </message>
-    <message>
-        <source>zPhr Mint</source>
-        <translation>zFBN 생성</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>성공 완료, 리턴 코드 :</translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>txid:</translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>수수료:</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter a Fivebalance address (e.g. %1)</source>
-        <translation>Fivebalance 주소를 입력하세요 (예 %1)</translation>
+        <source>Enter FIVEBALANCE address (e.g. %1)</source>
+        <translation>FIVEBALANCE 주소 입력(예 : %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2568,26 +2151,103 @@ Please be patient...</source>
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>이미지 &amp;저장...</translation>
+        <source>A fatal error occurred. FIVEBALANCE can no longer continue safely and will quit.</source>
+        <translation>치명적인 오류가 발생하였습니다. FIVEBALANCE는 더 이상 안전하게 계속될 수 없으며, 곧 종료됩니다.</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>&amp;이미지 복사</translation>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
-        <source>Save QR Code</source>
-        <translation>QR 코드 저장</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Error: Specified data directory "%1" does not exist.</translation>
     </message>
     <message>
-        <source>PNG Image (*.png)</source>
-        <translation>PNG 형식 이미지 (*.png)</translation>
+        <source>FIVEBALANCE Core didn't yet exit safely...</source>
+        <translation>FIVEBALANCE Core가 아직 안전하게 종료되지 않았습니다....</translation>
     </message>
-</context>
+    <message>
+        <source>Contact</source>
+        <translation>연락처</translation>
+    </message>
+    <message>
+        <source>Receiving</source>
+        <translation>받는중</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>콜드 스테이킹</translation>
+    </message>
+    <message>
+        <source>Cold Staking Contact</source>
+        <translation>콜드 스테이킹 연락처</translation>
+    </message>
+    <message>
+        <source>Hidden</source>
+        <translation>Hidden</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Unknown</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>전체</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>연락처</translation>
+    </message>
+    <message>
+        <source>Staking Contacts</source>
+        <translation>스테이킹 연락처</translation>
+    </message>
+    <message>
+        <source>Date desc</source>
+        <translation>날짜 내림차순</translation>
+    </message>
+    <message>
+        <source>Date asc</source>
+        <translation>날짜 오름차순</translation>
+    </message>
+    <message>
+        <source>Amount desc</source>
+        <translation>금액 내림차순</translation>
+    </message>
+    <message>
+        <source>Amount asc</source>
+        <translation>금액 오름차순</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>받음</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>보냄</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>채굴</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>발행</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>마스터노드 보상</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>자신에게</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>콜드 스테이크</translation>
+    </message>
+    </context>
 <context>
     <name>RPCConsole</name>
     <message>
@@ -2639,10 +2299,6 @@ Please be patient...</source>
         <translation>로그 파일 디버그</translation>
     </message>
     <message>
-        <source>Using OpenSSL version</source>
-        <translation>OpenSSL 버전 사용</translation>
-    </message>
-    <message>
         <source>Build date</source>
         <translation>빌드 날짜</translation>
     </message>
@@ -2663,12 +2319,20 @@ Please be patient...</source>
         <translation>블록체인</translation>
     </message>
     <message>
-        <source>Open the Fivebalance debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>현재 데이터 디렉토리에서 Fivebalance 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
+        <source>Open the FIVEBALANCE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>현재 데이터 디렉토리에서 FIVEBALANCE 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
         <translation>마스터노드 개수</translation>
+    </message>
+    <message>
+        <source>Data Directory</source>
+        <translation>데이터 디렉토리</translation>
+    </message>
+    <message>
+        <source>Last block hash</source>
+        <translation>최근 블록 hash 값</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2703,8 +2367,16 @@ Please be patient...</source>
         <translation>&amp;피어</translation>
     </message>
     <message>
+        <source>Banned peers</source>
+        <translation>제한된 피어</translation>
+    </message>
+    <message>
         <source>Select a peer to view detailed information.</source>
         <translation>자세한 정보를 보기 위해 피어를 선택 하세요.</translation>
+    </message>
+    <message>
+        <source>Whitelisted</source>
+        <translation>화이트리스트</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2721,14 +2393,6 @@ Please be patient...</source>
     <message>
         <source>Services</source>
         <translation>서비스</translation>
-    </message>
-    <message>
-        <source>Starting Height</source>
-        <translation>시작 위치</translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>동기화 위치</translation>
     </message>
     <message>
         <source>Ban Score</source>
@@ -2763,8 +2427,48 @@ Please be patient...</source>
         <translation>&amp;지갑 복구</translation>
     </message>
     <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>자신의 컴퓨터의 블록체인 폴더 삭제</translation>
+    </message>
+    <message>
         <source>Wallet In Use:</source>
         <translation>사용중인 지갑:</translation>
+    </message>
+    <message>
+        <source>Starting Block</source>
+        <translation>시작 블록</translation>
+    </message>
+    <message>
+        <source>Synced Headers</source>
+        <translation>동기화된 헤더</translation>
+    </message>
+    <message>
+        <source>Synced Blocks</source>
+        <translation>동기화된 블록</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>현재 미해결 ping의 지속 시간.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>핑 대기</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>타임 오프셋</translation>
+    </message>
+    <message>
+        <source>Custom Backup Path:</source>
+        <translation>맞춤 백업 경로 :</translation>
+    </message>
+    <message>
+        <source>Custom zFBN Backup Path:</source>
+        <translation>맞춤 zFBN 백업 경로 :</translation>
+    </message>
+    <message>
+        <source>Custom Backups Threshold:</source>
+        <translation>맞춤 백업 역치(threshold) : </translation>
     </message>
     <message>
         <source>Salvage wallet</source>
@@ -2808,6 +2512,14 @@ Please be patient...</source>
         <translation>현재 blk000??.dat로 부터 블록체인 인덱스 재작성</translation>
     </message>
     <message>
+        <source>-resync:</source>
+        <translation>-resync:</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>블록체인을 재동기화를 위해 모든 블록체인 폴더 삭제</translation>
+    </message>
+    <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>아래 버튼들은 지갑을 고치기 위한 명령어 옵션들로 실행시 지갑을 재시작합니다, 손상된 블록체인 파일 또는 누락되었거나 오래된 트랜잭션들에 대한 문제를 해결합니다.</translation>
     </message>
@@ -2832,16 +2544,68 @@ Please be patient...</source>
         <translation>출력:</translation>
     </message>
     <message>
-        <source>Welcome to the Fivebalance RPC console.</source>
-        <translation>Fivebalance RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the FIVEBALANCE RPC console.</source>
+        <translation>FIVEBALANCE RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>위 아래 화살표를 사용하여 기록을 탐색하고 &lt;b&gt;Ctrl-L&lt;/b&gt; 화면을 지웁니다.</translation>
+        <source>&amp;Disconnect Node</source>
+        <translation>&amp; 연결이 끊어진 노드</translation>
+    </message>
+    <message>
+        <source>Ban Node for</source>
+        <translation>제한된 노드</translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;시간</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;일</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;주일</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;년</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp;제한 해지된 노드</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>그러면 로컬 블록 체인 폴더가 삭제되고 Wallet은 전체 Blockchain을 처음부터 동기화합니다.</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>이것은 상당한 시간을 필요로하며 많은 양의 데이터를 다운로드합니다.</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>다운로드가 완료되면 거래와 자금이 다시 표시됩니다 .12</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>계속 진행하겠습니까?&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>블록체인 동기화를 다시 하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>위 아래 화살표를 사용하여 기록을 탐색할수 있으며 %1 으로 화면을 지울수 있습니다.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>사용가능한 명령을 보려면 &lt;b&gt;help&lt;/b&gt;를 입력하십시오.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>경고문: 남에게 도움 받을때 조심하시기 바랍니다. 이 터미널을 이용해 중요한 커맨드를 수행하게 해 코인을 훔쳐가는 케이스가 많습니다. 출력 내용을 남에게 알려주기 전에, 위험성을 확인하시길 바랍니다.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2860,6 +2624,10 @@ Please be patient...</source>
         <translation>%1 GB</translation>
     </message>
     <message>
+        <source>(node id: %1)</source>
+        <translation>(노드 id: %1)</translation>
+    </message>
+    <message>
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -2876,154 +2644,106 @@ Please be patient...</source>
         <translation>아웃바운드</translation>
     </message>
     <message>
+        <source>Yes</source>
+        <translation>Yes</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>No</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Unknown</translation>
     </message>
+</context>
+<context>
+    <name>ReceiveDialog</name>
     <message>
-        <source>Fetching...</source>
-        <translation>가져오는 중...</translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>My Address</source>
+        <translation>내 주소</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>이전에 사용한 수신 주소 중 하나를 다시 사용하십시오.&lt;br&gt;주소 재사용은 보안 및 개인정보보호 문제가 있습니다.&lt;br&gt;이전에 만든 결제 요청을 다시 생성하지 않는 한 이것을 사용하지 마십시오.</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>기&amp;존 수신 주소 재사용 (권장하지 않음)</translation>
+        <source>No address</source>
+        <translation>주소 없음</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>&amp;메세지:</translation>
+        <source>Add Label</source>
+        <translation>라벨 추가</translation>
     </message>
     <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>새로운 수신 주소와 연결할 선택적 라벨.</translation>
+        <source>Generate Address</source>
+        <translation>주소 생성</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fivebalance network.</source>
-        <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다. 참고: Fivebalance 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
+        <source>Copy</source>
+        <translation>복사</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Fivebalance network.</source>
-        <translation>요청이 열릴 때 표시되는 결제 요청에 첨부할 선택적 메세지 입니다.&lt;br&gt;참고: Fivebalance 네트워크를 통한 결제는 메세지가 전송되지 않습니다.</translation>
+        <source>Receive</source>
+        <translation>받기</translation>
     </message>
     <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>결제 요청을 진행하려면 해당 양식을 입력하세요. 모든 입력란은 &lt;b&gt;선택 사항&lt;/b&gt;입니다.</translation>
+        <source>No available address, try unlocking the wallet</source>
+        <translation>사용 가능한 주소가 없습니다. 지갑 잠금을 풀어 보십시요.</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;라벨:</translation>
+        <source>Error generating address</source>
+        <translation>주소 생성 오류</translation>
     </message>
     <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>요청할 선택적 금액. 이 금액을 비워두거나 특정 금액을 요청하지 않으려면 0으로 두세요.</translation>
+        <source>Edit Label</source>
+        <translation>라벨 수정하기</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;금액:</translation>
+        <source>Edit Address Label</source>
+        <translation>주소 라벨 수정하기</translation>
     </message>
     <message>
-        <source>&amp;Request payment</source>
-        <translation>&amp;결제 요청</translation>
+        <source>Address label saved</source>
+        <translation>주소 라벨이 저장됨</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>모든 입력 양식 지우기.</translation>
+        <source>Error storing address label</source>
+        <translation>주소 라벨 저장 오류</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>지우기</translation>
+        <source>Cannot create new address, wallet locked</source>
+        <translation>지갑이 잠겨 있어, 새로운 주소를 만들수 없습니다.</translation>
     </message>
     <message>
-        <source>Requested payments history</source>
-        <translation>요청된 결제 내역</translation>
+        <source>New address created</source>
+        <translation>새로운 주소 생성 됨</translation>
     </message>
     <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>선택한 요청을 표시합니다 (항목을 두 번 클릭하는 것과 동일)</translation>
+        <source>Address copied</source>
+        <translation>주소가 복사되었습니다.</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>표시</translation>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>명령을 수행할 수 없습니다. 지갑이 잠겨 있습니다.</translation>
     </message>
     <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>선택한 항목을 목록에서 제거하십시오</translation>
+        <source>URI copied to clipboard</source>
+        <translation>URI가 클립보드에 복사되었습니다.</translation>
     </message>
     <message>
-        <source>Remove</source>
-        <translation>제거</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>라벨 복사</translation>
-    </message>
-    <message>
-        <source>Copy message</source>
-        <translation>메세지 복사</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>금액 복사</translation>
-    </message>
-</context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-        <source>QR Code</source>
-        <translation>QR 코드</translation>
-    </message>
-    <message>
-        <source>Copy &amp;URI</source>
-        <translation>&amp;URI 복사</translation>
-    </message>
-    <message>
-        <source>Copy &amp;Address</source>
-        <translation>&amp;주소 복사</translation>
-    </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>이미지 &amp;저장...</translation>
-    </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation>%1 결제 요청</translation>
-    </message>
-    <message>
-        <source>Payment information</source>
-        <translation>결제 정보</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>주소</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>금액</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>라벨</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>메세지</translation>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>URI 결과가 너무 길면, 라벨 / 메세지의 텍스트를 줄입니다.</translation>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>URI를 QR 코드로 인코딩하는 도중 오류가 발생하였습니다.</translation>
+        <source>Address copied to clipboard</source>
+        <translation>주소가 클립보드에 복사됨</translation>
     </message>
 </context>
 <context>
@@ -3039,6 +2759,10 @@ Please be patient...</source>
     <message>
         <source>Message</source>
         <translation>메세지</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3058,519 +2782,993 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>코인 전송 </translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>코인 제어 기능</translation>
+        <source>Amount</source>
+        <translation>금액</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>자금이 충분하지 않습니다!</translation>
+        <source>FBN</source>
+        <translation>FBN</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>수량:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Bytes:</translation>
+        <source>COPY ADDRESS</source>
+        <translation>주소 복사</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>금액:</translation>
+        <source>COPY URL</source>
+        <translation>URL 복사</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>우선 순위:</translation>
+        <source>CANCEL</source>
+        <translation>취소</translation>
     </message>
     <message>
-        <source>medium</source>
-        <translation>중간</translation>
+        <source>Label</source>
+        <translation>라벨</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>수수료:</translation>
+        <source>Description (optional)</source>
+        <translation>설명 (선택 과목)</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>현금:</translation>
+        <source>New Payment Request</source>
+        <translation>새로운 출금 결제 요청</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>아니오</translation>
+        <source>Enter a label for the address</source>
+        <translation>주소의 라벨을 입력 해주세요</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>이후 수수료:</translation>
+        <source>Error</source>
+        <translation>에러</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>변경:</translation>
+        <source>GENERATE</source>
+        <translation>생성</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>이 옵션이 활성화되었지만, 변경 주소가 비어있거나 유효하지 않은 경우 변경사항은 새로 생성된 주소로 전송됩니다.</translation>
+        <source>New Cold Staking Address</source>
+        <translation>새로운 콜드 스테이킹 주소</translation>
     </message>
     <message>
-        <source>Custom change address</source>
-        <translation>커스텀 주소 변경</translation>
+        <source>Amount (optional)</source>
+        <translation>액수 (선택 과목)</translation>
     </message>
     <message>
-        <source>Split UTXO</source>
-        <translation>UTXO 분할</translation>
+        <source>Invalid amount</source>
+        <translation>잘못된 수량</translation>
+    </message>
+    </context>
+<context>
+    <name>SendChangeAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source># of outputs</source>
-        <translation># 출력 수</translation>
+        <source>CANCEL</source>
+        <translation>취소</translation>
     </message>
     <message>
-        <source>UTXO Size:</source>
-        <translation>UTXO 크기:</translation>
+        <source>Custom Change Address</source>
+        <translation>커스텀 잔돈 주소</translation>
     </message>
     <message>
-        <source>0 FBN</source>
-        <translation>0 FBN</translation>
+        <source>SAVE</source>
+        <translation>저장</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>트랜잭션 수수료:</translation>
+        <source>Invalid address</source>
+        <translation>잘못된 주소 입력</translation>
     </message>
+    </context>
+<context>
+    <name>SendCustomFeeDialog</name>
     <message>
-        <source>Choose...</source>
-        <translation>선택...</translation>
-    </message>
-    <message>
-        <source>collapse fee-settings</source>
-        <translation>간단한 수수료 설정</translation>
-    </message>
-    <message>
-        <source>Minimize</source>
-        <translation>최소화</translation>
-    </message>
-    <message>
-        <source>per kilobyte</source>
-        <translation>킬로바이트당</translation>
-    </message>
-    <message>
-        <source>total at least</source>
-        <translation>전체에서 최소</translation>
-    </message>
-    <message>
-        <source>(read the tooltip)</source>
-        <translation>(툴팁을 읽어주세요)</translation>
-    </message>
-    <message>
-        <source>Custom:</source>
-        <translation>커스텀:</translation>
-    </message>
-    <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>(스마트 수수료가 아직 초기화 되지 않았습니다. 일반적으로 몇 블록이 지나야됩니다...)</translation>
-    </message>
-    <message>
-        <source>Confirmation time:</source>
-        <translation>승인 시간:</translation>
-    </message>
-    <message>
-        <source>Open Coin Control...</source>
-        <translation>코인 설정 열기...</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>코인 자동으로 선택됨</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uFBNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFBNs in fee,&lt;br /&gt;while "at least" pays 1000 uFBNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uFBNs로 설정되고,&lt;br /&gt;1000 uFBNs 안에는 최소 "킬로바이트당" 250 uFBNs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uFBNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFBNs in fee,&lt;br /&gt;while "total at least" pays 1000 uFBNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uFBNs로 설정되고,&lt;br /&gt;1000 uFBNs 안에는 전체에서 최소 "킬로바이트당" 250 uFBNs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Fivebalance transactions than the network can process.</source>
-        <translation>블록의 공간보다 트랜잭션량이 적으면 최소 수수료만 지불하면 됩니다.&lt;br /&gt;하지만 Fivebalance 트랜잭션 수가 많으면 미확인된 트랜잭션로 네트워크가 처리할 수도 있습니다.</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>보통</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>빠른</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
         <source>Recommended</source>
         <translation>권장</translation>
     </message>
     <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>가능하다면 제로 수수료 트랜잭션으로 전송하십시오</translation>
+        <source>FBN/kilobyte</source>
+        <translation>FBN/Kilobyte</translation>
     </message>
     <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(승인이 오래걸릴 수 있습니다)</translation>
+        <source>0.00 KB</source>
+        <translation>0.00 KB</translation>
     </message>
     <message>
-        <source>Confirm the send action</source>
-        <translation>전송 작업 확인</translation>
+        <source>Custom</source>
+        <translation>커스텀</translation>
     </message>
     <message>
-        <source>S&amp;end</source>
-        <translation>전&amp;송</translation>
+        <source>CANCEL</source>
+        <translation>취소</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>모든 입력 양식 지우기.</translation>
+        <source>Customize Fee</source>
+        <translation>커스텀 수수료 변경</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>전체 &amp;지우기</translation>
+        <source>Normal</source>
+        <translation>보통</translation>
     </message>
     <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>한번에 여러 곳 전송</translation>
+        <source>Slow</source>
+        <translation>느리게</translation>
     </message>
     <message>
-        <source>Add &amp;Recipient</source>
-        <translation>&amp;받는 사람 추가</translation>
+        <source>Fast</source>
+        <translation>빠르게</translation>
     </message>
     <message>
-        <source>Anonymized FBN</source>
-        <translation>익명화 FBN</translation>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+    </context>
+<context>
+    <name>SendMultiRow</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <source>Enter address</source>
+        <translation>주소 입력</translation>
     </message>
     <message>
-        <source>Balance:</source>
-        <translation>잔액:</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>수량 복사</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>금액 복사</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>수수료 복사</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>이용 수수료 복사</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>bytes 복사</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>우선 사항 복사</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>현금 복사</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>변경 복사</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>분할 블록 도구는 외부 주소로 보낼 때 작동하지 않습니다. 다시 시도하십시오.</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>분할 블록 도구는 여러 주소에서 작동하지 않습니다. 다시 시도하십시오.</translation>
-    </message>
-    <message>
-        <source>using</source>
-        <translation>사용</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>익명 자금</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid Fivebalance address</source>
-        <translation>경고: 잘못된 Fivebalance 주소</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>사용 가능한 자금 (권장하지 않음)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>그리고 SwiftTX</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 에서 %2</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>정말 보내시겠습니까?</translation>
-    </message>
-    <message>
-        <source>are added as transaction fee</source>
-        <translation>트랜잭션 수수료가 추가됩니다</translation>
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>총 금액 = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>코인 전송 확인</translation>
-    </message>
-    <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>KB당 %1보다 %2배 많은 수수료는 너무 높은 수수료입니다.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>%n 블록이내에서 컨펌이 시작될것 같습니다.</numerusform></translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>수신자 주소가 유효하지 않습니다. 다시 확인해주세요.</translation>
-    </message>
-    <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>UTXO 스플리터를 사용하여 %1 출력으로 분할하십시오.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(표시된 %2개 항목중 %1개)&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>지불 할 금액은 0보다 커야합니다.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>입력한 금액이 잔액을 초과합니다.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>%1 트랜잭션 수수료가 포함하면 현재 잔액을 초과합니다.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>중복된 주소를 발견했습니다. 각 주소는 전송 작업당 한 번씩만 보낼 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>트랜잭션 생성 실패!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>트랜잭션이 거부되었습니다! 지갑에 있는 코인 중 일부가 이미 사용된 경우일 수 있습니다. wallet.dat 사본을 사용하고 코인을 이미 사용하고 현재 여기에 표시되지 않은 경우에 이런 현상이 발생할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>오류: 현재 지갑이 익명 처리를 위해 잠금해제 되어 있습니다. 익명화 및 스테이킹 전용을 해제하시고 다시 시도하세요.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>에러 : 현재 지갑은 코인 익명화를 위해서만 잠금해제되었습니다. 잠금해제가 취소됩니다.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>%1의 최소 수수료만 지불하십시오</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>경고: 알 수 없는 변경 주소</translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(라벨 없음)</translation>
+        <source>Enter label</source>
+        <translation>라벨 입력</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsEntry</name>
+    <name>SendWidget</name>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>이것은 일반 결제입니다.</translation>
+        <source>Total remaining from the selected UTXO</source>
+        <translation>선택된 UTXO 의 남은 액수</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>지불 &amp;대상:</translation>
+        <source>Warning!</source>
+        <translation>경고!</translation>
     </message>
     <message>
-        <source>The Fivebalance address to send the payment to</source>
-        <translation>전송할 Fivebalance 주소</translation>
+        <source>Customize Fee</source>
+        <translation>커스텀 수수료 변경</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>이전에 사용한 주소 선택</translation>
+        <source>Maximum amount of outputs reached</source>
+        <translation>최대 한도의 output 갯수에 도달함</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Invalid entry</source>
+        <translation>잘못된 입력</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>클립보드에서 주소 붙여 넣기</translation>
+        <source>Cannot send, wallet locked</source>
+        <translation>전송 불가, 지갑 잠김</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Cannot create transaction.</source>
+        <translation>전송 불가</translation>
     </message>
     <message>
-        <source>Remove this entry</source>
-        <translation>이 항목 삭제</translation>
+        <source>WARNING:
+Transaction spends a cold-stake delegation, voiding it.
+These coins will no longer be cold-staked.</source>
+        <translation>주의 :
+Cold-staking 중인 코인을 사용하여 전송하며, 무효화됩니다.
+이 코인은 더이상  cold-staking 되지 않습니다.</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;라벨:</translation>
+        <source>Transaction sent</source>
+        <translation>전송 완료</translation>
     </message>
     <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>이 주소의 라벨을 입력하여 사용된 주소 목록에 추가하십시오</translation>
+        <source>Address label update failed for address: %1</source>
+        <translation>주소의 라벨 변경에 실패 했습니다: %1</translation>
     </message>
     <message>
-        <source>A&amp;mount:</source>
-        <translation>금&amp;액:</translation>
+        <source>Invalid URI</source>
+        <translation>잘못된 URI 입력</translation>
     </message>
     <message>
-        <source>Message:</source>
-        <translation>메세지:</translation>
+        <source>Invalid address in URI</source>
+        <translation>URI 에 잘못된 주소 입력됨</translation>
     </message>
     <message>
-        <source>A message that was attached to the Fivebalance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fivebalance network.</source>
-        <translation>참조용으로 트랜잭션과 함께 기록되는 Fivebalance : URI에 첨부된 메세지입니다. 참고: 이 메세지는 Fivebalance 네트워크를 통해 전송되지 않습니다.</translation>
+        <source>Custom Fee %1</source>
+        <translation>커스텀 수수료 %1</translation>
     </message>
     <message>
-        <source>This is an unverified payment request.</source>
-        <translation>확인되지 않은 결제 요청입니다.</translation>
+        <source>Coin Control</source>
+        <translation>코인 설정</translation>
     </message>
     <message>
-        <source>Pay To:</source>
-        <translation>지불 대상:</translation>
+        <source>Open URI</source>
+        <translation>URI 열기</translation>
     </message>
     <message>
-        <source>Memo:</source>
-        <translation>메모:</translation>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>존재하는 연락처가 없습니다. 연락처 화면에서 추가 하실수 있습니다.</translation>
     </message>
     <message>
-        <source>This is a verified payment request.</source>
-        <translation>확인된 결제 요청입니다.</translation>
+        <source>Save contact</source>
+        <translation>연락처 저장</translation>
     </message>
     <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>주소록에 추가하려면 이 주소의 라벨을 입력해주세요.</translation>
+        <source>Address field is empty</source>
+        <translation>주소 필드가 비어있음</translation>
+    </message>
+    <message>
+        <source>Invalid address</source>
+        <translation>잘못된 주소 입력</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>자신의 주소는 연락처로 저장할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Update Contact</source>
+        <translation>연락처 업데이트</translation>
+    </message>
+    <message>
+        <source>Create New Contact</source>
+        <translation>새로운 주소 만들기</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>새로운 주소가 저장되었습니다.</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>연락처 저장 오류</translation>
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
+    <name>SettingsBackupWallet</name>
     <message>
-        <source>Fivebalance Core is shutting down...</source>
-        <translation>Fivebalance Core가 종료됩니다...</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>이 창이 사라질 때까지 컴퓨터를 종료하지 마십시오.</translation>
+        <source>Change Wallet Passphrase</source>
+        <translation>지갑 암호 변경</translation>
+    </message>
+    <message>
+        <source>Where</source>
+        <translation>위치</translation>
+    </message>
+    <message>
+        <source>Select folder...</source>
+        <translation>폴더 선택</translation>
+    </message>
+    <message>
+        <source>Change Passphrase</source>
+        <translation>암호 변경</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>지갑 백업</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>지갑 데이터 (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>백업 생성 완료</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>백업 생성 실패</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the backup first.</source>
+        <translation>백업을 추출하기 전 폴더를 선택해주세요.</translation>
     </message>
 </context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SettingsBitToolWidget</name>
     <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>서명 - 서명 / 메세지 검증</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>&amp;메세지 서명</translation>
+        <source>Import Address</source>
+        <translation>주소 가져오기</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>자신의 주소로 메세지에 서명할 수 있습니다. 피싱 공격으로 사용자를 속일 수 있으므로 서명에 주의해주세요. 동의하는 바에 한하여 서명하십시오.</translation>
+        <source>BIP38 Tool</source>
+        <translation>BIP38 Tool</translation>
     </message>
     <message>
-        <source>The Fivebalance address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 Fivebalance 주소</translation>
+        <source>Encrypt</source>
+        <translation>암호화</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>이전에 사용한 주소 선택</translation>
+        <source>Decrypt</source>
+        <translation>암호화 해제</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>Encrypted key</source>
+        <translation>암호화된 키</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>클립보드에서 주소 붙여 넣기</translation>
+        <source>Enter a encrypted key</source>
+        <translation>암호화된 키를 입력 하십시요</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Passphrase</source>
+        <translation>암호</translation>
     </message>
     <message>
-        <source>Enter the message you want to sign here</source>
-        <translation>서명할 메세지를 입력해주세요</translation>
+        <source>Decrypted address result</source>
+        <translation>암호 해재된 주소 결과</translation>
+    </message>
+    <message>
+        <source>Decrypted Address</source>
+        <translation>암호 해재된 주소</translation>
+    </message>
+    <message>
+        <source>DECRYPT KEY</source>
+        <translation>키 암호 해재</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE address</source>
+        <translation>FIVEBALANCE 주소</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>주소 입력</translation>
+    </message>
+    <message>
+        <source>Enter passphrase</source>
+        <translation>암호 입력</translation>
+    </message>
+    <message>
+        <source>Encrypted Key</source>
+        <translation>암호화된 키</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>암호화</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>모두 지우기</translation>
+    </message>
+    <message>
+        <source>CLEAR</source>
+        <translation>지우기</translation>
+    </message>
+    <message>
+        <source>The entered passphrase is invalid. </source>
+        <translation>입력한 암호 문구가 잘못되었습니다.</translation>
+    </message>
+    <message>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>사용가능: 0-9,a-z,A-Z,</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>입력한 주소가 올바르지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>주소를 다시 확인해주세요.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>입력한 주소가 키를 참조하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>지갑 잠금 해제가 취소되었습니다.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>입력한 주소의 개인 키를 사용할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Address encrypted.</source>
+        <translation>주소 암호화 완료</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>암호해제에 실패하였습니다.</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>키와 암호를 확인하고 다시 시도해주세요.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>데이터가 올바르지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>다시 시도해주세요.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>키를 가져오는 동안 기다려주세요.</translation>
+    </message>
+    <message>
+        <source>Error adding key to the wallet</source>
+        <translation>지갑에 키를 추가하는 도중 에러가 발생했습니다</translation>
+    </message>
+    <message>
+        <source>Successfully added private key to the wallet</source>
+        <translation>지갑에 개인 키를 추가하였습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>콘솔</translation>
+    </message>
+    <message>
+        <source>Console input</source>
+        <translation>콘솔 입력</translation>
+    </message>
+    <message>
+        <source>Open Debug File</source>
+        <translation>디버그 파일 열기</translation>
+    </message>
+    <message>
+        <source>Clear history</source>
+        <translation>히스토리 초기화</translation>
+    </message>
+    <message>
+        <source>Cannot open debug file.
+Verify that you have installed a predetermined text editor.</source>
+        <translation>디버그 파일을 열수 없습니다.
+미리 결정된 텍스트 에디터를 인스톨했는지 확인하세요.</translation>
+    </message>
+    <message>
+        <source>Welcome to the FIVEBALANCE RPC console.</source>
+        <translation>FIVEBALANCE RPC 콘솔에 오신 것을 환영합니다.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>위 아래 화살표를 사용하여 기록을 탐색할수 있으며 %1 으로 화면을 지울수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>사용가능한 명령을 보려면 &lt;b&gt;help&lt;/b&gt;를 입력하십시오.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>경고문: 남에게 도움 받을때 조심하시기 바랍니다. 이 터미널을 이용해 중요한 커맨드를 수행하게 해 코인을 훔쳐가는 케이스가 많습니다. 출력 내용을 남에게 알려주기 전에, 위험성을 확인하시길 바랍니다.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Hide stake charts in the dashboard</source>
+        <translation>홈 화면에서 스테이킹 차트를 숨김</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>기본값으로 리셋</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>변경 사항 폐기</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>디스플레이</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>언어</translation>
+    </message>
+    <message>
+        <source>Unit to show amount</source>
+        <translation>금액을 표시할 단위</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>10진수</translation>
+    </message>
+    <message>
+        <source>Third party transactions URLs</source>
+        <translation>서드파티 트랜잭션 URL</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>빈 계좌 숨기기</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>기본값</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>옵션 리셋 성공</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsExportCSV</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Export Accounting</source>
+        <translation>회계 데이터 출력</translation>
+    </message>
+    <message>
+        <source>Export your wallet's accounting data to a csv file.</source>
+        <translation>지갑의 회계 기록을 csv 포멧 파일로 출력할수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Where</source>
+        <translation>위치</translation>
+    </message>
+    <message>
+        <source>Select folder...</source>
+        <translation>폴더 선택</translation>
+    </message>
+    <message>
+        <source>Export Address Book</source>
+        <translation>주소집 내보내기</translation>
+    </message>
+    <message>
+        <source>Export CSV</source>
+        <translation>CSV 내보내기</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>주소록 내보내기</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the csv file first.</source>
+        <translation>csv 파일을 내보내기 위해 폴더를 선택해주세요.</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>확정됨</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>읽기 전용</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>날짜</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>분류</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>라벨</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>주소</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>No available addresses to export under the selected filter</source>
+        <translation>선택된 필터로는 내보낼 주소가 없습니다.</translation>
+    </message>
+    </context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>마스터로드란?</translation>
+    </message>
+    <message>
+        <source>Frequently Asked Questions</source>
+        <translation>자주 하는 질문들</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>닫기</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Network Monitor</source>
+        <translation>네트워크 모니터</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>일반</translation>
+    </message>
+    <message>
+        <source>Client Version:</source>
+        <translation>클라이언트 버전:</translation>
+    </message>
+    <message>
+        <source>Datadir:</source>
+        <translation>Datadir:</translation>
+    </message>
+    <message>
+        <source>Startup time:</source>
+        <translation>시작 시간:</translation>
+    </message>
+    <message>
+        <source>Connections:</source>
+        <translation>연결 개수:</translation>
+    </message>
+    <message>
+        <source>Number of Masternodes:</source>
+        <translation>마스터노드 개수:</translation>
+    </message>
+    <message>
+        <source>Current number of blocks:</source>
+        <translation>현재 블록 개수:</translation>
+    </message>
+    <message>
+        <source>Last block time:</source>
+        <translation>최근 블록 시간:</translation>
+    </message>
+    <message>
+        <source>Last block hash:</source>
+        <translation>최근 블록 hash 값:</translation>
+    </message>
+    <message>
+        <source>Current number of transactions:</source>
+        <translation>현재 트랜젝션 개수</translation>
+    </message>
+    <message>
+        <source>User Agent:</source>
+        <translation>User Agent:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>네트워크</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>이름:</translation>
+    </message>
+    <message>
+        <source>Blockchain</source>
+        <translation>블록체인</translation>
+    </message>
+    <message>
+        <source>Memory Pool</source>
+        <translation>메모리 풀</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>메인 옵션</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>정보 없음</translation>
+    </message>
+    <message>
+        <source>Unable to open backups folder</source>
+        <translation>백업 폴더를 열 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Unable to open fivebalance.conf with default application</source>
+        <translation>fivebalance.conf 파일을 기본 앱으로 열 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>입력:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>출력:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>윈도우</translation>
+    </message>
+    <message>
+        <source>Customize the application window options</source>
+        <translation>지갑 어플의 윈도우 옵션 설정</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>기본값으로 리셋</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>변경 사항 폐기</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>메인 옵션</translation>
+    </message>
+    <message>
+        <source>Size of database cache</source>
+        <translation>데이터베이스 캐시 크기</translation>
+    </message>
+    <message>
+        <source>Number of script verification threads</source>
+        <translation>스크립트 검증 스레드 개수</translation>
+    </message>
+    <message>
+        <source>Start FIVEBALANCE on system login</source>
+        <translation>시스템 로그인시 FIVEBALANCE 지갑 시작</translation>
+    </message>
+    <message>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>최소화시 작업표시줄이 아닌 시스템 트레이로 최소화</translation>
+    </message>
+    <message>
+        <source>Minimize on close</source>
+        <translation>닫기시 최소화</translation>
+    </message>
+    <message>
+        <source>Reset Options</source>
+        <translation>옵션 초기화</translation>
+    </message>
+    <message>
+        <source>You are just about to reset the app's options to the default values.
+
+Are you sure?
+</source>
+        <translation>모든 지갑의 옵션이 초기화 됩니다.
+
+진행 하시겠습니까?
+</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>옵션 리셋 성공</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>전송 상세내역</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>텍스트라벨</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>New recipient for multisend</source>
+        <translation>새로운 멀티 전송 받는이</translation>
+    </message>
+    <message>
+        <source>Address Label (optional)</source>
+        <translation>주소 라벨 (선택사항)</translation>
+    </message>
+    <message>
+        <source>Enter label to be saved with this address</source>
+        <translation>저장될 이 주소의 라벨을 입력하여 주십시요</translation>
+    </message>
+    <message>
+        <source>Percentage</source>
+        <translation>퍼센티지</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>텍스트라벨</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>N/A</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>체크박스</translation>
+    </message>
+    <message>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FIVEBALANCE addresses after it matures.</source>
+        <translation>멀티 전송 기능은 확인된 새로 받은 스테이킹 혹은 마스터노드 보상을 100% 전부 까지 지정된 다른 주소로 자동 전송할수 있는 기능입니다.</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>누적 활성 시간</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>비활성화</translation>
+    </message>
+    <message>
+        <source>No active recipient yet</source>
+        <translation>활성화된 받는이 주소가 아직 없음</translation>
+    </message>
+    <message>
+        <source>Send stakes</source>
+        <translation>스테이크 보상 전송</translation>
+    </message>
+    <message>
+        <source>Send masternode rewards</source>
+        <translation>마스터노드 보상 전송</translation>
+    </message>
+    <message>
+        <source>ADD RECIPIENT</source>
+        <translation>받는이 추가 하기</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>모두 지우기</translation>
+    </message>
+    <message>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>명령을 수행할 수 없습니다. 지갑이 잠겨 있습니다.</translation>
+    </message>
+    <message>
+        <source>Cannot add multisend recipient, wallet locked</source>
+        <translation>지갑이 잠겨있어 멀티 전송 받는이 추가가 불가 합니다.</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation>입력된 주소: %1 은 올바르지 않습니다.
+주소를 확인하고 다시 시도해주세요.</translation>
+    </message>
+    <message>
+        <source>Invalid percentage, please enter values from 1 to 100.</source>
+        <translation>올바르지 않은 퍼센트 값이 입력되었습니다. 1 부터 100 사이로 입력해주십시요.</translation>
+    </message>
+    <message>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>멀티전송 벡터의 총 금액이 스테이크 보상 금액의 100 % 이상입니다</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, no available recipients</source>
+        <translation>멀티전송 보내기에 실패했습니다. 유효한 연락처가 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>멀티 전송 기능이 활성화 됨</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>멀티 전송 기능이 비활성화 됨</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>메세지 서명 / 검증</translation>
+    </message>
+    <message>
+        <source>Sign</source>
+        <translation>서명</translation>
+    </message>
+    <message>
+        <source>Verify</source>
+        <translation>검증</translation>
+    </message>
+    <message>
+        <source>Select mode</source>
+        <translation>모드 선택</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>메세지</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE address or contact label</source>
+        <translation>FIVEBALANCE 주소 / 연락처 라벨</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>주소 입력</translation>
     </message>
     <message>
         <source>Signature</source>
         <translation>서명</translation>
     </message>
     <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>현재 서명을 시스템 클립 보드에 복사</translation>
+        <source>SIGN</source>
+        <translation>서명</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Fivebalance address</source>
-        <translation>이 Fivebalance 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
+        <source>CLEAR ALL</source>
+        <translation>모두 지우기</translation>
     </message>
     <message>
-        <source>The Fivebalance address the message was signed with</source>
-        <translation>메세지에 서명된 Fivebalance 주소</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Fivebalance address</source>
-        <translation>메세지가 지정된 Fivebalance 주소로 서명되었는지 확인해주세요</translation>
-    </message>
-    <message>
-        <source>Sign &amp;Message</source>
-        <translation>서명 &amp;메세지</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>모든 서명 메세지 입력 지우기</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>전체 &amp;지우기</translation>
-    </message>
-    <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;메세지 확인</translation>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>자신의 주소로 메세지에 서명할 수 있습니다. 피싱 공격으로 사용자를 속일 수 있으므로 서명에 주의해주세요. 동의하는 바에 한하여 서명하십시오.</translation>
     </message>
     <message>
         <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
         <translation>메세지를 확인하기 위해 서명 주소, 메세지 (줄 바꿈, 공백, 탭 등을 정확하게 복사해주세요) 및 서명을 입력하십시오. 중간자 공격에 주의해서 서명을 입력해주세요.</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>&amp;메세지 확인</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>모든 확인 메세지 영역 지우기</translation>
-    </message>
-    <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>"서명 메세지"를 클릭하여 서명 생성</translation>
+        <source>VERIFY</source>
+        <translation>검증</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3620,32 +3818,458 @@ Please be patient...</source>
         <source>Message verified.</source>
         <translation>메세지 확인 됨.</translation>
     </message>
+    </context>
+<context>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>기본값으로 리셋</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>변경 사항 폐기</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>지갑</translation>
+    </message>
+    <message>
+        <source>Customize the internal wallet options</source>
+        <translation>지갑의 내부 설정 옵션</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change</source>
+        <translation>확인되지 않은 잔돈 전송</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>네트워크</translation>
+    </message>
+    <message>
+        <source>Customize the node network options</source>
+        <translation>네트워크 노드 설정 옵션</translation>
+    </message>
+    <message>
+        <source>Enter port</source>
+        <translation>Port 입력</translation>
+    </message>
+    <message>
+        <source>Enter proxy IP</source>
+        <translation>프록시 IP 주소 입력</translation>
+    </message>
+    <message>
+        <source>Map port using UPnP</source>
+        <translation>UPnP 를 사용하여 포트 매핑</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>들어오는 연결 허용</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>저장</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>옵션 리셋 성공</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>지갑 복구</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
+        <translation>시작시 지갑 파일을 최신 포맷으로 업그레이드 (참고 : 지갑 자체의 업데이트가 아님)</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>지갑 복구</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>손상된 wallet.dat으로 부터 개인 키 복구를 시도합니다.</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain file</source>
+        <translation>블록체인 파일 재스캔</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>트랜잭션 복구 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>트랜잭션 복구 2</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>지갑 구성 업그레이드</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>색인 재구축</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>그러면 로컬 블록 체인 폴더가 삭제되고 Wallet은 전체 Blockchain을 처음부터 동기화합니다.</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>이것은 상당한 시간을 필요로하며 많은 양의 데이터를 다운로드합니다.</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>다운로드가 완료되면 거래와 자금이 다시 표시됩니다 .12</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>계속 진행하겠습니까?&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>블록체인 동기화를 다시 하시겠습니까?</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <translation>지갑 데이터</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>지갑</translation>
+    </message>
+    <message>
+        <source>Multisend</source>
+        <translation>멀티 전송</translation>
+    </message>
+    <message>
+        <source>Export Accounting</source>
+        <translation>회계 데이터 출력</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>도구</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>메세지 서명 / 검증</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>BIP38 Tool</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>옵션</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>메인 옵션</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>디스플레이</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>정보</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>콘솔</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>지갑 복구</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>도움말</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>FAQ</translation>
+    </message>
+    <message>
+        <source>About FIVEBALANCE</source>
+        <translation>FIVEBALANCE 정보</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>설정</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>옵션 재설정 확인</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>변경 사항을 적용하려면 클라이언트를 다시 시작해야합니다.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>클라이언트가 종료됩니다. 계속 진행하시겠습니까?</translation>
+    </message>
+    <message>
+        <source>Restart required</source>
+        <translation>지갑 재시작이 필요합니다</translation>
+    </message>
+    <message>
+        <source>Your wallet needs to be restarted to apply the changes
+</source>
+        <translation>변경 사항이 적용되려면 지갑을 재시작 해야합니다
+</translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation>지금 재시작</translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation>나중에 재시작</translation>
+    </message>
+    <message>
+        <source>Options will be applied on next wallet restart</source>
+        <translation>저장된 옵션은 재시작시 적용됩니다.</translation>
+    </message>
+    <message>
+        <source>Options stored</source>
+        <translation>옵션 저장됨</translation>
+    </message>
+    <message>
+        <source>Options store failed</source>
+        <translation>옵션 저장 실패</translation>
+    </message>
+    <message>
+        <source>Discard Unsaved Changes</source>
+        <translation>저장 되지 않은 변경 사항 폐기</translation>
+    </message>
+    <message>
+        <source>You are just about to discard all of your unsaved options.
+
+Are you sure?
+</source>
+        <translation>저장 되지 않은 옵션내용은 적용되지 않습니다.
+
+확실 합니까?
+</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>FIVEBALANCE Core is shutting down...</source>
+        <translation>FIVEBALANCE Core가 종료됩니다...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>이 창이 사라질 때까지 컴퓨터를 종료하지 마십시오.</translation>
+    </message>
+</context>
+<context>
+    <name>SnackBar</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Contact Stored</source>
+        <translation>주소 저장됨</translation>
+    </message>
+</context>
+<context>
+    <name>Splash</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation>로딩중...</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
+    </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
-    </message>
-    <message>
-        <source>Version %1</source>
-        <translation>버전 %1</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>비트코인 Core 개발자</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>Dash Core 개발자</translation>
-    </message>
-    <message>
-        <source>The Fivebalance Core developers</source>
-        <translation>Fivebalance Core 개발자</translation>
-    </message>
-    <message>
         <source>[testnet]</source>
         <translation>[테스트넷]</translation>
+    </message>
+</context>
+<context>
+    <name>TooltipMenu</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>복사</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>수정</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>삭제</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>마지막</translation>
+    </message>
+</context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Available</source>
+        <translation>가능함</translation>
+    </message>
+    <message>
+        <source>Pending</source>
+        <translation>대기중</translation>
+    </message>
+    <message>
+        <source>Immature</source>
+        <translation>미완료</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked for staking</source>
+        <translation>스테이킹 위해 지갑 열기</translation>
+    </message>
+    <message>
+        <source>Error generating address</source>
+        <translation>주소 생성 오류</translation>
+    </message>
+    <message>
+        <source>Address Copied</source>
+        <translation>주소 복사됨</translation>
+    </message>
+    <message>
+        <source>Staking active</source>
+        <translation>스테이킹 활성화</translation>
+    </message>
+    <message>
+        <source>Staking not active</source>
+        <translation>스테이킹 비활성화</translation>
+    </message>
+    <message>
+        <source>Synchronized - Block: %1</source>
+        <translation>동기화 - Block : %1</translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 그리고 %2</translation>
+    </message>
+    <message>
+        <source>Wallet Upgrade</source>
+        <translation>지갑 업그레이드</translation>
+    </message>
+    <message>
+        <source>Upgrading to HD wallet will improve
+the wallet's reliability and security.
+
+
+NOTE: after the upgrade, a new
+backup will be created.
+</source>
+        <translation>HD 지갑은 신뢰성과 보안성이 뛰어납니다.
+
+NOTE: 업그레이드 이후에는
+새로운 백업이 만들어 집니다.
+</translation>
+    </message>
+    <message>
+        <source>Upgrade Wallet</source>
+        <translation>지갑 업그레이드</translation>
+    </message>
+    <message>
+        <source>Wallet unlock cancelled</source>
+        <translation>지갑 열기 취소됨</translation>
+    </message>
+    <message>
+        <source>Tor Active: %1</source>
+        <translation>Tor 활성화: %1</translation>
+    </message>
+    <message>
+        <source>Tor Disabled</source>
+        <translation>Tor 비활성화</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>FAQ</translation>
+    </message>
+    <message>
+        <source>Available (Locked included)</source>
+        <translation>사용가능(잠긴 것 포함)</translation>
+    </message>
+    <message>
+        <source>The wallet has been successfully upgraded to HD.</source>
+        <translation>HD 지갑으로 업그레이드가 되었습니다.</translation>
+    </message>
+    <message>
+        <source>It is advised to make a backup.</source>
+        <translation>백업하기를 권유드립니다.</translation>
+    </message>
+    <message>
+        <source>Do you wish to backup now?</source>
+        <translation>지금 백업할까요?</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>지갑 백업</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>지갑 데이터 (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>백업 생성 완료</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>백업 생성 실패</translation>
+    </message>
+    <message>
+        <source>no file selected</source>
+        <translation>선택된 파일 없음</translation>
+    </message>
+    <message>
+        <source>Wallet upgraded successfully, but no backup created.</source>
+        <translation>지갑이 성공적으로 업그레이드 되었지만, 백업이 만들어지지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>WARNING: remember to make a copy of your wallet.dat file!</source>
+        <translation>주의 : 당신의 wallet.dat 파일을 만드는 것을 꼭 기억하세요.</translation>
+    </message>
+    <message>
+        <source>Upgrade Wallet Error</source>
+        <translation>지갑 업그레이드 오류</translation>
     </message>
 </context>
 <context>
@@ -3657,10 +4281,6 @@ Please be patient...</source>
 </context>
 <context>
     <name>TransactionDesc</name>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n 이상의 블록 열기</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>%1까지 열기</translation>
@@ -3668,18 +4288,6 @@ Please be patient...</source>
     <message>
         <source>conflicted</source>
         <translation>충돌됨</translation>
-    </message>
-    <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/오프라인 (swifttx를 통해 확인 됨)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/확인 됨 (swifttx를 통해 확인 됨)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 확인 (swifttx를 통해 확인 됨)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3694,24 +4302,36 @@ Please be patient...</source>
         <translation>%1 확인</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/오프라인 (swifttx를 통해 확인 됨)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/확인 됨 (swifttx를 통해 확인 됨)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 확인 (swifttx를 통해 확인 됨)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1/오프라인 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
         <translation>%1/확인 됨 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
         <translation>%1 확인 (SwiftTX 확인 진행 중 - %2 중 %3 서명)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
+        <source>%1/offline (SwiftX verification failed)</source>
         <translation>%1/오프라인 (SwiftTX 확인 실패)
 </translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
+        <source>%1/confirmed (SwiftX verification failed)</source>
         <translation>%1/확인 됨 (SwiftTX 확인 실패)</translation>
     </message>
     <message>
@@ -3721,10 +4341,6 @@ Please be patient...</source>
     <message>
         <source>, has not been successfully broadcast yet</source>
         <translation>, 아직 성공적으로 브로드캐스트되지 않았습니다</translation>
-    </message>
-    <message numerus="yes">
-        <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, %n 개 노드를 통해 브로드캐스트됩니다.</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3765,10 +4381,6 @@ Please be patient...</source>
     <message>
         <source>Credit</source>
         <translation>크레딧</translation>
-    </message>
-    <message numerus="yes">
-        <source>matures in %n more block(s)</source>
-        <translation><numerusform>%n 개 이상의 블록에서 생성됩니다.</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -3815,10 +4427,6 @@ Please be patient...</source>
         <translation>상인</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>생성된 코인은 사용되기 전 %1 블록이 완료되야 합니다. 이 블록을 생성하면 네트워크에 브로드캐스팅되어 블록체인에 추가 됩니다. 체인이 실패한 경우 "승인되지 않음"으로 바뀌어 사용할 수 없습니다. 다른 노드가 당신과 겹쳐서 몇 초 이내 블록을 생성하면 때때로 이런 일이 발생할 수 있습니다.</translation>
-    </message>
-    <message>
         <source>Debug information</source>
         <translation>디버그 정보</translation>
     </message>
@@ -3844,17 +4452,6 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>트랜잭션 세부 정보</translation>
-    </message>
-    <message>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>이 창은 트랜잭션에 대한 자세한 설명을 보여줍니다.</translation>
-    </message>
-</context>
-<context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
@@ -3868,10 +4465,6 @@ Please be patient...</source>
         <source>Address</source>
         <translation>주소</translation>
     </message>
-    <message numerus="yes">
-        <source>Open for %n more block(s)</source>
-        <translation><numerusform>%n 이상의 블록 열기</numerusform></translation>
-    </message>
     <message>
         <source>Open until %1</source>
         <translation>%1까지 열기</translation>
@@ -3882,7 +4475,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Unconfirmed</source>
-        <translation>미확인 됨</translation>
+        <translation>미확인됨</translation>
     </message>
     <message>
         <source>Confirming (%1 of %2 recommended confirmations)</source>
@@ -3894,7 +4487,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Conflicted</source>
-        <translation>충돌 됨</translation>
+        <translation>충돌됨</translation>
     </message>
     <message>
         <source>Immature (%1 confirmations, will be available after %2)</source>
@@ -3906,7 +4499,7 @@ Please be patient...</source>
     </message>
     <message>
         <source>Received with</source>
-        <translation>수신 됨</translation>
+        <translation>수신됨</translation>
     </message>
     <message>
         <source>Masternode Reward</source>
@@ -3917,24 +4510,8 @@ Please be patient...</source>
         <translation>수신됨</translation>
     </message>
     <message>
-        <source>Received via Obfuscation</source>
-        <translation>난독화를 통해 수신 됨</translation>
-    </message>
-    <message>
-        <source>Obfuscation Denominate</source>
-        <translation>난독화 표시</translation>
-    </message>
-    <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>난독화 보증 결제 </translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>난독화로 보증 입력</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>난독화 표시 만들기</translation>
+        <source>Stake delegation</source>
+        <translation>Stake delegation</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3949,44 +4526,20 @@ Please be patient...</source>
         <translation>자신에게 지불</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>발행</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>채굴</translation>
-    </message>
-    <message>
-        <source>Obfuscated</source>
-        <translation>난독화</translation>
-    </message>
-    <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>zFBN로 변환된 FBN</translation>
-    </message>
-    <message>
-        <source>Spent zPhr</source>
-        <translation>전송된 zFBN</translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>zFBN로 전송받은 FBN</translation>
-    </message>
-    <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>zFBN 전송후 남은 잔돈 zFBN 생성됨</translation>
-    </message>
-    <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>zPhr에서 Phr로 변환됨</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>읽기 전용</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>zPhr 누산기</translation>
+        <source>Anonymous</source>
+        <translation>익명</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>정보 없음</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4018,212 +4571,101 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <source>All</source>
-        <translation>전체</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
     <message>
-        <source>Today</source>
-        <translation>오늘</translation>
+        <source>Transaction Details</source>
+        <translation>전송 상세내역</translation>
     </message>
     <message>
-        <source>This week</source>
-        <translation>이번 주</translation>
+        <source>Total amount</source>
+        <translation>총량</translation>
     </message>
     <message>
-        <source>This month</source>
-        <translation>이번 달</translation>
+        <source>Previous Transaction</source>
+        <translation>이전 전송</translation>
     </message>
     <message>
-        <source>Last month</source>
-        <translation>지난 달</translation>
+        <source>Output Index</source>
+        <translation>출력 인덱스</translation>
     </message>
     <message>
-        <source>This year</source>
-        <translation>올해</translation>
+        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z </translation>
     </message>
     <message>
-        <source>Range...</source>
-        <translation>범위...</translation>
-    </message>
-    <message>
-        <source>Most Common</source>
-        <translation>기본적인</translation>
-    </message>
-    <message>
-        <source>Received with</source>
-        <translation>수신 됨</translation>
-    </message>
-    <message>
-        <source>Sent to</source>
-        <translation>대상 전송</translation>
-    </message>
-    <message>
-        <source>Obfuscated</source>
-        <translation>난독화</translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>난독화로 보증 입력</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>난독화 표시 만들기</translation>
-    </message>
-    <message>
-        <source>Obfuscation Denominate</source>
-        <translation>난독화 표시</translation>
-    </message>
-    <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>난독화 보증 결제 </translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>자신에게</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>채굴</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>발행</translation>
-    </message>
-    <message>
-        <source>Masternode Reward</source>
-        <translation>마스터노드 보상 </translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>zFBN로 전송받은 FBN</translation>
-    </message>
-    <message>
-        <source>Zerocoin Mint</source>
-        <translation>제로코인 생성</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend</source>
-        <translation>제로코인 전송</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>제로코인 전송, 잔돈은 zFBN</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend to Self</source>
-        <translation>자신에게 제로코인 전송</translation>
-    </message>
-    <message>
-        <source>Other</source>
-        <translation>기타</translation>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation>검색 할 주소 또는 라벨 입력</translation>
-    </message>
-    <message>
-        <source>Min amount</source>
-        <translation>최소 금액</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>주소 복사</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>라벨 복사</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>금액 복사</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>트랜잭션 ID 복사</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>라벨 수정</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation>트랜잭션 세부 정보 표시</translation>
-    </message>
-    <message>
-        <source>Export Transaction History</source>
-        <translation>트랜잭션 내역 내보내기</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>콤마로 구분 된 파일 (*.csv)</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>확정</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>읽기 전용</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>날짜</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>분류</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>라벨</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>주소</translation>
+        <source>May 25, 2017</source>
+        <translation>May 25, 2017</translation>
     </message>
     <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <source>Exporting Failed</source>
-        <translation>내보내기 실패</translation>
+        <source>Fee</source>
+        <translation>수수료</translation>
     </message>
     <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>트랜잭션 기록을 %1로 저장하는 동안 오류가 발생하였습니다.</translation>
+        <source>Size</source>
+        <translation>사이즈</translation>
     </message>
     <message>
-        <source>Exporting Successful</source>
-        <translation>내보내기 성공</translation>
+        <source>Change address</source>
+        <translation>주소 변경</translation>
     </message>
     <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>트랜잭션 기록이 %1에 성공적으로 저장되었습니다.</translation>
+        <source>Spendable</source>
+        <translation>사용가능</translation>
     </message>
     <message>
-        <source>Range:</source>
-        <translation>범위:</translation>
+        <source>Confirmations</source>
+        <translation>확인</translation>
     </message>
     <message>
-        <source>to</source>
-        <translation>대상</translation>
+        <source>Status</source>
+        <translation>상태</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>날짜</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>텍스트라벨</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>취소</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>선택</translation>
+    </message>
+    <message>
+        <source>Confirm Your Transaction</source>
+        <translation>당신의 전송을 확인해주세요</translation>
+    </message>
+    <message>
+        <source>SEND</source>
+        <translation>보내기</translation>
+    </message>
+    <message>
+        <source>ID copied</source>
+        <translation>ID 복사됨</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Unknown</translation>
     </message>
 </context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
+    <name>TxRow</name>
     <message>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>금액을 표시할 단위. 다른 단위를 선택하려면 클릭해주세요.</translation>
-    </message>
-</context>
-<context>
-    <name>WalletFrame</name>
-    <message>
-        <source>No wallet has been loaded.</source>
-        <translation>지갑이 로드되지 않았습니다.</translation>
+        <source>Form</source>
+        <translation>양식</translation>
     </message>
 </context>
 <context>
@@ -4232,75 +4674,70 @@ Please be patient...</source>
         <source>Send Coins</source>
         <translation>코인 전송 </translation>
     </message>
-    <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 FBN.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 FBN로 제한됩니다.</translation>
-    </message>
-</context>
+    </context>
 <context>
-    <name>WalletView</name>
+    <name>WelcomeContentWidget</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;내보내기</translation>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>현재 선택된 탭의 데이터를 파일로 내보내기</translation>
+        <source>2</source>
+        <translation>2</translation>
     </message>
     <message>
-        <source>Selected amount:</source>
-        <translation>선택한 금액:</translation>
+        <source>3</source>
+        <translation>3</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>지갑 백업</translation>
+        <source>4</source>
+        <translation>4</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>지갑 데이터 (*.dat)</translation>
+        <source>Language</source>
+        <translation>언어</translation>
     </message>
     <message>
-        <source>Backup Failed</source>
-        <translation>백업 실패하였습니다</translation>
+        <source>Welcome</source>
+        <translation>환영합니다</translation>
     </message>
     <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>%1에 지갑 데이터를 저장하는 동안 오류가 발생하였습니다.</translation>
+        <source>Privacy</source>
+        <translation>Privacy</translation>
     </message>
     <message>
-        <source>Backup Successful</source>
-        <translation>백업 성공하였습니다</translation>
+        <source>Masternodes</source>
+        <translation>마스터노드</translation>
     </message>
     <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>지갑 데이터가 %1에 성공적으로 저장되었습니다.</translation>
-    </message>
-</context>
-<context>
-    <name>ZPhrControlDialog</name>
-    <message>
-        <source>Select zPhr to Spend</source>
-        <translation>전송할 zFBN 선택</translation>
+        <source>Select your language</source>
+        <translation>원하시는 언어를 선택하세요.</translation>
     </message>
     <message>
-        <source>Quantity</source>
-        <translation>수량</translation>
+        <source>Welcome to
+FIVEBALANCE Core Wallet</source>
+        <translation>환영합니다.
+FIVEBALANCE Core Wallet</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>FIVEBALANCE is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>FIVEBALANCE 는 많은 경험과 뛰어난 실력을 겸비한 개발자와 암호학자로 구성된 팀이 개발하는 연신적인 Proof of Stake 블록체인 기술을 자랑하는 오픈소스 프로젝트 입니다. </translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - FIVEBALANCE believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;FIVEBALANCE 는 Manifesto 선언서에 적힌대로: 프라이버시는 협상이 불가능한 인간의 기본적인 인권중 하나이다. 이로 인해 그 언제나 그 누구에게나 데이터를 공유할수 있는 자유를 얻게 될것이다. FIVEBALANCE 프로젝트는 개인 독립을 추구한다. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Select/Deselect All</source>
-        <translation>전체 선택 / 해제</translation>
+        <source>How FIVEBALANCE respects your privacy?</source>
+        <translation>FIVEBALANCE 가 당신의 프라이버시를 존중하는 방법은?</translation>
     </message>
     <message>
-        <source>Is Spendable</source>
-        <translation>전송가능합니다.</translation>
+        <source>What is a Masternode?</source>
+        <translation>마스터로드란?</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>기본값</translation>
     </message>
 </context>
 <context>
@@ -4312,10 +4749,6 @@ Please be patient...</source>
     <message>
         <source>Allow JSON-RPC connections from specified source. Valid for &lt;ip&gt; are a single IP (e.g. 1.2.3.4), a network/netmask (e.g. 1.2.3.4/255.255.255.0) or a network/CIDR (e.g. 1.2.3.4/24). This option can be specified multiple times</source>
         <translation>지정된 소스에서 JSON-RPC 연결을 허용하십시오. 단일 IP (예 : 1.2.3.4), 네트워크/넷마스크 (예 : 1.2.3.4/255.255.255.0) 또는 네트워크 / CIDR (예 : 1.2.3.4/24)에 대해 &lt;ip&gt; 가 유효합니다. 이 옵션은 여러번 지정할 수 있습니다.</translation>
-    </message>
-    <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>수신을 위한 RPC 주소 %s 포트 %u설정 도중 오류가 발생했습니다: %s</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
@@ -4330,12 +4763,8 @@ Please be patient...</source>
         <translation>JSON-RPC연결 수신을 위해 주어진 주소를 지정합니다. [host]: IPv6 포트 표기법 사용. 이 옵션은 여러번 지정할 수 있습니다. (기본값 : 모든 인터페이스에 지정)</translation>
     </message>
     <message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>계산된 누산기 체크포인트는 블록 인덱스에 의해 기록되는 것이 아닙니다.</translation>
-    </message>
-    <message>
-        <source>Cannot obtain a lock on data directory %s. Fivebalance Core is probably already running.</source>
-        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. Fivebalance Core는 이미 실행 중입니다.</translation>
+        <source>Cannot obtain a lock on data directory %s. FIVEBALANCE Core is probably already running.</source>
+        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. FIVEBALANCE Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -4354,8 +4783,8 @@ Please be patient...</source>
         <translation>지갑의 모든 트랜잭션들을 삭제하고 오직 블록체인을 통한 트랜잭션 부분들만 복구합니다 -시작 시 다시 스캔</translation>
     </message>
     <message>
-        <source>Disable all Fivebalance specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Fivebalance의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4366,16 +4795,16 @@ Please be patient...</source>
         <translation>올바른 개인키로 spork 관리 기능을 사용 가능</translation>
     </message>
     <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
-    </message>
-    <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
         <translation>리그레션 테스트에 들어갑니다. 특수 체인을 사용하며 블록들을 바로 푸는 것이 가능합니다.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
         <translation>오류: 오는 연결들을 수신하는데 실패했습니다.(수신 중 오류 반환됨 %s)</translation>
+    </message>
+    <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Error: 트랜젝션의 크기가 혀용된 크기를 넘었습니다.</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -4394,20 +4823,8 @@ Please be patient...</source>
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in FBN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (FBN/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in FBN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (FBN/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
-    </message>
-    <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>메모리 풀에서 디스크로 매 &lt;n&gt; 메가바이트만큼 데이터베이스 활동 플러쉬를 기록합니다 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>미확인 표시된 출력들을 찾고 계속하기 위한 확인을 받기 전까지 기다립니다.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -4418,12 +4835,12 @@ Please be patient...</source>
         <translation>이 모드에서 -genproclimit는 즉시 생성되는 블록 수를 제어합니다.</translation>
     </message>
     <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>-maxtxfee=&lt;amount&gt;에 대한 잘못된 금액: '%s' (트랜잭션 정지를 막을려면 적어도 %s의 minrelay 수수료가 있어야 합니다)</translation>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>확정 된 자금이 불충분하거나 부족한 경우 몇 분 후에 다시 시도하십시오.</translation>
     </message>
     <message>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>항상 송금할수 있도록 지정된 수량 유지 (기본값 : 0)</translation>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>-maxtxfee=&lt;amount&gt;에 대한 잘못된 금액: '%s' (트랜잭션 정지를 막을려면 적어도 %s의 minrelay 수수료가 있어야 합니다)</translation>
     </message>
     <message>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
@@ -4446,16 +4863,12 @@ Please be patient...</source>
         <translation>재연결로 인해 피어가 오작동을 유지하는 초 단위 시간 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>난독화는 정확한 금액을 사용하여 자금을 송금하기 때문에 더 많은 코인을 익명화해야 할 수도 있습니다.</translation>
-    </message>
-    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>디버깅 정보 출력 (기본값: %u, &lt;category&gt; 공급은 선택입니다)</translation>
     </message>
     <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>DNS 검색을 통한 피어 주소 쿼리, 주소가 부족할 경우 (-connect 아닌 이상 기본값:1)</translation>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>모든 프록시 연결마다 자격 증명 무작위화. 이렇게하면 Tor 스트림을 격리할수 있습니다. (기본값 : %u)</translation>
     </message>
     <message>
         <source>Require high priority for relaying free or low-fee transactions (default:%u)</source>
@@ -4486,52 +4899,12 @@ Please be patient...</source>
         <translation>bloom필터를 사용한 블록 및 트랜잭션 필터링 지원 (기본값 : %u)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
-    </message>
-    <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>To use fivebalanced, or the -server option to fivebalance-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=fivebalancerpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
-</source>
-        <translation>Fivebalanced 또는 Fivebalance-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
-%s
-다음 무작위 암호를 사용하는 것을 추천합니다:
-rpcuser=Fivebalancepc
-rpcpassword=%s
-(이 비밀번호는 기억할 필요가 없습니다)
-유저 이름과 비밀번호는 반드시 달라야 합니다.
-파일이 존재하지 않는다면 작성자만 읽기 가능한 권한으로 파일을 생성하십시오.
-또한 문제 발생 알림을 받을려면 alertnotify를 설정하는 것을 추천합니다.
-예시: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
-</translation>
-    </message>
-    <message>
-        <source>Unable to bind to %s on this computer. Fivebalance Core is probably already running.</source>
-        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. Fivebalance Core는 이미 실행 중입니다.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기된 충분한 금액을 찾을 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 FBN.</source>
-        <translation>이 트랜잭션를 위해 난독화 표기가 안된 충분한 금액을 찾을 수 없습니다. 10000 FBN과 일치하지 않음.</translation>
-    </message>
-    <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 FBN.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 FBN와 같지 않음</translation>
+        <source>Unable to bind to %s on this computer. FIVEBALANCE Core is probably already running.</source>
+        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. FIVEBALANCE Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4546,8 +4919,8 @@ rpcpassword=%s
         <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Fivebalance Core will not work properly.</source>
-        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 Fivebalance 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong FIVEBALANCE Core will not work properly.</source>
+        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 FIVEBALANCE 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4578,10 +4951,6 @@ rpcpassword=%s
         <translation>환경설정에서 masternodeprivkey를 지정해야 합니다. 도움말을 참조하십시오.</translation>
     </message>
     <message>
-        <source>(30001 could be used only on mainnet)</source>
-        <translation>(30001 은 메인넷에서만 사용될 수 있습니다)</translation>
-    </message>
-    <message>
         <source>(default: %s)</source>
         <translation>(기본값: %s)</translation>
     </message>
@@ -4590,24 +4959,12 @@ rpcpassword=%s
         <translation>(기본값: 1)</translation>
     </message>
     <message>
-        <source>(must be 30001 for mainnet)</source>
-        <translation>(메인넷 일경우 30001)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation> command line 과 JSON-RPC 적용</translation>
     </message>
     <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>외부에서의 접속을 허용 (1 -프록시 또는 -연결이 없을 경우 기본값)</translation>
-    </message>
-    <message>
         <source>Accept public REST requests (default: %u)</source>
         <translation>공개 REST 요청 수락(기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Acceptable ciphers (default: %s)</source>
-        <translation>허용되는 암호 (기본값: %s)</translation>
     </message>
     <message>
         <source>Add a node to connect to and attempt to keep the connection open</source>
@@ -4616,10 +4973,6 @@ rpcpassword=%s
     <message>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>-addnode, -seednode, -connect을 위해 DNS 조회를 허용하십시오.</translation>
-    </message>
-    <message>
-        <source>Already have that input.</source>
-        <translation>이미 연결 중입니다.</translation>
     </message>
     <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
@@ -4638,48 +4991,8 @@ rpcpassword=%s
         <translation>블록 생성 옵션:</translation>
     </message>
     <message>
-        <source>Calculating missing accumulators...</source>
-        <translation>누락된 누산기 계산중...</translation>
-    </message>
-    <message>
-        <source>Can't denominate: no compatible inputs left.</source>
-        <translation>표시할 수 없음: 남아있는 호환된 연결이 없습니다.</translation>
-    </message>
-    <message>
-        <source>Can't find random Masternode.</source>
-        <translation>임의의 마스터노드를 찾을 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>동기화가 진행 중일 때에는 믹싱을 할 수 없습니다.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>지갑을 다운그레이드 할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>주소를 변환할 수 없습니다 주소 -bind: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>주소를 변환할 수 없습니다 -externalip 주소: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>해결할 수 없습니다 -whitebind 주소: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>기본 주소를 사용할 수 없습니다.</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Collateral이 유효하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>지정된 노드(s)로만 연결이 가능합니다.</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -4702,16 +5015,12 @@ rpcpassword=%s
         <translation>Copyright (C) 2014-%i The Dash Core 개발자들</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Fivebalance Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Fivebalance Core 개발자</translation>
+        <source>Copyright (C) 2015-%i The FIVEBALANCE Core Developers</source>
+        <translation>Copyright (C) 2015-%i The FIVEBALANCE Core 개발자</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>손상된 블록 데이터베이스가 발견되었습니다</translation>
-    </message>
-    <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>-rpcbind 값 %s 를 네트워크 주소로 분석할 수 없습니다</translation>
     </message>
     <message>
         <source>Could not parse masternode.conf</source>
@@ -4720,6 +5029,10 @@ rpcpassword=%s
     <message>
         <source>Debugging/Testing options:</source>
         <translation>디버깅/테스팅 옵션:</translation>
+    </message>
+    <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>블록 체인 폴더 삭제 및 처음부터 다시 동기화</translation>
     </message>
     <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
@@ -4746,20 +5059,16 @@ rpcpassword=%s
         <translation>로딩 완료</translation>
     </message>
     <message>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>자동 제로코인 생성 (0-1, 기본값: %u)</translation>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>클라이언트가 마스터노드로 작동하는 것을 활성화 (0-1, 기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Entries are full.</source>
-        <translation>항목이 가득 찼습니다.</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Masternode에 연결하는 중 오류가 발생했습니다.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -4782,8 +5091,8 @@ rpcpassword=%s
         <translation>wallet.dat을 불러오는 중 오류가 발생했습니다: 지갑 손상됨</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Fivebalance Core</source>
-        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 Fivebalance 코어가 필요합니다.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FIVEBALANCE Core</source>
+        <translation>wallet.dat를 로드하는 중 오류가 발생했습니다. 지갑에 최신 버전의 FIVEBALANCE 코어가 필요합니다.</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4794,20 +5103,20 @@ rpcpassword=%s
         <translation>데이터베이스에서서 읽어오는 중 오류가 발생했습니다. 종료합니다.</translation>
     </message>
     <message>
-        <source>Error recovering public key.</source>
-        <translation>공개 키를 복구하는 중 오류가 발생했습니다.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>디스크에 zerocoinDB 쓰기 오류</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>에러</translation>
     </message>
     <message>
-        <source>Error: A fatal internal error occured, see debug.log for details</source>
-        <translation>오류 : 내부에서 치명적인 오류가 발생했습니다. 자세한 내용은 debug.log를 참조하십시오</translation>
+        <source>Error: </source>
+        <translation>에러:</translation>
     </message>
     <message>
-        <source>Error: Can't select current denominated inputs</source>
-        <translation>오류 : 현재 표시된 입력을 선택할 수 없습니다</translation>
+        <source>Error: A fatal internal error occured, see debug.log for details</source>
+        <translation>오류 : 내부에서 치명적인 오류가 발생했습니다. 자세한 내용은 debug.log를 참조하십시오</translation>
     </message>
     <message>
         <source>Error: Disk space is low!</source>
@@ -4822,36 +5131,16 @@ rpcpassword=%s
         <translation>오류 : 지갑이 잠겼습니다, 트랜잭션을 생성할 수 없습니다!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>오류 : 이미 난독화 그룹에 보류중인 항목들이 있습니다.</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>어떠한 포트에서도 수신하는 것에 실패했습니다. 원하신다면 -listen=0 을 사용하십시오.</translation>
     </message>
     <message>
-        <source>Failed to read block</source>
-        <translation>블록을 받아오는데 실패했습니다.</translation>
-    </message>
-    <message>
-        <source>Fee (in FBN/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (FBN/kB) (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>트랜잭션 완료.</translation>
+        <source>Failed to parse host:port string</source>
+        <translation>호스트 : 포트 문자열을 구문 분석하지 못했습니다.</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
         <translation>강제 안전 모드 (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>충분한 사용자를 찾았습니다, 서명 중 ( %s 기다리는 중 )</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>충분한 사용자를 찾았습니다, 서명 중 ...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -4878,14 +5167,6 @@ rpcpassword=%s
         <translation>디버그 출력에 IP 주소를 포함합니다 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>호환되지 않는 모드.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>호환되지 않는 버전.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>잘못되었거나 블록을 찾지 못하였습니다. 네트워크에 대한 잘못된 데이터 디렉토리 문제?</translation>
     </message>
@@ -4894,12 +5175,8 @@ rpcpassword=%s
         <translation>정보</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Fivebalance Core is shutting down.</source>
-        <translation>초기화 정확성 검사에 실패 했습니다. Fivebalance Core가 종료됩니다.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>입력이 올바르지 않습니다.</translation>
+        <source>Initialization sanity check failed. FIVEBALANCE Core is shutting down.</source>
+        <translation>초기화 정확성 검사에 실패 했습니다. FIVEBALANCE Core가 종료됩니다.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4914,32 +5191,8 @@ rpcpassword=%s
         <translation>잘못된 -onion 주소거나 호스트네임 : '%s'</translation>
     </message>
     <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>잘못된 -proxy 주소거나 호스트네입 : '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-maxtxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-minrelaytxfee=&lt;amount&gt;; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-mintxfee=&lt;amount&gt;; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>-paytxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s' (적어도 %s 가 필요합니다)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>-paytxfee=&lt;amount&gt; 에 대한 유효하지 않은 값: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>-reservebalance=&lt;amount&gt;에 대한 금액이 유효하지 않은 값</translation>
     </message>
     <message>
         <source>Invalid amount</source>
@@ -4954,16 +5207,24 @@ rpcpassword=%s
         <translation>-whitelist: '%s' 에 지정된 넷마스크가 유효하지 않습니다.</translation>
     </message>
     <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>masternode.conf 에서 유효하지 않은 포트가 감지되었습니다</translation>
+        <source>Recalculating FBN supply...</source>
+        <translation>FBN 공급 재계산중...</translation>
     </message>
     <message>
-        <source>Invalid private key.</source>
-        <translation>유효하지 않은 개인 키입니다.</translation>
+        <source>Reindexing zerocoin database...</source>
+        <translation>제로코인 데이타베이스 재색인</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>유효하지 않은 스크립트가 발견되었습니다.</translation>
+        <source>Reindexing zerocoin failed</source>
+        <translation>제로코인 재 인덱싱 실패</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>지불대상보다 적은 코인 선택됨</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX 옵션:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -4986,20 +5247,36 @@ rpcpassword=%s
 </translation>
     </message>
     <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>에러 : 거래가 거부되었습니다. 예를 들어 다른 사본 wallet.dat에서 코인을 사용했다면 2중 사용으로 인식될수 있습니다. 혹은, 일부가 이미 소비 된 경우에 이런 일이 발생할 수 있습니다.</translation>
+        <source>Disable all FIVEBALANCE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>FIVEBALANCE의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>에러 :이 거래에는 전송량, 복잡성 또는 최근에 받은 자금의 사용등으로 인해 적어도 %s의 거래 수수료가 필요합니다!</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>swiftTX 활성화, 잠긴 트랜잭션들에 대한 확인 표시 (bool, 기본값: %s)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
         <translation>에러 : 지원하지않는 argument -checklevel 발견된.  Checklevel는 레벨 4이어야 합니다.</translation>
     </message>
     <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Failed to find coin set amongst held coins with less than maxNumber of Spends</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX는 최소 6회 확인이 필요한 입력으로 몇 분 후에 다시 시도해야 할 수 있습니다.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -5022,20 +5299,12 @@ rpcpassword=%s
         <translation>&lt;address&gt; 에서 해시 블록 게시 가능</translation>
     </message>
     <message>
-        <source>Enable publish hash transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>&lt;address&gt; 에서 해시 전송 게시 가능 (SwiftTX로 설정된)</translation>
-    </message>
-    <message>
         <source>Enable publish hash transaction in &lt;address&gt;</source>
         <translation>&lt;address&gt; 에서 해시 불록 게시 가능</translation>
     </message>
     <message>
         <source>Enable publish raw block in &lt;address&gt;</source>
         <translation>&lt;address&gt;에서 Raw 블록 게시 가능</translation>
-    </message>
-    <message>
-        <source>Enable publish raw transaction (locked via SwiftTX) in &lt;address&gt;</source>
-        <translation>&lt;address&gt;에서 Raw 트랜잭션 게시 지원 (SwiftTX를 통해 잠겨진)</translation>
     </message>
     <message>
         <source>Enable publish raw transaction in &lt;address&gt;</source>
@@ -5046,24 +5315,36 @@ rpcpassword=%s
         <translation>스테이킹 기능 사용 (0-1, 기본값: %u)</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Error: 치명적 에러 발생 log 파일을 확인해주세요.</translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Error: 유효하지 않는 utxo!</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>wallet.dat 에서 제로코인을 인식 실패</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>제로코인 선택 실패</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>제로코인 DB 삭제 실패</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>지갑에 코인 시리얼 번호 작성 실패</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
+        <translation>-%s=&lt;amount&gt;; 에 대한 유효하지 않은 값: '%s'</translation>
+    </message>
+    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>메모리에서 연결 불가능한 트랜잭션을 &lt;n&gt;개까지 유지하십시오. (기본값: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>최근에 마지막으로 난독화를 진행했습니다.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>최근에 마지막으로 성공한 난독화 작업이 있습니다.</translation>
-    </message>
-    <message>
-        <source>Less than 3 mints added, unable to create spend</source>
-        <translation>3 미만 추가, 송금 불가능함</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>시그니처 캐시의 크기 제한을 &lt;n&gt; 항목으로 합니다 (기본값: %u)</translation>
     </message>
     <message>
         <source>Line: %d</source>
@@ -5080,6 +5361,10 @@ rpcpassword=%s
     <message>
         <source>Loading addresses...</source>
         <translation>주소를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>Loading banlist...</source>
+        <translation>차단 리스트 로딩중...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -5102,20 +5387,20 @@ rpcpassword=%s
         <translation>sporks 로딩중...</translation>
     </message>
     <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>지갑을 불러오는 중… (%3.2f %%)</translation>
-    </message>
-    <message>
         <source>Loading wallet...</source>
         <translation>지갑을 불러오는 중…</translation>
     </message>
     <message>
-        <source>Lock is already in place.</source>
-        <translation>이미 올바르게 잠겨있습니다.</translation>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>auth 쿠기 위치 (default: data dir)</translation>
     </message>
     <message>
         <source>Lock masternodes from masternode configuration file (default: %u)</source>
         <translation>마스터노드 구성 파일에서 마스터노드를 잠급니다. (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup(): Invalid -proxy address or hostname: '%s'</translation>
     </message>
     <message>
         <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
@@ -5126,14 +5411,6 @@ rpcpassword=%s
         <translation>마스터노드 옵션:</translation>
     </message>
     <message>
-        <source>Masternode queue is full.</source>
-        <translation>마스터노드 대기열이 가득 찼습니다.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>마스터노드:</translation>
-    </message>
-    <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
         <translation>연결 당 최대 수신 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
     </message>
@@ -5142,68 +5419,28 @@ rpcpassword=%s
         <translation>연결 당 최대 전송 버퍼, &lt;n&gt;*1000 바이트 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>트랜잭션 정보 입력에 누락된 부분이 있습니다.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>믹싱이 진행 중입니다...</translation>
+        <source>Mint did not make it into blockchain</source>
+        <translation>코인생성이 블록체인에 기록되지 않았습니다.</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>-whitebind: '%s' 의 포트를 지정해야 합니다</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>마스터노드가 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>호환되는 마스터노드가 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>분류가 필요한 자금이 발견되지 않았습니다.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>믹싱에 대한 일치하는 표기를 찾을 수 없습니다.</translation>
-    </message>
-    <message>
         <source>Node relay options:</source>
         <translation>노드 중계 옵션:</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>비 표준 공개 키가 감지되었습니다.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>기존 트랜잭션과 호환되지 않습니다.</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>사용 가능한 파일 디스크립터가 충분하지 않습니다.</translation>
     </message>
     <message>
-        <source>Not in the Masternode list.</source>
-        <translation>마스터노드 목록에 없습니다.</translation>
-    </message>
-    <message>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation>자동 지갑 백업 횟수 (기본값: 10)</translation>
     </message>
     <message>
-        <source>Obfuscation is idle.</source>
-        <translation>난독화는 유휴상태입니다.</translation>
-    </message>
-    <message>
-        <source>Obfuscation request complete:</source>
-        <translation>난독화 요청 완료:</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>난독화 요청 미완료:</translation>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Number of custom location backups to retain (default: %d)</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5222,8 +5459,36 @@ rpcpassword=%s
         <translation>JSON-RPC 연결 비밀번호</translation>
     </message>
     <message>
-        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
-        <translation>자동 생성 제로코인 퍼센트 (10-100, 기본값: %u)</translation>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>코인 생성이 포함된 거래를 찾을 수 없습니다 %s</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation>코인 생성이 포함된 거래를 찾을 수 없습니다. txHash: %s</translation>
+    </message>
+    <message>
+        <source>Use block spam filter (default: %u)</source>
+        <translation>블록 스팸 필터 사용하기 (기본 : %u)</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>재동기화 준비중...</translation>
+    </message>
+    <message>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong FIVEBALANCE Core will not work properly.</source>
+        <translation>컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 FIVEBALANCE 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -%s address: '%s'</source>
+        <translation>주소를 변환할 수 없습니다 주소 -%s: '%s'</translation>
+    </message>
+    <message>
+        <source>Need destination or change address because change is not exact</source>
+        <translation>잔돈 액수가 정확히 일치하지 않아 받을 주소가 필요합니다.</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -5234,16 +5499,8 @@ rpcpassword=%s
         <translation>버전 출력후 종료</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL 옵션: (SSL 설치 안내는 비트코인 위키를 참조하십시오)</translation>
-    </message>
-    <message>
         <source>RPC server options:</source>
         <translation>RPC 서버 옵션:</translation>
-    </message>
-    <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>HTTP 지속 연결에 관한 RPC 지원 (기본값: %d)</translation>
     </message>
     <message>
         <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
@@ -5256,10 +5513,6 @@ rpcpassword=%s
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>현재 blk000??.dat 파일의 블록체인 인덱스를 다시 구축합니다</translation>
-    </message>
-    <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>P2P 네크워크로 부터 경고를 받고 보여줍니다 (기본값: %u)</translation>
     </message>
     <message>
         <source>Relay and mine data carrier transactions (default: %u)</source>
@@ -5298,22 +5551,6 @@ rpcpassword=%s
         <translation>무료 수수료 트랜잭션이 가능할 경우 무료 수수료로 트랜잭션을 전송합니다 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>서버 인증서 파일 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>서버 개인 키 (기본값: %s)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>세션이 완료되지 않았습니다!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>세션이 만료되었습니다.</translation>
-    </message>
-    <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
         <translation>데이터베이스 캐시 크기를 메가바이트 단위로 설정합니다 (%d 에서 %d, 기본값: %d)</translation>
     </message>
@@ -5334,6 +5571,10 @@ rpcpassword=%s
         <translation>최소 블록 크기를 바이트 단위로 설정합니다 (기본값: %u)</translation>
     </message>
     <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>최대 재구성 깊이 설정 (기본값 : %u)</translation>
+    </message>
+    <message>
         <source>Set the masternode private key</source>
         <translation>마스터노드 개인 키를 설정합니다</translation>
     </message>
@@ -5352,14 +5593,6 @@ rpcpassword=%s
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>클라이언트 시작시에 debug.log 파일을 축소시킵니다 (기본값:1 아닐경우 -debug)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>인증에 실패했습니다.</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>인증 시간 초과.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -5394,8 +5627,12 @@ rpcpassword=%s
         <translation>자신의 공용 주소를 지정</translation>
     </message>
     <message>
+        <source>Spend Valid</source>
+        <translation>유효한 지출</translation>
+    </message>
+    <message>
         <source>Spend unconfirmed change when sending transactions (default: %u)</source>
-        <translation>트랜잭션 전송시 승인되지 않은 변경사항을 전송합니다 (기본값: %u)</translation>
+        <translation>트랜잭션 전송시 승인되지 않은 잔돈을 전송합니다 (기본값: %u)</translation>
     </message>
     <message>
         <source>Staking options:</source>
@@ -5406,32 +5643,12 @@ rpcpassword=%s
         <translation>디스크에서 블록을 가져오면 실행 중지 (기본값: %u)</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>마스터노드에 다음 항목들을 제출했습니다: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>마스터노드에 제출했습니다, 남은 항목들 기다리는중 ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>마스터노드에 제출했습니다, 대기열을 기다리는 중 %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTX 옵션:</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>동기화 실패</translation>
     </message>
     <message>
         <source>Synchronization finished</source>
         <translation>동기화 완료</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>동기화 대기중...</translation>
     </message>
     <message>
         <source>Synchronizing budgets...</source>
@@ -5450,6 +5667,10 @@ rpcpassword=%s
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
+        <source>Syncing zFBN wallet...</source>
+        <translation>zFBN 지갑 동기화중...</translation>
+    </message>
+    <message>
         <source>This help message</source>
         <translation>도움말 메시지입니다</translation>
     </message>
@@ -5462,12 +5683,12 @@ rpcpassword=%s
         <translation>이것은 리그레션 테스팅 및 앱 개발을 위해 만들어졌습니다.</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>마스터노드가 아닙니다.</translation>
-    </message>
-    <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>제대로 동작하지 않는 피어와 연결을 끊을 임계값 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>너무 많은 지출이 필요함</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -5478,24 +5699,20 @@ rpcpassword=%s
         <translation>onion 활성화되었을 경우 사용할 Tor 코트롤 포트 (기본값: %s)</translation>
     </message>
     <message>
+        <source>Transaction Created</source>
+        <translation>트랜잭션 취소됨</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>트랜잭션 생성 시작됨</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>트랜잭션 금액이 너무 적습니다</translation>
     </message>
     <message>
         <source>Transaction amounts must be positive</source>
         <translation>트랜잭션 금액에 반드시 양수값이 들어가야 합니다</translation>
-    </message>
-    <message>
-        <source>Transaction created successfully.</source>
-        <translation>트랜잭션이 성공적으로 생성되었습니다.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>트랜잭션 수수료가 너무 높습니다.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>올바르지 않은 트랜잭션입니다.</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -5506,32 +5723,36 @@ rpcpassword=%s
         <translation>트랜잭션이 너무 큽니다</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>최종 트랜잭션를 전송 중입니다.</translation>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>이미 전송된 리얼 번호를 보내려고 했습니다. 다시 시도하십시오.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>이 컴퓨터에서 %s 로 바인드할 수 없습니다 (바인드 리턴 오류 %s)</translation>
     </message>
     <message>
+        <source>Unable to generate initial key</source>
+        <translation>이니셜 키를 생성할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Unable to generate keys</source>
+        <translation>키를 생성할 수 없습니다.</translation>
+    </message>
+    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>스포크 메시지를 인증할 수 없습니다, 키를 확인해주세요</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>HTTP 서버를 시작할수 없습니다. log 파일을 확인해주세요.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>-onlynet: '%s' 에 알 수 없는 네트워크가 지정되었습니다</translation>
     </message>
     <message>
-        <source>Unknown state: id = %u</source>
-        <translation>알 수없는 상태: id = %u</translation>
-    </message>
-    <message>
         <source>Upgrade wallet to latest format</source>
         <translation>지갑을 최신 포맷으로 업그레이드합니다</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>JSON-RPC 연결에 OpenSSL (https)를 사용합니다</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -5542,6 +5763,10 @@ rpcpassword=%s
         <translation>수신 포트를 매핑하려면 UPnP를 사용하십시오 (기본값: 1 수신 상태일 때)</translation>
     </message>
     <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>맞춤 최대 체인 재구성 깊이 사용 (기본값 : %u)</translation>
+    </message>
+    <message>
         <source>Use the test network</source>
         <translation>테스트 네트워크를 사용합니다</translation>
     </message>
@@ -5550,8 +5775,8 @@ rpcpassword=%s
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>난독화 풀의 최대 허용 값보다 높습니다.</translation>
+        <source>Value is below the smallest available denomination (= 1) of zFBN</source>
+        <translation>Value is below the smallest available denomination (= 1) of zFBN</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5566,12 +5791,8 @@ rpcpassword=%s
         <translation>지갑 %s 가 데이터 디렉토리 외부에 존재합니다 %s</translation>
     </message>
     <message>
-        <source>Wallet is locked.</source>
-        <translation>지갑이 잠겼습니다.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Fivebalance Core to complete</source>
-        <translation>지갑을 다시 작성해야 합니다: 완료하려면 Fivebalance 코어를 재시작해야 합니다</translation>
+        <source>Wallet needed to be rewritten: restart FIVEBALANCE Core to complete</source>
+        <translation>지갑을 다시 작성해야 합니다: 완료하려면 FIVEBALANCE 코어를 재시작해야 합니다</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5598,20 +5819,12 @@ rpcpassword=%s
         <translation>경고 : 지원하지 않는 인수 -debugnet 무시됨 -debug=net를 사용하십시오.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>다시 시도합니다...</translation>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>지갑에 zFBN 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>-treindex를 변경하려면 -reindex를 사용하여 데이터베이스를 다시 빌드해야합니다.</translation>
-    </message>
-    <message>
-        <source>Your entries added successfully.</source>
-        <translation>항목이 성공적으로 추가되었습니다.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>트랜잭션이 풀로 접수되었습니다!</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -5626,16 +5839,55 @@ rpcpassword=%s
         <translation>제로코인 옵션:</translation>
     </message>
     <message>
-        <source>failed to validate zerocoin</source>
-        <translation>제로코인 검증을 못했습니다.</translation>
-    </message>
-    <message>
         <source>on startup</source>
         <translation>시작 시</translation>
     </message>
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat 파일이 손상되어 복구에 실패했습니다</translation>
+    </message>
+</context>
+<context>
+    <name>send</name>
+    <message>
+        <source>Form</source>
+        <translation>양식</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>보내기</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE address or contact label</source>
+        <translation>FIVEBALANCE 주소 / 연락처 라벨</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>금액</translation>
+    </message>
+    <message>
+        <source>Customize fee</source>
+        <translation>수수료 변경</translation>
+    </message>
+    <message>
+        <source>Clear all</source>
+        <translation>전체 지우기</translation>
+    </message>
+    <message>
+        <source>Add recipient</source>
+        <translation>받는이 추가</translation>
+    </message>
+    <message>
+        <source>Total to send</source>
+        <translation>전송할 총 액수</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>기본값으로 리셋</translation>
+    </message>
+    <message>
+        <source>Include delegated</source>
+        <translation>위임된 코인 포함</translation>
     </message>
 </context>
 </TS>

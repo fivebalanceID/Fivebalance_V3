@@ -1,0 +1,157 @@
+
+## <summary>policy for fivebalance</summary>
+
+
+########################################
+## <summary>
+##	Transition to fivebalance.
+## </summary>
+## <param name="domain">
+## <summary>
+##	Domain allowed to transition.
+## </summary>
+## </param>
+#
+interface(`fivebalance_domtrans',`
+	gen_require(`
+		type fivebalance_t, fivebalance_exec_t;
+	')
+
+	corecmd_search_bin($1)
+	domtrans_pattern($1, fivebalance_exec_t, fivebalance_t)
+')
+
+
+########################################
+## <summary>
+##	Execute fivebalance server in the fivebalance domain.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`fivebalance_initrc_domtrans',`
+	gen_require(`
+		type fivebalance_initrc_exec_t;
+	')
+
+	init_labeled_script_domtrans($1, fivebalance_initrc_exec_t)
+')
+
+
+########################################
+## <summary>
+##	Search fivebalance lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`fivebalance_search_lib',`
+	gen_require(`
+		type fivebalance_var_lib_t;
+	')
+
+	allow $1 fivebalance_var_lib_t:dir search_dir_perms;
+	files_search_var_lib($1)
+')
+
+########################################
+## <summary>
+##	Read fivebalance lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`fivebalance_read_lib_files',`
+	gen_require(`
+		type fivebalance_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	read_files_pattern($1, fivebalance_var_lib_t, fivebalance_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage fivebalance lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`fivebalance_manage_lib_files',`
+	gen_require(`
+		type fivebalance_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_files_pattern($1, fivebalance_var_lib_t, fivebalance_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage fivebalance lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`fivebalance_manage_lib_dirs',`
+	gen_require(`
+		type fivebalance_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_dirs_pattern($1, fivebalance_var_lib_t, fivebalance_var_lib_t)
+')
+
+
+########################################
+## <summary>
+##	All of the rules required to administrate
+##	a fivebalance environment
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+## <param name="role">
+##	<summary>
+##	Role allowed access.
+##	</summary>
+## </param>
+## <rolecap/>
+#
+interface(`fivebalance_admin',`
+	gen_require(`
+		type fivebalance_t;
+		type fivebalance_initrc_exec_t;
+		type fivebalance_var_lib_t;
+	')
+
+	allow $1 fivebalance_t:process { ptrace signal_perms };
+	ps_process_pattern($1, fivebalance_t)
+
+	fivebalance_initrc_domtrans($1)
+	domain_system_change_exemption($1)
+	role_transition $2 fivebalance_initrc_exec_t system_r;
+	allow $2 system_r;
+
+	files_search_var_lib($1)
+	admin_pattern($1, fivebalance_var_lib_t)
+
+')
+

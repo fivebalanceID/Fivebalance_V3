@@ -1,11 +1,13 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2015 The Bitcoin developers
+// Copyright (c) 2009-2014 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef BITCOIN_ARITH_UINT256_H
 #define BITCOIN_ARITH_UINT256_H
 
+#include "blob_uint256.h"
+#include "uint512.h"
 #include <assert.h>
 #include <cstring>
 #include <stdexcept>
@@ -13,7 +15,10 @@
 #include <string>
 #include <vector>
 
+class blob_uint512;
+class blob_uint256;
 class uint256;
+class uint512;
 
 class uint_error : public std::runtime_error {
 public:
@@ -24,11 +29,10 @@ public:
 template<unsigned int BITS>
 class base_uint
 {
-protected:
+public:
     enum { WIDTH=BITS/32 };
     uint32_t pn[WIDTH];
 
-public:
     base_uint()
     {
         for (int i = 0; i < WIDTH; i++)
@@ -57,6 +61,7 @@ public:
     }
 
     explicit base_uint(const std::string& str);
+    explicit base_uint(const std::vector<unsigned char>& vch);
 
     bool operator!() const
     {
@@ -230,12 +235,42 @@ public:
     void SetHex(const char* psz);
     void SetHex(const std::string& str);
     std::string ToString() const;
+    std::string ToStringReverseEndian() const;
+
+    unsigned char* begin()
+    {
+        return (unsigned char*)&pn[0];
+    }
+
+    unsigned char* end()
+    {
+        return (unsigned char*)&pn[WIDTH];
+    }
+
+    const unsigned char* begin() const
+    {
+        return (unsigned char*)&pn[0];
+    }
+
+    const unsigned char* end() const
+    {
+        return (unsigned char*)&pn[WIDTH];
+    }
 
     unsigned int size() const
     {
         return sizeof(pn);
     }
 
+    uint64_t Get64(int n = 0) const
+    {
+        return pn[2 * n] | (uint64_t)pn[2 * n + 1] << 32;
+    }
+
+    uint32_t Get32(int n = 0) const
+    {
+        return pn[2 * n];
+    }
     /**
      * Returns the position of the highest bit set plus one, or zero if the
      * value is zero.
@@ -247,6 +282,53 @@ public:
         assert(WIDTH >= 2);
         return pn[0] | (uint64_t)pn[1] << 32;
     }
+
+    template<typename Stream>
+    void Serialize(Stream& s) const
+    {
+        s.write((char*)pn, sizeof(pn));
+    }
+
+    template<typename Stream>
+    void Unserialize(Stream& s)
+    {
+        s.read((char*)pn, sizeof(pn));
+    }
+
+    // Temporary for migration to blob160/256
+    uint64_t GetCheapHash() const
+    {
+        return GetLow64();
+    }
+    void SetNull()
+    {
+        memset(pn, 0, sizeof(pn));
+    }
+    bool IsNull() const
+    {
+        for (int i = 0; i < WIDTH; i++)
+            if (pn[i] != 0)
+                return false;
+        return true;
+    }
+
+    friend class uint160;
+    friend class uint256;
+    friend class uint512;
+
+    friend class arith_uint160;
+    friend class arith_uint256;
+    friend class arith_uint512;
+};
+
+/** 160-bit unsigned big integer. */
+class arith_uint160 : public base_uint<160> {
+public:
+    arith_uint160() {}
+    arith_uint160(const base_uint<160>& b) : base_uint<160>(b) {}
+    arith_uint160(uint64_t b) : base_uint<160>(b) {}
+    explicit arith_uint160(const std::string& str) : base_uint<160>(str) {}
+    explicit arith_uint160(const std::vector<unsigned char>& vch) : base_uint<160>(vch) {}
 };
 
 /** 256-bit unsigned big integer. */
@@ -256,6 +338,7 @@ public:
     arith_uint256(const base_uint<256>& b) : base_uint<256>(b) {}
     arith_uint256(uint64_t b) : base_uint<256>(b) {}
     explicit arith_uint256(const std::string& str) : base_uint<256>(str) {}
+    explicit arith_uint256(const std::vector<unsigned char>& vch) : base_uint<256>(vch) {}
 
     /**
      * The "compact" format is a representation of a whole
@@ -280,11 +363,31 @@ public:
     arith_uint256& SetCompact(uint32_t nCompact, bool *pfNegative = NULL, bool *pfOverflow = NULL);
     uint32_t GetCompact(bool fNegative = false) const;
 
-    friend uint256 ArithToUint256(const arith_uint256 &);
-    friend arith_uint256 UintToArith256(const uint256 &);
+    uint64_t GetHash(const arith_uint256& salt) const;
+
+    uint32_t Get32(int n = 0) const { return pn[2 * n]; }
 };
 
-uint256 ArithToUint256(const arith_uint256 &);
-arith_uint256 UintToArith256(const uint256 &);
+/** 512-bit unsigned big integer. */
+class arith_uint512 : public base_uint<512> {
+public:
+    arith_uint512() {}
+    arith_uint512(const base_uint<512>& b) : base_uint<512>(b) {}
+    arith_uint512(uint64_t b) : base_uint<512>(b) {}
+    explicit arith_uint512(const std::string& str) : base_uint<512>(str) {}
+    explicit arith_uint512(const std::vector<unsigned char>& vch) : base_uint<512>(vch) {}
 
-#endif // BITCOIN_ARITH_UINT256_H
+    uint64_t GetHash(const arith_uint256& salt) const;
+
+    //friend arith_uint512 UintToArith512(const blob_uint512 &a);
+    //friend blob_uint512 ArithToUint512(const arith_uint512 &a);
+
+};
+
+/** Old classes definitions */
+
+/** End classes definitions */
+
+const arith_uint256 ARITH_UINT256_ZERO = arith_uint256();
+
+#endif // BITCOIN_UINT256_H

@@ -1,0 +1,8 @@
+/usr/bin/fivebalance-cli		--	gen_context(system_u:object_r:fivebalance_exec_t,s0)
+/usr/sbin/fivebalanced		--	gen_context(system_u:object_r:fivebalance_exec_t,s0)
+/usr/lib(64)?/fivebalance/fivebalanced		--	gen_context(system_u:object_r:fivebalance_exec_t,s0)
+
+/etc/fivebalance(/.*)?		gen_context(system_u:object_r:fivebalance_conf_t,s0)
+/var/lib/fivebalance(/.*)?		gen_context(system_u:object_r:fivebalance_var_lib_t,s0)
+
+(/var)?/run/fivebalanced(/.*)?   gen_context(system_u:object_r:fivebalance_var_run_t,s0)

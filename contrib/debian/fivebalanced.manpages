@@ -1,2 +1,2 @@
-debian/manpages/fivebalanced.1
-debian/manpages/fivebalance.conf.5
+doc/man/fivebalanced.1
+doc/man/fivebalance-cli.1

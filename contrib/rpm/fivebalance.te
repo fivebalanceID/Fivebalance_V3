@@ -1,0 +1,81 @@
+policy_module(fivebalance, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type fivebalance_t;
+type fivebalance_exec_t;
+init_daemon_domain(fivebalance_t, fivebalance_exec_t)
+
+permissive fivebalance_t;
+
+type fivebalance_initrc_exec_t;
+init_script_file(fivebalance_initrc_exec_t)
+
+type fivebalance_conf_t;
+files_type(fivebalance_conf_t)
+
+type fivebalance_var_lib_t;
+files_type(fivebalance_var_lib_t)
+
+type fivebalance_var_run_t;
+files_type(fivebalance_var_run_t)
+
+type fivebalance_port_t;
+corenet_port(fivebalance_port_t)
+
+########################################
+#
+# fivebalance local policy
+#
+allow fivebalance_t self:process { fork };
+
+allow fivebalance_t self:fifo_file rw_fifo_file_perms;
+allow fivebalance_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(fivebalance_t, fivebalance_conf_t, fivebalance_conf_t)
+manage_files_pattern(fivebalance_t, fivebalance_conf_t, fivebalance_conf_t)
+
+manage_dirs_pattern(fivebalance_t, fivebalance_var_lib_t, fivebalance_var_lib_t)
+manage_files_pattern(fivebalance_t, fivebalance_var_lib_t, fivebalance_var_lib_t)
+files_var_lib_filetrans(fivebalance_t, fivebalance_var_lib_t, { dir file })
+
+manage_dirs_pattern(fivebalance_t, fivebalance_var_run_t, fivebalance_var_run_t)
+manage_files_pattern(fivebalance_t, fivebalance_var_run_t, fivebalance_var_run_t)
+
+sysnet_dns_name_resolve(fivebalance_t)
+corenet_all_recvfrom_unlabeled(fivebalance_t)
+
+allow fivebalance_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(fivebalance_t)
+corenet_tcp_sendrecv_generic_node(fivebalance_t)
+corenet_tcp_sendrecv_all_ports(fivebalance_t)
+corenet_tcp_bind_generic_node(fivebalance_t)
+
+gen_require(`
+    type fivebalance_port_t;
+')
+allow fivebalance_t fivebalance_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type fivebalance_port_t;
+')
+allow fivebalance_t fivebalance_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(fivebalance_t)
+
+files_read_etc_files(fivebalance_t)
+
+miscfiles_read_localization(fivebalance_t)
+
+sysnet_dns_name_resolve(fivebalance_t)
+
+allow fivebalance_t fivebalance_exec_t:file execute_no_trans;
+allow fivebalance_t self:process setsched;
+corecmd_exec_ls(fivebalance_t)
+corenet_tcp_connect_http_port(fivebalance_t)
+dev_read_urand(fivebalance_t)
+fs_getattr_xattr_fs(fivebalance_t)
+kernel_read_system_state(fivebalance_t)

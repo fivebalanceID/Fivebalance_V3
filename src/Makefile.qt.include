@@ -1,113 +1,160 @@
+# Copyright (c) 2013-2016 The Bitcoin Core developers
+# Distributed under the MIT software license, see the accompanying
+# file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
 bin_PROGRAMS += qt/fivebalance-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
 # fivebalance qt core #
-QT_TS = \
-  qt/locale/fivebalance_bg.ts \
-  qt/locale/fivebalance_ca.ts \
-  qt/locale/fivebalance_cs.ts \
-  qt/locale/fivebalance_da.ts \
-  qt/locale/fivebalance_de.ts \
-  qt/locale/fivebalance_en.ts \
-  qt/locale/fivebalance_en_US.ts \
-  qt/locale/fivebalance_es.ts \
-  qt/locale/fivebalance_fi.ts \
-  qt/locale/fivebalance_fr_FR.ts \
-  qt/locale/fivebalance_hr.ts \
-  qt/locale/fivebalance_it.ts \
-  qt/locale/fivebalance_ja.ts \
-  qt/locale/fivebalance_ko_KR.ts \
-  qt/locale/fivebalance_nl.ts \
-  qt/locale/fivebalance_pl.ts \
-  qt/locale/fivebalance_pt.ts \
-  qt/locale/fivebalance_pt_BR.ts \
-  qt/locale/fivebalance_ro_RO.ts \
-  qt/locale/fivebalance_ru.ts \
-  qt/locale/fivebalance_sk.ts \
-  qt/locale/fivebalance_sv.ts \
-  qt/locale/fivebalance_tr.ts \
-  qt/locale/fivebalance_uk.ts \
-  qt/locale/fivebalance_zh_CN.ts \
-  qt/locale/fivebalance_zh_TW.ts
+include Makefile.qt_locale.include
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
   qt/forms/askpassphrasedialog.ui \
-  qt/forms/bip38tooldialog.ui \
   qt/forms/coincontroldialog.ui \
-  qt/forms/blockexplorer.ui \
-  qt/forms/obfuscationconfig.ui \
   qt/forms/editaddressdialog.ui \
   qt/forms/helpmessagedialog.ui \
   qt/forms/intro.ui \
-  qt/forms/masternodelist.ui \
-  qt/forms/multisenddialog.ui \
-  qt/forms/multisigdialog.ui\
   qt/forms/openuridialog.ui \
   qt/forms/optionsdialog.ui \
-  qt/forms/overviewpage.ui \
-  qt/forms/receivecoinsdialog.ui \
-  qt/forms/privacydialog.ui \
-  qt/forms/receiverequestdialog.ui \
   qt/forms/rpcconsole.ui \
-  qt/forms/sendcoinsdialog.ui \
-  qt/forms/sendcoinsentry.ui \
-  qt/forms/signverifymessagedialog.ui \
-  qt/forms/transactiondescdialog.ui \
-  qt/forms/zfivebalancecontroldialog.ui
+  qt/fivebalance/forms/loadingdialog.ui \
+  qt/fivebalance/forms/snackbar.ui \
+  qt/fivebalance/forms/navmenuwidget.ui \
+  qt/fivebalance/forms/lockunlock.ui \
+  qt/fivebalance/forms/expandablebutton.ui \
+  qt/fivebalance/forms/receivedialog.ui \
+  qt/fivebalance/forms/topbar.ui \
+  qt/fivebalance/forms/txrow.ui \
+  qt/fivebalance/forms/dashboardwidget.ui \
+  qt/fivebalance/forms/addresslabelrow.ui \
+  qt/fivebalance/forms/contactdropdownrow.ui \
+  qt/fivebalance/forms/mninfodialog.ui \
+  qt/fivebalance/forms/optionbutton.ui \
+  qt/fivebalance/forms/masternodewizarddialog.ui \
+  qt/fivebalance/forms/mnrow.ui \
+  qt/fivebalance/forms/masternodeswidget.ui \
+  qt/fivebalance/forms/myaddressrow.ui \
+  qt/fivebalance/forms/csrow.ui \
+  qt/fivebalance/forms/sendchangeaddressdialog.ui \
+  qt/fivebalance/forms/sendconfirmdialog.ui \
+  qt/fivebalance/forms/sendcustomfeedialog.ui \
+  qt/fivebalance/forms/sendchangeaddressdialog.ui \
+  qt/fivebalance/forms/sendmultirow.ui \
+  qt/fivebalance/forms/send.ui \
+  qt/fivebalance/forms/addnewaddressdialog.ui \
+  qt/fivebalance/forms/addnewcontactdialog.ui \
+  qt/fivebalance/forms/requestdialog.ui \
+  qt/fivebalance/forms/receivewidget.ui \
+  qt/fivebalance/forms/tooltipmenu.ui \
+  qt/fivebalance/forms/addresseswidget.ui \
+  qt/fivebalance/forms/defaultdialog.ui \
+  qt/fivebalance/forms/coldstakingwidget.ui \
+  qt/fivebalance/settings/forms/settingsbackupwallet.ui \
+  qt/fivebalance/settings/forms/settingsexportcsv.ui \
+  qt/fivebalance/settings/forms/settingsbittoolwidget.ui \
+  qt/fivebalance/settings/forms/settingsconsolewidget.ui \
+  qt/fivebalance/settings/forms/settingsdisplayoptionswidget.ui \
+  qt/fivebalance/settings/forms/settingsfaqwidget.ui \
+  qt/fivebalance/settings/forms/settingsinformationwidget.ui \
+  qt/fivebalance/settings/forms/settingsmainoptionswidget.ui \
+  qt/fivebalance/settings/forms/settingsmultisenddialog.ui \
+  qt/fivebalance/settings/forms/settingsmultisendwidget.ui \
+  qt/fivebalance/settings/forms/settingssignmessagewidgets.ui \
+  qt/fivebalance/settings/forms/settingswalletoptionswidget.ui \
+  qt/fivebalance/settings/forms/settingswalletrepairwidget.ui \
+  qt/fivebalance/settings/forms/settingswidget.ui \
+  qt/fivebalance/forms/welcomecontentwidget.ui \
+  qt/fivebalance/forms/splash.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
   qt/moc_addresstablemodel.cpp \
   qt/moc_askpassphrasedialog.cpp \
-  qt/moc_bip38tooldialog.cpp \
+  qt/moc_bantablemodel.cpp \
   qt/moc_bitcoinaddressvalidator.cpp \
-  qt/moc_bitcoinamountfield.cpp \
-  qt/moc_bitcoingui.cpp \
+  qt/fivebalance/moc_fivebalancegui.cpp \
   qt/moc_bitcoinunits.cpp \
-  qt/moc_blockexplorer.cpp \
   qt/moc_clientmodel.cpp \
   qt/moc_coincontroldialog.cpp \
   qt/moc_coincontroltreewidget.cpp \
   qt/moc_csvmodelwriter.cpp \
-  qt/moc_obfuscationconfig.cpp \
   qt/moc_editaddressdialog.cpp \
   qt/moc_guiutil.cpp \
   qt/moc_intro.cpp \
   qt/moc_macdockiconhandler.cpp \
   qt/moc_macnotificationhandler.cpp \
-  qt/moc_masternodelist.cpp \
-  qt/moc_multisenddialog.cpp \
-  qt/moc_multisigdialog.cpp\
   qt/moc_notificator.cpp \
   qt/moc_openuridialog.cpp \
   qt/moc_optionsdialog.cpp \
   qt/moc_optionsmodel.cpp \
-  qt/moc_overviewpage.cpp \
   qt/moc_peertablemodel.cpp \
   qt/moc_paymentserver.cpp \
   qt/moc_qvalidatedlineedit.cpp \
   qt/moc_qvaluecombobox.cpp \
-  qt/moc_receivecoinsdialog.cpp \
-  qt/moc_privacydialog.cpp \
-  qt/moc_receiverequestdialog.cpp \
   qt/moc_recentrequeststablemodel.cpp \
   qt/moc_rpcconsole.cpp \
-  qt/moc_sendcoinsdialog.cpp \
-  qt/moc_sendcoinsentry.cpp \
-  qt/moc_signverifymessagedialog.cpp \
-  qt/moc_splashscreen.cpp \
   qt/moc_trafficgraphwidget.cpp \
   qt/moc_transactiondesc.cpp \
-  qt/moc_transactiondescdialog.cpp \
   qt/moc_transactionfilterproxy.cpp \
   qt/moc_transactiontablemodel.cpp \
-  qt/moc_transactionview.cpp \
   qt/moc_utilitydialog.cpp \
-  qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
-  qt/moc_walletview.cpp \
-  qt/moc_zfivebalancecontroldialog.cpp
+  qt/fivebalance/moc_loadingdialog.cpp \
+  qt/fivebalance/moc_pwidget.cpp \
+  qt/fivebalance/moc_focuseddialog.cpp \
+  qt/fivebalance/moc_snackbar.cpp \
+  qt/fivebalance/moc_navmenuwidget.cpp \
+  qt/fivebalance/moc_lockunlock.cpp \
+  qt/fivebalance/moc_expandablebutton.cpp \
+  qt/fivebalance/moc_furabstractlistitemdelegate.cpp \
+  qt/fivebalance/moc_receivedialog.cpp \
+  qt/fivebalance/moc_pfborderimage.cpp \
+  qt/fivebalance/moc_topbar.cpp \
+  qt/fivebalance/moc_txrow.cpp \
+  qt/fivebalance/moc_dashboardwidget.cpp \
+  qt/fivebalance/moc_addresslabelrow.cpp \
+  qt/fivebalance/moc_contactdropdownrow.cpp \
+  qt/fivebalance/moc_mninfodialog.cpp \
+  qt/fivebalance/moc_optionbutton.cpp \
+  qt/fivebalance/moc_coldstakingmodel.cpp \
+  qt/fivebalance/moc_mnmodel.cpp \
+  qt/fivebalance/moc_masternodewizarddialog.cpp \
+  qt/fivebalance/moc_mnrow.cpp \
+  qt/fivebalance/moc_masternodeswidget.cpp \
+  qt/fivebalance/moc_myaddressrow.cpp \
+  qt/fivebalance/moc_csrow.cpp \
+  qt/fivebalance/moc_contactsdropdown.cpp \
+  qt/fivebalance/moc_sendchangeaddressdialog.cpp \
+  qt/fivebalance/moc_sendconfirmdialog.cpp \
+  qt/fivebalance/moc_sendcustomfeedialog.cpp \
+  qt/fivebalance/moc_sendchangeaddressdialog.cpp \
+  qt/fivebalance/moc_sendmultirow.cpp \
+  qt/fivebalance/moc_send.cpp \
+  qt/fivebalance/moc_addnewaddressdialog.cpp \
+  qt/fivebalance/moc_addnewcontactdialog.cpp \
+  qt/fivebalance/moc_requestdialog.cpp \
+  qt/fivebalance/moc_receivewidget.cpp \
+  qt/fivebalance/moc_tooltipmenu.cpp \
+  qt/fivebalance/moc_addresseswidget.cpp \
+  qt/fivebalance/moc_defaultdialog.cpp \
+  qt/fivebalance/moc_coldstakingwidget.cpp \
+  qt/fivebalance/settings/moc_settingsbackupwallet.cpp \
+  qt/fivebalance/settings/moc_settingsexportcsv.cpp \
+  qt/fivebalance/settings/moc_settingsbittoolwidget.cpp \
+  qt/fivebalance/settings/moc_settingsconsolewidget.cpp \
+  qt/fivebalance/settings/moc_settingsdisplayoptionswidget.cpp \
+  qt/fivebalance/settings/moc_settingsfaqwidget.cpp \
+  qt/fivebalance/settings/moc_settingsinformationwidget.cpp \
+  qt/fivebalance/settings/moc_settingsmainoptionswidget.cpp \
+  qt/fivebalance/settings/moc_settingsmultisenddialog.cpp \
+  qt/fivebalance/settings/moc_settingsmultisendwidget.cpp \
+  qt/fivebalance/settings/moc_settingssignmessagewidgets.cpp \
+  qt/fivebalance/settings/moc_settingswalletoptionswidget.cpp \
+  qt/fivebalance/settings/moc_settingswalletrepairwidget.cpp \
+  qt/fivebalance/settings/moc_settingswidget.cpp \
+  qt/fivebalance/moc_welcomecontentwidget.cpp \
+  qt/fivebalance/moc_splash.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
@@ -115,10 +162,9 @@ BITCOIN_MM = \
 
 QT_MOC = \
   qt/fivebalance.moc \
-  qt/bitcoinamountfield.moc \
   qt/intro.moc \
-  qt/overviewpage.moc \
-  qt/rpcconsole.moc
+  qt/rpcconsole.moc \
+  qt/fivebalance/settings/moc_settingsconsolewidget.cpp
 
 QT_QRC_CPP = qt/qrc_fivebalance.cpp
 QT_QRC = qt/fivebalance.qrc
@@ -133,132 +179,335 @@ BITCOIN_QT_H = \
   qt/addressbookpage.h \
   qt/addresstablemodel.h \
   qt/askpassphrasedialog.h \
-  qt/bip38tooldialog.h \
+  qt/bantablemodel.h \
   qt/bitcoinaddressvalidator.h \
-  qt/bitcoinamountfield.h \
-  qt/bitcoingui.h \
+  qt/fivebalance/fivebalancegui.h \
   qt/bitcoinunits.h \
-  qt/blockexplorer.h \
   qt/clientmodel.h \
   qt/coincontroldialog.h \
   qt/coincontroltreewidget.h \
   qt/csvmodelwriter.h \
-  qt/obfuscationconfig.h \
   qt/editaddressdialog.h \
   qt/guiconstants.h \
   qt/guiutil.h \
   qt/intro.h \
   qt/macdockiconhandler.h \
   qt/macnotificationhandler.h \
-  qt/masternodelist.h \
-  qt/multisenddialog.h \
-  qt/multisigdialog.h\
   qt/networkstyle.h \
   qt/notificator.h \
   qt/openuridialog.h \
   qt/optionsdialog.h \
   qt/optionsmodel.h \
-  qt/overviewpage.h \
   qt/paymentrequestplus.h \
   qt/paymentserver.h \
   qt/peertablemodel.h \
   qt/platformstyle.h \
   qt/qvalidatedlineedit.h \
   qt/qvaluecombobox.h \
-  qt/receivecoinsdialog.h \
-  qt/privacydialog.h \
-  qt/receiverequestdialog.h \
   qt/recentrequeststablemodel.h \
   qt/rpcconsole.h \
-  qt/sendcoinsdialog.h \
-  qt/sendcoinsentry.h \
-  qt/signverifymessagedialog.h \
-  qt/splashscreen.h \
   qt/trafficgraphwidget.h \
   qt/transactiondesc.h \
-  qt/transactiondescdialog.h \
   qt/transactionfilterproxy.h \
   qt/transactionrecord.h \
   qt/transactiontablemodel.h \
-  qt/transactionview.h \
   qt/utilitydialog.h \
-  qt/walletframe.h \
   qt/walletmodel.h \
   qt/walletmodeltransaction.h \
-  qt/walletview.h \
+  qt/fivebalance/prunnable.h \
+  qt/fivebalance/pfborderimage.h \
+  qt/fivebalance/loadingdialog.h \
   qt/winshutdownmonitor.h \
-  qt/zfivebalancecontroldialog.h
+  qt/fivebalance/pwidget.h \
+  qt/fivebalance/focuseddialog.h \
+  qt/fivebalance/guitransactionsutils.h \
+  qt/fivebalance/snackbar.h \
+  qt/fivebalance/navmenuwidget.h \
+  qt/fivebalance/lockunlock.h \
+  qt/fivebalance/receivedialog.h \
+  qt/fivebalance/furlistrow.h \
+  qt/fivebalance/furabstractlistitemdelegate.h \
+  qt/fivebalance/txviewholder.h \
+  qt/fivebalance/qtutils.h \
+  qt/fivebalance/expandablebutton.h \
+  qt/fivebalance/topbar.h \
+  qt/fivebalance/txrow.h \
+  qt/fivebalance/addressholder.h \
+  qt/fivebalance/addressfilterproxymodel.h \
+  qt/fivebalance/dashboardwidget.h \
+  qt/fivebalance/addresslabelrow.h \
+  qt/fivebalance/contactdropdownrow.h \
+  qt/fivebalance/mninfodialog.h \
+  qt/fivebalance/optionbutton.h \
+  qt/fivebalance/coldstakingmodel.h \
+  qt/fivebalance/mnmodel.h \
+  qt/fivebalance/masternodewizarddialog.h \
+  qt/fivebalance/mnrow.h \
+  qt/fivebalance/masternodeswidget.h \
+  qt/fivebalance/myaddressrow.h \
+  qt/fivebalance/csrow.h \
+  qt/fivebalance/contactsdropdown.h \
+  qt/fivebalance/sendchangeaddressdialog.h \
+  qt/fivebalance/sendconfirmdialog.h \
+  qt/fivebalance/sendcustomfeedialog.h \
+  qt/fivebalance/sendchangeaddressdialog.h \
+  qt/fivebalance/sendmultirow.h \
+  qt/fivebalance/send.h \
+  qt/fivebalance/addnewaddressdialog.h \
+  qt/fivebalance/addnewcontactdialog.h \
+  qt/fivebalance/requestdialog.h \
+  qt/fivebalance/receivewidget.h \
+  qt/fivebalance/tooltipmenu.h \
+  qt/fivebalance/addresseswidget.h \
+  qt/fivebalance/defaultdialog.h \
+  qt/fivebalance/coldstakingwidget.h \
+  qt/fivebalance/settings/settingsbackupwallet.h \
+  qt/fivebalance/settings/settingsexportcsv.h \
+  qt/fivebalance/settings/settingsbittoolwidget.h \
+  qt/fivebalance/settings/settingsconsolewidget.h \
+  qt/fivebalance/settings/settingsdisplayoptionswidget.h \
+  qt/fivebalance/settings/settingsfaqwidget.h \
+  qt/fivebalance/settings/settingsinformationwidget.h \
+  qt/fivebalance/settings/settingsmainoptionswidget.h \
+  qt/fivebalance/settings/settingsmultisenddialog.h \
+  qt/fivebalance/settings/settingsmultisendwidget.h \
+  qt/fivebalance/settings/settingssignmessagewidgets.h \
+  qt/fivebalance/settings/settingswalletoptionswidget.h \
+  qt/fivebalance/settings/settingswalletrepairwidget.h \
+  qt/fivebalance/settings/settingswidget.h \
+  qt/fivebalance/welcomecontentwidget.h \
+  qt/fivebalance/splash.h
 
 RES_ICONS = \
-  qt/res/icons/add.png \
-  qt/res/icons/address-book.png \
   qt/res/icons/bitcoin.ico \
   qt/res/icons/bitcoin.png \
   qt/res/icons/bitcoin_testnet.ico \
   qt/res/icons/bitcoin_testnet.png \
-  qt/res/icons/browse.png \
-  qt/res/icons/clock1.png \
-  qt/res/icons/clock2.png \
-  qt/res/icons/clock3.png \
-  qt/res/icons/clock4.png \
-  qt/res/icons/clock5.png \
-  qt/res/icons/configure.png \
-  qt/res/icons/connect0_16.png \
-  qt/res/icons/connect1_16.png \
-  qt/res/icons/connect2_16.png \
-  qt/res/icons/connect3_16.png \
-  qt/res/icons/connect4_16.png \
-  qt/res/icons/debugwindow.png \
-  qt/res/icons/edit.png \
-  qt/res/icons/editcopy.png \
-  qt/res/icons/editpaste.png \
-  qt/res/icons/explorer.png \
-  qt/res/icons/export.png \
-  qt/res/icons/eye.png \
-  qt/res/icons/eye_minus.png \
-  qt/res/icons/eye_plus.png \
-  qt/res/icons/filesave.png \
-  qt/res/icons/history.png \
-  qt/res/icons/key.png \
+  qt/res/icons/bitcoin_regtest.png \
   qt/res/icons/lock_closed.png \
   qt/res/icons/lock_open.png \
-  qt/res/icons/masternodes.png \
   qt/res/icons/overview.png \
-  qt/res/icons/qrcode.png \
-  qt/res/icons/quit.png \
-  qt/res/icons/receive.png \
-  qt/res/icons/privacy.png \
-  qt/res/icons/remove.png \
-  qt/res/icons/send.png \
-  qt/res/icons/staking_active.png \
-  qt/res/icons/staking_inactive.png \
-  qt/res/icons/synced.png \
-  qt/res/icons/trade.png \
-  qt/res/icons/transaction0.png \
-  qt/res/icons/transaction2.png \
-  qt/res/icons/transaction_conflicted.png \
-  qt/res/icons/tx_inout.png \
-  qt/res/icons/tx_input.png \
-  qt/res/icons/tx_output.png \
-  qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_fivebalance.png \
-  qt/res/icons/unit_mfivebalance.png \
-  qt/res/icons/unit_ufivebalance.png \
-  qt/res/icons/unit_tfivebalance.png \
-  qt/res/icons/unit_tmfivebalance.png \
-  qt/res/icons/unit_tufivebalance.png
+  qt/res/icons/ic-transaction-received.svg \
+  qt/res/icons/ic-transaction-mint.svg \
+  qt/res/icons/ic-transaction-sent.svg \
+  qt/res/icons/ic-transaction-staked.svg \
+  qt/fivebalance/res/img/bg-dashboard-banner.png \
+  qt/fivebalance/res/img/bg-multi-number-dark.svg \
+  qt/fivebalance/res/img/ic-check-locked.svg \
+  qt/fivebalance/res/img/ic-nav-address.svg \
+  qt/fivebalance/res/img/ic-update.svg \
+  qt/fivebalance/res/img/bg-multi-number.svg \
+  qt/fivebalance/res/img/ic-check-mint-off.svg \
+  qt/fivebalance/res/img/ic-nav-cold-staking.svg \
+  qt/fivebalance/res/img/ic-nav-cold-staking-active.svg \
+  qt/fivebalance/res/img/ic-nav-dashboard-active.svg \
+  qt/fivebalance/res/img/ic-wallet-status-locked.svg \
+  qt/fivebalance/res/img/bg-splash.svg \
+  qt/fivebalance/res/img/bg-splash.png \
+  qt/fivebalance/res/img/ic-check-mint.svg \
+  qt/fivebalance/res/img/ic-nav-dashboard-hover.svg \
+  qt/fivebalance/res/img/ic-wallet-status-staking.svg \
+  qt/fivebalance/res/img/ic-check-peers-off.svg \
+  qt/fivebalance/res/img/ic-nav-dashboard.svg \
+  qt/fivebalance/res/img/ic-wallet-status-unlocked.svg \
+  qt/fivebalance/res/img/ic-check-peers.svg \
+  qt/fivebalance/res/img/ic-nav-master-active.svg \
+  qt/fivebalance/res/img/ic-watch-password-white.svg \
+  qt/fivebalance/res/img/bg-welcome-container.jpg \
+  qt/fivebalance/res/img/bg-welcome-container.png \
+  qt/fivebalance/res/img/bg-welcome-container.svg \
+  qt/fivebalance/res/img/bg-welcome-container@2x.png \
+  qt/fivebalance/res/img/bg-welcome-container@3x.png \
+  qt/fivebalance/res/img/ic-check-staking-off.svg \
+  qt/fivebalance/res/img/ic-nav-master-hover.svg \
+  qt/fivebalance/res/img/ic-watch-password.svg \
+  qt/fivebalance/res/img/bg-welcome.jpg \
+  qt/fivebalance/res/img/bg-welcome.svg \
+  qt/fivebalance/res/img/bg-welcome@2x.jpg \
+  qt/fivebalance/res/img/bg-welcome@3x.jpg \
+  qt/fivebalance/res/img/bg-welcome.png \
+  qt/fivebalance/res/img/ic-check-staking.svg \
+  qt/fivebalance/res/img/ic-nav-master.svg \
+  qt/fivebalance/res/img/img-dashboard-banner.jpg \
+  qt/fivebalance/res/img/btn-radio-active.svg \
+  qt/fivebalance/res/img/ic-check-sync-off.svg \
+  qt/fivebalance/res/img/ic-nav-privacy-active.svg \
+  qt/fivebalance/res/img/img-empty-contacts.svg \
+  qt/fivebalance/res/img/btn-radio-off.svg \
+  qt/fivebalance/res/img/ic-check-sync.png \
+  qt/fivebalance/res/img/ic-nav-privacy-hover.svg \
+  qt/fivebalance/res/img/img-empty-dark-contacts.svg \
+  qt/fivebalance/res/img/ic-contact-arrow-down.svg \
+  qt/fivebalance/res/img/ic-contact-arrow-down-white.svg \
+  qt/fivebalance/res/img/ic-check-sync.svg \
+  qt/fivebalance/res/img/ic-check-faq.svg \
+  qt/fivebalance/res/img/ic-nav-privacy.svg \
+  qt/fivebalance/res/img/img-empty-dark-error.svg \
+  qt/fivebalance/res/img/ic-add-label.svg \
+  qt/fivebalance/res/img/ic-pending.svg \
+  qt/fivebalance/res/img/ic-check-theme-dark.svg \
+  qt/fivebalance/res/img/ic-nav-receive-active.svg \
+  qt/fivebalance/res/img/img-empty-dark-masternode.svg \
+  qt/fivebalance/res/img/ic-add-liliac.svg \
+  qt/fivebalance/res/img/ic-check-theme-light.svg \
+  qt/fivebalance/res/img/ic-nav-receive-hover.svg \
+  qt/fivebalance/res/img/img-empty-dark-multisend.svg \
+  qt/fivebalance/res/img/ic-add-purple.svg \
+  qt/fivebalance/res/img/ic-check-white.svg \
+  qt/fivebalance/res/img/ic-nav-receive.svg \
+  qt/fivebalance/res/img/img-empty-dark-peers.svg \
+  qt/fivebalance/res/img/ic-add.svg \
+  qt/fivebalance/res/img/ic-check.svg \
+  qt/fivebalance/res/img/ic-nav-send-active.svg \
+  qt/fivebalance/res/img/img-empty-dark-staking-off.svg \
+  qt/fivebalance/res/img/img-empty-dark-staking-on.svg \
+  qt/fivebalance/res/img/ic-address-book-grey.svg \
+  qt/fivebalance/res/img/ic-chevron-left.svg \
+  qt/fivebalance/res/img/ic-nav-send-hover.svg \
+  qt/fivebalance/res/img/img-empty-dark-transactions.svg \
+  qt/fivebalance/res/img/ic-address-book-white.svg \
+  qt/fivebalance/res/img/ic-chevron-right.svg \
+  qt/fivebalance/res/img/ic-nav-send.svg \
+  qt/fivebalance/res/img/img-empty-error.svg \
+  qt/fivebalance/res/img/ic-address-book.svg \
+  qt/fivebalance/res/img/ic-clear-liliac.svg \
+  qt/fivebalance/res/img/ic-nav-settings-active.svg \
+  qt/fivebalance/res/img/img-empty-masternode.svg \
+  qt/fivebalance/res/img/ic-address-send-white.svg \
+  qt/fivebalance/res/img/ic-clear-purple.svg \
+  qt/fivebalance/res/img/ic-nav-settings-hover.svg \
+  qt/fivebalance/res/img/img-empty-multisend.svg \
+  qt/fivebalance/res/img/ic-address-send.svg \
+  qt/fivebalance/res/img/ic-close-white.svg \
+  qt/fivebalance/res/img/ic-nav-settings.svg \
+  qt/fivebalance/res/img/img-empty-peers.svg \
+  qt/fivebalance/res/img/img-empty-privacy.svg \
+  qt/fivebalance/res/img/img-empty-privacy-dark.svg \
+  qt/fivebalance/res/img/ic-arrow-drop-down-white.svg \
+  qt/fivebalance/res/img/ic-close.svg \
+  qt/fivebalance/res/img/ic-radio-liliac-on.svg \
+  qt/fivebalance/res/img/img-empty-staking-off.svg \
+  qt/fivebalance/res/img/ic-arrow-drop-down.svg \
+  qt/fivebalance/res/img/ic-coin-fbn.svg \
+  qt/fivebalance/res/img/ic-receive-off.svg \
+  qt/fivebalance/res/img/img-empty-staking-on.svg \
+  qt/fivebalance/res/img/ic-arrow-drop-up-white.svg \
+  qt/fivebalance/res/img/ic-coin-zfbn.png \
+  qt/fivebalance/res/img/ic-receive-on.svg \
+  qt/fivebalance/res/img/img-empty-transactions.svg \
+  qt/fivebalance/res/img/ic-arrow-drop-up.svg \
+  qt/fivebalance/res/img/ic-coin-zfbn.svg \
+  qt/fivebalance/res/img/ic-received.svg \
+  qt/fivebalance/res/img/img-logo-fivebalance.png \
+  qt/fivebalance/res/img/ic-arrow-drop-white-down.svg \
+  qt/fivebalance/res/img/ic-combo-box.svg \
+  qt/fivebalance/res/img/ic-send.svg \
+  qt/fivebalance/res/img/img-logo-fivebalance@2x.png \
+  qt/fivebalance/res/img/ic-arrow-purple-down.svg \
+  qt/fivebalance/res/img/ic-connect.svg \
+  qt/fivebalance/res/img/ic-submenu-lock.svg \
+  qt/fivebalance/res/img/img-logo-fivebalance@3x.png \
+  qt/fivebalance/res/img/img-logo-fivebalance.svg \
+  qt/fivebalance/res/img/ic-arrow-right-white.svg \
+  qt/fivebalance/res/img/ic-arrow-left-white.svg \
+  qt/fivebalance/res/img/ic-arrow-left.svg \
+  qt/fivebalance/res/img/ic-copy-liliac.svg \
+  qt/fivebalance/res/img/ic-submenu-staking.svg \
+  qt/fivebalance/res/img/img-nav-logo-fivebalance.png \
+  qt/fivebalance/res/img/ic-arrow-right.svg \
+  qt/fivebalance/res/img/ic-copy.svg \
+  qt/fivebalance/res/img/ic-copy-big.svg \
+  qt/fivebalance/res/img/ic-copy-big-white.svg \
+  qt/fivebalance/res/img/ic-submenu-unlock.svg \
+  qt/fivebalance/res/img/img-nav-logo.png \
+  qt/fivebalance/res/img/ic-arrow-white-left.svg \
+  qt/fivebalance/res/img/ic-exit.svg \
+  qt/fivebalance/res/img/ic-switch-liliac-on.svg \
+  qt/fivebalance/res/img/img-nav-logo.svg \
+  qt/fivebalance/res/img/ic-arrow-white-right.svg \
+  qt/fivebalance/res/img/ic-expand.svg \
+  qt/fivebalance/res/img/ic-switch-off.svg \
+  qt/fivebalance/res/img/img-qr-test-big.png \
+  qt/fivebalance/res/img/ic-check-active.svg \
+  qt/fivebalance/res/img/ic-folder.svg \
+  qt/fivebalance/res/img/ic-switch-on.svg \
+  qt/fivebalance/res/img/img-qr-test.png \
+  qt/fivebalance/res/img/ic-check-box.svg \
+  qt/fivebalance/res/img/ic-check-box-dark-active.svg \
+  qt/fivebalance/res/img/ic-check-box-indeterminate.svg \
+  qt/fivebalance/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/fivebalance/res/img/ic-label-liliac.svg \
+  qt/fivebalance/res/img/ic-transaction-warning.svg \
+  qt/fivebalance/res/img/ic-transaction-mint.svg \
+  qt/fivebalance/res/img/ic-transaction-mint-inactive.svg \
+  qt/fivebalance/res/img/ic-check-cold-staking.svg \
+  qt/fivebalance/res/img/ic-check-cold-staking-off.svg \
+  qt/fivebalance/res/img/ic-check-cold-staking-enabled.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-cs-contract.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-cs-contract-inactive.svg \
+  qt/fivebalance/res/img/img-qr.svg \
+  qt/fivebalance/res/img/ic-check-connect-off.svg \
+  qt/fivebalance/res/img/ic-check-tor-off.svg \
+  qt/fivebalance/res/img/ic-check-tor.svg \
+  qt/fivebalance/res/img/ic-label.svg \
+  qt/fivebalance/res/img/ic-transaction-received.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-received.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-warning.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-mint.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-mint-inactive.svg \
+  qt/fivebalance/res/img/ic-transaction-received-inactive.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-received-inactive.svg \
+  qt/fivebalance/res/img/img-welcome-step1.png \
+  qt/fivebalance/res/img/ic-check-connect.svg \
+  qt/fivebalance/res/img/ic-menu-hover.svg \
+  qt/fivebalance/res/img/ic-transaction-sent.svg \
+  qt/fivebalance/res/img/ic-transaction-sent-inactive.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-sent.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-sent-inactive.svg \
+  qt/fivebalance/res/img/img-welcome-step2.png \
+  qt/fivebalance/res/img/ic-check-dark.svg \
+  qt/fivebalance/res/img/ic-mint.svg \
+  qt/fivebalance/res/img/ic-transaction-staked.svg \
+  qt/fivebalance/res/img/ic-transaction-staked-inactive.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-staked.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-staked-inactive.svg \
+  qt/fivebalance/res/img/img-welcome-step3.png \
+  qt/fivebalance/res/img/ic-check-liliac-on.svg \
+  qt/fivebalance/res/img/ic-nav-address-active.svg \
+  qt/fivebalance/res/img/ic-unlock-staking.svg \
+  qt/fivebalance/res/img/img-welcome-step4.png \
+  qt/fivebalance/res/img/ic-check-locked-off.svg \
+  qt/fivebalance/res/img/ic-nav-address-hover.svg \
+  qt/fivebalance/res/img/ic-update-liliac.svg \
+  qt/fivebalance/res/img/ic-arrow-drop-down-purple.svg \
+  qt/fivebalance/res/img/ic-arrow-drop-up-purple.svg \
+  qt/fivebalance/res/img/ic-check-liliac-indeterminate.svg \
+  qt/fivebalance/res/img/ic-check-box-liliac-indeterminate.svg \
+  qt/fivebalance/res/img/ic-transaction-stake-delegated.svg \
+  qt/fivebalance/res/img/ic-transaction-stake-delegated-inactive.svg \
+  qt/fivebalance/res/img/ic-transaction-stake-hot.svg \
+  qt/fivebalance/res/img/ic-transaction-stake-hot-inactive.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-stake-hot.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-stake-hot-inactive.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-stake-delegated.svg \
+  qt/fivebalance/res/img/dark/ic-transaction-stake-delegated-inactive.svg \
+  qt/fivebalance/res/img/ic-transaction-cs-contract.svg \
+  qt/fivebalance/res/img/ic-transaction-cs-contract-inactive.svg \
+  qt/fivebalance/res/img/ic-check-box-indeterminate.svg \
+  qt/fivebalance/res/img/ani-loading-dark.gif \
+  qt/fivebalance/res/img/ani-loading.gif
 
-BITCOIN_QT_CPP = \
+
+
+BITCOIN_QT_BASE_CPP = \
+  qt/bantablemodel.cpp \
   qt/bitcoinaddressvalidator.cpp \
-  qt/bitcoinamountfield.cpp \
-  qt/bitcoingui.cpp \
+  qt/fivebalance/fivebalancegui.cpp \
   qt/bitcoinunits.cpp \
-  qt/blockexplorer.cpp \
   qt/clientmodel.cpp \
   qt/csvmodelwriter.cpp \
   qt/guiutil.cpp \
   qt/intro.cpp \
-  qt/masternodelist.cpp \
   qt/networkstyle.cpp \
   qt/notificator.cpp \
   qt/optionsdialog.cpp \
@@ -268,80 +517,120 @@ BITCOIN_QT_CPP = \
   qt/qvalidatedlineedit.cpp \
   qt/qvaluecombobox.cpp \
   qt/rpcconsole.cpp \
-  qt/splashscreen.cpp \
   qt/trafficgraphwidget.cpp \
-  qt/utilitydialog.cpp \
-  qt/winshutdownmonitor.cpp
+  qt/utilitydialog.cpp
 
-if ENABLE_WALLET
-BITCOIN_QT_CPP += \
+BITCOIN_QT_WINDOWS_CPP = qt/winshutdownmonitor.cpp
+
+BITCOIN_QT_WALLET_CPP = \
   qt/addressbookpage.cpp \
   qt/addresstablemodel.cpp \
   qt/askpassphrasedialog.cpp \
-  qt/bip38tooldialog.cpp \
-  qt/blockexplorer.cpp \
   qt/coincontroldialog.cpp \
   qt/coincontroltreewidget.cpp \
-  qt/obfuscationconfig.cpp \
   qt/editaddressdialog.cpp \
-  qt/masternodelist.cpp \
-  qt/multisenddialog.cpp \
-  qt/multisigdialog.cpp\
   qt/openuridialog.cpp \
-  qt/overviewpage.cpp \
   qt/paymentrequestplus.cpp \
   qt/paymentserver.cpp \
-  qt/receivecoinsdialog.cpp \
-  qt/privacydialog.cpp \
-  qt/receiverequestdialog.cpp \
   qt/recentrequeststablemodel.cpp \
-  qt/sendcoinsdialog.cpp \
-  qt/sendcoinsentry.cpp \
-  qt/signverifymessagedialog.cpp \
   qt/transactiondesc.cpp \
-  qt/transactiondescdialog.cpp \
   qt/transactionfilterproxy.cpp \
   qt/transactionrecord.cpp \
   qt/transactiontablemodel.cpp \
-  qt/transactionview.cpp \
-  qt/walletframe.cpp \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
-  qt/walletview.cpp \
-  qt/zfivebalancecontroldialog.cpp
+  qt/fivebalance/loadingdialog.cpp \
+  qt/fivebalance/pwidget.cpp \
+  qt/fivebalance/focuseddialog.cpp \
+  qt/fivebalance/guitransactionsutils.cpp \
+  qt/fivebalance/snackbar.cpp \
+  qt/fivebalance/navmenuwidget.cpp \
+  qt/fivebalance/lockunlock.cpp \
+  qt/fivebalance/receivedialog.cpp \
+  qt/fivebalance/furabstractlistitemdelegate.cpp \
+  qt/fivebalance/txviewholder.cpp \
+  qt/fivebalance/qtutils.cpp \
+  qt/fivebalance/expandablebutton.cpp \
+  qt/fivebalance/topbar.cpp \
+  qt/fivebalance/txrow.cpp \
+  qt/fivebalance/addressholder.cpp \
+  qt/fivebalance/addressfilterproxymodel.cpp \
+  qt/fivebalance/dashboardwidget.cpp \
+  qt/fivebalance/addresslabelrow.cpp \
+  qt/fivebalance/contactdropdownrow.cpp \
+  qt/fivebalance/contactsdropdown.cpp \
+  qt/fivebalance/optionbutton.cpp \
+  qt/fivebalance/mninfodialog.cpp \
+  qt/fivebalance/coldstakingmodel.cpp \
+  qt/fivebalance/mnmodel.cpp \
+  qt/fivebalance/masternodewizarddialog.cpp \
+  qt/fivebalance/mnrow.cpp \
+  qt/fivebalance/masternodeswidget.cpp \
+  qt/fivebalance/myaddressrow.cpp \
+  qt/fivebalance/csrow.cpp \
+  qt/fivebalance/sendchangeaddressdialog.cpp \
+  qt/fivebalance/sendconfirmdialog.cpp \
+  qt/fivebalance/sendcustomfeedialog.cpp \
+  qt/fivebalance/sendchangeaddressdialog.cpp \
+  qt/fivebalance/sendmultirow.cpp \
+  qt/fivebalance/send.cpp \
+  qt/fivebalance/addnewaddressdialog.cpp \
+  qt/fivebalance/addnewcontactdialog.cpp \
+  qt/fivebalance/requestdialog.cpp \
+  qt/fivebalance/receivewidget.cpp \
+  qt/fivebalance/tooltipmenu.cpp \
+  qt/fivebalance/addresseswidget.cpp \
+  qt/fivebalance/defaultdialog.cpp \
+  qt/fivebalance/coldstakingwidget.cpp \
+  qt/fivebalance/settings/settingsbackupwallet.cpp \
+  qt/fivebalance/settings/settingsexportcsv.cpp \
+  qt/fivebalance/settings/settingsbittoolwidget.cpp \
+  qt/fivebalance/settings/settingsconsolewidget.cpp \
+  qt/fivebalance/settings/settingsdisplayoptionswidget.cpp \
+  qt/fivebalance/settings/settingsfaqwidget.cpp \
+  qt/fivebalance/settings/settingsinformationwidget.cpp \
+  qt/fivebalance/settings/settingsmainoptionswidget.cpp \
+  qt/fivebalance/settings/settingsmultisenddialog.cpp \
+  qt/fivebalance/settings/settingsmultisendwidget.cpp \
+  qt/fivebalance/settings/settingssignmessagewidgets.cpp \
+  qt/fivebalance/settings/settingswalletoptionswidget.cpp \
+  qt/fivebalance/settings/settingswalletrepairwidget.cpp \
+  qt/fivebalance/settings/settingswidget.cpp \
+  qt/fivebalance/welcomecontentwidget.cpp \
+  qt/fivebalance/splash.cpp
 
+
+BITCOIN_QT_CPP = $(BITCOIN_QT_BASE_CPP)
+if TARGET_WINDOWS
+BITCOIN_QT_CPP += $(BITCOIN_QT_WINDOWS_CPP)
+endif
+if ENABLE_WALLET
+BITCOIN_QT_CPP += $(BITCOIN_QT_WALLET_CPP)
 endif
 
 RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/fivebalance_logo_horizontal.png \
-  qt/res/images/downArrow.png \
-  qt/res/images/downArrow_small.png \
-  qt/res/images/upArrow_small.png \
-  qt/res/images/leftArrow_small.png \
-  qt/res/images/rightArrow_small.png \
-  qt/res/images/qtreeview_selected.png \
-  qt/res/images/walletFrame.png \
-  qt/res/images/walletFrame_bg.png \
-  qt/res/images/walletFrame_bg.png
+  qt/res/images/splash_regtest.png
 
 RES_CSS = \
-  qt/res/css/default.css
-
-RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
+  qt/res/css/default.css \
+  qt/fivebalance/res/css/style_dark.css \
+  qt/fivebalance/res/css/style_light.css
 
 BITCOIN_RC = qt/res/fivebalance-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
-  -I$(builddir)/qt/forms
+  -I$(builddir)/qt/forms -DQT_NO_KEYWORDS
 
-qt_libbitcoinqt_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+qt_libbitcoinqt_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(QT_DBUS_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
+qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
-  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES)
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS)
 
 nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
@@ -360,8 +649,9 @@ $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
 # fivebalance-qt binary #
-qt_fivebalance_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
-  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
+qt_fivebalance_qt_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+  $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS) $(SVG_CFLAGS) $(CHARTS_CFLAGS)
+qt_fivebalance_qt_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_fivebalance_qt_SOURCES = qt/fivebalance.cpp
 if TARGET_DARWIN
@@ -372,42 +662,43 @@ if TARGET_WINDOWS
 endif
 qt_fivebalance_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_fivebalance_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_fivebalance_qt_LDADD += $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
 qt_fivebalance_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_fivebalance_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
-  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
+qt_fivebalance_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBLEVELDB_SSE42) $(LIBMEMENV) \
+  $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(SVG_LIBS) $(CHARTS_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
 qt_fivebalance_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_fivebalance_qt_LIBTOOLFLAGS = --tag CXX
+qt_fivebalance_qt_LIBTOOLFLAGS = $(AM_LIBTOOLFLAGS) --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
-.SECONDARY: $(QT_QM)
+SECONDARY: $(QT_QM)
 
-qt/fivebalancestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+$(srcdir)/qt/fivebalancestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES) $(libbitcoin_zmq_a_SOURCES) $(libbitcoin_util_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
-	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
+	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) PACKAGE_NAME="$(PACKAGE_NAME)" $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/fivebalancestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: $(srcdir)/qt/fivebalancestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_BASE_CPP) qt/fivebalance.cpp $(BITCOIN_QT_WINDOWS_CPP) $(BITCOIN_QT_WALLET_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/fivebalance_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts $(srcdir)/qt/locale/fivebalance_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
-	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name fivebalance_locale $(@D)/$(<F) | \
+	@cp -f $< $(@D)/temp_$(<F)
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name fivebalance_locale $(@D)/temp_$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
+	@rm $(@D)/temp_$(<F)
 
-$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(PROTOBUF_H)
 	@test -f $(RCC)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name fivebalance $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
-CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
+CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno qt/temp_fivebalance_locale.qrc
 
 CLEANFILES += $(CLEAN_QT)
 
@@ -422,11 +713,11 @@ ui_%.h: %.ui
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(UIC) -o $@ $< || (echo "Error creating $@"; false)
 
 %.moc: %.cpp
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 moc_%.cpp: %.h
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(QT_INCLUDES) $(MOC_DEFS) $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(MOC) $(DEFAULT_INCLUDES) $(QT_INCLUDES) $(MOC_DEFS) $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 %.qm: %.ts

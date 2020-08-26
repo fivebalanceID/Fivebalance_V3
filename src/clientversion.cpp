@@ -1,4 +1,5 @@
-// Copyright (c) 2012-2014 The Bitcoin developers
+// Copyright (c) 2012-2017 The Bitcoin Core developers
+// Copyright (c) 2016-2019 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -6,19 +7,18 @@
 
 #include "tinyformat.h"
 
-#include <string>
 
 /**
  * Name of client reported in the 'version' message. Report the same name
  * for both fivebalanced and fivebalance-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("Fivebalance Core");
+const std::string CLIENT_NAME("FIVEBALANCE Core");
 
 /**
  * Client version number
  */
-#define CLIENT_VERSION_SUFFIX "_FBN"
+#define CLIENT_VERSION_SUFFIX ""
 
 
 /**
@@ -39,14 +39,14 @@ const std::string CLIENT_NAME("Fivebalance Core");
 
 //! First, include build.h if requested
 #ifdef HAVE_BUILD_INFO
-#include "build.h"
+#include "obj/build.h"
 #endif
 
-//! git will put "#define GIT_ARCHIVE 1" on the next line inside archives.
-#define GIT_ARCHIVE
+//! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
+#define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "20180620"
-#define GIT_COMMIT_DATE "Sun, 20 Jun 2018 16:00:00 GMT"
+#define GIT_COMMIT_ID "82fd4224bd5091fcadbf7bfd0cc25bbed8f0b45c"
+#define GIT_COMMIT_DATE "Tue, 18 Aug 2020 13:25:44 -0700"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
@@ -90,6 +90,11 @@ static std::string FormatVersion(int nVersion)
 std::string FormatFullVersion()
 {
     return CLIENT_BUILD;
+}
+
+std::string FormatVersionFriendly()
+{
+    return FormatVersion(CLIENT_VERSION);
 }
 
 /** 

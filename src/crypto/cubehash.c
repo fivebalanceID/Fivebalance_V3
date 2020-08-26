@@ -45,7 +45,7 @@ extern "C"{
 
 /*
  * Some tests were conducted on an Intel Core2 Q6600 (32-bit and 64-bit
- * mode), a PowerPC G3, and a MIPS-compatible CPU (Broadcom FBN3302).
+ * mode), a PowerPC G3, and a MIPS-compatible CPU (Broadcom BCM3302).
  * It appears that the optimal settings are:
  *  -- full unroll, no state copy on the "big" systems (x86, PowerPC)
  *  -- unroll to 4 or 8, state copy on the "small" system (MIPS)

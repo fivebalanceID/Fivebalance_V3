@@ -1,9 +1,69 @@
 <TS language="de" version="2.1">
 <context>
+    <name>AddNewAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>New Address</source>
+        <translation>Neue Adresse</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <source>PushButton</source>
+        <translation>Schaltfläche</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
+    </message>
+</context>
+<context>
+    <name>AddNewContactDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
+    </message>
+    <message>
+        <source>Edit Contact</source>
+        <translation>Kontakt bearbeiten</translation>
+    </message>
+    <message>
+        <source>Set a label for the selected address</source>
+        <translation>Der ausgewählten Adresse eine Bezeichnung zuweisen</translation>
+    </message>
+    <message>
+        <source>Enter a label for the address (e.g. Exchange)</source>
+        <translation>Gib eine Bezeichnung für die Adresse ein (z.B. Börse)</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
+    </message>
+    <message>
+        <source>Edit label for the selected address:
+%1</source>
+        <translation>Beschreibung für ausgewählte Adresse bearbeiten:
+%1</translation>
+    </message>
+</context>
+<context>
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
-        <translation>Rechts-Klick um Adresse oder Bezeichnung zu bearbeiten</translation>
+        <translation>Rechtsklick, um Adresse oder Bezeichnung zu bearbeiten</translation>
     </message>
     <message>
         <source>Create a new address</source>
@@ -31,7 +91,7 @@
     </message>
     <message>
         <source>Export the data in the current tab to a file</source>
-        <translation>Daten der aktuellen Ansicht in eine Datei exportieren</translation>
+        <translation>Daten aus dem aktuellen Tab in eine Datei exportieren</translation>
     </message>
     <message>
         <source>&amp;Export</source>
@@ -43,11 +103,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie Fivebalance überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie Münzen senden wollen</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie Fivebalance empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, mit der Sie Münzen empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +122,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your Fivebalance addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre Fivebalance-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie Fivebalance überweisen.</translation>
+        <source>These are your FIVEBALANCE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre FIVEBALANCE-Adressen zum Senden von Zahlungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie FBN überweisen.</translation>
     </message>
     <message>
-        <source>These are your Fivebalance addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre Fivebalance-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your FIVEBALANCE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Das sind Ihre FIVEBALANCE-Adressen zum Empfangen von Zahlungen. Es wird empfohlen, für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -79,7 +139,7 @@
     </message>
     <message>
         <source>&amp;Edit</source>
-        <translation>&amp;Editieren</translation>
+        <translation>&amp;Bearbeiten</translation>
     </message>
     <message>
         <source>Export Address List</source>
@@ -87,7 +147,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
-        <translation>Kommagetrennte-Datei (*.csv)</translation>
+        <translation>Kommagetrennte Datei (*.csv)</translation>
     </message>
     <message>
         <source>Exporting Failed</source>
@@ -95,7 +155,22 @@
     </message>
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
-        <translation>Beim Speichern der Adressliste nach %1 ist ein Fehler aufgetreten. Bitte noch einmal versuchen.</translation>
+        <translation>Beim Speichern der Adressliste nach %1 ist ein Fehler aufgetreten. Bitte erneut versuchen.</translation>
+    </message>
+</context>
+<context>
+    <name>AddressLabelRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Bob Allen</source>
+        <translation>Bob Allen</translation>
+    </message>
+    <message>
+        <source>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</source>
+        <translation>DN6i46dytMPVhV1JMGZFuQBh7BZZ6nNLox</translation>
     </message>
 </context>
 <context>
@@ -109,39 +184,130 @@
         <translation>Adresse</translation>
     </message>
     <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Art</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(keine Bezeichnung)</translation>
+    </message>
+</context>
+<context>
+    <name>AddressesWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Contact name</source>
+        <translation>Kontaktname</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Adresse einfügen</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Kontakte</translation>
+    </message>
+    <message>
+        <source>You can add a new one in the options menu to the side.</source>
+        <translation>Unter Menü "Optionen" auf der Seite können Sie einen Neuen erfassen.</translation>
+    </message>
+    <message>
+        <source>No contacts yet</source>
+        <translation>Noch keine Kontakte</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
+    </message>
+    <message>
+        <source>Add new contact</source>
+        <translation>Neuen Kontakt hinzufügen</translation>
+    </message>
+    <message>
+        <source>Generate a new address to receive tokens.</source>
+        <translation>Erzeuge eine neue Adresse, um Token zu empfangen</translation>
+    </message>
+    <message>
+        <source>Invalid Contact Address</source>
+        <translation>Ungültige Kontaktadresse</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Eigene Adresse nicht als Kontakt speicherbar</translation>
+    </message>
+    <message>
+        <source>Address already stored, label: %1</source>
+        <translation>Adresse schon gespeichert, Bezeichnung: %1</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Neuer Kontakt gespeichert</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Fehler beim Speichern des Kontakts</translation>
+    </message>
+    <message>
+        <source>Contact edited</source>
+        <translation>Kontakt bearbeitet</translation>
+    </message>
+    <message>
+        <source>Contact edit failed</source>
+        <translation>Bearbeitung des Kontakts fehlgeschlagen</translation>
+    </message>
+    <message>
+        <source>Delete Contact</source>
+        <translation>Lösche Kontakt</translation>
+    </message>
+    <message>
+        <source>You are just about to remove the contact:
+
+%1
+
+Are you sure?</source>
+        <translation>Sie sind dabei folgenden Kontakt zu löschen:
+
+%1
+
+Sind Sie sicher?</translation>
+    </message>
+    <message>
+        <source>Contact Deleted</source>
+        <translation>Kontakt gelöscht</translation>
+    </message>
+    <message>
+        <source>Error deleting a contact</source>
+        <translation>Fehler beim Löschen des Kontakts</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adresse kopiert</translation>
     </message>
 </context>
 <context>
     <name>AskPassphraseDialog</name>
     <message>
         <source>Passphrase Dialog</source>
-        <translation>Passphrasendialog</translation>
+        <translation>Passphrase Dialog</translation>
     </message>
     <message>
-        <source>Enter passphrase</source>
-        <translation>Passphrase eingeben</translation>
+        <source>TextLabel</source>
+        <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>New passphrase</source>
-        <translation>Neue Passphrase</translation>
-    </message>
-    <message>
-        <source>Repeat new passphrase</source>
-        <translation>Neue Passphrase wiederholen</translation>
-    </message>
-    <message>
-        <source>Serves to disable the trivial sendmoney when OS account compromised. Provides no real security.</source>
-        <translation>Verhindert das einfache Überweisen von Geld, falls das Systemkonto kompromittiert wurde. Bietet keine wirkliche Sicherheit.</translation>
-    </message>
-    <message>
-        <source>For anonymization and staking only</source>
-        <translation>Nur zur Anonymisierung und "Staking"</translation>
+        <source>PushButton</source>
+        <translation>Schaltfläche</translation>
     </message>
     <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Geben Sie die neue Passphrase für die Wallet ein.&lt;br&gt;Bitte benutzen Sie eine Passphrase bestehend aus &lt;b&gt;10 oder mehr zufälligen Zeichen&lt;/b&gt; oder &lt;b&gt;8 oder mehr Wörtern&lt;/b&gt;.</translation>
+        <translation>Geben Sie die neue Passphrase für die Wallet ein.&lt;br/&gt;Bitte verwenden Sie eine Passphrase bestehend aus &lt;b&gt;10 oder mehr zufälligen Zeichen&lt;/b&gt; oder &lt;b&gt;8 oder mehr Wörtern&lt;/b&gt;.</translation>
     </message>
     <message>
         <source>Encrypt wallet</source>
@@ -150,6 +316,11 @@
     <message>
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Dieser Vorgang benötigt ihre Passphrase, um die Wallet zu entsperren.</translation>
+    </message>
+    <message>
+        <source>Unlock wallet
+for staking</source>
+        <translation>Wallet entsperren</translation>
     </message>
     <message>
         <source>Unlock wallet</source>
@@ -169,687 +340,129 @@
     </message>
     <message>
         <source>Enter the old and new passphrase to the wallet.</source>
-        <translation>Geben Sie die alte und neue Wallet-Passphrase ein.</translation>
+        <translation>Geben Sie die alte und neue Passphrase für die Wallet ein.</translation>
     </message>
     <message>
         <source>Confirm wallet encryption</source>
-        <translation>Wallet-Verschlüsselung bestätigen</translation>
+        <translation>Verschlüsselung der Wallet bestätigen</translation>
     </message>
     <message>
-        <source>Fivebalance will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FBNs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer FBNs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>WARNING</source>
+        <translation>WARNUNG</translation>
+    </message>
+    <message>
+        <source>If you encrypt your wallet and lose your passphrase, you will</source>
+        <translation>Wenn Sie ihr Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>VERSCHLÜSSELN</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FBNs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendung wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte bedenken Sie, dass auch die Verschlüsselung nicht vollständig vor Diebstahl Ihrer FBNs durch Schadsoftware schützt, die Ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
-        <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
-    </message>
-    <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FBN&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre FBNs verlieren&lt;/b&gt;!</translation>
+        <translation>Sind Sie sich sicher, dass Sie Ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
         <translation>Wallet verschlüsselt</translation>
     </message>
     <message>
+        <source>WARNING:</source>
+        <translation>Warnung:</translation>
+    </message>
+    <message>
+        <source>The caps lock key is on!</source>
+        <translation>Die Feststelltaste (Caps lock) ist eingeschaltet!</translation>
+    </message>
+    <message>
+        <source>Passphrases do not match!</source>
+        <translation>Die Passphrasen stimmen nicht überein!</translation>
+    </message>
+    <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
-        <translation>WICHTIG: Alle vorherigen Sicherungen sollten durch die neu erzeugte, verschlüsselte Wallet-Datei ersetzt werden. Aus Sicherheitsgründen werden vorherige Sicherungen der unverschlüsselten Wallet nutzlos, sobald Sie die neue, verschlüsselte Wallet verwenden.</translation>
+        <translation>WICHTIG: Alle vorherigen Sicherungen sollten durch die neu erzeugte, verschlüsselte Wallet-Datei ersetzt werden. Aus Sicherheitsgründen werden ältere Sicherungen der unverschlüsselten Wallet nutzlos, sobald Sie die neue, verschlüsselte Wallet verwenden.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
-        <translation>Wallet-Verschlüsselung fehlgeschlagen</translation>
+        <translation>Verschlüsselung der Wallet fehlgeschlagen</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
-        <translation>Die Wallet-Verschlüsselung ist aufgrund eines internen Fehlers fehlgeschlagen. Ihre Wallet wurde nicht verschlüsselt.</translation>
+        <translation>Die Verschlüsselung der Wallet ist aufgrund eines internen Fehlers fehlgeschlagen. Ihre Wallet wurde nicht verschlüsselt.</translation>
     </message>
     <message>
         <source>The supplied passphrases do not match.</source>
         <translation>Die eingegebenen Passphrasen stimmen nicht überein.</translation>
     </message>
     <message>
+        <source>LOSE ALL OF YOUR COINS</source>
+        <translation>VERLUST ALL IHRER MÜNZEN</translation>
+    </message>
+    <message>
         <source>Wallet unlock failed</source>
-        <translation>Wallet-Entsperrung fehlgeschlagen</translation>
+        <translation>Entsperrung der Wallet fehlgeschlagen</translation>
     </message>
     <message>
         <source>The passphrase entered for the wallet decryption was incorrect.</source>
-        <translation>Die eingegebene Passphrase zur Wallet-Entschlüsselung war nicht korrekt.</translation>
+        <translation>Die eingegebene Passphrase zur Entschlüsselung der Wallet ist nicht korrekt.</translation>
     </message>
     <message>
         <source>Wallet decryption failed</source>
-        <translation>Wallet-Entschlüsselung fehlgeschlagen</translation>
+        <translation>Entschlüsselung der Wallet fehlgeschlagen</translation>
     </message>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
-        <translation>Die Wallet-Passphrase wurde erfolgreich geändert.</translation>
-    </message>
-    <message>
-        <source>Warning: The Caps Lock key is on!</source>
-        <translation>Warnung: Die Feststelltaste ist aktiviert!</translation>
+        <translation>Die Passphrase der Wallet wurde erfolgreich geändert.</translation>
     </message>
 </context>
 <context>
-    <name>Bip38ToolDialog</name>
+    <name>BanTableModel</name>
     <message>
-        <source>BIP 38 Tool</source>
-        <translation>BIP 38 Tool</translation>
+        <source>IP/Netmask</source>
+        <translation>IP/Netzmaske</translation>
     </message>
     <message>
-        <source>&amp;BIP 38 Encrypt</source>
-        <translation>&amp;BIP 38 Verschlüsselung</translation>
-    </message>
-    <message>
-        <source>Enter a Fivebalance Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine Fivebalance Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adresse:</translation>
-    </message>
-    <message>
-        <source>The Fivebalance address to sign the message with</source>
-        <translation>Fivebalance Adresse mit welcher die Nachricht signiert werden soll</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Bereits verwendete Adresse auswählen</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Adresse aus der Zwischenablage einfügen</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Passphrase: </source>
-        <translation>Passphrase: </translation>
-    </message>
-    <message>
-        <source>Encrypted Key:</source>
-        <translation>Geschützer Schlüssel:</translation>
-    </message>
-    <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
-    </message>
-    <message>
-        <source>Sign the message to prove you own this Fivebalance address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Fivebalance Adresse besitzt</translation>
-    </message>
-    <message>
-        <source>Encrypt &amp;Key</source>
-        <translation>Verschlüsselt &amp;Schlüssel</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>Setze alle signierten Nachrichten Felder zurück</translation>
-    </message>
-    <message>
-        <source>Clear &amp;All</source>
-        <translation>&amp;Alles zurücksetzen</translation>
-    </message>
-    <message>
-        <source>&amp;BIP 38 Decrypt</source>
-        <translation>&amp;BIP 38 Entschlüsseln</translation>
-    </message>
-    <message>
-        <source>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</source>
-        <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
-    </message>
-    <message>
-        <source>The Fivebalance address the message was signed with</source>
-        <translation>Die Fivebalance Adresse mit welcher die Nachricht signiert wurde.</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Fivebalance address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Fivebalance-Adresse signiert wurde.</translation>
-    </message>
-    <message>
-        <source>Decrypt &amp;Key</source>
-        <translation>Entschlüsseln &amp;Schlüssel</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>Zurücksetzen aller überprüften Felder.</translation>
-    </message>
-    <message>
-        <source>Decrypted Key:</source>
-        <translation>Entschlüsselter Schlüssel:</translation>
-    </message>
-    <message>
-        <source>Import Address</source>
-        <translation>Adresse importieren</translation>
-    </message>
-    <message>
-        <source>Click "Decrypt Key" to compute key</source>
-        <translation>Klicke "Schlüssel entschlüsseln" um den Schlüssel zu berechnen</translation>
-    </message>
-    <message>
-        <source>The entered passphrase is invalid. </source>
-        <translation>Die eingegebene Passphrase ist ungültig. </translation>
-    </message>
-    <message>
-        <source>Allowed: 0-9,a-z,A-Z,</source>
-        <translation>Zulässig: 0-9,a-z,A-Z,</translation>
-    </message>
-    <message>
-        <source>The entered address is invalid.</source>
-        <translation>Die eingegebene Adresse ist falsch</translation>
-    </message>
-    <message>
-        <source>Please check the address and try again.</source>
-        <translation>Bitte die Adresse prüfen und erneut eingeben</translation>
-    </message>
-    <message>
-        <source>The entered address does not refer to a key.</source>
-        <translation>Die eingegebene Adresse passt nicht zu einem Schlüssel</translation>
-    </message>
-    <message>
-        <source>Wallet unlock was cancelled.</source>
-        <translation>Wallet-Entsperrung wurde abgebrochen.</translation>
-    </message>
-    <message>
-        <source>Private key for the entered address is not available.</source>
-        <translation>Privater Schlüssel für die eingegebene Adresse ist nicht verfügbar</translation>
-    </message>
-    <message>
-        <source>Failed to decrypt.</source>
-        <translation>Entschlüsselung fehlgeschlagen.</translation>
-    </message>
-    <message>
-        <source>Please check the key and passphrase and try again.</source>
-        <translation>Bitte überprüfe den Schlüssel und die Passphrase und versuche es erneut.</translation>
-    </message>
-    <message>
-        <source>Data Not Valid.</source>
-        <translation>Daten fehlerhaft</translation>
-    </message>
-    <message>
-        <source>Please try again.</source>
-        <translation>Bitte versuche es noch einmal</translation>
-    </message>
-    <message>
-        <source>Please wait while key is imported</source>
-        <translation>Bitte warten. Schlüssel wird importiert..</translation>
-    </message>
-    <message>
-        <source>Key Already Held By Wallet</source>
-        <translation>Schlüssel bereits im Wallet vorhanden</translation>
-    </message>
-    <message>
-        <source>Error Adding Key To Wallet</source>
-        <translation>Fehler beim hinzufügen des Schlüssels zum Wallet</translation>
-    </message>
-    <message>
-        <source>Successfully Added Private Key To Wallet</source>
-        <translation>Erfolgreiches hinzufügen eines privaten Schlüssels zum Wallet</translation>
+        <source>Banned Until</source>
+        <translation>Gesperrt bis</translation>
     </message>
 </context>
 <context>
-    <name>BitcoinGUI</name>
+    <name>CSRow</name>
     <message>
-        <source>Wallet</source>
-        <translation>Wallet</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>Knoten</translation>
+        <source>Savings</source>
+        <translation>Erspartes</translation>
     </message>
     <message>
-        <source>&amp;Overview</source>
-        <translation>&amp;Übersicht</translation>
+        <source>0,00 FBN</source>
+        <translation>0,00 FIVEBALANCE</translation>
     </message>
     <message>
-        <source>Show general overview of wallet</source>
-        <translation>Allgemeine Wallet-Übersicht anzeigen</translation>
+        <source>address</source>
+        <translation>Adresse</translation>
     </message>
     <message>
-        <source>&amp;Send</source>
-        <translation>&amp;Überweisen</translation>
+        <source>Not Staking</source>
+        <translation>Nicht stakend</translation>
     </message>
     <message>
-        <source>&amp;Receive</source>
-        <translation>&amp;Empfangen</translation>
-    </message>
-    <message>
-        <source>&amp;Transactions</source>
-        <translation>&amp;Transaktionen</translation>
-    </message>
-    <message>
-        <source>Browse transaction history</source>
-        <translation>Transaktionsverlauf durchsehen</translation>
-    </message>
-    <message>
-        <source>E&amp;xit</source>
-        <translation>&amp;Beenden</translation>
-    </message>
-    <message>
-        <source>Quit application</source>
-        <translation>Anwendung beenden</translation>
-    </message>
-    <message>
-        <source>About &amp;Qt</source>
-        <translation>Über &amp;Qt</translation>
-    </message>
-    <message>
-        <source>Show information about Qt</source>
-        <translation>Informationen über Qt anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Options...</source>
-        <translation>&amp;Konfiguration...</translation>
-    </message>
-    <message>
-        <source>&amp;Show / Hide</source>
-        <translation>&amp;Anzeigen / Verstecken</translation>
-    </message>
-    <message>
-        <source>Show or hide the main Window</source>
-        <translation>Das Hauptfenster anzeigen oder verstecken</translation>
-    </message>
-    <message>
-        <source>&amp;Encrypt Wallet...</source>
-        <translation>Wallet &amp;verschlüsseln...</translation>
-    </message>
-    <message>
-        <source>Encrypt the private keys that belong to your wallet</source>
-        <translation>Verschlüsselt die zu ihrer Wallet gehörenden privaten Schlüssel</translation>
-    </message>
-    <message>
-        <source>&amp;Backup Wallet...</source>
-        <translation>Wallet &amp;sichern...</translation>
-    </message>
-    <message>
-        <source>Backup wallet to another location</source>
-        <translation>Eine Wallet-Sicherungskopie erstellen und abspeichern</translation>
-    </message>
-    <message>
-        <source>&amp;Change Passphrase...</source>
-        <translation>Passphrase &amp;ändern...</translation>
-    </message>
-    <message>
-        <source>Change the passphrase used for wallet encryption</source>
-        <translation>Ändert die Passphrase, die für die Wallet-Verschlüsselung benutzt wird</translation>
-    </message>
-    <message>
-        <source>&amp;Unlock Wallet...</source>
-        <translation>Wallet &amp;entsperren</translation>
-    </message>
-    <message>
-        <source>Unlock wallet</source>
-        <translation>Wallet entsperren</translation>
-    </message>
-    <message>
-        <source>&amp;Lock Wallet</source>
-        <translation>Wallet &amp;sperren</translation>
-    </message>
-    <message>
-        <source>Sign &amp;message...</source>
-        <translation>Nachricht s&amp;ignieren...</translation>
-    </message>
-    <message>
-        <source>&amp;Verify message...</source>
-        <translation>Nachricht prüfen...</translation>
-    </message>
-    <message>
-        <source>&amp;Information</source>
-        <translation>&amp;Information</translation>
-    </message>
-    <message>
-        <source>Show diagnostic information</source>
-        <translation>Diagnoseinformation anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Debug console</source>
-        <translation>&amp;Debugkonsole</translation>
-    </message>
-    <message>
-        <source>Open debugging console</source>
-        <translation>Debugkonsole öffnen</translation>
-    </message>
-    <message>
-        <source>&amp;Network Monitor</source>
-        <translation>&amp;Netzwerkmonitor</translation>
-    </message>
-    <message>
-        <source>Show network monitor</source>
-        <translation>Netzwerkmonitor anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Peers list</source>
-        <translation>&amp;Gegenstellen-Liste</translation>
-    </message>
-    <message>
-        <source>Show peers info</source>
-        <translation>Informationen zu Gegenstellen anzeigen</translation>
-    </message>
-    <message>
-        <source>Wallet &amp;Repair</source>
-        <translation>Wallet-&amp;Reparatur</translation>
-    </message>
-    <message>
-        <source>Show wallet repair options</source>
-        <translation>Optionen zur Wallet-Reparatur anzeigen</translation>
-    </message>
-    <message>
-        <source>Open configuration file</source>
-        <translation>Konfigurationsdatei öffnen</translation>
-    </message>
-    <message>
-        <source>Show Automatic &amp;Backups</source>
-        <translation>Automatische &amp;Sicherheitskopien anzeigen</translation>
-    </message>
-    <message>
-        <source>Show automatically created wallet backups</source>
-        <translation>Automatisch erzeugte Wallet-Sicherheitskopien anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>&amp;Zahlungsadressen...</translation>
-    </message>
-    <message>
-        <source>Show the list of used sending addresses and labels</source>
-        <translation>Liste verwendeter Zahlungsadressen und Bezeichnungen anzeigen</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>&amp;Empfangsadressen...</translation>
-    </message>
-    <message>
-        <source>Show the list of used receiving addresses and labels</source>
-        <translation>Liste verwendeter Empfangsadressen und Bezeichnungen anzeigen</translation>
-    </message>
-    <message>
-        <source>Open &amp;URI...</source>
-        <translation>&amp;URI öffnen...</translation>
-    </message>
-    <message>
-        <source>&amp;Command-line options</source>
-        <translation>&amp;Kommandozeilenoptionen</translation>
-    </message>
-    <message numerus="yes">
-        <source>Processed %n blocks of transaction history.</source>
-        <translation><numerusform>%n Block des Transaktionsverlaufs verarbeitet.</numerusform><numerusform>%n Blöcke des Transaktionsverlaufs verarbeitet.</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing additional data: %p%</source>
-        <translation>Synchronisiere zusätzliche Daten:  %p%</translation>
-    </message>
-    <message>
-        <source>&amp;File</source>
-        <translation>&amp;Datei</translation>
-    </message>
-    <message>
-        <source>&amp;Settings</source>
-        <translation>&amp;Einstellungen</translation>
-    </message>
-    <message>
-        <source>&amp;Tools</source>
-        <translation>&amp;Werkzeuge</translation>
-    </message>
-    <message>
-        <source>&amp;Help</source>
-        <translation>&amp;Hilfe</translation>
-    </message>
-    <message>
-        <source>Tabs toolbar</source>
-        <translation>Registerkartenleiste</translation>
-    </message>
-    <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
-    </message>
-    <message>
-        <source>Send coins to a Fivebalance address</source>
-        <translation>An eine Fivebalance-Adresse überweisen</translation>
-    </message>
-    <message>
-        <source>Request payments (generates QR codes and fivebalance: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und fivebalance: URIs)</translation>
-    </message>
-    <message>
-        <source>&amp;Privacy</source>
-        <translation>&amp;Privatsphäre</translation>
-    </message>
-    <message>
-        <source>Privacy Action for zFBN and Obfuscation</source>
-        <translation>Privatsphäre Aktion für zFBN und Verschleierung</translation>
-    </message>
-    <message>
-        <source>&amp;Masternodes</source>
-        <translation>&amp;Masternodes</translation>
-    </message>
-    <message>
-        <source>Browse masternodes</source>
-        <translation>Masternodes durchsuchen</translation>
-    </message>
-    <message>
-        <source>&amp;About Fivebalance Core</source>
-        <translation>Über.Fivebalance Core</translation>
-    </message>
-    <message>
-        <source>Show information about Fivebalance Core</source>
-        <translation>Zeigt Informationen über Fivebalance Core</translation>
-    </message>
-    <message>
-        <source>Modify configuration options for Fivebalance</source>
-        <translation>Konfiguration von Fivebalance verändern</translation>
-    </message>
-    <message>
-        <source>Sign messages with your Fivebalance addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer Fivebalance-Adresse und beweist, dass sie Ihnen gehört</translation>
-    </message>
-    <message>
-        <source>Verify messages to ensure they were signed with specified Fivebalance addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten Fivebalance-Adresse signiert wurde</translation>
-    </message>
-    <message>
-        <source>&amp;BIP38 tool</source>
-        <translation>&amp;BIP38 Hilfsprogramm</translation>
-    </message>
-    <message>
-        <source>&amp;MultiSend</source>
-        <translation>&amp;MultiSend</translation>
-    </message>
-    <message>
-        <source>MultiSend Settings</source>
-        <translation>MultiSend Einstellungen</translation>
-    </message>
-    <message>
-        <source>Open Wallet &amp;Configuration File</source>
-        <translation>Öffne Wallet &amp;Einstellungsdatei </translation>
-    </message>
-    <message>
-        <source>Open &amp;Masternode Configuration File</source>
-        <translation>Öffne &amp;Masternode Einstellungsdatei </translation>
-    </message>
-    <message>
-        <source>Open Masternode configuration file</source>
-        <translation>Öffne Masternode Einstellungsdatei</translation>
-    </message>
-    <message>
-        <source>Open a Fivebalance: URI or payment request</source>
-        <translation>Öffne eine Fivebalance: URI or Zahlungsanfrage</translation>
-    </message>
-    <message>
-        <source>&amp;Blockchain explorer</source>
-        <translation>&amp;Blockchain Betrachter</translation>
-    </message>
-    <message>
-        <source>Block explorer window</source>
-        <translation>Blockchain Betrachter Fenster</translation>
-    </message>
-    <message>
-        <source>Show the Fivebalance Core help message to get a list with possible Fivebalance command-line options</source>
-        <translation>Zeige die Fivebalance-Core Hilfe, um mögliche Fivebalance Kommando-Zeilen-Optionen anzuzeigen</translation>
-    </message>
-    <message>
-        <source>Fivebalance Core client</source>
-        <translation>Fivebalance Core Client</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Fivebalance network</source>
-        <translation><numerusform>%n aktive Verbindung zum Fivebalance Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum Fivebalance Netzwerk</numerusform></translation>
-    </message>
-    <message>
-        <source>Synchronizing with network...</source>
-        <translation>Synchronisiere mit Netzwerk...</translation>
-    </message>
-    <message>
-        <source>Importing blocks from disk...</source>
-        <translation>Importiere Blöcke von Datenträger...</translation>
-    </message>
-    <message>
-        <source>Reindexing blocks on disk...</source>
-        <translation>Reindiziere Blöcke auf Datenträger...</translation>
-    </message>
-    <message>
-        <source>No block source available...</source>
-        <translation>Keine Blockquelle verfügbar...</translation>
-    </message>
-    <message>
-        <source>Up to date</source>
-        <translation>Auf aktuellem Stand</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n Stunde</numerusform><numerusform>%n Stunden</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n Tag</numerusform><numerusform>%n Tage</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n Woche</numerusform><numerusform>%n Wochen</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 and %2</source>
-        <translation>%1 und %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n Jahr</numerusform><numerusform>%n Jahre</numerusform></translation>
-    </message>
-    <message>
-        <source>%1 behind</source>
-        <translation>%1 im Rückstand</translation>
-    </message>
-    <message>
-        <source>Catching up...</source>
-        <translation>Hole auf...</translation>
-    </message>
-    <message>
-        <source>Last received block was generated %1 ago.</source>
-        <translation>Der letzte empfangene Block ist %1 alt.</translation>
-    </message>
-    <message>
-        <source>Transactions after this will not yet be visible.</source>
-        <translation>Transaktionen hiernach werden noch nicht angezeigt.</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Fehler</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation>Warnung</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation>Hinweis</translation>
-    </message>
-    <message>
-        <source>Sent transaction</source>
-        <translation>Gesendete Transaktion</translation>
-    </message>
-    <message>
-        <source>Incoming transaction</source>
-        <translation>Eingehende Transaktion</translation>
-    </message>
-    <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Versende MultiSend Transaktion</translation>
-    </message>
-    <message>
-        <source>Date: %1
-Amount: %2
-Type: %3
-Address: %4
-</source>
-        <translation>Datum: %1
-Betrag: %2
-Typ: %3
-Adresse: %4</translation>
-    </message>
-    <message>
-        <source>Staking is active
- MultiSend: %1</source>
-        <translation>Staking ist aktiviert
- MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Aktiv</translation>
-    </message>
-    <message>
-        <source>Not Active</source>
-        <translation>Nicht Aktiv</translation>
-    </message>
-    <message>
-        <source>Staking is not active
- MultiSend: %1</source>
-        <translation>Staking ist nicht aktiviert
- MultiSend: %1</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
-        <translation>Wallet ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;entsperrt&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt; for anonimization and staking only</source>
-        <translation>Wallet ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell nur zum Anonymisieren und "staking"&lt;b&gt;entsperrt&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
-        <translation>Wallet ist &lt;b&gt;verschlüsselt&lt;/b&gt; und aktuell &lt;b&gt;gesperrt&lt;/b&gt;</translation>
-    </message>
-</context>
-<context>
-    <name>BlockExplorer</name>
-    <message>
-        <source>Blockchain Explorer</source>
-        <translation>Blockchain Explorer</translation>
-    </message>
-    <message>
-        <source>Back</source>
-        <translation>Zurück</translation>
-    </message>
-    <message>
-        <source>Forward</source>
-        <translation>Vor</translation>
-    </message>
-    <message>
-        <source>Address / Block / Transaction</source>
-        <translation>Addrese / Block / Tansaktion</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation>Suche</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TextEtikett</translation>
-    </message>
-    <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (fivebalance.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "fivebalance.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Own delegation</source>
+        <translation>Eigene Zuweisung</translation>
     </message>
 </context>
 <context>
@@ -857,10 +470,6 @@ Adresse: %4</translation>
     <message>
         <source>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unknown: %5)</source>
         <translation>Total: %1 (IPv4: %2 / IPv6: %3 / Tor: %4 / Unbekannt: %5)</translation>
-    </message>
-    <message>
-        <source>Network Alert</source>
-        <translation>Netzwerkalarm</translation>
     </message>
 </context>
 <context>
@@ -871,15 +480,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Bytes:</source>
-        <translation>Byte:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Betrag:</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Priorität:</translation>
+        <translation>Bytes:</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -887,27 +488,19 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Coin Selection</source>
-        <translation>Münzenauswahl </translation>
+        <translation>Münzauswahl </translation>
+    </message>
+    <message>
+        <source>Select FBN Outputs to Spend</source>
+        <translation>FBN Outputs zum Ausgeben wählen</translation>
     </message>
     <message>
         <source>Dust:</source>
         <translation>Abzug:</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Nach Gebühren:</translation>
-    </message>
-    <message>
         <source>Change:</source>
         <translation>Wechselgeld:</translation>
-    </message>
-    <message>
-        <source>(un)select all</source>
-        <translation>(nicht) alle auswählen</translation>
-    </message>
-    <message>
-        <source>toggle lock state</source>
-        <translation>Sperrzustand umschalten</translation>
     </message>
     <message>
         <source>Tree mode</source>
@@ -926,12 +519,36 @@ Adresse: %4</translation>
         <translation>Betrag</translation>
     </message>
     <message>
+        <source>0.00 FBN</source>
+        <translation>0.00 FBN</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    <message>
+        <source>Select all</source>
+        <translation>Alle anwählen</translation>
+    </message>
+    <message>
+        <source>Toggle lock state</source>
+        <translation>Verriegelungsstatus umschalten</translation>
+    </message>
+    <message>
         <source>Received with label</source>
-        <translation>Empfange mit Bezeichnung</translation>
+        <translation>Empfangen mit Bezeichnung</translation>
     </message>
     <message>
         <source>Received with address</source>
         <translation>Empfangen mit Adresse</translation>
+    </message>
+    <message>
+        <source>After Fee: </source>
+        <translation>Nach Gebühren:</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Date</source>
@@ -939,15 +556,11 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Confirmations</source>
-        <translation>Betätigungen</translation>
+        <translation>Bestätigungen</translation>
     </message>
     <message>
         <source>Confirmed</source>
         <translation>Bestätigt</translation>
-    </message>
-    <message>
-        <source>Priority</source>
-        <translation>Priorität</translation>
     </message>
     <message>
         <source>Copy address</source>
@@ -974,36 +587,40 @@ Adresse: %4</translation>
         <translation>Entsperre Verwendung</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Kopiere Anzahl</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Kopiere Gebühr</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Kopiere nach Gebühr</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Kopiere Bytes</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Kopiere Priorität</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Kopiere Abzug</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Kopiere Wechselgeld</translation>
+        <source>Unselect all</source>
+        <translation>Alle abwählen</translation>
     </message>
     <message>
         <source>Please switch to "List mode" to use this function.</source>
         <translation>Bitte wechsle zur "Listenansicht" um diese Funktion zu verwenden.</translation>
+    </message>
+    <message>
+        <source>Quantity Copied</source>
+        <translation>Menge kopiert</translation>
+    </message>
+    <message>
+        <source>Amount Copied</source>
+        <translation>Menge kopiert</translation>
+    </message>
+    <message>
+        <source>Fee Copied</source>
+        <translation>Gebühr kopiert</translation>
+    </message>
+    <message>
+        <source>After Fee Copied</source>
+        <translation>Nach Gebühr kopiert</translation>
+    </message>
+    <message>
+        <source>Bytes Copied</source>
+        <translation>Bytes kopiert</translation>
+    </message>
+    <message>
+        <source>Dust Copied</source>
+        <translation>Staub kopiert</translation>
+    </message>
+    <message>
+        <source>Change Copied</source>
+        <translation>Wechselbetrag kopiert</translation>
     </message>
     <message>
         <source>highest</source>
@@ -1020,10 +637,6 @@ Adresse: %4</translation>
     <message>
         <source>medium-high</source>
         <translation>mittel-hoch</translation>
-    </message>
-    <message>
-        <source>Can vary +/- %1 duff(s) per input.</source>
-        <translation>Kann um +/- %1 Abzug(s) pro Eingang variieren.</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1058,6 +671,18 @@ Adresse: %4</translation>
         <translation>ja</translation>
     </message>
     <message>
+        <source>Can vary +/- %1 u%2 per input.</source>
+        <translation>Kann +/- %1u%2 pro Eingabe variieren.</translation>
+    </message>
+    <message>
+        <source>delegated to %1 for cold staking</source>
+        <translation>%1 für Cold Staking zugewiesen</translation>
+    </message>
+    <message>
+        <source>Select All</source>
+        <translation>Alle anwählen</translation>
+    </message>
+    <message>
         <source>no</source>
         <translation>nein</translation>
     </message>
@@ -1071,7 +696,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Can vary +/- 1 byte per input.</source>
-        <translation>Kann um +/-1 Byte pro Eingang variieren.</translation>
+        <translation>Kann um +/-1 Byte pro Eingabe variieren.</translation>
     </message>
     <message>
         <source>Transactions with higher priority are more likely to get included into a block.</source>
@@ -1096,6 +721,351 @@ Adresse: %4</translation>
     <message>
         <source>(change)</source>
         <translation>(Wechselgeld)</translation>
+    </message>
+</context>
+<context>
+    <name>ColdStakingWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Owner address (optional, if empty a new address will be created)</source>
+        <translation>Adresse des Besitzers (Optional, wenn leer, wird eine neue Adresse erzeugt)</translation>
+    </message>
+    <message>
+        <source>Total Staking:</source>
+        <translation>Gesamtmenge Staking</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>Cold Staking</translation>
+    </message>
+    <message>
+        <source>Staker</source>
+        <translation>Staker</translation>
+    </message>
+    <message>
+        <source>Delegation</source>
+        <translation>Zuweisung</translation>
+    </message>
+    <message>
+        <source>Delegate</source>
+        <translation>Delegierter</translation>
+    </message>
+    <message>
+        <source>Clear All</source>
+        <translation>Alles löschen</translation>
+    </message>
+    <message>
+        <source>Delegated balance history</source>
+        <translation>Verlauf zugewiesener Bilanzen</translation>
+    </message>
+    <message>
+        <source>No delegations yet</source>
+        <translation>Bisher keine Zuweisungen</translation>
+    </message>
+    <message>
+        <source>Total Staking: %1</source>
+        <translation>Insgesamt %1 staking</translation>
+    </message>
+    <message>
+        <source>Error loading delegations: %1</source>
+        <translation>Fehler beim Laden der Zuweisungen: %1</translation>
+    </message>
+    <message>
+        <source>You can delegate your FBNs, letting a hot node (24/7 online node)
+stake on your behalf, while you keep the keys securely offline.</source>
+        <translation>Sie können Ihre FBNs zuweisen und einen Node (24/7) für Sie staken lassen, während Sie Ihre Schlüssel sicher offline verwahren. </translation>
+    </message>
+    <message>
+        <source>Enter owner address</source>
+        <translation>Adresse des Besitzers eingeben</translation>
+    </message>
+    <message>
+        <source>Accept FBN delegation / Delegate FBN</source>
+        <translation>FBN Zusweisung annehmen / FBN zuweisen</translation>
+    </message>
+    <message>
+        <source>Cold Staking address</source>
+        <translation>Adresse für Cold Staking</translation>
+    </message>
+    <message>
+        <source>No receive addresses available, you can go to the receive screen and create some there!</source>
+        <translation>Keine Empfangsadresse verfügbar. Sie können zum Empfangsfenster gehen und dort eine erzeugen.</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Keine Kontakte verfügbar. Sie können zum Kontaktfenster wechseln und dort welche hinzufügen.</translation>
+    </message>
+    <message>
+        <source>Cannot send delegation, wallet locked</source>
+        <translation>Zuweisung konnte nicht gesendet werden. Ihr Wallet ist verschlossen.</translation>
+    </message>
+    <message>
+        <source>Cold staking is networkely disabled</source>
+        <translation>Cold staking ist ausgeschaltet</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Coinverwaltung</translation>
+    </message>
+    <message>
+        <source>Select %1 outputs to delegate.</source>
+        <translation>Wählen Sie %1 Outputs für die Zuweisung</translation>
+    </message>
+    <message>
+        <source>Create Cold Staking Address</source>
+        <translation>Erzeuge Cold Staking Adresse</translation>
+    </message>
+    <message>
+        <source>Creates an address to receive delegated coins
+and stake them on their owner's behalf.</source>
+        <translation>Erzeugte eine Adresse für den Empfang von zugewiesenen Münzen
+und stakt diese für den Besitzer.</translation>
+    </message>
+    <message>
+        <source>My Cold Staking Addresses</source>
+        <translation>Meine Cold Staking Adresse</translation>
+    </message>
+    <message>
+        <source>List your own cold staking addresses.</source>
+        <translation>Listen Sie Ihre eigenen Cold Staking Adressen auf.</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Ungültiger Eintrag</translation>
+    </message>
+    <message>
+        <source>Invalid entry, minimum delegable amount is </source>
+        <translation>Ungültiger Eintrag, die Mindestmenge für Zuweisungen ist</translation>
+    </message>
+    <message>
+        <source>Owner address invalid</source>
+        <translation>Adresse des Besitzers ist ungültig</translation>
+    </message>
+    <message>
+        <source>ALERT!</source>
+        <translation>ALARM!</translation>
+    </message>
+    <message>
+        <source>Delegating to an external owner address!
+
+The delegated coins will NOT be spendable by this wallet.
+Spending these coins will need to be done from the wallet or
+device containing the owner address.
+
+Do you wish to proceed?</source>
+        <translation>Weise einer externen Adresse zu!
+
+Die zugewiesenen Coins können von diesem Wallet nicht mehr ausgegeben werden.
+Das Ausgeben dieser Münzen ist nur von dem Wallet oder Gerät möglich, das im Besitz der Adresse ist.
+
+Möchten Sie fortfahren?</translation>
+    </message>
+    <message>
+        <source>Staking address corresponds to this wallet, change it to an external node</source>
+        <translation>Die Staking Adresse entspricht diesem Wallet, ändern Sie dies zu einem externen Node.</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>Die Transaktion kann nicht erzeugt werden.</translation>
+    </message>
+    <message>
+        <source>Coins delegated</source>
+        <translation>Coins zugewiesen</translation>
+    </message>
+    <message>
+        <source>You don't have any %1 to select.</source>
+        <translation>Sie haben keine %1 für die Auswahl.</translation>
+    </message>
+    <message>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>Aufgabe kann nicht durchgeführt werden, Ihr Wallet ist verschlossen</translation>
+    </message>
+    <message>
+        <source>URI copied to clipboard</source>
+        <translation>URI in die Zwischenablage kopiert</translation>
+    </message>
+    <message>
+        <source>Address copied to clipboard</source>
+        <translation>Adresse in Zwischenablage kopiert</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopieren</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Bearbeiten</translation>
+    </message>
+    <message>
+        <source>Stake</source>
+        <translation>Stake</translation>
+    </message>
+    <message>
+        <source>Blacklist</source>
+        <translation>Blacklist</translation>
+    </message>
+    <message>
+        <source>Edit Label</source>
+        <translation>Bezeichnung bearbeiten</translation>
+    </message>
+    <message>
+        <source>Copy owner
+address</source>
+        <translation>Besitzeradresse kopieren</translation>
+    </message>
+    <message>
+        <source>Address copied</source>
+        <translation>Adresse kopiert</translation>
+    </message>
+    <message>
+        <source>Edit Cold Address Label</source>
+        <translation>Bezeichnung der Cold Adresse bearbeiten</translation>
+    </message>
+    <message>
+        <source>Whitelist failed, please check the logs</source>
+        <translation>Whitelist gescheitert. Bitte überprüfen Sie die Logs.</translation>
+    </message>
+    <message>
+        <source> staking!</source>
+        <translation>Staking!</translation>
+    </message>
+    <message>
+        <source>Blacklist failed, please check the logs</source>
+        <translation>Blacklist gescheitert. Bitte überprüfen Sie die Logs.</translation>
+    </message>
+    <message>
+        <source> blacklisted from staking</source>
+        <translation>Vom Staking geblacklisted</translation>
+    </message>
+    <message>
+        <source>Owner address copied</source>
+        <translation>Besitzeradresse kopiert</translation>
+    </message>
+    <message>
+        <source>Edit Owner Address Label</source>
+        <translation>Besitzeradresse bearbeiten</translation>
+    </message>
+    <message>
+        <source>Address label saved</source>
+        <translation>Adressbezeichnung gespeichert</translation>
+    </message>
+    <message>
+        <source>Error storing address label</source>
+        <translation>Fehler beim Speichern der Adressbezeichnung</translation>
+    </message>
+</context>
+<context>
+    <name>ContactDropdownRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+</context>
+<context>
+    <name>DashboardWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Transactions</source>
+        <translation>Transaktion</translation>
+    </message>
+    <message>
+        <source>Staking Rewards</source>
+        <translation>Staking Entschädigung</translation>
+    </message>
+    <message>
+        <source>Staking statistics</source>
+        <translation>Staking Statistiken</translation>
+    </message>
+    <message>
+        <source>View your account's history</source>
+        <translation>Verlauf des Accounts ansehen</translation>
+    </message>
+    <message>
+        <source>How to get FBN</source>
+        <translation>Wie erhalte ich FBN</translation>
+    </message>
+    <message>
+        <source>Sort by</source>
+        <translation>Sortieren nach</translation>
+    </message>
+    <message>
+        <source>Days</source>
+        <translation>Tage</translation>
+    </message>
+    <message>
+        <source>Months</source>
+        <translation>Monate</translation>
+    </message>
+    <message>
+        <source>Years</source>
+        <translation>Jahre</translation>
+    </message>
+    <message>
+        <source>Filter by</source>
+        <translation>Filtern nach</translation>
+    </message>
+    <message>
+        <source>Amount of FBN and zFBN staked.</source>
+        <translation>Wieviele FBN und z FBN am Staken sind.</translation>
+    </message>
+    <message>
+        <source>Please wait until the wallet is fully synced to see your correct balance</source>
+        <translation>Bitte warten bis die Wallet voll synchronisiert ist, um den korrekten Kontostand zu sehen</translation>
+    </message>
+    <message>
+        <source>No transactions yet</source>
+        <translation>Bisher keine Transaktionen</translation>
+    </message>
+    <message>
+        <source>You can verify the staking activity in the status bar at the top right of the wallet.
+It will start automatically as soon as the wallet has enough confirmations on any unspent balances, and the wallet has synced.</source>
+        <translation>In der Statusbar der Wallet oben rechts können Sie sehen, ob Staking aktiviert wurde.
+Das Staking wird automatisch gestartet, sobald die Wallet genügend Bestätigungen für alle nicht ausgegebenen Guthaben hat und die Wallet synchronisiert ist.</translation>
+    </message>
+    <message>
+        <source>You have no staking rewards</source>
+        <translation>Sie haben keine Staking-Vergütungen</translation>
+    </message>
+    <message>
+        <source>No charts library</source>
+        <translation>Keine Chart Bibliothek</translation>
+    </message>
+    <message>
+        <source>Loading chart..</source>
+        <translation>Lade Tabelle..</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid show option</source>
+        <translation>Fehler beim Laden der Tabelle, ungültige Anzeigeoption</translation>
+    </message>
+    <message>
+        <source>Error loading chart, invalid data</source>
+        <translation>Fehler beim Laden des Charts. Daten sind ungültig.</translation>
+    </message>
+    <message>
+        <source>Error loading chart: %1</source>
+        <translation>Fehler beim Laden der Tabelle: %1</translation>
+    </message>
+</context>
+<context>
+    <name>DefaultDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
     </message>
 </context>
 <context>
@@ -1137,8 +1107,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Fivebalance address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige Fivebalance-Adresse.</translation>
+        <source>The entered address "%1" is not a valid FIVEBALANCE address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige FIVEBALANCE-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1154,6 +1124,13 @@ Adresse: %4</translation>
     </message>
 </context>
 <context>
+    <name>ExpandableButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+</context>
+<context>
     <name>FreespaceChecker</name>
     <message>
         <source>A new data directory will be created.</source>
@@ -1165,7 +1142,7 @@ Adresse: %4</translation>
     </message>
     <message>
         <source>Directory already exists. Add %1 if you intend to create a new directory here.</source>
-        <translation>Verzeichnis existiert bereits. Fügen Sie %1 an, wenn Sie beabsichtigen hier ein neues Verzeichnis anzulegen.</translation>
+        <translation>Verzeichnis existiert bereits. Fügen Sie %1 hinzu, wenn Sie beabsichtigen, hier ein neues Verzeichnis anzulegen.</translation>
     </message>
     <message>
         <source>Path already exists, and is not a directory.</source>
@@ -1183,16 +1160,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About Fivebalance Core</source>
-        <translation>Über Fivebalance Core</translation>
+        <source>About FIVEBALANCE Core</source>
+        <translation>Über FIVEBALANCE Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1219,6 +1196,10 @@ Adresse: %4</translation>
         <translation>Zeige Startbildschirm beim Start (Standard: %u)</translation>
     </message>
     <message>
+        <source>Hide QT staking charts on startup (default: %u)</source>
+        <translation>QT Staking Charts beim Startup verbergen (Standardmäßig: %u)</translation>
+    </message>
+    <message>
         <source>Set language, for example "de_DE" (default: system locale)</source>
         <translation>Sprache festlegen, z.B. "de_DE" (Standard: Systemstandard)</translation>
     </message>
@@ -1230,6 +1211,10 @@ Adresse: %4</translation>
         <source>Set SSL root certificates for payment request (default: -system-)</source>
         <translation>SSL-Wurzelzertifikate für Zahlungsanforderungen festlegen (Standard: Systemstandard)</translation>
     </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
 </context>
 <context>
     <name>Intro</name>
@@ -1238,28 +1223,36 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to Fivebalance Core.</source>
-        <translation>Willkommen zu Fivebalance Core.</translation>
+        <source>Welcome to FIVEBALANCE Core.</source>
+        <translation>Willkommen zu FIVEBALANCE Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Fivebalance Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie Fivebalance Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where FIVEBALANCE Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie FIVEBALANCE Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>Fivebalance Core will download and store a copy of the Fivebalance block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Fivebalance Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>FIVEBALANCE Core will download and store a copy of the FIVEBALANCE block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>FIVEBALANCE Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Standard-Datenverzeichnis verwenden</translation>
     </message>
     <message>
-        <source>Use a custom data directory:</source>
-        <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
+        <source>Use a custom data directory</source>
+        <translation>Wähle ein beliebiges Verzeichnis</translation>
     </message>
     <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1279,21 +1272,82 @@ Adresse: %4</translation>
     </message>
 </context>
 <context>
-    <name>MasternodeList</name>
+    <name>LoadingDialog</name>
     <message>
         <source>Form</source>
         <translation>Formular</translation>
     </message>
     <message>
-        <source>My Masternodes</source>
-        <translation>Meine Masternodes</translation>
+        <source>TextLabel</source>
+        <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Note: Status of your masternodes in local wallet can potentially be slightly incorrect.&lt;br /&gt;Always wait for wallet to sync additional data and then double check from another node&lt;br /&gt;if your node should be running but you still see "MISSING" in "Status" field.</source>
-        <translation>Achtung: Der Status Ihrer Masternodes kann in der lokalen Wallet leicht inkorrekt sein. &lt;br /&gt;Warten Sie immer bis die Wallet vollständig synchronisiert ist und überprüfen Sie von einer anderen Installation aus&lt;br /&gt;, sollte Ihre Masternode immer noch als "MISSING" angezeigt werden.</translation>
+        <source>Loading</source>
+        <translation>Lädt</translation>
     </message>
     <message>
-        <source>Alias</source>
+        <source>.</source>
+        <translation>.</translation>
+    </message>
+</context>
+<context>
+    <name>LockUnlock</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Unlock Wallet</source>
+        <translation>Wallet entsperren</translation>
+    </message>
+    <message>
+        <source>Lock Wallet</source>
+        <translation>Wallet sperren</translation>
+    </message>
+    <message>
+        <source>Staking Only</source>
+        <translation>Nur Staking</translation>
+    </message>
+</context>
+<context>
+    <name>MNRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Collateral tx not found</source>
+        <translation>Kollateraltransaktion nicht gefunden</translation>
+    </message>
+    <message>
+        <source>Status: %1</source>
+        <translation>Status: %1</translation>
+    </message>
+</context>
+<context>
+    <name>MasterNodeWizardDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>Intro</source>
+        <translation>Intro</translation>
+    </message>
+    <message>
+        <source>Name</source>
         <translation>Name</translation>
     </message>
     <message>
@@ -1301,286 +1355,393 @@ Adresse: %4</translation>
         <translation>Adresse</translation>
     </message>
     <message>
-        <source>Protocol</source>
-        <translation>Protokoll</translation>
+        <source>Create New Masternode Controller</source>
+        <translation>Erzeuge neuen Masternode Controller</translation>
     </message>
     <message>
-        <source>Status</source>
-        <translation>Status</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a FIVEBALANCE Masternode you must dedicate 1000,000 FBN (the unit of FIVEBALANCE) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Um einen FIVEBALANCE Masternode zu erzeugen, müssen Sie 1000.000 FBN (die Einheit von FIVEBALANCE) dem Netzwerk zuweisen (diese Coins sind weiterhin Ihre und Sie werden Ihren Besitz nicht verlassen)&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;
+Sie können den Node jederzeit deaktivieren und die Coins entriegeln.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Aktiv</translation>
+        <source>Set Masternode Name</source>
+        <translation>Namen des Masternodes eingeben</translation>
     </message>
     <message>
-        <source>Last Seen (UTC)</source>
-        <translation>Zuletzt gesehen (UTC)</translation>
+        <source>Set Masternode IP and Port</source>
+        <translation>Masternode IP und Port eingeben</translation>
     </message>
     <message>
-        <source>Pubkey</source>
-        <translation>Öffentlicher Schlüssel</translation>
+        <source>Enter port</source>
+        <translation>Port eingeben</translation>
     </message>
     <message>
-        <source>S&amp;tart alias</source>
-        <translation>S&amp;tarten</translation>
+        <source>Make sure you have this amount of coins.</source>
+        <translation>Stellen Sie sicher, dass Sie die Anzahl Coins besitzen.</translation>
     </message>
     <message>
-        <source>Start &amp;all</source>
-        <translation>&amp;Alle starten</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of 1000,000 FBN will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Eine Transaktion von 10'000 FBN wird erzugt&lt;/p&gt;&lt;p&gt; und an eine leere Adresse in Ihrer Wallet gesendet.&lt;/p&gt;&lt;p&gt;Die Adresse wird beschriftet mit dem Namen des Masternodes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>Start &amp;MISSING</source>
-        <translation>Starte nur &amp;MISSING</translation>
+        <source>Address of the node that must always be online running the actual master node.</source>
+        <translation>Adresse des Nodes, welche immer online sein muss, um den Master Node darüber laufen zu lassen.</translation>
     </message>
     <message>
-        <source>&amp;Update status</source>
-        <translation>Stat&amp;us aktualisieren</translation>
+        <source>Enter IP address</source>
+        <translation>IP-Adresse eingeben</translation>
     </message>
     <message>
-        <source>Status will be updated automatically in (sec):</source>
-        <translation>Status wird automatisch aktualisiert in (Sekunden):</translation>
+        <source>NEXT</source>
+        <translation>NEXT</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>BACK</source>
+        <translation>ZURÜCK</translation>
     </message>
     <message>
-        <source>Start alias</source>
-        <translation>Starten</translation>
+        <source>address label cannot be empty</source>
+        <translation>Adressenbeschriftung darf nicht leer sein</translation>
     </message>
     <message>
-        <source>Confirm masternode start</source>
-        <translation>Masternode start bestätigen</translation>
+        <source>IP or port cannot be empty</source>
+        <translation>IP und Port dürfen nicht leer sein</translation>
     </message>
     <message>
-        <source>Are you sure you want to start masternode %1?</source>
-        <translation>Sind Sie sicher, dass Sie den Masternode %1 starten wollen?</translation>
+        <source>Invalid IP address</source>
+        <translation>Ungültige IP Adresse</translation>
     </message>
     <message>
-        <source>Confirm all masternodes start</source>
-        <translation>Start aller Masternodes bestätigen</translation>
+        <source>Unknown error</source>
+        <translation>Unbekannter Fehler</translation>
     </message>
     <message>
-        <source>Are you sure you want to start ALL masternodes?</source>
-        <translation>Sind Sie sicher, dass Sie alle Masternodes starten wollen?</translation>
+        <source>Prepare master node failed.
+
+%1
+</source>
+        <translation>Vorbereitung des Masternode ist gescheitert.
+
+%1
+</translation>
     </message>
     <message>
-        <source>Command is not available right now</source>
-        <translation>Befehl steht zur Zeit nicht zut verfügung</translation>
+        <source>Invalid collateral output index</source>
+        <translation>Ungültiger Index der Kollateralausgabe </translation>
     </message>
     <message>
-        <source>You can't use this command until masternode list is synced</source>
-        <translation>Sie können diesen Befehlt nicht ausführen, bevor der Masternode synchronisiert ist</translation>
+        <source>Master node created! Wait %1 confirmations before starting it.</source>
+        <translation>Masternode erstellt. Warten Sie auf %1 Bestätigungen, bevor Sie ihn starten</translation>
     </message>
     <message>
-        <source>Confirm missing masternodes start</source>
-        <translation>Start fehlender Masternodes bestätigen</translation>
+        <source>Cannot send collateral transaction.
+
+%1</source>
+        <translation>Kollateral konnte nicht gesendet werden
+
+%1</translation>
     </message>
     <message>
-        <source>Are you sure you want to start MISSING masternodes?</source>
-        <translation>Sind Sie sicher, dass Sie alle fehlenden Masternodes starten wollen?</translation>
+        <source>walletModel not set</source>
+        <translation>Wallet Modell nicht gesetzt</translation>
+    </message>
+    <message>
+        <source>Invalid masternode.conf file</source>
+        <translation>Ungültige masternode.conf Datei</translation>
+    </message>
+    <message>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Fehler beim Parsen der masternode.conf Datei </translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>masternode.conf Datei existiert nicht</translation>
     </message>
 </context>
 <context>
-    <name>MultiSendDialog</name>
+    <name>MasterNodesWidget</name>
     <message>
-        <source>MultiSend</source>
-        <translation>MultiSend</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>Enter whole numbers 1 - 100</source>
-        <translation>Gebe Ganzzahlen zwischen 1 - 100 ein</translation>
+        <source>Start All</source>
+        <translation>Alle ausführen</translation>
     </message>
     <message>
-        <source>Enter Address to Send to</source>
-        <translation>Zieladresse eingeben</translation>
+        <source>Start Inactive/s</source>
+        <translation>Starte Inaktive</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Fivebalance addresses after it matures.
-To Add: enter percentage to give and Fivebalance address to add to the MultiSend vector.
-To Delete: Enter address to delete and press delete.
-MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen Fivebalance-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die Fivebalance-Adressen des MultiSend-Vektor hinzuzufügen.
-Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
-MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
-        <source>Add to MultiSend Vector</source>
-        <translation>Füge zum MultiSend-Vektor hinzu</translation>
+        <source>Full nodes that incentivize node operators to perform the core consensus functions
+and vote on the treasury system receiving a periodic reward.</source>
+        <translation>Full Nodes, die Node-Betreibern einen Anreiz bieten, die Konsensfunktionen zu betreiben und in dem Treasury-System mit abstimmen, erhalten periodisch eine Belohnung.</translation>
     </message>
     <message>
-        <source>Add</source>
-        <translation>Hinzufügen</translation>
+        <source>Create Masternode Controller</source>
+        <translation>Masternode Controller erstellen</translation>
     </message>
     <message>
-        <source>Deactivate MultiSend</source>
-        <translation>Deaktiviere MultiSend</translation>
+        <source>No active Masternode yet</source>
+        <translation>Bisher keine aktiven Masternodes</translation>
     </message>
     <message>
-        <source>Deactivate</source>
-        <translation>Deaktivieren</translation>
-    </message>
-    <message>
-        <source>Choose an address from the address book</source>
-        <translation>Wähle eine Adresse aus dem Adressbuch</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Percentage of stake to send</source>
-        <translation>Prozentsatz des Staken zum senden</translation>
-    </message>
-    <message>
-        <source>Percentage:</source>
-        <translation>Prozent:</translation>
-    </message>
-    <message>
-        <source>Address to send portion of stake to</source>
-        <translation>Adresse zum senden Teil des Staken an</translation>
-    </message>
-    <message>
-        <source>Address:</source>
-        <translation>Adresse:</translation>
-    </message>
-    <message>
-        <source>Delete Address From MultiSend Vector</source>
-        <translation>Lösche Adresse von MultiSend-Vektor</translation>
+        <source>Start</source>
+        <translation>Start</translation>
     </message>
     <message>
         <source>Delete</source>
         <translation>Löschen</translation>
     </message>
     <message>
-        <source>Activate MultiSend</source>
-        <translation>Aktiviere MultiSend</translation>
+        <source>Info</source>
+        <translation>Info</translation>
     </message>
     <message>
-        <source>Activate</source>
-        <translation>Aktivieren</translation>
+        <source>Please wait until the node is fully synced</source>
+        <translation>Bitte warten Sie bis der Node vollständig synchronisiert ist</translation>
     </message>
     <message>
-        <source>View MultiSend Vector</source>
-        <translation>Zeige MultiSend-Vektor</translation>
+        <source>Start Masternode</source>
+        <translation>Starte Masternode</translation>
     </message>
     <message>
-        <source>View MultiSend</source>
-        <translation>Zeige MultiSend</translation>
-    </message>
-    <message>
-        <source>Send For Stakes</source>
-        <translation>For Staker versenden</translation>
-    </message>
-    <message>
-        <source>Send For Masternode Rewards</source>
-        <translation>Für Masternode Rewards versenden</translation>
-    </message>
-    <message>
-        <source>The entered address:
+        <source>Are you sure you want to start masternode %1?
 </source>
-        <translation>Die eingegebene Adresse:
+        <translation>Sind Sie sicher, dass Sie den Masternode starten wollen %1?
 </translation>
     </message>
     <message>
-        <source> is invalid.
-Please check the address and try again.</source>
-        <translation>ist ungültig.
-Bitte Adresse überprüfen und nochmals versuchen.</translation>
+        <source>Cannot edit masternode, wallet locked</source>
+        <translation>Masternode kann nicht bearbeitet werden, das Wallet ist verschlossen</translation>
     </message>
     <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward
+        <source>Cannot start masternode, the collateral transaction has not been confirmed by the network yet.
+Please wait few more minutes (masternode collaterals require %1 confirmations).</source>
+        <translation>Masternode kann nicht gestartet werden, das Kollateral wurde noch nicht durch das Netzwerk bestätigt. Bitte warten Sie einige Minuten (Es werden %1 Bestätigungen benötigt)</translation>
+    </message>
+    <message>
+        <source>Background task is being executed, please wait</source>
+        <translation>Hintergrundprozess wird ausgeführt. Bitte warten Sie</translation>
+    </message>
+    <message>
+        <source>Start ALL masternodes failed</source>
+        <translation>Starten ALLER Masternodes gescheitert</translation>
+    </message>
+    <message>
+        <source>Wallet unlock cancelled</source>
+        <translation>Entriegelung des Wallets abgebrochen</translation>
+    </message>
+    <message>
+        <source>Cannot perform Masternodes start</source>
+        <translation>Start des Masternodes kann nicht durchgeführt werden</translation>
+    </message>
+    <message>
+        <source>%1 Masternodes failed to start, %2 started</source>
+        <translation>%1 Masternodes konnten nicht gestartet werden, %2 wurden gestartet</translation>
+    </message>
+    <message>
+        <source>All Masternodes started!</source>
+        <translation>Alle Masternodes gestartet</translation>
+    </message>
+    <message>
+        <source>Cannot show Masternode information, wallet locked</source>
+        <translation>Informationen des Masternodes konnten nicht angezeigt werden, das Wallet ist verriegelt.</translation>
+    </message>
+    <message>
+        <source>Masternode data copied to the clipboard.</source>
+        <translation>Masternode Daten in die Zwischenablage kopiert</translation>
+    </message>
+    <message>
+        <source>Not enough balance to create a masternode, 10,000 %1 required.</source>
+        <translation>Nicht genügend Coins für die Erzeugung eines Masternodes vorhanden, 10.000 %1 erforderlich.</translation>
+    </message>
+    <message>
+        <source>Remote Masternode Data</source>
+        <translation>Remote Masternode Daten</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Was ist ein Masternode?</translation>
+    </message>
+    <message>
+        <source>FAQ explaining what Masternodes are</source>
+        <translation>FAQ erklärt, was Masternodes sind</translation>
+    </message>
+    <message>
+        <source>What is a Controller?</source>
+        <translation>Was ist ein Controller?</translation>
+    </message>
+    <message>
+        <source>FAQ explaining what is a Masternode Controller</source>
+        <translation>FAQ erklärt, was ein Masternode Controller ist</translation>
+    </message>
+    <message>
+        <source>You are just about to export the required data to run a Masternode
+on a remote server to your clipboard.
+
+
+You will only have to paste the data in the fivebalance.conf file
+of your remote server and start it, then start the Masternode using
+this controller wallet (select the Masternode in the list and press "start").
 </source>
-        <translation>Die Gesamtzahl des MultiSend Vektors ist über 100% des Stake Rewards
+        <translation>Sie sind dabei die erforderlichen Daten, um einen Masternode auf einem externen Server laufen zu lassen,
+in die Zwischenablage zu kopieren.
+
+
+SIe müssen lediglich die Daten in die fivebalance.conf Datei Ihres externen Servers einfügen,
+die Fivebalance-wallet starten, um dann von der Kontrollwallet aus
+ihren Masternode zu starten (Wählen Sie den Masternode in der Liste aus und drücken SIe "Start").
 </translation>
     </message>
     <message>
-        <source>Please Enter 1 - 100 for percent.</source>
-        <translation>Bitte eine Zahl zwischen 1-100 in Prozent eingeben.</translation>
+        <source>Delete Masternode</source>
+        <translation>Lösche Masternode</translation>
     </message>
     <message>
-        <source>MultiSend Vector
-</source>
-        <translation>MultiSend Vektor
-</translation>
+        <source>You are just about to delete Masternode:
+%1
+
+Are you sure?</source>
+        <translation>Sie sind dabei folgednen Masternode zu löschen:
+%1
+
+Sind sie sicher?</translation>
     </message>
     <message>
-        <source>Removed </source>
-        <translation>Gelöscht</translation>
+        <source>Invalid masternode.conf file</source>
+        <translation>Ungültige masternode.conf Datei</translation>
     </message>
     <message>
-        <source>Could not locate address
-</source>
-        <translation>Konnte Adresse nicht ermitteln
-</translation>
+        <source>Error parsing masternode.conf file</source>
+        <translation>Fehler beim Parsen der masternode.conf Datei </translation>
+    </message>
+    <message>
+        <source>masternode.conf file doesn't exists</source>
+        <translation>masternode.conf Datei existiert nicht</translation>
+    </message>
+    <message>
+        <source>Cannot create Masternode controller, wallet locked</source>
+        <translation>Konnte keinen Masternode Controller erzeugen, das Wallet ist verriegelt</translation>
+    </message>
+    <message>
+        <source>Error creating masternode</source>
+        <translation>Fehler beim Erstellen des Masternodes</translation>
     </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MnInfoDialog</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>Verschleierung konfigurieren</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>Geringe Privatsphäre</translation>
+        <source>Masternode Information</source>
+        <translation>Masternode Information</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>Hohe Privatsphäre</translation>
+        <source>Public Key:</source>
+        <translation>Öffentlicher Schlüssel:</translation>
     </message>
     <message>
-        <source>Maximum Privacy</source>
-        <translation>Maximale Privatsphäre</translation>
+        <source>Address: </source>
+        <translation>IP-Adresse:</translation>
     </message>
     <message>
-        <source>Please select a privacy level.</source>
-        <translation>Bitte den gewünschten Privatsphäre Level auswählen.</translation>
+        <source>Collaterall tx id:</source>
+        <translation>ID der Kollateral-Transaktion:</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 FBN</source>
-        <translation>2 separate Masternodes verwenden um bis zu 10000 FBN zu mixen</translation>
+        <source>Output index:</source>
+        <translation>Output Index:</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 FBN</source>
-        <translation>8 separate Masternodes verwenden um bis zu 10000 FBN zu mixen</translation>
+        <source>1 Inputs</source>
+        <translation>1 Input</translation>
     </message>
     <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>16 separate Masternodes verwenden</translation>
+        <source>Status:</source>
+        <translation>Status:</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 FBN to anonymize 10000 FBN</source>
-        <translation>Diese Option ist die schnellst und kostet ungefähr ~0.025 FBN um 10000 FBN zu anonymisieren </translation>
+        <source>Export data to run the Masternode on a remote server</source>
+        <translation>Exportieren der Daten, um Masternode auf externem Server auszuführen</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 FBN to anonymize 10000 FBN</source>
-        <translation>Diese Option ist angemessen schnell und kostet ungefähr  0.05 FBN um 10000 FBN zu anonymisieren</translation>
+        <source>Masternode public key copied</source>
+        <translation>Public Key des Masternodes kopiert</translation>
     </message>
     <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Diese Option ist die langsamste und sicherste Option. Die Verwendung maximaler Anonymisierung kostet</translation>
+        <source>Collateral tx id copied</source>
+        <translation>Transaktions-ID des Kollaterals kopiert</translation>
+    </message>
+</context>
+<context>
+    <name>MyAddressRow</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+</context>
+<context>
+    <name>NavMenuWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>0.1 FBN per 10000 FBN you anonymize.</source>
-        <translation>0.1 FBN per 10000 FBN die anonymisiert werden.</translation>
+        <source>HOME
+</source>
+        <translation>HAUPT
+</translation>
     </message>
     <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Verschleierungskonfiguration</translation>
+        <source>SEND
+</source>
+        <translation>SENDEN
+</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Fivebalance's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den Fivebalances Konfigurationen ändern.</translation>
+        <source>RECEIVE
+</source>
+        <translation>EMPFANGEN
+</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Fivebalance's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den Fivebalances Konfigurationen ändern.</translation>
+        <source>CONTACTS
+</source>
+        <translation>KONTAKTE
+</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Fivebalance's configuration screen.</source>
-        <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den Fivebalances Konfigurationen ändern.</translation>
+        <source>MASTER
+NODES</source>
+        <translation>MASTER
+NODES</translation>
+    </message>
+    <message>
+        <source>COLD
+STAKING</source>
+        <translation>COLD
+STAKING</translation>
+    </message>
+    <message>
+        <source>SETTINGS
+</source>
+        <translation>EINSTELLUNGEN
+</translation>
+    </message>
+    <message>
+        <source>V 1.0.0</source>
+        <translation>V 1.0.0</translation>
+    </message>
+    <message>
+        <source>v%1</source>
+        <translation>v%1</translation>
     </message>
 </context>
 <context>
@@ -1594,8 +1755,16 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Zahlungsanfrage von URI oder Datei öffnen</translation>
     </message>
     <message>
-        <source>URI:</source>
-        <translation>URI:</translation>
+        <source>TextLabel</source>
+        <translation>TextEtikett</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Select payment request file</source>
@@ -1604,6 +1773,25 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     <message>
         <source>Select payment request file to open</source>
         <translation>Datei für Zahlungsanfrage öffnen</translation>
+    </message>
+    <message>
+        <source>File not found</source>
+        <translation>Datei nicht gefunden</translation>
+    </message>
+    <message>
+        <source>Parsed data too large</source>
+        <translation>Zu viele Daten zu parsen</translation>
+    </message>
+    <message>
+        <source>Invalid URI, not starting with "fivebalance" prefix</source>
+        <translation>Ungültige URI, sie beginnt nicht mit "fivebalance"-Präfix</translation>
+    </message>
+</context>
+<context>
+    <name>OptionButton</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
 </context>
 <context>
@@ -1614,7 +1802,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>&amp;Main</source>
-        <translation>&amp;Main</translation>
+        <translation>&amp;Haupt</translation>
     </message>
     <message>
         <source>Size of &amp;database cache</source>
@@ -1630,7 +1818,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>(0 = auto, &lt;0 = leave that many cores free)</source>
-        <translation>(0 = auto, &lt;0 = leave that many cores free)</translation>
+        <translation>(0 = auto, &lt;0 = lasse soviele Kerne frei)</translation>
     </message>
     <message>
         <source>W&amp;allet</source>
@@ -1638,15 +1826,15 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</source>
-        <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
+        <translation>Wenn Sie das Ausgeben von unbestätigtem Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf Ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the Fivebalance client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisches öffnen des Fivebalance-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
+        <source>Automatically open the FIVEBALANCE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisches öffnen des FIVEBALANCE-Client-Port im Router. Dies funktioniert nur, wenn Ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
-        <translation>Verbindungen von Aussen zulassen</translation>
+        <translation>Verbindungen von Außen zulassen</translation>
     </message>
     <message>
         <source>Allow incoming connections</source>
@@ -1661,12 +1849,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start Fivebalance after logging in to the system.</source>
-        <translation>Fivebalance automatisch nach dem Login starten.</translation>
+        <source>Automatically start FIVEBALANCE after logging in to the system.</source>
+        <translation>FIVEBALANCE automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start Fivebalance on system login</source>
-        <translation>Fivebalance automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start FIVEBALANCE on system login</source>
+        <translation>FIVEBALANCE automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1693,7 +1881,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Fivebalance.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting FIVEBALANCE.</source>
         <translation>Die Sprache der Benutzeroberfläche kann hier festgelegt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
@@ -1705,6 +1893,22 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Port mit &amp;UPnP mappen</translation>
+    </message>
+    <message>
+        <source>Enable automatic minting of FBN units to zFBN</source>
+        <translation>Aktivieren Sie die automatische Prägung von FBN-Einheiten zu zFBN</translation>
+    </message>
+    <message>
+        <source>Enable zFBN Automint</source>
+        <translation>Aktivieren Sie zFBN Automint</translation>
+    </message>
+    <message>
+        <source>Enable automatic zFBN minting from specific addresses</source>
+        <translation>Automatisches zFBN Minting von spezifischen Adressen erlauben</translation>
+    </message>
+    <message>
+        <source>Enable Automint Addresses</source>
+        <translation>Automint Adressen aktivieren</translation>
     </message>
     <message>
         <source>Percentage of incoming FBN which get automatically converted to zFBN via Zerocoin Protocol (min: 10%)</source>
@@ -1723,8 +1927,12 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>Bevorzugte automatisierte zFBN Stückelung </translation>
     </message>
     <message>
-        <source>Connect to the Fivebalance network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem Fivebalance Netzwerk verbinden.</translation>
+        <source>Stake split threshold:</source>
+        <translation>Staff Split-Schwelle:</translation>
+    </message>
+    <message>
+        <source>Connect to the FIVEBALANCE network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem FIVEBALANCE Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1748,7 +1956,7 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
     <message>
         <source>Show only a tray icon after minimizing the window.</source>
-        <translation>Zeige nur ein Symbolkachel nach der Fensterminimierung.</translation>
+        <translation>Zeige nur eine Symbolkachel nach der Fensterminimierung.</translation>
     </message>
     <message>
         <source>&amp;Minimize to the tray instead of the taskbar</source>
@@ -1775,8 +1983,8 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>Benutzeroberfläche Motiv:</translation>
     </message>
     <message>
-        <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;Einheit des Betrags anzeigen in:</translation>
+        <source>Unit to show amounts in:</source>
+        <translation>Einheit des Betrags anzeigen in:</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
@@ -1787,8 +1995,20 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>Dezimalstellen</translation>
     </message>
     <message>
+        <source>Hide empty balances</source>
+        <translation>Leere Salden ausblenden</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes in transaction lists</source>
+        <translation>Verbirge verwaiste Stakes in der Transaktionsliste</translation>
+    </message>
+    <message>
+        <source>Hide orphan stakes</source>
+        <translation>Verbirge verwaiste Stakes</translation>
+    </message>
+    <message>
         <source>Third party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
-        <translation>Drittpartei URLs (z.B. Blockexplorer) die auf der Registerkarte Transaktionen als Kontextmenü erscheinen.. %s in der URL wird durch den Transaktionshash ersetzt. Mehrere URLs sind durch vertikale Balken | getrennt.</translation>
+        <translation>Drittpartei URLs (z.B. Blockexplorer) die auf der Registerkarte Transaktionen als Kontextmenü erscheinen. %s in der URL wird durch den Transaktionshash ersetzt. Mehrere URLs sind durch vertikale Balken | getrennt.</translation>
     </message>
     <message>
         <source>Third party transaction URLs</source>
@@ -1815,8 +2035,8 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
         <translation>&amp;Abbrechen</translation>
     </message>
     <message>
-        <source>I don't care</source>
-        <translation>Mir egal</translation>
+        <source>Any</source>
+        <translation>Irgendein</translation>
     </message>
     <message>
         <source>default</source>
@@ -1832,7 +2052,7 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
     <message>
         <source>Client restart required to activate changes.</source>
-        <translation>Client Neustart erforderlich, um Änderungen zu aktivieren.</translation>
+        <translation>Neustart des Clients erforderlich, um Änderungen zu aktivieren.</translation>
     </message>
     <message>
         <source>Client will be shutdown, do you want to proceed?</source>
@@ -1844,106 +2064,90 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation>Die eingegeben PROXY-Adresse ist ungültig.</translation>
+        <translation>Die eingegebene PROXY-Adresse ist ungültig.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy port is invalid.</source>
+        <translation>Der angegebene Proxy-Port ist ungültig.</translation>
+    </message>
+    <message>
+        <source>The supplied proxy settings are invalid.</source>
+        <translation>Die angegebenen Proxyeinstellungen sind ungültig.</translation>
     </message>
 </context>
 <context>
-    <name>OverviewPage</name>
+    <name>FIVEBALANCEGUI</name>
     <message>
-        <source>Form</source>
-        <translation>Formular</translation>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
-        <source>FBN Balances</source>
-        <translation>FBN Bilanzen</translation>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
     </message>
     <message>
-        <source>Available:</source>
-        <translation>Verfügbar:</translation>
+        <source>Node</source>
+        <translation>Node</translation>
     </message>
     <message>
-        <source>Your current spendable balance</source>
-        <translation>Ihr aktuell verfügbarer Kontostand</translation>
+        <source>&amp;Show / Hide</source>
+        <translation>&amp;Anzeigen / Verbergen</translation>
     </message>
     <message>
-        <source>Pending:</source>
-        <translation>Ausstehend:</translation>
+        <source>Show or hide the main Window</source>
+        <translation>Das Hauptfenster anzeigen oder verbergen</translation>
     </message>
     <message>
-        <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
-        <translation>Betrag aus unbestätigten Transaktionen, der noch nicht im aktuell verfügbaren Kontostand enthalten ist</translation>
+        <source>E&amp;xit</source>
+        <translation>&amp;Beenden</translation>
     </message>
     <message>
-        <source>Immature:</source>
-        <translation>Unreif:</translation>
+        <source>Quit application</source>
+        <translation>Anwendung beenden</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards that has not yet matured</source>
-        <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
+        <source>FIVEBALANCE Core client</source>
+        <translation>FIVEBALANCE Core Client</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fivebalance network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Fivebalance-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>Error</source>
+        <translation>Fehler</translation>
     </message>
     <message>
-        <source>Unconfirmed transactions to watch-only addresses</source>
-        <translation>Unbestätigte Transaktionen  zu beobachteten Adressen</translation>
+        <source>Warning</source>
+        <translation>Warnung</translation>
     </message>
     <message>
-        <source>Staked or masternode rewards in watch-only addresses that has not yet matured</source>
-        <translation>Erarbeiteter Betrag der beobachteten Adressen der noch nicht gereift ist</translation>
+        <source>Information</source>
+        <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Total:</source>
-        <translation>Gesamtbetrag:</translation>
+        <source>System Message</source>
+        <translation>Systembenachrichtigung</translation>
     </message>
     <message>
-        <source>Your current total balance</source>
-        <translation>Aktueller Gesamtbetrag aus obigen Kategorien</translation>
+        <source>Sent MultiSend transaction</source>
+        <translation>Versende MultiSend Transaktion</translation>
     </message>
     <message>
-        <source>Current total balance in watch-only addresses</source>
-        <translation>Kontostand der beobachteten Adressen</translation>
+        <source>Sent transaction</source>
+        <translation>Gesendete Transaktion</translation>
     </message>
     <message>
-        <source>Watch-only:</source>
-        <translation>Beobachtet:</translation>
+        <source>Incoming transaction</source>
+        <translation>Eingehende Transaktion</translation>
     </message>
     <message>
-        <source>Your current balance in watch-only addresses</source>
-        <translation>Aktueller Kontostand der beobachteten Adressen</translation>
-    </message>
-    <message>
-        <source>Spendable:</source>
-        <translation>Verfügbar:</translation>
-    </message>
-    <message>
-        <source>Combined Balances (including immature coins)</source>
-        <translation>Kombinierte Bilanz (einschließlich unreifer Coins)</translation>
-    </message>
-    <message>
-        <source>FBN:</source>
-        <translation>FBN:</translation>
-    </message>
-    <message>
-        <source>zFBN:</source>
-        <translation>zFBN:</translation>
-    </message>
-    <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
-        <source>Zerocoin Balance</source>
-        <translation>Zerocoin Bilanz</translation>
-    </message>
-    <message>
-        <source>Recent transactions</source>
-        <translation>Letzte Transaktionen</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>nicht synchron</translation>
+        <source>Date: %1
+Amount: %2
+Type: %3
+Address: %4
+</source>
+        <translation>Datum: %1
+Betrag: %2
+Typ: %3
+Adresse: %4
+</translation>
     </message>
 </context>
 <context>
@@ -1966,15 +2170,15 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
     <message>
         <source>Invalid payment address %1</source>
-        <translation>Zahlungsaufforderungadresse %1</translation>
+        <translation>Ungültige Zahlungsaufforderungsadresse %1</translation>
     </message>
     <message>
         <source>Cannot start fivebalance: click-to-pay handler</source>
-        <translation>Kann Fivebalance nicht starten: click-to-pay Handler</translation>
+        <translation>Kann FIVEBALANCE nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Fivebalance address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige Fivebalance-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid FIVEBALANCE address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige FIVEBALANCE-Adresse oder fehlerhafte URI-Parameter verursacht worden sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2053,471 +2257,14 @@ https://www.transifex.com/fivebalance-project/fivebalance-project-translations</
     </message>
 </context>
 <context>
-    <name>PrivacyDialog</name>
-    <message>
-        <source>FBN which were anonymized via Zerocin Protocol</source>
-        <translation>FBN, die über das Zerocoin-Protokoll anonymisiert wurden</translation>
-    </message>
-    <message>
-        <source>Zerocoin FBN (zFBN)</source>
-        <translation>Zerocoin FBN (zFBN)</translation>
-    </message>
-    <message>
-        <source>Zerocoin Actions:</source>
-        <translation>Zerocoin Aktionen:</translation>
-    </message>
-    <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fivebalance network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem Fivebalance-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
-    </message>
-    <message>
-        <source>Enter an amount of Phr to convert to zPhr</source>
-        <translation>Eingabe des Phr-Betrags, um in zPhr umzuwandeln</translation>
-    </message>
-    <message>
-        <source>Mint Zerocoin</source>
-        <translation>Präge Zerocoin</translation>
-    </message>
-    <message>
-        <source>0</source>
-        <translation>0</translation>
-    </message>
-    <message>
-        <source>zFBN</source>
-        <translation>zFBN</translation>
-    </message>
-    <message>
-        <source>Available for Minting:</source>
-        <translation>Verfügbar für Prägung:</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 FBN</source>
-        <translation>0.000 000 00 FBN</translation>
-    </message>
-    <message>
-        <source>Reset Zerocoin Wallet DB. Deletes transactions that did not make it into the blockchain.</source>
-        <translation>Zurücksetzen der Zerocoin-Wallet-DB. Löscht Transaktionen, die es nicht in die Blockchain geschafft haben.</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Zurücksetzen</translation>
-    </message>
-    <message>
-        <source>Coin Control...</source>
-        <translation>Coin-Kontrolle...</translation>
-    </message>
-    <message>
-        <source>Quantity:</source>
-        <translation>Anzahl:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Betrag:</translation>
-    </message>
-    <message>
-        <source>Rescan the complete blockchain for  Zerocoin mints and their meta-data.</source>
-        <translation>Erneutes Scannen der kompletten Blockchain nach Zerocoin Prägungen und deren Meta-Daten</translation>
-    </message>
-    <message>
-        <source>ReScan</source>
-        <translation>Erneut Scannen</translation>
-    </message>
-    <message>
-        <source>Status and/or Mesages from the last Mint Action.</source>
-        <translation>Status und/oder Mitteilungen aus der letzten Prägung</translation>
-    </message>
-    <message>
-        <source>zPhr Control</source>
-        <translation>zPhr Kontrolle</translation>
-    </message>
-    <message>
-        <source>zPhr Selected:</source>
-        <translation>zPhr Ausgewählt:</translation>
-    </message>
-    <message>
-        <source>Quantity Selected:</source>
-        <translation>Menge ausgewählt:</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin. Without 'Pay To:' address creates payments to yourself.</source>
-        <translation>Überweise Zerocoin. Ohne Empfänger-Adresse werden Zahlungen an Sie selbst erstellt.</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin</source>
-        <translation>Überweise Zerocoin</translation>
-    </message>
-    <message>
-        <source>Available Balance:</source>
-        <translation>Verfügbare Bilanz:</translation>
-    </message>
-    <message>
-        <source>0 zFBN</source>
-        <translation>0 zFBN</translation>
-    </message>
-    <message>
-        <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
-        <translation>Sicherheitsstufe für Zerocoin-Transaktionen. Höher ist besser, benötigt jedoch mehr Zeit und Ressourcen.</translation>
-    </message>
-    <message>
-        <source>Security Level:</source>
-        <translation>Sicherheitsstufe:</translation>
-    </message>
-    <message>
-        <source>Security Level 1 - 100 (default: 42)</source>
-        <translation>Sicherheitsstufe 1 - 100 (Voreinstellung: 42)</translation>
-    </message>
-    <message>
-        <source>Pay &amp;To:</source>
-        <translation>E&amp;mpfänger:</translation>
-    </message>
-    <message>
-        <source>The Fivebalance address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Die Fivebalance-Adresse, an die die Zahlung gesendet wird. Erstellt eine lokale Zahlung an Sie selbst, wenn die Zeile leer ist.</translation>
-    </message>
-    <message>
-        <source>Choose previously used address</source>
-        <translation>Bereits verwendete Adresse auswählen</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Adresse aus der Zwischenablage einfügen</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Bezeichnung:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Adressbezeichnung eingeben, um diese in der Liste der bereits verwendeten Adressen zu speichern</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>Betra&amp;g:</translation>
-    </message>
-    <message>
-        <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Wandle Wechselgeld in Zerocoin um (kann zusätzliche Gebühren kosten)</translation>
-    </message>
-    <message>
-        <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
-        <translation>Falls aktiviert, versucht die Wallet, das zurückkehrende Wechselgeld zu minimieren, anstatt die Anzahl der verbrauchten Stückelungen zu minimieren.</translation>
-    </message>
-    <message>
-        <source>Minimize Change</source>
-        <translation>Minimiert Wechselgeld</translation>
-    </message>
-    <message>
-        <source>Information about the available Zerocoin funds.</source>
-        <translation>Informationen über den verfügbaren Zerocoin-Bestand.</translation>
-    </message>
-    <message>
-        <source>Zerocoin Stats:</source>
-        <translation>Zerocoin Statistiken:</translation>
-    </message>
-    <message>
-        <source>Available Funds</source>
-        <translation>Verfügbare Mittel</translation>
-    </message>
-    <message>
-        <source>Available Zerocoin  Balance:</source>
-        <translation>Verfügbare Zerocoin Bilanz:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1:</source>
-        <translation>Stückelungen mit Wert 1:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1:</source>
-        <translation>Stücke mit Wert 1:</translation>
-    </message>
-    <message>
-        <source>0 x</source>
-        <translation>0 x</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5:</source>
-        <translation>Stückelungen mit Wert 5:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5:</source>
-        <translation>Stücke mit Wert 5:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 10:</source>
-        <translation>Stückelungen mit Wert 10:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 10:</source>
-        <translation>Stücke mit Wert 10:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 50:</source>
-        <translation>Stückelungen mit Wert 50:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 50:</source>
-        <translation>Stücke mit Wert 50:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 100:</source>
-        <translation>Stückelungen mit Wert 100:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 100:</source>
-        <translation>Stücke mit Wert 100:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 500:</source>
-        <translation>Stückelungen mit Wert 500:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 500:</source>
-        <translation>Stücke mit Wert 500:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 1000:</source>
-        <translation>Stückelungen mit Wert 1000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 1000:</source>
-        <translation>Stücke mit Wert 1000:</translation>
-    </message>
-    <message>
-        <source>Denominations with value 5000:</source>
-        <translation>Stückelungen mit Wert 5000:</translation>
-    </message>
-    <message>
-        <source>Denom. with value 5000:</source>
-        <translation>Stücke mit Wert 5000:</translation>
-    </message>
-    <message>
-        <source>Note: This hidden objects are used for communication between the 'Coin Control' dialog and its parent objects. We don't want to change/reimplement the existing Coin Control, so this objects must be here, even when we don't use them. No, we don't like this approach, either.</source>
-        <translation>Hinweis: Diese verborgenen Objekte werden für die Kommunikation zwischen dem Dialog "Coin Kontrolle" und den übergeordneten Objekten verwendet. Wir wollen die bestehende Coin Kontrolle nicht ändern / reimplementieren. Also müssen diese Objekte hier sein, auch wenn wir sie nicht benutzen. Nein, das gefällt uns auch nicht.</translation>
-    </message>
-    <message>
-        <source>Priority:</source>
-        <translation>Priorität:</translation>
-    </message>
-    <message>
-        <source>Fee:</source>
-        <translation>Gebühr:</translation>
-    </message>
-    <message>
-        <source>Dust:</source>
-        <translation>Abzug:</translation>
-    </message>
-    <message>
-        <source>no</source>
-        <translation>nein</translation>
-    </message>
-    <message>
-        <source>Bytes:</source>
-        <translation>Byte:</translation>
-    </message>
-    <message>
-        <source>Insufficient funds!</source>
-        <translation>Unzureichender Kontostand!</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Coins automatisch ausgewählt</translation>
-    </message>
-    <message>
-        <source>medium</source>
-        <translation>mittel</translation>
-    </message>
-    <message>
-        <source>Coin Control Features</source>
-        <translation>"Coin Control"-Funktionen</translation>
-    </message>
-    <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Wenn dies aktivert, und die Wechselgeld-Adresse leer oder ungültig ist, wird das Wechselgeld einer neu erzeugten Adresse gutgeschrieben.</translation>
-    </message>
-    <message>
-        <source>Custom change address</source>
-        <translation>Benutzerdefinierte Wechselgeld-Adresse</translation>
-    </message>
-    <message>
-        <source>Amount After Fee:</source>
-        <translation>Betrag nach Gebühr:</translation>
-    </message>
-    <message>
-        <source>Change:</source>
-        <translation>Wechselgeld:</translation>
-    </message>
-    <message>
-        <source>out of sync</source>
-        <translation>nicht synchron</translation>
-    </message>
-    <message>
-        <source>Mint Status: Okay</source>
-        <translation>Prägestatus: Okay</translation>
-    </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Kopiere Anzahl</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Betrag kopieren</translation>
-    </message>
-    <message>
-        <source>Zerocoin functionality is not enabled on the Fivebalance network yet.</source>
-        <translation>Die Zerocoin Funktionalität ist im Fivebalance Netzwerk im Moment nicht freigeschaltet.</translation>
-    </message>
-    <message>
-        <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
-        <translation>Fehler: Ihre Wallet ist gesperrt. Bitte geben Sie zuerst ihre Wallet Passphrase ein.</translation>
-    </message>
-    <message>
-        <source>Message: Enter an amount &gt; 0.</source>
-        <translation>Nachricht: Geben Sie einen Betrag &gt; 0 ein.</translation>
-    </message>
-    <message>
-        <source>Minting </source>
-        <translation>Prägung</translation>
-    </message>
-    <message>
-        <source>Successfully minted </source>
-        <translation>Erfolgreich geprägt</translation>
-    </message>
-    <message>
-        <source> zFBN in </source>
-        <translation> zFBN in </translation>
-    </message>
-    <message>
-        <source> sec. Used denominations:
-</source>
-        <translation> ausg. Verwendete Stückelungen:
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetMintZerocoin: rescanning complete blockchain, this will need up to 30 minutes depending on your hardware. 
-Please be patient...</source>
-        <translation>Starten von ResetMintZerocoin: Erneutes Scannen der kompletten Blockchain. Das benötigt, je nach Hardware, bis zu 30 Minuten .
-Bitte haben Sie etwas Geduld...</translation>
-    </message>
-    <message>
-        <source>Duration: </source>
-        <translation>Dauer:</translation>
-    </message>
-    <message>
-        <source> sec.
-</source>
-        <translation>ausg.
-</translation>
-    </message>
-    <message>
-        <source>Starting ResetSpentZerocoin: </source>
-        <translation>Starte ResetSpentZerocoin: </translation>
-    </message>
-    <message>
-        <source>No 'Pay To' address provided, creating local payment</source>
-        <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
-    </message>
-    <message>
-        <source>Invalid Fivebalance Address</source>
-        <translation>Ungültige Fivebalance-Adresse </translation>
-    </message>
-    <message>
-        <source>Invalid Send Amount</source>
-        <translation>Ungültiger Sendebetrag.</translation>
-    </message>
-    <message>
-        <source>Confirm additional Fees</source>
-        <translation>Zusätzliche Gebühren bestätigen</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?&lt;br /&gt;&lt;br /&gt;</source>
-        <translation>Sind Sie sicher, dass Sie senden möchten?&lt;br /&gt;&lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source> to address </source>
-        <translation>an Adresse</translation>
-    </message>
-    <message>
-        <source> to a newly generated (unused and therefor anonymous) local address &lt;br /&gt;</source>
-        <translation>zu einer neu erzeugten (unbenutzten und damit anonymen) lokalen Adresse &lt;br /&gt;</translation>
-    </message>
-    <message>
-        <source>with Security Level </source>
-        <translation>mit Sicherheitsstufe</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Sende Coins bestätigen</translation>
-    </message>
-    <message>
-        <source>Spending Zerocoin.
-Computationally expensive, might need several minutes depending on the selected Security Level and your hardware. 
-Please be patient...</source>
-        <translation>Zerocoin ausgeben.
-Rechnerisch aufwändig. Kann je nach ausgewähltem Sicherheitsstufe und Ihrer Hardware mehrere Minuten benötigen
-Bitte haben Sie Geduld...</translation>
-    </message>
-    <message>
-        <source>Spend Zerocoin failed with status = </source>
-        <translation>Ausgeben Zerocoin fehlgeschlagen mit Status =</translation>
-    </message>
-    <message>
-        <source>zPhr Spend #: </source>
-        <translation>zFBN Ausgeben #:</translation>
-    </message>
-    <message>
-        <source>denomination: </source>
-        <translation>Stückelung:</translation>
-    </message>
-    <message>
-        <source>serial: </source>
-        <translation>seriell:</translation>
-    </message>
-    <message>
-        <source>Spend is 1 of : </source>
-        <translation>Spend ist 1 von :</translation>
-    </message>
-    <message>
-        <source>value out: </source>
-        <translation>Betrag out:</translation>
-    </message>
-    <message>
-        <source>address: </source>
-        <translation>Adresse:</translation>
-    </message>
-    <message>
-        <source>zPhr Mint</source>
-        <translation>zPhr Prägen</translation>
-    </message>
-    <message>
-        <source>Sending successful, return code: </source>
-        <translation>Senden erfolgreich, Rückgabecode:</translation>
-    </message>
-    <message>
-        <source>txid: </source>
-        <translation>txid: </translation>
-    </message>
-    <message>
-        <source>fee: </source>
-        <translation>Gebühr:</translation>
-    </message>
-</context>
-<context>
     <name>QObject</name>
     <message>
         <source>Amount</source>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a Fivebalance address (e.g. %1)</source>
-        <translation>Fivebalance-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter FIVEBALANCE address (e.g. %1)</source>
+        <translation>FIVEBALANCE Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2559,24 +2306,197 @@ Bitte haben Sie Geduld...</translation>
         <source>%1 ms</source>
         <translation>%1 Ms</translation>
     </message>
-</context>
-<context>
-    <name>QRImageWidget</name>
     <message>
-        <source>&amp;Save Image...</source>
-        <translation>Grafik &amp;speichern...</translation>
+        <source>A fatal error occurred. FIVEBALANCE can no longer continue safely and will quit.</source>
+        <translation>Ein fataler Fehler ist aufgetreten. FIVEBALANCE kann nicht länger sicher fortfahren und wird geschlossen</translation>
     </message>
     <message>
-        <source>&amp;Copy Image</source>
-        <translation>Grafik &amp;kopieren</translation>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
     </message>
     <message>
-        <source>Save QR Code</source>
-        <translation>QR-Code speichern</translation>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>Fehler: Angegebener Speicherpfad "%1" existiert nicht.</translation>
     </message>
     <message>
-        <source>PNG Image (*.png)</source>
-        <translation>PNG-Grafik (*.png)</translation>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation>Fehler: Konfigurationsdatei: %1 konnte nicht geparst werden. Bitte nutzen Sie nur Schlüssel=Wert Syntax</translation>
+    </message>
+    <message>
+        <source>Error: Invalid combination of -regtest and -testnet.</source>
+        <translation>Fehler: Ungültige Kombination von -regtest und -testnet</translation>
+    </message>
+    <message>
+        <source>Error reading masternode configuration file: %1</source>
+        <translation>Fehler beim Einlesen der Konfigurationsdatei %1 für den Masternode.</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE Core didn't yet exit safely...</source>
+        <translation>FIVEBALANCE Core konnte noch nicht sicher beendet werden...</translation>
+    </message>
+    <message>
+        <source>Contact</source>
+        <translation>Kontakt</translation>
+    </message>
+    <message>
+        <source>Receiving</source>
+        <translation>Empfangen</translation>
+    </message>
+    <message>
+        <source>Delegator</source>
+        <translation>Delegierter</translation>
+    </message>
+    <message>
+        <source>Delegable</source>
+        <translation>zuweisbar</translation>
+    </message>
+    <message>
+        <source>Cold Staking</source>
+        <translation>Cold Staking</translation>
+    </message>
+    <message>
+        <source>Cold Staking Contact</source>
+        <translation>Cold Staking Kontakt</translation>
+    </message>
+    <message>
+        <source>Hidden</source>
+        <translation>Verborgen</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Unbekannt</translation>
+    </message>
+    <message>
+        <source>All</source>
+        <translation>Alle</translation>
+    </message>
+    <message>
+        <source>Contacts</source>
+        <translation>Kontakte</translation>
+    </message>
+    <message>
+        <source>Staking Contacts</source>
+        <translation>Staking Kontakte</translation>
+    </message>
+    <message>
+        <source>Date desc</source>
+        <translation>Datum herabsteigend</translation>
+    </message>
+    <message>
+        <source>Date asc</source>
+        <translation>Datum aufsteigend</translation>
+    </message>
+    <message>
+        <source>Amount desc</source>
+        <translation>Menge herabsteigend</translation>
+    </message>
+    <message>
+        <source>Amount asc</source>
+        <translation>Menge aufsteigend</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>Empfangen</translation>
+    </message>
+    <message>
+        <source>Sent</source>
+        <translation>Gesendet</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Erarbeitet</translation>
+    </message>
+    <message>
+        <source>Minted</source>
+        <translation>Erzeugt</translation>
+    </message>
+    <message>
+        <source>MN reward</source>
+        <translation>MN Vergütung</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>Eigenüberweisung</translation>
+    </message>
+    <message>
+        <source>Cold stakes</source>
+        <translation>Cold Stakes</translation>
+    </message>
+    <message>
+        <source>Hot stakes</source>
+        <translation>Hot Stakes</translation>
+    </message>
+    <message>
+        <source>Delegated</source>
+        <translation>Zugewiesen</translation>
+    </message>
+    <message>
+        <source>Delegations</source>
+        <translation>Delegationen</translation>
+    </message>
+    <message>
+        <source>by Label</source>
+        <translation>nach Bezeichnung</translation>
+    </message>
+    <message>
+        <source>by Address</source>
+        <translation>nach Adresse</translation>
+    </message>
+    <message>
+        <source>by Date</source>
+        <translation>nach Datum</translation>
+    </message>
+    <message>
+        <source>Jan</source>
+        <translation>Januar</translation>
+    </message>
+    <message>
+        <source>Feb</source>
+        <translation>Februar</translation>
+    </message>
+    <message>
+        <source>Mar</source>
+        <translation>März</translation>
+    </message>
+    <message>
+        <source>Apr</source>
+        <translation>April</translation>
+    </message>
+    <message>
+        <source>May</source>
+        <translation>Mai</translation>
+    </message>
+    <message>
+        <source>Jun</source>
+        <translation>Juni</translation>
+    </message>
+    <message>
+        <source>Jul</source>
+        <translation>Juli</translation>
+    </message>
+    <message>
+        <source>Aug</source>
+        <translation>August</translation>
+    </message>
+    <message>
+        <source>Sep</source>
+        <translation>September</translation>
+    </message>
+    <message>
+        <source>Oct</source>
+        <translation>Oktober</translation>
+    </message>
+    <message>
+        <source>Nov</source>
+        <translation>November</translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation>Dezember</translation>
+    </message>
+    <message>
+        <source>Address with no label</source>
+        <translation>Adresse ohne Bezeichnung</translation>
     </message>
 </context>
 <context>
@@ -2611,7 +2531,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>&amp;Open</source>
-        <translation>&amp;Offen</translation>
+        <translation>&amp;Öffnen</translation>
     </message>
     <message>
         <source>Startup time</source>
@@ -2628,10 +2548,6 @@ Bitte haben Sie Geduld...</translation>
     <message>
         <source>Debug log file</source>
         <translation>Debug-Protokolldatei</translation>
-    </message>
-    <message>
-        <source>Using OpenSSL version</source>
-        <translation>Verwendete OpenSSL Version</translation>
     </message>
     <message>
         <source>Build date</source>
@@ -2651,15 +2567,23 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>Block chain</source>
-        <translation>Block chain</translation>
+        <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the Fivebalance debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffne Fivebalance-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the FIVEBALANCE debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffne FIVEBALANCE-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann bei großen Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
         <translation>Anzahl der Masternodes</translation>
+    </message>
+    <message>
+        <source>Data Directory</source>
+        <translation>Datenverzeichnis</translation>
+    </message>
+    <message>
+        <source>Last block hash</source>
+        <translation>Letzter Blockhash</translation>
     </message>
     <message>
         <source>&amp;Console</source>
@@ -2694,8 +2618,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>&amp;Peers</translation>
     </message>
     <message>
+        <source>Banned peers</source>
+        <translation>Gebannte Peers</translation>
+    </message>
+    <message>
         <source>Select a peer to view detailed information.</source>
         <translation>Wähle ein Peer, um detaillierte Informationen zu sehen.</translation>
+    </message>
+    <message>
+        <source>Whitelisted</source>
+        <translation>Whitelisted</translation>
     </message>
     <message>
         <source>Direction</source>
@@ -2712,14 +2644,6 @@ Bitte haben Sie Geduld...</translation>
     <message>
         <source>Services</source>
         <translation>Dienstleistung</translation>
-    </message>
-    <message>
-        <source>Starting Height</source>
-        <translation>Starthöhe </translation>
-    </message>
-    <message>
-        <source>Sync Height</source>
-        <translation>Sync Höhe</translation>
     </message>
     <message>
         <source>Ban Score</source>
@@ -2754,8 +2678,48 @@ Bitte haben Sie Geduld...</translation>
         <translation>&amp;Wallet reparieren </translation>
     </message>
     <message>
+        <source>Delete local Blockchain Folders</source>
+        <translation>Lokalen Blockchain-Ordner löschen.</translation>
+    </message>
+    <message>
         <source>Wallet In Use:</source>
         <translation>Wallet In Benutzung:</translation>
+    </message>
+    <message>
+        <source>Starting Block</source>
+        <translation>Startblock</translation>
+    </message>
+    <message>
+        <source>Synced Headers</source>
+        <translation>Synchronisierte Header</translation>
+    </message>
+    <message>
+        <source>Synced Blocks</source>
+        <translation>Synchronisierte Blöcke</translation>
+    </message>
+    <message>
+        <source>The duration of a currently outstanding ping.</source>
+        <translation>Die Dauer eines derzeit ausstehenden Pings.</translation>
+    </message>
+    <message>
+        <source>Ping Wait</source>
+        <translation>Ping warten</translation>
+    </message>
+    <message>
+        <source>Time Offset</source>
+        <translation>Zeitverschiebung</translation>
+    </message>
+    <message>
+        <source>Custom Backup Path:</source>
+        <translation>Benutzerdefinierter Sicherungspfad:</translation>
+    </message>
+    <message>
+        <source>Custom zFBN Backup Path:</source>
+        <translation>Benutzerdefinierter zFBN Sicherungspfad:</translation>
+    </message>
+    <message>
+        <source>Custom Backups Threshold:</source>
+        <translation>Benutzerdefinierter Sicherungs-Schwellwert:</translation>
     </message>
     <message>
         <source>Salvage wallet</source>
@@ -2798,6 +2762,14 @@ Bitte haben Sie Geduld...</translation>
         <translation>Blockchain Index aus der aktuellen blk000??.dat Datei neu aufbauen.</translation>
     </message>
     <message>
+        <source>-resync:</source>
+        <translation>-resync:</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch.</source>
+        <translation>Löscht alle lokalen Blockchain-Ordner damit das Wallet sich von Grund auf synchronisiert.</translation>
+    </message>
+    <message>
         <source>The buttons below will restart the wallet with command-line options to repair the wallet, fix issues with corrupt blockhain files or missing/obsolete transactions.</source>
         <translation>Die unten aufgeführten Schaltflächen starten die Wallet mit Befehlszeilenoptionen, um die Wallet zu reparieren. Probleme mit beschädigten Blockchain-Dateien oder fehlenden/veralteten Transaktionen werden behoben.</translation>
     </message>
@@ -2822,16 +2794,68 @@ Bitte haben Sie Geduld...</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Fivebalance RPC console.</source>
-        <translation>Willkommen in der Fivebalance RPC-Konsole.</translation>
+        <source>Welcome to the FIVEBALANCE RPC console.</source>
+        <translation>Willkommen in der FIVEBALANCE RPC-Konsole.</translation>
     </message>
     <message>
-        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
-        <translation>Nutze Pfeiltasten hoch und runter um ehemals genutze Konsolenbefehle durch zu scrollen, und &lt;b&gt;Ctrl-L&lt;/b&gt; um das Konsolenfenster zu leeren.</translation>
+        <source>&amp;Disconnect Node</source>
+        <translation>&amp;Disconnect Node</translation>
+    </message>
+    <message>
+        <source>Ban Node for</source>
+        <translation>Ban Knoten für</translation>
+    </message>
+    <message>
+        <source>1 &amp;hour</source>
+        <translation>1 &amp;hour</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 &amp;day</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 &amp;week</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 &amp;year</translation>
+    </message>
+    <message>
+        <source>&amp;Unban Node</source>
+        <translation>&amp;Unban Node</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dieser Vorgang wird Ihren lokalen Blockchain-Ordner löschen und das Wallet wird von Grund auf neu Synchronisieren.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dieser Vorgang wird einige Zeit in Anspruch nehmen und eine menge Daten herunterladen.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Deine Transaktionen und Guthaben werden wieder sichtbar sein nachdem der Download-Prozess abgeschlossen ist.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Möchten Sie fortfahren?&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Synchronisation der Blockchain bestätigen</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Verwende die Pfeiltasten um durch den Verlauf zu scrollen und %1 um das Konsolenfester zu löschen.</translation>
     </message>
     <message>
         <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
         <translation>Gebe &lt;b&gt;help&lt;/b&gt; ein, um eine Übersicht der verfügbaren Befehle zu erhalten.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>Warnung: Abzocker sind aktiv und erzählen Nutzer hier Befehle einzugeben, um so den Inhalt des Wallets zu stehlen. Nutzen Sie diese Konsole nicht, ohne die Bedeutungen eines Befehls vollständig zu verstehen.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2850,6 +2874,10 @@ Bitte haben Sie Geduld...</translation>
         <translation>%1 GB</translation>
     </message>
     <message>
+        <source>(node id: %1)</source>
+        <translation>(node id: %1)</translation>
+    </message>
+    <message>
         <source>via %1</source>
         <translation>via %1</translation>
     </message>
@@ -2866,154 +2894,130 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ausgehend</translation>
     </message>
     <message>
+        <source>Yes</source>
+        <translation>Ja</translation>
+    </message>
+    <message>
+        <source>No</source>
+        <translation>Nein</translation>
+    </message>
+    <message>
         <source>Unknown</source>
         <translation>Unbekannt</translation>
     </message>
+</context>
+<context>
+    <name>ReceiveDialog</name>
     <message>
-        <source>Fetching...</source>
-        <translation>Holen...</translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
+    </message>
+    <message>
+        <source>My Address</source>
+        <translation>Meine Adresse</translation>
+    </message>
+    <message>
+        <source>COPY</source>
+        <translation>KOPIEREN</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
     </message>
 </context>
 <context>
-    <name>ReceiveCoinsDialog</name>
+    <name>ReceiveWidget</name>
     <message>
-        <source>Reuse one of the previously used receiving addresses.&lt;br&gt;Reusing addresses has security and privacy issues.&lt;br&gt;Do not use this unless re-generating a payment request made before.</source>
-        <translation>Wiederverwendung einer zuvor verwendeten Empfangsadressen.&lt;br&gt;Wiederverwendete Adressen haben Sicherheits- und Datenschutzprobleme.&lt;br&gt;Verwenden Sie diese nicht, es sei denn, dass Sie zuvor eine Zahlungsanforderung generieren.</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>R&amp;euse an existing receiving address (not recommended)</source>
-        <translation>&amp;Wiederverwendung einer vorhandenen Empfangsadresse (nicht empfohlen)</translation>
+        <source>No address</source>
+        <translation>Keine Adresse</translation>
     </message>
     <message>
-        <source>&amp;Message:</source>
-        <translation>Nachricht:</translation>
+        <source>Scan the QR code or copy the address to receive FBN</source>
+        <translation>Scannen Sie den QR Code oder kopieren Sie die Adresse, um FBN zu erhalten</translation>
     </message>
     <message>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation>Ein optionales Etikett, das mit der neuen Empfangsadresse verknüpft werden soll.</translation>
+        <source>Add Label</source>
+        <translation>Bezeichnung hinzufügen</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fivebalance network.</source>
-        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das Fivebalance-Netzwerk gesendet.</translation>
+        <source>Generate Address</source>
+        <translation>Generiere Adresse</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Fivebalance network.</source>
-        <translation>Eine optionale Nachricht an die Zahlungsaufforderung anhängen, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das Fivebalance-Netzwerk gesendet.</translation>
+        <source>Copy</source>
+        <translation>Kopieren</translation>
     </message>
     <message>
-        <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
-        <translation>Verwenden Sie dieses Formular, um Zahlungen anzufordern. Alle Felder sind &lt;b&gt;optional&lt;/b&gt;.</translation>
+        <source>Receive</source>
+        <translation>Empfangen</translation>
     </message>
     <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Bezeichnung:</translation>
+        <source>My Addresses</source>
+        <translation>Meine Adressen</translation>
     </message>
     <message>
-        <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
-        <translation>Einen optionalen Betrag anfordern. Lassen Sie diesen leer oder Null, um einen unbestimmten Betrag anzufordern.</translation>
+        <source>List your own addresses</source>
+        <translation>Eigenen Adressen auflisten</translation>
     </message>
     <message>
-        <source>&amp;Amount:</source>
-        <translation>&amp;Betrag:</translation>
+        <source>Create Request</source>
+        <translation>Zahlungsanweisung erstellen</translation>
     </message>
     <message>
-        <source>&amp;Request payment</source>
-        <translation>Zahlung anfo&amp;rdern</translation>
+        <source>Request payment with a fixed amount</source>
+        <translation>Zahlungsanweisung mit festem Betrag erstellen</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Alle Formularfelder zurücksetzen.</translation>
+        <source>No available address, try unlocking the wallet</source>
+        <translation>Keine Adresse verfügbar, versuche die Wallet zu entsperren.</translation>
     </message>
     <message>
-        <source>Clear</source>
-        <translation>Clear</translation>
+        <source>Error generating address</source>
+        <translation>Fehler beim Erstellen der Adresse</translation>
     </message>
     <message>
-        <source>Requested payments history</source>
-        <translation>Verlauf der angeforderten Zahlungen</translation>
+        <source>Edit Label</source>
+        <translation>Bezeichnung bearbeiten</translation>
     </message>
     <message>
-        <source>Show the selected request (does the same as double clicking an entry)</source>
-        <translation>Zeige die ausgewählte Anfrage an (entspricht dem Doppelklick auf einen Eintrag)</translation>
+        <source>Edit Address Label</source>
+        <translation>Adressbezeichnung bearbeiten</translation>
     </message>
     <message>
-        <source>Show</source>
-        <translation>Anzeigen</translation>
+        <source>Address label saved</source>
+        <translation>Adressbezeichnung gespeichert</translation>
     </message>
     <message>
-        <source>Remove the selected entries from the list</source>
-        <translation>Entferne die ausgewählten Einträge aus der Liste</translation>
+        <source>Error storing address label</source>
+        <translation>Fehler beim Speichern der Adressbezeichnung</translation>
     </message>
     <message>
-        <source>Remove</source>
-        <translation>Entfernen</translation>
+        <source>Cannot create new address, wallet locked</source>
+        <translation>Konnte keine neue Adresse erzeugen. Wallet verriegelt.</translation>
     </message>
     <message>
-        <source>Copy label</source>
-        <translation>Bezeichnung kopieren</translation>
+        <source>New address created</source>
+        <translation>Neue Adresse erstellen</translation>
     </message>
     <message>
-        <source>Copy message</source>
-        <translation>Nachricht kopieren</translation>
+        <source>Address copied</source>
+        <translation>Adresse kopiert</translation>
     </message>
     <message>
-        <source>Copy amount</source>
-        <translation>Betrag kopieren</translation>
-    </message>
-</context>
-<context>
-    <name>ReceiveRequestDialog</name>
-    <message>
-        <source>QR Code</source>
-        <translation>QR Code</translation>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>Aufgabe kann nicht durchgeführt werden, Ihr Wallet ist verschlossen</translation>
     </message>
     <message>
-        <source>Copy &amp;URI</source>
-        <translation>&amp;URI kopieren</translation>
+        <source>URI copied to clipboard</source>
+        <translation>URI in die Zwischenablage kopiert</translation>
     </message>
     <message>
-        <source>Copy &amp;Address</source>
-        <translation>&amp;Adresse kopieren</translation>
-    </message>
-    <message>
-        <source>&amp;Save Image...</source>
-        <translation>Grafik &amp;speichern...</translation>
-    </message>
-    <message>
-        <source>Request payment to %1</source>
-        <translation>Zahlung an %1 anfordern </translation>
-    </message>
-    <message>
-        <source>Payment information</source>
-        <translation>Zahlungsinformationen</translation>
-    </message>
-    <message>
-        <source>URI</source>
-        <translation>URI</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adresse</translation>
-    </message>
-    <message>
-        <source>Amount</source>
-        <translation>Betrag</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Bezeichnung</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <translation>Nachricht</translation>
-    </message>
-    <message>
-        <source>Resulting URI too long, try to reduce the text for label / message.</source>
-        <translation>Resultierende URI zu lang. Versuchen sie den Text für Label / Nachricht zu kürzen.</translation>
-    </message>
-    <message>
-        <source>Error encoding URI into QR Code.</source>
-        <translation>Fehler bei der Kodierung der URI im QR-Code</translation>
+        <source>Address copied to clipboard</source>
+        <translation>Adresse in Zwischenablage kopiert</translation>
     </message>
 </context>
 <context>
@@ -3029,6 +3033,10 @@ Bitte haben Sie Geduld...</translation>
     <message>
         <source>Message</source>
         <translation>Nachricht</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
     </message>
     <message>
         <source>Amount</source>
@@ -3048,519 +3056,500 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsDialog</name>
+    <name>RequestDialog</name>
     <message>
-        <source>Send Coins</source>
-        <translation>FBNs überweisen</translation>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source>Coin Control Features</source>
-        <translation>"Coin Control"-Funktionen</translation>
+        <source>Amount</source>
+        <translation>Betrag</translation>
     </message>
     <message>
-        <source>Insufficient funds!</source>
-        <translation>Unzureichender Kontostand!</translation>
+        <source>FBN</source>
+        <translation>FBN</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Anzahl:</translation>
+        <source>Instead of sharing only a FIVEBALANCE address, you can create a payment request, bundling up more information</source>
+        <translation>Anstatt nur Ihre FIVEBALANCE Adresse zu teilen, können Sie eine Zahlungsanweisung erstellen, die mehr Information enthält</translation>
     </message>
     <message>
-        <source>Bytes:</source>
-        <translation>Byte:</translation>
+        <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z</translation>
     </message>
     <message>
-        <source>Amount:</source>
-        <translation>Betrag:</translation>
+        <source>COPY ADDRESS</source>
+        <translation>Adresse kopieren</translation>
     </message>
     <message>
-        <source>Priority:</source>
-        <translation>Priorität:</translation>
+        <source>COPY URL</source>
+        <translation>URL kopieren</translation>
     </message>
     <message>
-        <source>medium</source>
-        <translation>mittel</translation>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
     </message>
     <message>
-        <source>Fee:</source>
-        <translation>Gebühr:</translation>
+        <source>Label</source>
+        <translation>Bezeichnung</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Abzug:</translation>
+        <source>Description (optional)</source>
+        <translation>Beschreibung (optional)</translation>
     </message>
     <message>
-        <source>no</source>
-        <translation>nein</translation>
+        <source>New Payment Request</source>
+        <translation>Neue Bezahlung anfordern</translation>
     </message>
     <message>
-        <source>After Fee:</source>
-        <translation>Nach Gebühren:</translation>
+        <source>Enter a label for the address</source>
+        <translation>Eine Bezeichnung für die Adresse eingeben</translation>
     </message>
     <message>
-        <source>Change:</source>
-        <translation>Wechselgeld:</translation>
+        <source>Enter description</source>
+        <translation>Beschreibung eingeben</translation>
     </message>
     <message>
-        <source>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</source>
-        <translation>Wenn dies aktivert, und die Wechselgeld-Adresse leer oder ungültig ist, wird das Wechselgeld einer neu erzeugten Adresse gutgeschrieben.</translation>
+        <source>Error</source>
+        <translation>Fehler</translation>
     </message>
     <message>
-        <source>Custom change address</source>
-        <translation>Benutzerdefinierte Wechselgeld-Adresse</translation>
+        <source>GENERATE</source>
+        <translation>ERSTELLEN</translation>
     </message>
     <message>
-        <source>Split UTXO</source>
-        <translation>UTXO aufteilen</translation>
+        <source>Creates an address to receive coin delegations and be able to stake them.</source>
+        <translation>Erstellt eine Adresse um Münzzuweisungen zu empfangen und diese zu staken</translation>
     </message>
     <message>
-        <source># of outputs</source>
-        <translation>Anzahl outputs</translation>
+        <source>New Cold Staking Address</source>
+        <translation>Neue Cold Staking Adresse</translation>
     </message>
     <message>
-        <source>UTXO Size:</source>
-        <translation>UTXO Größe:</translation>
+        <source>Amount (optional)</source>
+        <translation>Betrag (optional)</translation>
     </message>
     <message>
-        <source>0 FBN</source>
-        <translation>0 FBN</translation>
+        <source>Address label cannot be empty</source>
+        <translation>Adressbezeichnung kann nicht leer sein</translation>
     </message>
     <message>
-        <source>Transaction Fee:</source>
-        <translation>Transaktionsgebühr:</translation>
+        <source>Invalid amount</source>
+        <translation>Ungültiger Betrag</translation>
     </message>
     <message>
-        <source>Choose...</source>
-        <translation>Auswählen...</translation>
+        <source>Request for </source>
+        <translation>Zahlungsanweisung für</translation>
     </message>
     <message>
-        <source>collapse fee-settings</source>
-        <translation>Gebühreneinstellungen reduzieren</translation>
+        <source>Cold Staking Address Generated</source>
+        <translation>Cold Staking Adresse erzeugt</translation>
+    </message>
+</context>
+<context>
+    <name>SendChangeAddressDialog</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Dialog</translation>
     </message>
     <message>
-        <source>Minimize</source>
-        <translation>Minimieren</translation>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
     </message>
     <message>
-        <source>per kilobyte</source>
-        <translation>pro Kilobyte</translation>
+        <source>Custom Change Address</source>
+        <translation>Benutzerdefinierte Wechseladresse</translation>
     </message>
     <message>
-        <source>total at least</source>
-        <translation>Gesamt mindestens</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" FIVEBALANCE address</source>
+        <translation>Der verbleibende Betrag der Inputs minus der Outputs geht an die Wechseladresse</translation>
     </message>
     <message>
-        <source>(read the tooltip)</source>
-        <translation>(Kurzinfo lesen)</translation>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
     </message>
     <message>
-        <source>Custom:</source>
-        <translation>Benutzerdefiniert:</translation>
+        <source>RESET</source>
+        <translation>Zurücksetzen</translation>
     </message>
     <message>
-        <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
-        <translation>("Intelligente" Gebühren sind noch nicht berechnet. Dies dauert normalerweise ein paar Blöcke...)</translation>
+        <source>Invalid address</source>
+        <translation>Ungültige Adresse</translation>
     </message>
     <message>
-        <source>Confirmation time:</source>
-        <translation>Bestätigungszeit:</translation>
+        <source>Cannot use cold staking addresses for change</source>
+        <translation>Eine Cold Staking Adresse kann nicht für Wechselgelder verwendet werden</translation>
     </message>
+</context>
+<context>
+    <name>SendCustomFeeDialog</name>
     <message>
-        <source>Open Coin Control...</source>
-        <translation>Öffne Coin Kontrolle...</translation>
-    </message>
-    <message>
-        <source>Coins automatically selected</source>
-        <translation>Coins automatisch ausgewählt</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uFBNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFBNs in fee,&lt;br /&gt;while "at least" pays 1000 uFBNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uFBNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uFBNs an Gebühren,&lt;br /&gt;während man "mindestens" 1000 uFBNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
-    </message>
-    <message>
-        <source>If the custom fee is set to 1000 uFBNs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFBNs in fee,&lt;br /&gt;while "total at least" pays 1000 uFBNs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uFBNs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uFBNs an Gebühren,&lt;br /&gt;während man "insgesamt mindestens" 1000 uFBNs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie per Kilobyte.</translation>
-    </message>
-    <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Fivebalance transactions than the network can process.</source>
-        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken gibt.&lt;br /&gt;Aber seien Sie sich bewusst, dass dies in einer niemals bestätigende Transaktion enden kann, sobald die Nachfrage nach Fivebalance-Transaktionen höher ist, als was das Netzwerk verarbeiten kann.</translation>
-    </message>
-    <message>
-        <source>normal</source>
-        <translation>normal</translation>
-    </message>
-    <message>
-        <source>fast</source>
-        <translation>schnell</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
         <source>Recommended</source>
         <translation>Empfohlen</translation>
     </message>
     <message>
-        <source>Send as zero-fee transaction if possible</source>
-        <translation>Sende als gebührenfreie Transaktion, wenn möglich</translation>
+        <source>FBN/kilobyte</source>
+        <translation>FBN/kB</translation>
     </message>
     <message>
-        <source>(confirmation may take longer)</source>
-        <translation>(die Bestätigung kann länger dauern)</translation>
+        <source>0.00 KB</source>
+        <translation>0.00 KB</translation>
     </message>
     <message>
-        <source>Confirm the send action</source>
-        <translation>Bestätige die Sendeaktion</translation>
+        <source>Customize the transaction fee, depending on the fee value your transaction might be included faster in the blockchain</source>
+        <translation>Passen Sie die Transaktionsgebühr an. Abhängig von ihrer Höhe wird Ihre Transaktion schneller in die Blockchain eingefügt</translation>
     </message>
     <message>
-        <source>S&amp;end</source>
-        <translation>Üb&amp;erweisen</translation>
+        <source>Custom</source>
+        <translation>Benutzerdefiniert:</translation>
     </message>
     <message>
-        <source>Clear all fields of the form.</source>
-        <translation>Alle Formularfelder zurücksetzen.</translation>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>&amp;Alles zurücksetzen</translation>
+        <source>Customize Fee</source>
+        <translation>Benutzerdefinierte Gebühr</translation>
     </message>
     <message>
-        <source>Send to multiple recipients at once</source>
-        <translation>An mehrere Empfänger auf einmal überweisen</translation>
+        <source>Normal</source>
+        <translation>Normal</translation>
     </message>
     <message>
-        <source>Add &amp;Recipient</source>
-        <translation>Empfänge&amp;r hinzufügen</translation>
+        <source>Slow</source>
+        <translation>Langsam</translation>
     </message>
     <message>
-        <source>Anonymized FBN</source>
-        <translation>Anonymisierte FBN</translation>
+        <source>Fast</source>
+        <translation>Schnell</translation>
     </message>
     <message>
-        <source>SwiftTX</source>
-        <translation>SwiftTX</translation>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
     </message>
     <message>
-        <source>Balance:</source>
-        <translation>Kontostand:</translation>
+        <source>Fee too high. Must be below: %1</source>
+        <translation>Gebühr ist zu hoch. Sie muss weniger sein als: %1</translation>
     </message>
     <message>
-        <source>Copy quantity</source>
-        <translation>Anzahl kopieren</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Betrag kopieren</translation>
-    </message>
-    <message>
-        <source>Copy fee</source>
-        <translation>Gebühr kopieren</translation>
-    </message>
-    <message>
-        <source>Copy after fee</source>
-        <translation>Kopiere nach Gebühr</translation>
-    </message>
-    <message>
-        <source>Copy bytes</source>
-        <translation>Kopiere Bytes</translation>
-    </message>
-    <message>
-        <source>Copy priority</source>
-        <translation>Kopiere Priorität</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Kopiere Abzug</translation>
-    </message>
-    <message>
-        <source>Copy change</source>
-        <translation>Kopiere Wechselgeld</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work when sending to outside addresses. Try again.</source>
-        <translation>Das Split-Block-Tool funktioniert nicht beim Senden an externe Adressen. Versuchen Sie es erneut.</translation>
-    </message>
-    <message>
-        <source>The split block tool does not work with multiple addresses. Try again.</source>
-        <translation>Das Split-Block-Tool funktioniert nicht mit mehreren Adressen. Versuchen Sie es erneut.</translation>
-    </message>
-    <message>
-        <source>using</source>
-        <translation>benutze</translation>
-    </message>
-    <message>
-        <source>anonymous funds</source>
-        <translation>anonyme Mittel</translation>
-    </message>
-    <message>
-        <source>Warning: Invalid Fivebalance address</source>
-        <translation>Warnung: Ungültige Fivebalance-Adresse</translation>
-    </message>
-    <message>
-        <source>any available funds (not recommended)</source>
-        <translation>alle verfügbaren Mittel (nicht empfohlen)</translation>
-    </message>
-    <message>
-        <source>and SwiftTX</source>
-        <translation>und SwiftTX</translation>
-    </message>
-    <message>
-        <source>%1 to %2</source>
-        <translation>%1 zu %2</translation>
-    </message>
-    <message>
-        <source>Are you sure you want to send?</source>
-        <translation>Sind Sie sicher, dass Sie senden möchten?</translation>
-    </message>
-    <message>
-        <source>are added as transaction fee</source>
-        <translation>werden als Transaktionsgebühr hinzugefügt</translation>
-    </message>
-    <message>
-        <source>Total Amount = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</source>
-        <translation>Gesamtbetrag = &lt;b&gt;%1&lt;/b&gt;&lt;br /&gt;= %2</translation>
-    </message>
-    <message>
-        <source>Confirm send coins</source>
-        <translation>Sende Coins bestätigen</translation>
-    </message>
-    <message>
-        <source>A fee %1 times higher than %2 per kB is considered an insanely high fee.</source>
-        <translation>Eine Gebühr %1 mal höher als %2 pro kB gilt als wahnsinnig hohe Gebühr.</translation>
-    </message>
-    <message numerus="yes">
-        <source>Estimated to begin confirmation within %n block(s).</source>
-        <translation><numerusform>Geschätzt beginnt die Betätigung in %n Blöcken.</numerusform><numerusform>Voraussichtlich beginnt die Betätigung in %n Blöcken.</numerusform></translation>
-    </message>
-    <message>
-        <source>The recipient address is not valid, please recheck.</source>
-        <translation>Die Adresse des Empfängers ist nicht gültig, bitte erneut prüfen.</translation>
-    </message>
-    <message>
-        <source> split into %1 outputs using the UTXO splitter.</source>
-        <translation>In %1 Ausgänge mit dem UTXO-Splitter aufgeteilen.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;(%1 of %2 entries displayed)&lt;/b&gt;</source>
-        <translation>&lt;b&gt;(%1 von %2 Einträge angezeigt)&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <source>The amount to pay must be larger than 0.</source>
-        <translation>Der zu zahlende Betrag muss größer als 0 sein.</translation>
-    </message>
-    <message>
-        <source>The amount exceeds your balance.</source>
-        <translation>Der Betrag übersteigt ihr Guthaben.</translation>
-    </message>
-    <message>
-        <source>The total exceeds your balance when the %1 transaction fee is included.</source>
-        <translation>Die Gesamtsumme überschreitet Ihr Guthaben, sobald die Transaktionsgebühr von %1 enthalten ist.</translation>
-    </message>
-    <message>
-        <source>Duplicate address found, can only send to each address once per send operation.</source>
-        <translation>Doppelte Adresse gefunden. Es kann nur einmal pro Sendeoperation an jede Adresse gesendet werden.</translation>
-    </message>
-    <message>
-        <source>Transaction creation failed!</source>
-        <translation>Transaktionserstellung fehlgeschlagen!</translation>
-    </message>
-    <message>
-        <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Die Transaktion wurde abgelehnt! Dies könnte passieren, wenn einige der Coins in deiner Wallet schon ausgegeben wurden. Zum Beispiel wenn du eine Kopie der wallet.dat benutzt hättest und Coins in der Kopie verbracht wurden.  Hier aber noch nicht als verbraucht markiert wurden.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins.</source>
-        <translation>Fehler: Die Wallet wurde nur zum Anonymisieren von Coins freigeschaltet.</translation>
-    </message>
-    <message>
-        <source>Error: The wallet was unlocked only to anonymize coins. Unlock canceled.</source>
-        <translation>Fehler: Die Wallet wurde nur zum Anonymisieren von Coins freigeschaltet. Freischaltung aufgehoben.</translation>
-    </message>
-    <message>
-        <source>Pay only the minimum fee of %1</source>
-        <translation>Zahle nur die Mindestgebühr von %1</translation>
-    </message>
-    <message>
-        <source>Warning: Unknown change address</source>
-        <translation>Warnung: Unbekannte Wechselgeld-Adresse </translation>
-    </message>
-    <message>
-        <source>(no label)</source>
-        <translation>(keine Bezeichnung)</translation>
+        <source>Fee too low. Must be at least: %1</source>
+        <translation>Die Gebühr ist zu niedrig. Sie muss größer sein als: %1</translation>
     </message>
 </context>
 <context>
-    <name>SendCoinsEntry</name>
+    <name>SendMultiRow</name>
     <message>
-        <source>This is a normal payment.</source>
-        <translation>Dies ist eine normale Überweisung.</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>Pay &amp;To:</source>
-        <translation>E&amp;mpfänger:</translation>
+        <source>Enter address</source>
+        <translation>Adresse einfügen</translation>
     </message>
     <message>
-        <source>The Fivebalance address to send the payment to</source>
-        <translation>Fivebalance-Adresse, an die überwiesen werden soll</translation>
+        <source>Address label (optional)</source>
+        <translation>Adressbezeichnung (Optional)</translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Bereits verwendete Adresse auswählen</translation>
-    </message>
-    <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
-    </message>
-    <message>
-        <source>Paste address from clipboard</source>
-        <translation>Adresse aus der Zwischenablage einfügen</translation>
-    </message>
-    <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
-    </message>
-    <message>
-        <source>Remove this entry</source>
-        <translation>Diesen Eintrag entfernen</translation>
-    </message>
-    <message>
-        <source>&amp;Label:</source>
-        <translation>&amp;Bezeichnung:</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to the list of used addresses</source>
-        <translation>Adressbezeichnung eingeben, um diese in der Liste der bereits verwendeten Adressen zu speichern</translation>
-    </message>
-    <message>
-        <source>A&amp;mount:</source>
-        <translation>Betra&amp;g:</translation>
-    </message>
-    <message>
-        <source>Message:</source>
-        <translation>Nachricht:</translation>
-    </message>
-    <message>
-        <source>A message that was attached to the Fivebalance: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fivebalance network.</source>
-        <translation>Eine an die Fivebalance-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Fivebalance-Netzwerk gesendet.</translation>
-    </message>
-    <message>
-        <source>This is an unverified payment request.</source>
-        <translation>Dies ist eine unverifizierte Zahlungsanforderung.</translation>
-    </message>
-    <message>
-        <source>Pay To:</source>
-        <translation>Empfänger:</translation>
-    </message>
-    <message>
-        <source>Memo:</source>
-        <translation>Memo:</translation>
-    </message>
-    <message>
-        <source>This is a verified payment request.</source>
-        <translation>Dies ist eine verifizierte Zahlungsanforderung.</translation>
-    </message>
-    <message>
-        <source>Enter a label for this address to add it to your address book</source>
-        <translation>Adressbezeichnung eingeben, diese wird zusammen mit der Adresse dem Adressbuch hinzugefügt</translation>
+        <source>Enter label</source>
+        <translation>Bezeichnung eingeben</translation>
     </message>
 </context>
 <context>
-    <name>ShutdownWindow</name>
+    <name>SendWidget</name>
     <message>
-        <source>Fivebalance Core is shutting down...</source>
-        <translation>Fivebalance Core wird beendet...</translation>
+        <source>Total remaining from the selected UTXO</source>
+        <translation>Verbleibender Gesamtbetrag von der ausgewählten UTXO</translation>
     </message>
     <message>
-        <source>Do not shut down the computer until this window disappears.</source>
-        <translation>Fahren Sie den Computer nicht herunter, bevor dieses Fenster verschwindet.</translation>
+        <source>Warning!</source>
+        <translation>Warnung!</translation>
+    </message>
+    <message>
+        <source>The change address doesn't belong to this wallet.
+
+Do you want to continue?</source>
+        <translation>Die Wechseladresse gehört nicht zu diesem Wallet.
+Möchten Sie fortfahren?</translation>
+    </message>
+    <message>
+        <source>Customize Fee</source>
+        <translation>Benutzerdefinierte Gebühr</translation>
+    </message>
+    <message>
+        <source>Maximum amount of outputs reached</source>
+        <translation>Maximale Anzahl an Outputs erreicht</translation>
+    </message>
+    <message>
+        <source>Invalid entry, previous entries must be valid before add a new one</source>
+        <translation>Ungültige Eingabe, vorangehende Eingaben müssen gültig sein bevor eine neue angefügt werden kann</translation>
+    </message>
+    <message>
+        <source>Possibly spend coins delegated for cold-staking (currently available: %1</source>
+        <translation>Möglicherweise für das Cold Staking ausgegebene Münzen (bisher verfügbar: %1</translation>
+    </message>
+    <message>
+        <source>Invalid entry</source>
+        <translation>Ungültiger Eintrag</translation>
+    </message>
+    <message>
+        <source>No set recipients</source>
+        <translation>Keine Empfänger definiert</translation>
+    </message>
+    <message>
+        <source>Cannot send, wallet locked</source>
+        <translation>Senden nicht möglich, Wallet geschlossen</translation>
+    </message>
+    <message>
+        <source>Cannot create transaction.</source>
+        <translation>Die Transaktion kann nicht erzeugt werden.</translation>
+    </message>
+    <message>
+        <source>WARNING:
+Transaction spends a cold-stake delegation, voiding it.
+These coins will no longer be cold-staked.</source>
+        <translation>WARNUNG:
+Transaktion gibt eine cold-staking Zuweisung aus und macht diese nichtig. Diese Münzen werden nicht länger cold gestaked.</translation>
+    </message>
+    <message>
+        <source>Transaction sent</source>
+        <translation>Transaktion geschickt</translation>
+    </message>
+    <message>
+        <source>Address label update failed for address: %1</source>
+        <translation>Update fpr Adressbezeichnung der Adresse %1 gescheitert</translation>
+    </message>
+    <message>
+        <source>Invalid URI</source>
+        <translation>Ungültige URI</translation>
+    </message>
+    <message>
+        <source>Invalid address in URI</source>
+        <translation>Ungültige Adresse in URI</translation>
+    </message>
+    <message>
+        <source>Custom Fee %1</source>
+        <translation>Benutzerdefinierte Gebühr %1</translation>
+    </message>
+    <message>
+        <source>Coin Control</source>
+        <translation>Coinverwaltung</translation>
+    </message>
+    <message>
+        <source>Select the source of the coins</source>
+        <translation>Wählen Sie die Quelle der Münzen</translation>
+    </message>
+    <message>
+        <source>Change Address</source>
+        <translation>Wechseladresse</translation>
+    </message>
+    <message>
+        <source>Customize the change address</source>
+        <translation>Wechseladresse anpassen</translation>
+    </message>
+    <message>
+        <source>Open URI</source>
+        <translation>URI öffnen</translation>
+    </message>
+    <message>
+        <source>Parse a payment request</source>
+        <translation>Zahlungsanweisung parsen</translation>
+    </message>
+    <message>
+        <source>Unlocked remaining</source>
+        <translation>Verbleibende entsperren</translation>
+    </message>
+    <message>
+        <source>You don't have any %1 to select.</source>
+        <translation>Sie haben keine %1 für die Auswahl.</translation>
+    </message>
+    <message>
+        <source>No contacts available, you can go to the contacts screen and add some there!</source>
+        <translation>Keine Kontakte verfügbar. Sie können zum Kontaktfenster wechseln und dort welche hinzufügen.</translation>
+    </message>
+    <message>
+        <source>Save contact</source>
+        <translation>Kontakt speichern</translation>
+    </message>
+    <message>
+        <source>Address field is empty</source>
+        <translation>Adressfeld ist leer</translation>
+    </message>
+    <message>
+        <source>Invalid address</source>
+        <translation>Ungültige Adresse</translation>
+    </message>
+    <message>
+        <source>Cannot store your own address as contact</source>
+        <translation>Eigene Adresse nicht als Kontakt speicherbar</translation>
+    </message>
+    <message>
+        <source>Update Contact</source>
+        <translation>Kontakt bearbeiten</translation>
+    </message>
+    <message>
+        <source>Create New Contact</source>
+        <translation>Kontakt erstellen</translation>
+    </message>
+    <message>
+        <source>New Contact Stored</source>
+        <translation>Neuer Kontakt gespeichert</translation>
+    </message>
+    <message>
+        <source>Error Storing Contact</source>
+        <translation>Fehler beim Speichern des Kontakts</translation>
     </message>
 </context>
 <context>
-    <name>SignVerifyMessageDialog</name>
+    <name>SettingsBackupWallet</name>
     <message>
-        <source>Signatures - Sign / Verify a Message</source>
-        <translation>Signaturen - Signieren / Überprüfen einer Nachricht</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>&amp;Sign Message</source>
-        <translation>Nachricht &amp;signieren</translation>
+        <source>Change Wallet Passphrase</source>
+        <translation>Wallet Passwort ändern</translation>
     </message>
     <message>
-        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie diese besitzen. Seien Sie vorsichtig nichts fragwürdiges zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu überschreiben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
+        <source>Where</source>
+        <translation>Wo</translation>
     </message>
     <message>
-        <source>The Fivebalance address to sign the message with</source>
-        <translation>Fivebalance Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>Keep your wallet safe by doing regular backups and storing your backup file externally.
+This option creates a wallet.dat file that can be used to recover your whole balance (transactions and addresses) on another device</source>
+        <translation>Halten Sie Ihre Wallet durch regelmäßige Backups sicher und speichern Sie Ihr Backup extern.
+Diese Option erzeugt eine Wallet.dat Datei, die für die WIederherstellung ihrer Bilanz (Transaktionen und Adressen) auf einem anderen Gerät genutzt werden kann </translation>
     </message>
     <message>
-        <source>Choose previously used address</source>
-        <translation>Bereits verwendete Adresse auswählen</translation>
+        <source>Select folder...</source>
+        <translation>Ordner auswählen</translation>
     </message>
     <message>
-        <source>Alt+A</source>
-        <translation>Alt+A</translation>
+        <source>This will decrypt the whole wallet data and encrypt it back with the new passphrase.
+Remember to write it down and store it safely, otherwise you might lose access to your funds</source>
+        <translation>Dies wird alle Daten des Wallets entschlüsseln und mit einer neuen Passphrase verschlüsseln.
+Vergewissern SIe sich, diese aufzuschreiben und sicher zu verwahren, andernfalls können Sie den Zugriff auf Ihre Münzen verlieren.</translation>
     </message>
     <message>
-        <source>Paste address from clipboard</source>
-        <translation>Adresse aus der Zwischenablage einfügen</translation>
+        <source>Change Passphrase</source>
+        <translation>Passwort ändern</translation>
     </message>
     <message>
-        <source>Alt+P</source>
-        <translation>Alt+P</translation>
+        <source>Backup Wallet</source>
+        <translation>Wallet sichern</translation>
     </message>
     <message>
-        <source>Enter the message you want to sign here</source>
-        <translation>Gehen Sie hier die Nachricht ein, die Sie digital unterschreiben möchten</translation>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Wallet-Daten (*.dat)</translation>
     </message>
     <message>
-        <source>Signature</source>
-        <translation>Signatur</translation>
+        <source>Backup created</source>
+        <translation>Backup erstellt</translation>
     </message>
     <message>
-        <source>Copy the current signature to the system clipboard</source>
-        <translation>Kopiert die aktuelle Signatur in die Zwischenablage</translation>
+        <source>Backup creation failed</source>
+        <translation>Erstellung des Backups fehlgeschlagen</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Fivebalance address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese Fivebalance Adresse besitzt</translation>
+        <source>Please select a folder to export the backup first.</source>
+        <translation>Bitte wählen Sie zuerst einen Ordner aus, um das Backup zu exportieren.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsBitToolWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>The Fivebalance address the message was signed with</source>
-        <translation>Die Fivebalance Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>Import Address</source>
+        <translation>Adresse importieren</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Fivebalance address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen Fivebalance-Adresse signiert wurde.</translation>
+        <source>BIP38 Tool</source>
+        <translation>BIP 38 Werkzeug</translation>
     </message>
     <message>
-        <source>Sign &amp;Message</source>
-        <translation>Signiere &amp;Nachricht </translation>
+        <source>Encrypt your FIVEBALANCE addresses (key pair actually) using BIP38 encryption.
+Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
+        <translation>Verschlüsseln Sie Ihre FIVEBALANCE Adressen mit der Verschlüsselung nach BIP38 (Schlüsselpaare).
+Damit können Sie ihre Schlüssel sicher ohne Middle-Man Risiko teilen. Sie müssen nur Ihre Passphrase sicher aufbewahren.</translation>
     </message>
     <message>
-        <source>Reset all sign message fields</source>
-        <translation>Setze alle signierten Nachrichten Felder zurück</translation>
+        <source>Encrypt</source>
+        <translation>VERSCHLÜSSELN</translation>
     </message>
     <message>
-        <source>Clear &amp;All</source>
-        <translation>&amp;Alles zurücksetzen</translation>
+        <source>Decrypt</source>
+        <translation>ENTSCHLÜSSELN</translation>
     </message>
     <message>
-        <source>&amp;Verify Message</source>
-        <translation>&amp;Verifiziere Nachricht</translation>
+        <source>Encrypted key</source>
+        <translation>Schlüssel zur Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
-        <translation>Geben Sie die signierte Adresse, die Nachricht (stellen Sie sicher, dass Zeilenumbrüche, Leerzeichen, Tabs usw. genau kopieren) und Signatur unten ein, um die Nachricht zu überprüfen. Seien Sie vorsichtig, nicht mehr in die Signatur hinein zu interpretieren, als das was in der signierten Nachricht selbst angegeben ist, um zu vermeiden, von einem Mann-in-der-Mitte Angriff getroffen zu werden.</translation>
+        <source>Enter a encrypted key</source>
+        <translation>Geben Sie einen Schlüssel für die Verschlüsselung ein</translation>
     </message>
     <message>
-        <source>Verify &amp;Message</source>
-        <translation>Verifiziere &amp;Nachricht</translation>
+        <source>Passphrase</source>
+        <translation>Passphrase</translation>
     </message>
     <message>
-        <source>Reset all verify message fields</source>
-        <translation>Zurücksetzen aller überprüften Felder.</translation>
+        <source>Decrypted address result</source>
+        <translation>Ergebnisse entschlüsselter Adressen</translation>
     </message>
     <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Klicken Sie auf "signiere Nachricht", um Signatur zu generieren</translation>
+        <source>Decrypted Address</source>
+        <translation>Entschlüsselte Adresse</translation>
+    </message>
+    <message>
+        <source>DECRYPT KEY</source>
+        <translation>CHIFFRE ZUR ENTSCHLÜSSELUNG</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE address</source>
+        <translation>FIVEBALANCE Adresse</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Adresse einfügen</translation>
+    </message>
+    <message>
+        <source>Enter passphrase</source>
+        <translation>Passphrase eingeben</translation>
+    </message>
+    <message>
+        <source>Encrypted Key</source>
+        <translation>Verschlüsselter Schlüssel</translation>
+    </message>
+    <message>
+        <source>ENCRYPT</source>
+        <translation>VERSCHLÜSSELN</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>ALLES LÖSCHEN</translation>
+    </message>
+    <message>
+        <source>Enter a passphrase</source>
+        <translation>Geben Sie eine Passphrase ein</translation>
+    </message>
+    <message>
+        <source>CLEAR</source>
+        <translation>LÖSCHEN</translation>
+    </message>
+    <message>
+        <source>The entered passphrase is invalid. </source>
+        <translation>Die eingegebene Passphrase ist ungültig. </translation>
+    </message>
+    <message>
+        <source>Allowed: 0-9,a-z,A-Z,</source>
+        <translation>Zulässig: 0-9,a-z,A-Z,</translation>
     </message>
     <message>
         <source>The entered address is invalid.</source>
@@ -3572,11 +3561,837 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation>Die eingegebene Adresse passt nicht zu einem Schlüssel</translation>
+        <translation>Die eingegebene Adresse passt zu keinem Schlüssel</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Wallet-Entsperrung wurde abgebrochen.</translation>
+        <translation>Entsperrung der Wallet wurde abgebrochen.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>Kein privater Schlüssel für die eingegebene Adresse verfügbar</translation>
+    </message>
+    <message>
+        <source>Address encrypted.</source>
+        <translation>Verschlüsselte Adresse.</translation>
+    </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Keine Adressen verfügbar, Sie können in das Empfangsmenu gehen und neue hinzufügen!</translation>
+    </message>
+    <message>
+        <source>Failed to decrypt.</source>
+        <translation>Entschlüsselung fehlgeschlagen.</translation>
+    </message>
+    <message>
+        <source>Please check the key and passphrase and try again.</source>
+        <translation>Bitte überprüfen Sie den Schlüssel und die Passphrase und versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Data Not Valid.</source>
+        <translation>Daten ungültig.</translation>
+    </message>
+    <message>
+        <source>Please try again.</source>
+        <translation>Bitte versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Please wait while key is imported</source>
+        <translation>Bitte warten. Schlüssel wird importiert..</translation>
+    </message>
+    <message>
+        <source>Cannot import address, key already held by the wallet</source>
+        <translation>Adresse kann nicht importiert werden, der Schlüssel ist schon in der Wallet hinterlegt</translation>
+    </message>
+    <message>
+        <source>Error adding key to the wallet</source>
+        <translation>Fehler beim Hinzufügen des Schlüssels zur Wallet</translation>
+    </message>
+    <message>
+        <source>Successfully added private key to the wallet</source>
+        <translation>Private Key erfolgreich zum Wallet hinzugefügt</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsConsoleWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Konsole</translation>
+    </message>
+    <message>
+        <source>Console input</source>
+        <translation>Konsoleneingabe</translation>
+    </message>
+    <message>
+        <source>Open Debug File</source>
+        <translation>Öffne Debug-Datei</translation>
+    </message>
+    <message>
+        <source>Command Line Options</source>
+        <translation>Optionen für die Kommandozeile</translation>
+    </message>
+    <message>
+        <source>Clear history</source>
+        <translation>Verlauf löschen</translation>
+    </message>
+    <message>
+        <source>Cannot open debug file.
+Verify that you have installed a predetermined text editor.</source>
+        <translation>Debug Datei konnte nicht geöffnet werden. Stellen Sie sicher, den vorher bestimmten Texteditor installiert zu haben.</translation>
+    </message>
+    <message>
+        <source>Welcome to the FIVEBALANCE RPC console.</source>
+        <translation>Willkommen in der FIVEBALANCE RPC-Konsole.</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
+        <translation>Verwende die Pfeiltasten um durch den Verlauf zu scrollen und %1 um das Konsolenfester zu löschen.</translation>
+    </message>
+    <message>
+        <source>Type &lt;b&gt;help&lt;/b&gt; for an overview of available commands.</source>
+        <translation>Gebe &lt;b&gt;help&lt;/b&gt; ein, um eine Übersicht der verfügbaren Befehle zu erhalten.</translation>
+    </message>
+    <message>
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
+        <translation>Warnung: Abzocker sind aktiv und erzählen Nutzer hier Befehle einzugeben, um so den Inhalt des Wallets zu stehlen. Nutzen Sie diese Konsole nicht, ohne die Bedeutungen eines Befehls vollständig zu verstehen.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDisplayOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Hide stake charts in the dashboard</source>
+        <translation>Verbirge Stake Charts im Dashboard</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Auf Voreinstellungen zurücksetzen</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Änderungen verwerfen</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Display</translation>
+    </message>
+    <message>
+        <source>Customize the display view options</source>
+        <translation>Anpassen der Bildschirmdarstellung</translation>
+    </message>
+    <message>
+        <source>Language</source>
+        <translation>Sprache</translation>
+    </message>
+    <message>
+        <source>Unit to show amount</source>
+        <translation>Anzeige der Einheit</translation>
+    </message>
+    <message>
+        <source>Decimal digits</source>
+        <translation>Dezimalstellen</translation>
+    </message>
+    <message>
+        <source>Third party transactions URLs</source>
+        <translation>URLs für Drittpartei-Transaktionen</translation>
+    </message>
+    <message>
+        <source>Hide empty balances</source>
+        <translation>Leere Salden ausblenden</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>standard</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Zurücksetzen der Optionen erfolgreich.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsExportCSV</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Export Accounting</source>
+        <translation>Exportiere Bilanzen</translation>
+    </message>
+    <message>
+        <source>Export your wallet's accounting data to a csv file.</source>
+        <translation>Wallet Daten als csv Datei exportieren</translation>
+    </message>
+    <message>
+        <source>Where</source>
+        <translation>Wo</translation>
+    </message>
+    <message>
+        <source>Select folder...</source>
+        <translation>Ordner auswählen</translation>
+    </message>
+    <message>
+        <source>Export Address Book</source>
+        <translation>Adressbuch exportieren</translation>
+    </message>
+    <message>
+        <source>Export CSV</source>
+        <translation>Exportiere CSV</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>Adressliste exportieren</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE_tx_csv_export(*.csv)</source>
+        <translation>FIVEBALANCE_tx_csv_export(*.csv)</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE_addresses_csv_export(*.csv)</source>
+        <translation>FIVEBALANCE_addresses_csv_export(*.csv)</translation>
+    </message>
+    <message>
+        <source>Please select a folder to export the csv file first.</source>
+        <translation>Bitte wählen Sie zuerst einen Ordner für den Export der CSV-Datei aus</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Bestätigt</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>Nur beobachtet</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Art</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Bezeichnung</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>Exporting Successful
+The transaction history was successfully saved to %1.</source>
+        <translation>Export erfolgreich.
+Die Transaktionshistorie wurde erfolgreich unter %1 gespeichert.</translation>
+    </message>
+    <message>
+        <source>Exporting Failed
+There was an error trying to save the transaction history to %1.</source>
+        <translation>Export gescheitert.
+Es gab einen Fehler beim Versuch die Transaktionshistorie unter %1 zu speichern.</translation>
+    </message>
+    <message>
+        <source>No available addresses to export under the selected filter</source>
+        <translation>Für den Export sind bei dem ausgewählten Filter keine Adressen verfügbar.</translation>
+    </message>
+    <message>
+        <source>Exporting Successful
+The address book was successfully saved to %1.</source>
+        <translation>Export erfolgreich!
+Das Adressbuch wurde erfolgreich unter %1 gespeichert.</translation>
+    </message>
+    <message>
+        <source>Exporting Failed
+There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Export gescheitert.
+Es gab ein Problem bei dem Versuch die Adressen unter %1 zu speichern. Bitte versuchen Sie es erneut.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsFaqWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>1) What is FIVEBALANCE?</source>
+        <translation>1) Was ist FIVEBALANCE?</translation>
+    </message>
+    <message>
+        <source>2) Why are my FBN unspendable?</source>
+        <translation>2) Wieso kann ich meine FBN nicht ausgeben?</translation>
+    </message>
+    <message>
+        <source>https://PIVX.org/</source>
+        <translation>https://PIVX.org/</translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
+    </message>
+    <message>
+        <source>What is FIVEBALANCE?</source>
+        <translation>Was ist FIVEBALANCE</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           FIVEBALANCE is a form of digital online money using blockchain technology
+                           that can be easily transferred globally, instantly, and with near
+                           zero fees.  FIVEBALANCE incorporates market leading security &amp;
+                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
+                           to implement ZeroCoin(zFBN) and Zerocoin staking.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           FIVEBALANCE utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of FIVEBALANCE to participate in earning block rewards
+                           while securing the network with full node wallets, as well as to
+                           run Masternodes to create and vote on proposals.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>FIVEBALANCE ist eine Form von digitalem Onlinegeld, das die Blockchaintechnologie verwendet und
+einfach, global, sofort und nahezu kostenlos versendet werden kann. FIVEBALANCE enthält marktführende Sicherheits- und Privatsphäretechnologien und ist auch die erste PoS (Proof of Stake) Kryptowährung, die ZeroCoin (zFBN) und Zerocoin Staking verwendet.
+FIVEBALANCE nutzt einen PoS Konsensalgorithmus, der es den Besitzern von FIVEBALANCE erlaubt, an der Vergabe der Block Rewards teilzuhaben, während das Netzwerk durch Fullnode Wallets abgesichert ist. Darüber hinaus können Masternode Proposals einreichen und darüber abstimmen.</translation>
+    </message>
+    <message>
+        <source>2</source>
+        <translation>2</translation>
+    </message>
+    <message>
+        <source>Why are my FBN unspendable?</source>
+        <translation>Wieso kann ich meine FBN nicht ausgeben?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           Newly received FIVEBALANCE requires 6 confirmations on the network
+                           to become eligible for spending which can take ~6 minutes.
+                           &lt;/p&gt;&lt;p align="justify"&gt;
+                           Your FIVEBALANCE wallet also needs to be completely synchronized
+                           to see and spend balances on the network.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>Neu empfangene FIVEBALANCE brauchen 6 Bestätigungen im Netzwerkum für Transaktionen verwendet werden zu können. Dies dauert ungeführ 6 Minuten. Ihr FIVEBALANCE Wallet muss auch komplett mit dem Netzwerk synchronisiert sein um Guthaben einsehen und versenden zu können.</translation>
+    </message>
+    <message>
+        <source>3</source>
+        <translation>3</translation>
+    </message>
+    <message>
+        <source>How do I stake FBN?</source>
+        <translation>Wie stake ich FBN?</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of FIVEBALANCE with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (fivebalance-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Stellen Sie sicher, dass Ihre Wallet komplett synchronisiert ist und Sie die neueste Version verwenden.&lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Sie müssen einige FIVEBALANCE mit mindestens 600 Bestätigungen halten.&lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Ihre Wallt muss online und über den gesamten Staking Prozess entriegelt sein.&lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Sobald Sie all diese Schritte befolgen, sollte das Staking ermöglicht sein.&lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Sie können den Status des Stakings einsehen, indem Sie mit der Maus über das Paket Symbol in der oberen Reihe links ziehen. Das Paket wird aufleuchten und anzeigen: &amp;quot;Staking Enabled&amp;quot; , um Staking anzuzeigen. In der Kommandozeile (fivebalance-cli) zeigt der Befehl &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; den Status an.&lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>4</source>
+        <translation>4</translation>
+    </message>
+    <message>
+        <source>5</source>
+        <translation>5</translation>
+    </message>
+    <message>
+        <source>6</source>
+        <translation>6</translation>
+    </message>
+    <message>
+        <source>Where should I go if I need support?</source>
+        <translation>An wen kann ich mich wenden, wenn ich Hilfe benötige?</translation>
+    </message>
+    <message>
+        <source>
+                           &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+                           We have support channels in most of our official chat groups, for example
+                           &lt;a style='color: #b088ff' href='https://discord.FIVEBALANCE.org'&gt;
+                           #support in our Discord&lt;/a&gt;.
+                           If you prefer to submit a ticket, You can do so at
+                           &lt;a style='color: #b088ff' href='https://FIVEBALANCE.freshdesk.com'&gt;
+                           our Freshdesk support site&lt;/a&gt;.
+                           &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+                         </source>
+        <translation>
+&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
+Wir haben Support-Kanäle in den meisten unserer offiziellen Chatgruppen, z.B.
+&lt;a style='color: #b088ff' href='https://discord.FIVEBALANCE.org'&gt;
+#support in Discord&lt;/a&gt;
+Wenn Sie bevorzugen, uns ein Ticket zu schicken, besuchen Sie
+&lt;a style='color: #b088ff' href='https://FIVEBALANCE.freshdesk.com'&gt;
+unsere Support-Seite.&lt;/a&gt;
+&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Was ist ein Masternode?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode Controller?</source>
+        <translation>Was ist ein Masternode Controller?</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the 1000,000 FBN collateral can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Ein Masternode Controller Wallet ist, wo die 1000.000 FBN Kollateral verweilen können, während ein Controller-Remote Masternode Setup erfolgt. Es ist ein Wallet, das remote Masternode Wallet(s) aktiviert und Ihnen erlaubt, ihre Kollateral-Münzen offline zu halten, während der remote Masternode online bleibt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
+    </message>
+    <message>
+        <source>Frequently Asked Questions</source>
+        <translation>Häufig gestellte Fragen</translation>
+    </message>
+    <message>
+        <source>3) How do I stake FBN?</source>
+        <translation>3) Wie stake ich FBN?</translation>
+    </message>
+    <message>
+        <source>4) Where I should go if I need support?</source>
+        <translation>4) An wen soll ich mich wenden, wenn ich Hilfe benötige?</translation>
+    </message>
+    <message>
+        <source>5) What is a Masternode?</source>
+        <translation>5) Was ist ein Masternode?</translation>
+    </message>
+    <message>
+        <source>6) What is a Masternode Controller?</source>
+        <translation>6) Was ist ein Masternode Controller?</translation>
+    </message>
+    <message>
+        <source>You can read more here</source>
+        <translation>Hier können Sie mehr lesen</translation>
+    </message>
+    <message>
+        <source>Exit</source>
+        <translation>Exit</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsInformationWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Network Monitor</source>
+        <translation>Netzwerkmonitor</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Hinweis</translation>
+    </message>
+    <message>
+        <source>General</source>
+        <translation>Allgemein</translation>
+    </message>
+    <message>
+        <source>Client Version:</source>
+        <translation>Client Version:</translation>
+    </message>
+    <message>
+        <source>BerkeleyDB version:</source>
+        <translation>BerkeleyDB version:</translation>
+    </message>
+    <message>
+        <source>Datadir:</source>
+        <translation>Speicherpfad:</translation>
+    </message>
+    <message>
+        <source>Startup time:</source>
+        <translation>Startzeit:</translation>
+    </message>
+    <message>
+        <source>Connections:</source>
+        <translation>Verbindungen</translation>
+    </message>
+    <message>
+        <source>Number of Masternodes:</source>
+        <translation>Anzahl der Masternodes:</translation>
+    </message>
+    <message>
+        <source>Current number of blocks:</source>
+        <translation>Aktuelle Nummer von Blöcken:</translation>
+    </message>
+    <message>
+        <source>Last block time:</source>
+        <translation>Letzte Blockzeit:</translation>
+    </message>
+    <message>
+        <source>Last block hash:</source>
+        <translation>Letzter Blockhash:</translation>
+    </message>
+    <message>
+        <source>Current number of transactions:</source>
+        <translation>Aktuelle Anzahl von Transaktionen:</translation>
+    </message>
+    <message>
+        <source>User Agent:</source>
+        <translation>User Agent:</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netzwerk</translation>
+    </message>
+    <message>
+        <source>Name:</source>
+        <translation>Name:</translation>
+    </message>
+    <message>
+        <source>Blockchain</source>
+        <translation>Blockchain</translation>
+    </message>
+    <message>
+        <source>Memory Pool</source>
+        <translation>Memory Pool</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Main</translation>
+    </message>
+    <message>
+        <source>Wallet Conf</source>
+        <translation>Wallet Konfiguration</translation>
+    </message>
+    <message>
+        <source>Backups</source>
+        <translation>Backups</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Keine Information</translation>
+    </message>
+    <message>
+        <source>Unable to open backups folder</source>
+        <translation>Backup-Ordner konnte nicht geöffnet werden</translation>
+    </message>
+    <message>
+        <source>Unable to open fivebalance.conf with default application</source>
+        <translation>fivebalance.conf konnte mit der Standardanwendung nicht geöffnet werden</translation>
+    </message>
+    <message>
+        <source>In:</source>
+        <translation>In:</translation>
+    </message>
+    <message>
+        <source>Out:</source>
+        <translation>Out:</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMainOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation>Fenster</translation>
+    </message>
+    <message>
+        <source>Customize the application window options</source>
+        <translation>Optionen des Anwendungsfensters anpassen</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Auf Voreinstellungen zurücksetzen</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Änderungen verwerfen</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Main</translation>
+    </message>
+    <message>
+        <source>Customize the main application options</source>
+        <translation>Die Optionen der Hauptanwendung anpassen</translation>
+    </message>
+    <message>
+        <source>Size of database cache</source>
+        <translation>Größe des Datenbankcache</translation>
+    </message>
+    <message>
+        <source>Number of script verification threads</source>
+        <translation>Anzahl der Threads für die Skriptverifizierung</translation>
+    </message>
+    <message>
+        <source>Start FIVEBALANCE on system login</source>
+        <translation>Starte FIVEBALANCE bei Systemlogin</translation>
+    </message>
+    <message>
+        <source>Minimize to the tray instead of the taskbar</source>
+        <translation>Minimiere in den Tray statt in die Taskbar</translation>
+    </message>
+    <message>
+        <source>Minimize on close</source>
+        <translation>Minimiere bei Schließen</translation>
+    </message>
+    <message>
+        <source>Reset Options</source>
+        <translation>Optionen zurücksetzen</translation>
+    </message>
+    <message>
+        <source>You are just about to reset the app's options to the default values.
+
+Are you sure?
+</source>
+        <translation>Sind sind dabei die Optionen der Anwendung auf die Standardwerte zurückzusetzen.
+
+Sind Sie sicher?</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Zurücksetzen der Optionen erfolgreich.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendDialog</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Transaction Details</source>
+        <translation>Transaktionsdetails</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextEtikett</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
+    </message>
+    <message>
+        <source>New recipient for multisend</source>
+        <translation>Neuer Empfänger für Multisend</translation>
+    </message>
+    <message>
+        <source>Address Label (optional)</source>
+        <translation>Adressbezeichnung (optional)</translation>
+    </message>
+    <message>
+        <source>Enter label to be saved with this address</source>
+        <translation>Bezeichnung, die mit dieser Adresse gespeichert wird</translation>
+    </message>
+    <message>
+        <source>Percentage</source>
+        <translation>Prozentsatz</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsMultisendWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextEtikett</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation>k.A.</translation>
+    </message>
+    <message>
+        <source>CheckBox</source>
+        <translation>Checkbox</translation>
+    </message>
+    <message>
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FIVEBALANCE addresses after it matures.</source>
+        <translation>MultiSend erlaubt automatisch bis zu 100% Ihres Stakes oder Ihrer Masternode Belohnungen an eine Liste von FIVEBALANCE Adressen zu senden, nachdem diese fällig geworden sind.</translation>
+    </message>
+    <message>
+        <source>Active</source>
+        <translation>Aktiv</translation>
+    </message>
+    <message>
+        <source>Disable</source>
+        <translation>deaktivieren</translation>
+    </message>
+    <message>
+        <source>No active recipient yet</source>
+        <translation>Noch kein aktiver Empfänger</translation>
+    </message>
+    <message>
+        <source>Send stakes</source>
+        <translation>Sende Stakes</translation>
+    </message>
+    <message>
+        <source>Send masternode rewards</source>
+        <translation>Sende Masternode Belohnungen</translation>
+    </message>
+    <message>
+        <source>ADD RECIPIENT</source>
+        <translation>EMPFÄNGER HINZUFÜGEN</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>ALLES LÖSCHEN</translation>
+    </message>
+    <message>
+        <source>Cannot perform operation, wallet locked</source>
+        <translation>Aufgabe kann nicht durchgeführt werden, Ihr Wallet ist verschlossen</translation>
+    </message>
+    <message>
+        <source>Clear succeed</source>
+        <translation>Löschen erfolgreich</translation>
+    </message>
+    <message>
+        <source>Clear all failed, could not locate address in wallet file</source>
+        <translation>Adresse konnte in der Wallet Datei nicht gefunden werden.</translation>
+    </message>
+    <message>
+        <source>Cannot add multisend recipient, wallet locked</source>
+        <translation>Multisend Empfänger konnte nicht hinzugefügt werden, das Wallet ist verriegelt</translation>
+    </message>
+    <message>
+        <source>The entered address: %1 is invalid.
+Please check the address and try again.</source>
+        <translation>Die eingegebene Adresse %1 ist ungültig. Bitte kontrollieren Sie diese und versuchen Sie es erneut.</translation>
+    </message>
+    <message>
+        <source>Invalid percentage, please enter values from 1 to 100.</source>
+        <translation>Ungültiger Prozentsatz. Bitte geben Sie einen Wert zwischen 1 und 100 ein.</translation>
+    </message>
+    <message>
+        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
+        <translation>Die Gesamtmenge Ihres MultiSend-Vektors ist größer als 100% Ihrer Belohnung</translation>
+    </message>
+    <message>
+        <source>Error saving  MultiSend, failed saving properties to the database.</source>
+        <translation>Fehler beim Speichern von MultiSend.
+Eigenschaften konnten nicht in der Datenbank gespeichert werden.</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend, no available recipients</source>
+        <translation>Multisend konnte nicht aktiviert werden. Keine Empfänger verfügbar.</translation>
+    </message>
+    <message>
+        <source>Unable to activate MultiSend
+Check one or both of the check boxes to send on stake and/or masternode rewards</source>
+        <translation>MultiSend konnte nicht aktiviert werden
+
+Aktivieren Sie eine oder beide Checkboxen, um Stake oder Masternode Rewards zu senden</translation>
+    </message>
+    <message>
+        <source>MultiSend activated but writing settings to DB failed</source>
+        <translation>MultiSend wurde aktiviert aber das Schreiben der Einstellung in die Datenbank ist gescheitert.</translation>
+    </message>
+    <message>
+        <source>MultiSend activated</source>
+        <translation>MultiSend aktiviert</translation>
+    </message>
+    <message>
+        <source>First multiSend address invalid</source>
+        <translation>Die erste MultiSend Adresse ist ungültig.</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated but writing settings to DB failed</source>
+        <translation>MultiSend wurde deatktiviert, aber das Schreiben der Einstellungen in die Datenbank ist gescheitert.</translation>
+    </message>
+    <message>
+        <source>MultiSend deactivated</source>
+        <translation>MultiSend deaktiviert</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsSignMessageWidgets</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Signiere/Verifiziere Nachricht</translation>
+    </message>
+    <message>
+        <source>Sign</source>
+        <translation>Signiere</translation>
+    </message>
+    <message>
+        <source>Verify</source>
+        <translation>Verifiziere</translation>
+    </message>
+    <message>
+        <source>Write message here...</source>
+        <translation>Hier eine Nachricht schreiben...</translation>
+    </message>
+    <message>
+        <source>Select mode</source>
+        <translation>Modus auswählen</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Nachricht</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE address or contact label</source>
+        <translation>FIVEBALANCE Adresse oder Kontaktbezeichnung</translation>
+    </message>
+    <message>
+        <source>Enter address</source>
+        <translation>Adresse einfügen</translation>
+    </message>
+    <message>
+        <source>Signature</source>
+        <translation>Signatur</translation>
+    </message>
+    <message>
+        <source>SIGN</source>
+        <translation>SIGNIEREN</translation>
+    </message>
+    <message>
+        <source>CLEAR ALL</source>
+        <translation>ALLES LÖSCHEN</translation>
+    </message>
+    <message>
+        <source>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie diese besitzen. Seien Sie vorsichtig nichts fragwürdiges zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu überschreiben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
+    </message>
+    <message>
+        <source>Enter the signing address, message (ensure you copy line breaks, spaces, tabs, etc. exactly) and signature below to verify the message. Be careful not to read more into the signature than what is in the signed message itself, to avoid being tricked by a man-in-the-middle attack.</source>
+        <translation>Geben Sie die signierte Adresse, die Nachricht (stellen Sie sicher, dass Zeilenumbrüche, Leerzeichen, Tabs usw. genau kopieren) und Signatur unten ein, um die Nachricht zu überprüfen. Seien Sie vorsichtig, nicht mehr in die Signatur hinein zu interpretieren, als das was in der signierten Nachricht selbst angegeben ist, um zu vermeiden, von einem Mann-in-der-Mitte Angriff getroffen zu werden.</translation>
+    </message>
+    <message>
+        <source>VERIFY</source>
+        <translation>VERIFIZIEREN</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>Die eingegebene Adresse ist falsch</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Bitte die Adresse prüfen und erneut eingeben</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>Die eingegebene Adresse passt zu keinem Schlüssel</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Entsperrung der Wallet wurde abgebrochen.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -3610,32 +4425,568 @@ Bitte haben Sie Geduld...</translation>
         <source>Message verified.</source>
         <translation>Nachricht überprüft.</translation>
     </message>
+    <message>
+        <source>No addresses available, you can go to the receive screen and add some there!</source>
+        <translation>Keine Adressen verfügbar, Sie können in das Empfangsmenu gehen und neue hinzufügen!</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletOptionsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Auf Voreinstellungen zurücksetzen</translation>
+    </message>
+    <message>
+        <source>Discard changes</source>
+        <translation>Änderungen verwerfen</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
+    </message>
+    <message>
+        <source>Customize the internal wallet options</source>
+        <translation>Interne Optionen des Wallets anpassen</translation>
+    </message>
+    <message>
+        <source>Stake split threshold</source>
+        <translation>Stake split Schwelle</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change</source>
+        <translation>Unconfirmed Change ausgeben</translation>
+    </message>
+    <message>
+        <source>Network</source>
+        <translation>Netzwerk</translation>
+    </message>
+    <message>
+        <source>Customize the node network options</source>
+        <translation>Optionen des Node-Netzwerks anpassen</translation>
+    </message>
+    <message>
+        <source>Connect through SOCKS5 proxy (default proxy)</source>
+        <translation>Über SOCKS5 Proxy verbinden (standard)</translation>
+    </message>
+    <message>
+        <source>Proxy IP</source>
+        <translation>Proxy IP</translation>
+    </message>
+    <message>
+        <source>Port</source>
+        <translation>Port</translation>
+    </message>
+    <message>
+        <source>Enter port</source>
+        <translation>Port eingeben</translation>
+    </message>
+    <message>
+        <source>Enter proxy IP</source>
+        <translation>Proxy IP eingeben</translation>
+    </message>
+    <message>
+        <source>Map port using UPnP</source>
+        <translation>Port mittels UPnP mappen</translation>
+    </message>
+    <message>
+        <source>Allow incoming connections</source>
+        <translation>Eingehende Verbindungen erlauben</translation>
+    </message>
+    <message>
+        <source>SAVE</source>
+        <translation>SPEICHERN</translation>
+    </message>
+    <message>
+        <source>Options reset succeed</source>
+        <translation>Zurücksetzen der Optionen erfolgreich.</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWalletRepairWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Wallet Reparatur</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet to latest format on startup. (Note: this is NOT an update of the wallet itself)</source>
+        <translation>Upgrade das Wallet zum aktuellen Format bei Start-up. (Bedenke: Dies updated nicht das Wallet selbst)</translation>
+    </message>
+    <message>
+        <source>The buttons below will restart the wallet with command-line options to repair this wallet, fix issues with corrupt blockchain files or missing/obsolete transactions</source>
+        <translation>Der untere Knopf wird das Wallet mit den Kommandozeilenoptionen für die Reparatur, die Problembehebung beschädigter Blockchaindatein oder das Beheben fehlender/osbsolter Transaktionen neu starten.</translation>
+    </message>
+    <message>
+        <source>Salvage wallet</source>
+        <translation>Wallet Rettung</translation>
+    </message>
+    <message>
+        <source>Attempt to recover private keys from a corrupt wallet.dat</source>
+        <translation>Versuche private Schlüssel aus fehlerhafter wallet.dat wiederherzustellen.</translation>
+    </message>
+    <message>
+        <source>Rescan blockchain file</source>
+        <translation>Blockchain Datei erneut scannen</translation>
+    </message>
+    <message>
+        <source>Rescan the blockchain for missing wallet transactions</source>
+        <translation>Blockchain nochmals scannen um fehlende Transaktionen zu laden</translation>
+    </message>
+    <message>
+        <source>Recover transactions 1</source>
+        <translation>Wiederherstellung von Transaktionen 1</translation>
+    </message>
+    <message>
+        <source>Recover transactions 2</source>
+        <translation>Wiederherstellung von Transaktionen 2</translation>
+    </message>
+    <message>
+        <source>Upgrade wallet format</source>
+        <translation>Upgrade Wallet Format</translation>
+    </message>
+    <message>
+        <source>Rebuild index</source>
+        <translation>Index neu aufbauen</translation>
+    </message>
+    <message>
+        <source>Rebuild blockchain index from current blk000???.dat files</source>
+        <translation>Baue den Blockchain-Index mithilfe der aktuellen blk000??.dat Datei erneut auf</translation>
+    </message>
+    <message>
+        <source>Delete local blockchain</source>
+        <translation>Lokale Blockchain-Daten löschen</translation>
+    </message>
+    <message>
+        <source>Deletes all local blockchain folders so the wallet synchronizes from scratch</source>
+        <translation>Löscht sämtliche Blockchain-Daten, die Wallet wird komplett neu syncronisiert</translation>
+    </message>
+    <message>
+        <source>This will delete your local blockchain folders and the wallet will synchronize the complete Blockchain from scratch.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dieser Vorgang wird Ihren lokalen Blockchain-Ordner löschen und das Wallet wird von Grund auf neu Synchronisieren.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>This needs quite some time and downloads a lot of data.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Dieser Vorgang wird einige Zeit in Anspruch nehmen und eine menge Daten herunterladen.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Your transactions and funds will be visible again after the download has completed.&lt;br /&gt;&lt;br /&gt;</source>
+        <translation>Deine Transaktionen und Guthaben werden wieder sichtbar sein nachdem der Download-Prozess abgeschlossen ist.&lt;br /&gt;&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Do you want to continue?.&lt;br /&gt;</source>
+        <translation>Möchten Sie fortfahren?&lt;br /&gt;</translation>
+    </message>
+    <message>
+        <source>Confirm resync Blockchain</source>
+        <translation>Synchronisation der Blockchain bestätigen</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsWidget</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Wallet Data</source>
+        <translation>Wallet Daten</translation>
+    </message>
+    <message>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
+    </message>
+    <message>
+        <source>Multisend</source>
+        <translation>Multisend</translation>
+    </message>
+    <message>
+        <source>Export Accounting</source>
+        <translation>Exportiere Bilanzen</translation>
+    </message>
+    <message>
+        <source>Tools</source>
+        <translation>Werkzeuge</translation>
+    </message>
+    <message>
+        <source>Sign/Verify Message</source>
+        <translation>Signiere/Verifiziere Nachricht</translation>
+    </message>
+    <message>
+        <source>BIP38 Tool</source>
+        <translation>BIP 38 Werkzeug</translation>
+    </message>
+    <message>
+        <source>Options</source>
+        <translation>Optionen</translation>
+    </message>
+    <message>
+        <source>Main</source>
+        <translation>Main</translation>
+    </message>
+    <message>
+        <source>Display</source>
+        <translation>Display</translation>
+    </message>
+    <message>
+        <source>Debug</source>
+        <translation>Debug</translation>
+    </message>
+    <message>
+        <source>Information</source>
+        <translation>Hinweis</translation>
+    </message>
+    <message>
+        <source>Console</source>
+        <translation>Konsole</translation>
+    </message>
+    <message>
+        <source>Wallet Repair</source>
+        <translation>Wallet Reparatur</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation>Hilfe</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>FAQ</translation>
+    </message>
+    <message>
+        <source>About FIVEBALANCE</source>
+        <translation>Über FIVEBALANCE</translation>
+    </message>
+    <message>
+        <source>Settings</source>
+        <translation>Einstellungen</translation>
+    </message>
+    <message>
+        <source>Confirm options reset</source>
+        <translation>Zurücksetzen der Optionen bestätigen</translation>
+    </message>
+    <message>
+        <source>Client restart required to activate changes.</source>
+        <translation>Neustart des Clients erforderlich, um Änderungen zu aktivieren.</translation>
+    </message>
+    <message>
+        <source>Client will be shutdown, do you want to proceed?</source>
+        <translation>Der Client wird heruntergefahren, wollen Sie fortfahren?</translation>
+    </message>
+    <message>
+        <source>Stake Split too low, it shall be either &gt;= %1 or equal to 0 (to disable stake splitting)</source>
+        <translation>Stake split zu klein, es sollte besser &gt;= %1 oder gleich 0 (zum deaktivieren des Stake splittings)</translation>
+    </message>
+    <message>
+        <source>Restart required</source>
+        <translation>Neustart erforderlich</translation>
+    </message>
+    <message>
+        <source>Your wallet needs to be restarted to apply the changes
+</source>
+        <translation>Ihr Wallet muss für die Übernahme der Änderungen neu gestartet werden</translation>
+    </message>
+    <message>
+        <source>Restart Now</source>
+        <translation>Jetzt neu starten</translation>
+    </message>
+    <message>
+        <source>Restart Later</source>
+        <translation>Später neu starten</translation>
+    </message>
+    <message>
+        <source>Options will be applied on next wallet restart</source>
+        <translation>Änderungen werden mit dem nächsten Start des Wallets wirksam</translation>
+    </message>
+    <message>
+        <source>Options stored</source>
+        <translation>Optionen gesichert</translation>
+    </message>
+    <message>
+        <source>Options store failed</source>
+        <translation>Speichern der Optionen gescheitert</translation>
+    </message>
+    <message>
+        <source>Discard Unsaved Changes</source>
+        <translation>Entferne nicht gespeicherte Änderungen</translation>
+    </message>
+    <message>
+        <source>You are just about to discard all of your unsaved options.
+
+Are you sure?
+</source>
+        <translation>Sie sind dabei all Ihre ungespeicherten Optionen zu entfernen.
+
+Sind Sie sicher?</translation>
+    </message>
+</context>
+<context>
+    <name>ShutdownWindow</name>
+    <message>
+        <source>FIVEBALANCE Core is shutting down...</source>
+        <translation>FIVEBALANCE Core wird beendet...</translation>
+    </message>
+    <message>
+        <source>Do not shut down the computer until this window disappears.</source>
+        <translation>Fahren Sie den Computer nicht herunter, bevor dieses Fenster verschwindet.</translation>
+    </message>
+</context>
+<context>
+    <name>SnackBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Contact Stored</source>
+        <translation>Kontakt gespeichert</translation>
+    </message>
+</context>
+<context>
+    <name>Splash</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Loading…</source>
+        <translation>Lade...</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE Core</source>
+        <translation>FIVEBALANCE Core</translation>
+    </message>
 </context>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Fivebalance Core</source>
-        <translation>Fivebalance Core</translation>
-    </message>
-    <message>
-        <source>Version %1</source>
-        <translation>Version %1</translation>
-    </message>
-    <message>
-        <source>The Bitcoin Core developers</source>
-        <translation>Die Bitcoin Core Entwickler</translation>
-    </message>
-    <message>
-        <source>The Dash Core developers</source>
-        <translation>Die Dash Core Entwickler</translation>
-    </message>
-    <message>
-        <source>The Fivebalance Core developers</source>
-        <translation>Die Fivebalance Core Entwickler</translation>
-    </message>
-    <message>
         <source>[testnet]</source>
         <translation>[Testnetzwerk]</translation>
+    </message>
+</context>
+<context>
+    <name>TooltipMenu</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Copy</source>
+        <translation>Kopieren</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation>Bearbeiten</translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation>Löschen</translation>
+    </message>
+    <message>
+        <source>Last</source>
+        <translation>Letzte</translation>
+    </message>
+</context>
+<context>
+    <name>TopBar</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Available</source>
+        <translation>Verfügbar</translation>
+    </message>
+    <message>
+        <source>Pending</source>
+        <translation>Ausstehend</translation>
+    </message>
+    <message>
+        <source>Immature</source>
+        <translation>Noch nicht fällig</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked for staking</source>
+        <translation>Wallet für das Staking entriegelt</translation>
+    </message>
+    <message>
+        <source>Error generating address</source>
+        <translation>Fehler beim Erstellen der Adresse</translation>
+    </message>
+    <message>
+        <source>Address Copied</source>
+        <translation>Adresse kopiert</translation>
+    </message>
+    <message>
+        <source>Staking active</source>
+        <translation>Staking aktiv</translation>
+    </message>
+    <message>
+        <source>Staking not active</source>
+        <translation>Staking nicht aktiv</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n active connection(s)</source>
+        <translation><numerusform>%n aktive Verbindung(en)</numerusform><numerusform>%n aktive Verbindung(en)</numerusform></translation>
+    </message>
+    <message>
+        <source>Synchronized - Block: %1</source>
+        <translation>Synchronisierter Block:%1</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n Stunden</numerusform><numerusform>%n Stunden</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>%n Tage</numerusform><numerusform>%n Tage</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n Wochen</numerusform><numerusform>%n Wochen</numerusform></translation>
+    </message>
+    <message>
+        <source>%1 and %2</source>
+        <translation>%1 und %2</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n Jahre</numerusform><numerusform>%n Jahre</numerusform></translation>
+    </message>
+    <message>
+        <source>Wallet Upgrade</source>
+        <translation>Wallet Upgrade</translation>
+    </message>
+    <message>
+        <source>Upgrading to HD wallet will improve
+the wallet's reliability and security.
+
+
+NOTE: after the upgrade, a new
+backup will be created.
+</source>
+        <translation>Das Upgrade auf ein HD Wallet wird die Verlässlichkeit und Sicherheit des Wallets erhöhen.
+
+
+BEDENKEN SIE: Nach dem Upgrade wird ein neues Backup erstellt.
+</translation>
+    </message>
+    <message>
+        <source>Upgrade Wallet</source>
+        <translation>Upgrade Wallet</translation>
+    </message>
+    <message>
+        <source>Wallet unlock cancelled</source>
+        <translation>Entriegelung des Wallets abgebrochen</translation>
+    </message>
+    <message>
+        <source>Tor Active: %1</source>
+        <translation>Tor aktiv: %1</translation>
+    </message>
+    <message>
+        <source>Tor Disabled</source>
+        <translation>Tor ausgeschaltet</translation>
+    </message>
+    <message>
+        <source>FAQ</source>
+        <translation>FAQ</translation>
+    </message>
+    <message>
+        <source>Upgrade to HD Wallet</source>
+        <translation>Zur HD Wlattet upgraden</translation>
+    </message>
+    <message>
+        <source>No Connection</source>
+        <translation>Keine Verbindung</translation>
+    </message>
+    <message>
+        <source>Staking Disabled</source>
+        <translation>Staking ausgeschaltet</translation>
+    </message>
+    <message>
+        <source>Cold Staking Disabled</source>
+        <translation>Cold Staking deaktiviert</translation>
+    </message>
+    <message>
+        <source> %54 Synchronizing..</source>
+        <translation>%54 Synchronisiert</translation>
+    </message>
+    <message>
+        <source>Light Theme</source>
+        <translation>Helles Theme</translation>
+    </message>
+    <message>
+        <source>Dark Theme</source>
+        <translation>Dunkles Theme</translation>
+    </message>
+    <message>
+        <source>Wallet Locked </source>
+        <translation>Wallet gesperrt</translation>
+    </message>
+    <message>
+        <source>Wallet Locked</source>
+        <translation>Wallet gesperrt</translation>
+    </message>
+    <message>
+        <source>Wallet Unlocked</source>
+        <translation>Wallet entsperrt</translation>
+    </message>
+    <message>
+        <source>Wallet Unencrypted</source>
+        <translation>Wallet unverschlüsselt</translation>
+    </message>
+    <message>
+        <source>Available (Locked included)</source>
+        <translation>Verfügbar (einschl. Verriegelte)</translation>
+    </message>
+    <message>
+        <source>The wallet has been successfully upgraded to HD.</source>
+        <translation>Das Wallet wurde erfolgreich auf HD geupgradet.</translation>
+    </message>
+    <message>
+        <source>It is advised to make a backup.</source>
+        <translation>Es wird empfohlen ein Backup zu machen.</translation>
+    </message>
+    <message>
+        <source>Do you wish to backup now?</source>
+        <translation>Möchten Sie jetzt ein Backup erstellen?</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Wallet sichern</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Wallet-Daten (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup created</source>
+        <translation>Backup erstellt</translation>
+    </message>
+    <message>
+        <source>Backup creation failed</source>
+        <translation>Erstellung des Backups fehlgeschlagen</translation>
+    </message>
+    <message>
+        <source>no file selected</source>
+        <translation>Keine Datei ausgewählt</translation>
+    </message>
+    <message>
+        <source>Wallet upgraded successfully, but no backup created.</source>
+        <translation>Wallet erfolgreich geupgradet, aber es wurde kein Backup erstellt.</translation>
+    </message>
+    <message>
+        <source>WARNING: remember to make a copy of your wallet.dat file!</source>
+        <translation>WARNUNG: Vergessen Sie nicht eine Kopie Ihrer Wallet.dat Datei zu machen!</translation>
+    </message>
+    <message>
+        <source>Upgrade Wallet Error</source>
+        <translation>Fehler beim Upgrade des Wallets</translation>
     </message>
 </context>
 <context>
@@ -3649,7 +5000,7 @@ Bitte haben Sie Geduld...</translation>
     <name>TransactionDesc</name>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Offen für %n weitere Block</numerusform><numerusform>Offen für %n weitere Blocks</numerusform></translation>
+        <translation><numerusform>Geöffnet für %n weitere Blöcke</numerusform><numerusform>Geöffnet für %n weitere Blöcke</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -3658,18 +5009,6 @@ Bitte haben Sie Geduld...</translation>
     <message>
         <source>conflicted</source>
         <translation>in Konflikt stehend</translation>
-    </message>
-    <message>
-        <source>%1/offline (verified via swifttx)</source>
-        <translation>%1/offline (Überprüft durch SwiftTX)</translation>
-    </message>
-    <message>
-        <source>%1/confirmed (verified via swifttx)</source>
-        <translation>%1/bestätigt (Überprüft durch SwiftTX)</translation>
-    </message>
-    <message>
-        <source>%1 confirmations (verified via swifttx)</source>
-        <translation>%1 Bestätigungen (Überprüft durch SwiftTX)</translation>
     </message>
     <message>
         <source>%1/offline</source>
@@ -3684,24 +5023,36 @@ Bitte haben Sie Geduld...</translation>
         <translation>%1 Bestätigungen</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1/offline (Überprüfung durch SwiftTX - %2 von %3 Signaturen)</translation>
+        <source>%1/offline (verified via SwiftX)</source>
+        <translation>%1/offline (verifiziert via Swift Transaktion)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification in progress - %2 of %3 signatures )</source>
-        <translation>%1/bestätigt (Überprüfung durch SwiftTX - %2 von %3 Signaturen)</translation>
+        <source>%1/confirmed (verified via SwiftX)</source>
+        <translation>%1/bestätigt (verifiziert via Swift Transaktion)</translation>
     </message>
     <message>
-        <source>%1 confirmations (SwiftTX verification in progress - %2 of %3 signatures)</source>
-        <translation>%1 Bestätigungen (Überprüfung durch SwiftTX - %2 von %3 Signaturen)</translation>
+        <source>%1 confirmations (verified via SwiftX)</source>
+        <translation>%1 Bestätigungen (verifiziert via Swift Transaktion)</translation>
     </message>
     <message>
-        <source>%1/offline (SwiftTX verification failed)</source>
-        <translation>%1/offline (Überprüfung durch SwiftTX fehlgeschlagen)</translation>
+        <source>%1/offline (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1/offline (Swift Transaktion wird verifiziert - %2 aus %3 Signaturen)</translation>
     </message>
     <message>
-        <source>%1/confirmed (SwiftTX verification failed)</source>
-        <translation>%1/bestätigt (Überprüfung durch SwiftTX fehlgeschlagen)</translation>
+        <source>%1/confirmed (SwiftX verification in progress - %2 of %3 signatures )</source>
+        <translation>%1/bestätigt (Swift Transaktion wird verifiziert - %2 von %3 Signaturen)</translation>
+    </message>
+    <message>
+        <source>%1 confirmations (SwiftX verification in progress - %2 of %3 signatures)</source>
+        <translation>%1 Bestätigungen (Swift Transaktion wird verifiziert - %2 von %3 Signaturen)</translation>
+    </message>
+    <message>
+        <source>%1/offline (SwiftX verification failed)</source>
+        <translation>%1/offline (Swift Transaktion konnte nicht verifiziert werden)</translation>
+    </message>
+    <message>
+        <source>%1/confirmed (SwiftX verification failed)</source>
+        <translation>%1/bestätigt (Swift Transaktion konnte nicht verifiziert werden)</translation>
     </message>
     <message>
         <source>Status</source>
@@ -3713,7 +5064,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message numerus="yes">
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, Broadcast durch %n Node</numerusform><numerusform>, Broadcast durch %n Nodes</numerusform></translation>
+        <translation><numerusform>, Broadcast durch %n Nodes</numerusform><numerusform>, Broadcast durch %n Nodes</numerusform></translation>
     </message>
     <message>
         <source>Date</source>
@@ -3757,7 +5108,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>gereift in %n weiteren Block</numerusform><numerusform>gereift in %n weiteren Blocks</numerusform></translation>
+        <translation><numerusform>reift noch %n weitere Blöcke</numerusform><numerusform>reift noch %n weitere Blöcke</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
@@ -3804,10 +5155,6 @@ Bitte haben Sie Geduld...</translation>
         <translation>Händler</translation>
     </message>
     <message>
-        <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte FBNs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine FBNs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
-    </message>
-    <message>
         <source>Debug information</source>
         <translation>Debuginformationen</translation>
     </message>
@@ -3833,17 +5180,6 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>TransactionDescDialog</name>
-    <message>
-        <source>Transaction details</source>
-        <translation>Transaktionsdetails</translation>
-    </message>
-    <message>
-        <source>This pane shows a detailed description of the transaction</source>
-        <translation>Dieser Bereich zeigt eine detaillierte Beschreibung der Transaktion an</translation>
-    </message>
-</context>
-<context>
     <name>TransactionTableModel</name>
     <message>
         <source>Date</source>
@@ -3859,7 +5195,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
     <message numerus="yes">
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Offen für %n weitere Block</numerusform><numerusform>Offen für %n weitere Blocks</numerusform></translation>
+        <translation><numerusform>Geöffnet für %n weitere Blöcke</numerusform><numerusform>Geöffnet für %n weitere Blöcke</numerusform></translation>
     </message>
     <message>
         <source>Open until %1</source>
@@ -3906,24 +5242,24 @@ Bitte haben Sie Geduld...</translation>
         <translation>Empfangen von</translation>
     </message>
     <message>
-        <source>Received via Obfuscation</source>
-        <translation>über/durch Verschleierung empfangen</translation>
+        <source>%1 Stake</source>
+        <translation>%1 Stake</translation>
     </message>
     <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Stückelung der Verschleierung</translation>
+        <source>z%1 Stake</source>
+        <translation>z%1 Stake</translation>
     </message>
     <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Sicherheitspfandzahlung für Verschleierung</translation>
+        <source>%1 Cold Stake</source>
+        <translation>%1 Cold Stake</translation>
     </message>
     <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Verschleierung Erzeugung des Sicherheitspfand</translation>
+        <source>%1 Stake on behalf of</source>
+        <translation>%1 Stake im Auftrag von</translation>
     </message>
     <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Verschleierung Erzeugung der Stückelung</translation>
+        <source>Stake delegation</source>
+        <translation>Stake Zuweisung</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3938,44 +5274,36 @@ Bitte haben Sie Geduld...</translation>
         <translation>Eigenüberweisung</translation>
     </message>
     <message>
-        <source>Minted</source>
-        <translation>Erzeugt</translation>
+        <source>Stake delegation spent by</source>
+        <translation>Stake Zuweisung ausgegeben durch</translation>
     </message>
     <message>
         <source>Mined</source>
         <translation>Erarbeitet</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>Verschleiert</translation>
+        <source>Converted %1 to z%1</source>
+        <translation>z%1 zu %1 konvertiert</translation>
     </message>
     <message>
-        <source>Converted Phr to zPhr</source>
-        <translation>Umgewandeltes FBN zu zFBN</translation>
+        <source>Received %1 from z%1</source>
+        <translation>%1 empfangen von z%1</translation>
     </message>
     <message>
-        <source>Spent zPhr</source>
-        <translation>Ausgeben zFBN</translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Empfangene FBN von zFBN</translation>
-    </message>
-    <message>
-        <source>Minted Change as zPhr from zPhr Spend</source>
-        <translation>Geprägtes Wechselgeld als zFBN von zFBN Ausgabe</translation>
-    </message>
-    <message>
-        <source>Converted zPhr to Phr</source>
-        <translation>Umgewandeltes zFBN zu FBN</translation>
+        <source>Converted z%1 to %1</source>
+        <translation>Konvertiere z%1 zu %1</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>nur beobachtet</translation>
     </message>
     <message>
-        <source>zPhr Accumulator</source>
-        <translation>zFBN Speicher</translation>
+        <source>Anonymous</source>
+        <translation>Anonym</translation>
+    </message>
+    <message>
+        <source>No information</source>
+        <translation>Keine Information</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4007,212 +5335,113 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>TransactionView</name>
+    <name>TxDetailDialog</name>
     <message>
-        <source>All</source>
-        <translation>Alle</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
     <message>
-        <source>Today</source>
-        <translation>Heute</translation>
+        <source>Transaction Details</source>
+        <translation>Transaktionsdetails</translation>
     </message>
     <message>
-        <source>This week</source>
-        <translation>Diese Woche</translation>
+        <source>Total amount</source>
+        <translation>Gesamtmenge</translation>
     </message>
     <message>
-        <source>This month</source>
-        <translation>Diesen Monat</translation>
+        <source>Previous Transaction</source>
+        <translation>Vorherige Transaktion</translation>
     </message>
     <message>
-        <source>Last month</source>
-        <translation>Letzten Monat</translation>
+        <source>Output Index</source>
+        <translation>Output Index</translation>
     </message>
     <message>
-        <source>This year</source>
-        <translation>Dieses Jahr</translation>
+        <source>D7VFR83SQbie…BhjcWJtcfip5krte2Z </source>
+        <translation>D7VFR83SQbie…BhjcWJtcfip5krte2Z</translation>
     </message>
     <message>
-        <source>Range...</source>
-        <translation>Zeitraum...</translation>
-    </message>
-    <message>
-        <source>Most Common</source>
-        <translation>Gängigste</translation>
-    </message>
-    <message>
-        <source>Received with</source>
-        <translation>Empfangen über</translation>
-    </message>
-    <message>
-        <source>Sent to</source>
-        <translation>Überwiesen an</translation>
-    </message>
-    <message>
-        <source>Obfuscated</source>
-        <translation>Verschleiert</translation>
-    </message>
-    <message>
-        <source>Obfuscation Make Collateral Inputs</source>
-        <translation>Verschleierung Erzeugung des Sicherheitspfand</translation>
-    </message>
-    <message>
-        <source>Obfuscation Create Denominations</source>
-        <translation>Verschleierung Erzeugung der Stückelung</translation>
-    </message>
-    <message>
-        <source>Obfuscation Denominate</source>
-        <translation>Stückelung der Verschleierung</translation>
-    </message>
-    <message>
-        <source>Obfuscation Collateral Payment</source>
-        <translation>Sicherheitspfandzahlung für Verschleierung</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>Eigenüberweisung</translation>
-    </message>
-    <message>
-        <source>Mined</source>
-        <translation>Erarbeitet</translation>
-    </message>
-    <message>
-        <source>Minted</source>
-        <translation>Erzeugt</translation>
-    </message>
-    <message>
-        <source>Masternode Reward</source>
-        <translation>Masternode Vergütung</translation>
-    </message>
-    <message>
-        <source>Received Phr from zPhr</source>
-        <translation>Empfangene FBN von zFBN</translation>
-    </message>
-    <message>
-        <source>Zerocoin Mint</source>
-        <translation>Zerocoin Prägung</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend</source>
-        <translation>Zerocoin Ausgabe</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend, Change in zPhr</source>
-        <translation>Zerocoin Ausgabe, Wechselgeld in zFBN</translation>
-    </message>
-    <message>
-        <source>Zerocoin Spend to Self</source>
-        <translation>Zerocoin Ausgabe an sich Selbst</translation>
-    </message>
-    <message>
-        <source>Other</source>
-        <translation>Andere</translation>
-    </message>
-    <message>
-        <source>Enter address or label to search</source>
-        <translation>Zu suchende Adresse oder Bezeichnung eingeben</translation>
-    </message>
-    <message>
-        <source>Min amount</source>
-        <translation>Minimaler Betrag</translation>
-    </message>
-    <message>
-        <source>Copy address</source>
-        <translation>Adresse kopieren</translation>
-    </message>
-    <message>
-        <source>Copy label</source>
-        <translation>Bezeichnung kopieren</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Betrag kopieren</translation>
-    </message>
-    <message>
-        <source>Copy transaction ID</source>
-        <translation>Transaktions-ID kopieren</translation>
-    </message>
-    <message>
-        <source>Edit label</source>
-        <translation>Bezeichnung bearbeiten</translation>
-    </message>
-    <message>
-        <source>Show transaction details</source>
-        <translation>Transaktionsdetails anzeigen</translation>
-    </message>
-    <message>
-        <source>Export Transaction History</source>
-        <translation>Transaktionsverlauf exportieren</translation>
-    </message>
-    <message>
-        <source>Comma separated file (*.csv)</source>
-        <translation>Kommagetrennte-Datei (*.csv)</translation>
-    </message>
-    <message>
-        <source>Confirmed</source>
-        <translation>Bestätigt</translation>
-    </message>
-    <message>
-        <source>Watch-only</source>
-        <translation>Nur beobachtet</translation>
-    </message>
-    <message>
-        <source>Date</source>
-        <translation>Datum</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation>Art</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation>Bezeichnung</translation>
-    </message>
-    <message>
-        <source>Address</source>
-        <translation>Adresse</translation>
+        <source>May 25, 2017</source>
+        <translation>25. Mai 2017</translation>
     </message>
     <message>
         <source>ID</source>
         <translation>ID</translation>
     </message>
     <message>
-        <source>Exporting Failed</source>
-        <translation>Exportieren fehlgeschlagen</translation>
+        <source>Sending to</source>
+        <translation>Sende an</translation>
     </message>
     <message>
-        <source>There was an error trying to save the transaction history to %1.</source>
-        <translation>Beim Speichern des Transaktionsverlaufs nach %1 ist ein Fehler aufgetreten.</translation>
+        <source>Coin inputs</source>
+        <translation>Münzeingaben</translation>
     </message>
     <message>
-        <source>Exporting Successful</source>
-        <translation>Exportieren erfolgreich</translation>
+        <source>Fee</source>
+        <translation>Gebühr</translation>
     </message>
     <message>
-        <source>The transaction history was successfully saved to %1.</source>
-        <translation>Speichern des Transaktionsverlaufs nach %1 war erfolgreich.</translation>
+        <source>Size</source>
+        <translation>Größe</translation>
     </message>
     <message>
-        <source>Range:</source>
-        <translation>Zeitraum:</translation>
+        <source>Change address</source>
+        <translation>Wechseladresse</translation>
     </message>
     <message>
-        <source>to</source>
-        <translation>bis</translation>
+        <source>Spendable</source>
+        <translation>Verfügbar für die Ausgabe</translation>
+    </message>
+    <message>
+        <source>Confirmations</source>
+        <translation>Bestätigungen</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Status</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Datum</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>TextEtikett</translation>
+    </message>
+    <message>
+        <source>CANCEL</source>
+        <translation>ABBRECHEN</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation>OK</translation>
+    </message>
+    <message>
+        <source>Confirm Your Transaction</source>
+        <translation>Bestätigen Sie Ihre Transaktion</translation>
+    </message>
+    <message>
+        <source>SEND</source>
+        <translation>SENDEN</translation>
+    </message>
+    <message>
+        <source>ID copied</source>
+        <translation>ID kopiert</translation>
+    </message>
+    <message>
+        <source>Delegating to</source>
+        <translation>Delegieren zu</translation>
+    </message>
+    <message>
+        <source>Unknown</source>
+        <translation>Unbekannt</translation>
     </message>
 </context>
 <context>
-    <name>UnitDisplayStatusBarControl</name>
+    <name>TxRow</name>
     <message>
-        <source>Unit to show amounts in. Click to select another unit.</source>
-        <translation>Angezeigte Einheit. Klicken Sie, um eine andere Einheit zu wählen.</translation>
-    </message>
-</context>
-<context>
-    <name>WalletFrame</name>
-    <message>
-        <source>No wallet has been loaded.</source>
-        <translation>Es wurde keine Wallet geladen.</translation>
+        <source>Form</source>
+        <translation>Formular</translation>
     </message>
 </context>
 <context>
@@ -4222,74 +5451,84 @@ Bitte haben Sie Geduld...</translation>
         <translation>FBNs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 FBN.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 FBN begrenzt.</translation>
+        <source>Transaction creation failed!
+%1</source>
+        <translation>Transaktionserstellung fehlgeschlagen!
+%1</translation>
+    </message>
+    <message>
+        <source>The size of the transaction is too big.
+Select fewer inputs with coin control.</source>
+        <translation>Die Transaktionsgröße ist zu groß.
+Wählen Sie weniger Eingänge über coin control aus.</translation>
     </message>
 </context>
 <context>
-    <name>WalletView</name>
+    <name>WelcomeContentWidget</name>
     <message>
-        <source>&amp;Export</source>
-        <translation>&amp;Exportieren</translation>
+        <source>1</source>
+        <translation>1</translation>
     </message>
     <message>
-        <source>Export the data in the current tab to a file</source>
-        <translation>Daten der aktuellen Ansicht in eine Datei exportieren</translation>
+        <source>2</source>
+        <translation>2</translation>
     </message>
     <message>
-        <source>Selected amount:</source>
-        <translation>Ausgewählter Betrag:</translation>
+        <source>3</source>
+        <translation>3</translation>
     </message>
     <message>
-        <source>Backup Wallet</source>
-        <translation>Wallet sichern</translation>
+        <source>4</source>
+        <translation>4</translation>
     </message>
     <message>
-        <source>Wallet Data (*.dat)</source>
-        <translation>Wallet-Daten (*.dat)</translation>
+        <source>Language</source>
+        <translation>Sprache</translation>
     </message>
     <message>
-        <source>Backup Failed</source>
-        <translation>Sicherung fehlgeschlagen</translation>
+        <source>Welcome</source>
+        <translation>Willkommen</translation>
     </message>
     <message>
-        <source>There was an error trying to save the wallet data to %1.</source>
-        <translation>Beim Speichern der Wallet-Daten nach %1 ist ein Fehler aufgetreten.</translation>
+        <source>Privacy</source>
+        <translation>Privatsphäre</translation>
     </message>
     <message>
-        <source>Backup Successful</source>
-        <translation>Sicherung erfolgreich</translation>
+        <source>Masternodes</source>
+        <translation>Masternodes</translation>
     </message>
     <message>
-        <source>The wallet data was successfully saved to %1.</source>
-        <translation>Speichern der Wallet-Daten nach %1 war erfolgreich.</translation>
-    </message>
-</context>
-<context>
-    <name>ZPhrControlDialog</name>
-    <message>
-        <source>Select zPhr to Spend</source>
-        <translation>Auswahl zFBN als Ausgabe</translation>
+        <source>Select your language</source>
+        <translation>Wählen Sie Ihre Sprache</translation>
     </message>
     <message>
-        <source>Quantity</source>
-        <translation>Menge</translation>
+        <source>Welcome to
+FIVEBALANCE Core Wallet</source>
+        <translation>Willkommen beim FIVEBALANCE Core Wallet</translation>
     </message>
     <message>
-        <source>0</source>
-        <translation>0</translation>
+        <source>FIVEBALANCE is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>FIVEBALANCE ist die innovativste, auf Proof of Stake Blockchain basierende Technologie. Es wurde von einem Team hoch erfahrener Entwickler und Kryptographen entwickelt.</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zFBN</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - FIVEBALANCE believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>Wie unser Manifestum sagt: Privatsphäre ist ein nicht-verhandelbares Menschenrecht; es garantiert Nuzern die Freiheit ihre Daten wann immer und mit wem auch immer zu teilen - FIVEBALANCE galubt an diese Souveränität.</translation>
     </message>
     <message>
-        <source>Select/Deselect All</source>
-        <translation>Alle Aus-/Abwählen</translation>
+        <source>The masternode network is FIVEBALANCE's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Das Masternode Netzwerk ist FIVEBALANCE zweite Schicht, die auf der Blockchain aufgesetzt wurde und unserer DAO ermöglicht, dezentrale Steuerung und einen Fiskus ermöglicht.</translation>
     </message>
     <message>
-        <source>Is Spendable</source>
-        <translation>ist aufwendbar</translation>
+        <source>How FIVEBALANCE respects your privacy?</source>
+        <translation>Wie respektiert FIVEBALANCE meine Privatsphäre?</translation>
+    </message>
+    <message>
+        <source>What is a Masternode?</source>
+        <translation>Was ist ein Masternode?</translation>
+    </message>
+    <message>
+        <source>default</source>
+        <translation>standard</translation>
     </message>
 </context>
 <context>
@@ -4303,16 +5542,28 @@ Bitte haben Sie Geduld...</translation>
         <translation>Erlaubt JSON-RPC Verbindungen von der angegebenen Quelle. Valide für &lt;ip&gt; ist eine einzelne IP (z.B. 1.2.3.4), ein Netzwerk/Netzwerkmaske (z.B. 1.2.3.4/255.255.255.0) oder ein Netzwerk/CIDR (z.B. 1.2.3.4/24). Diese Option kann mehrfach angegeben werden</translation>
     </message>
     <message>
-        <source>An error occurred while setting up the RPC address %s port %u for listening: %s</source>
-        <translation>Fehler aufgetreten beim Einrichten der RPC-Adresse %s Port %u für horchen: %s</translation>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>Binde an die angegebene Adresse und höre immer auf ihr. Benutze [host]:port Notation für IPv6</translation>
     </message>
     <message>
-        <source>Calculated accumulator checkpoint is not what is recorded by block index</source>
-        <translation>Der berechnete Akkumulator-Checkpoint stimmt nicht mit dem vom Blockindex aufgezeichneten überein</translation>
+        <source>Bind to given address and whitelist peers connecting to it. Use [host]:port notation for IPv6</source>
+        <translation>Binde an die angegebene Adresse und setze Verbindungen zu ihr auf die Whitelist. Benutze [host]:port Notation für IPv6</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Fivebalance Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. Fivebalance Core läuft wahrscheinlich bereits.</translation>
+        <source>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</source>
+        <translation>Binde an die angegebene Adresse und höre auf JSON-RPC verbindungen. Benutze [host]:port Notation für IPv6. Diese Option kann mehrere Male aufgerufen werden (Standard: Binde an alle Schnittstellen)</translation>
+    </message>
+    <message>
+        <source>Cannot obtain a lock on data directory %s. FIVEBALANCE Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. FIVEBALANCE Core läuft wahrscheinlich bereits.</translation>
+    </message>
+    <message>
+        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
+        <translation>Ändere das automatische, finale Budget Stimmverhalten. Modus=auto: Stimme nur für exakt finale Budgets, welche meinem generierten Budget entsprechen. (string, Standard:auto)</translation>
+    </message>
+    <message>
+        <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
+        <translation>Begrenze freie Transaktionen Permanent auf &lt;n&gt;*1000 Bytes pro Minute (Standard:%u)</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -4323,20 +5574,20 @@ Bitte haben Sie Geduld...</translation>
         <translation>Lösche alle Wallet-Transaktionen und stelle nur diese Teile der Blockchain  beim Start durch -neuscan wieder her</translation>
     </message>
     <message>
-        <source>Disable all Fivebalance specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Deaktiviere alle Fivebalance-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
+        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
+        <translation>Lösche alle Zerocoin Überweisungen und Prägungen die in der Blockchain-Datenbank gespeichert wurden und reindiziere diese (0-1, Standard: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Veröffentlicht unter der MIT-Software-Lizenz, siehe die beigelegte Datei COPYING oder &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable spork administration functionality with the appropriate private key.</source>
-        <translation>Aktiviere die Funktionalität der Spork-Administration mit dem entsprechenden privaten Schlüssel.</translation>
+        <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
+        <translation>Ermögliche Cold Staking Funktionalität (0-1, standardmäßig: %u). Ausgeschaltet, wenn staking=0</translation>
     </message>
     <message>
-        <source>Enable swifttx, show confirmations for locked transactions (bool, default: %s)</source>
-        <translation>SwiftTx aktivieren, Bestätigungen für gesperrte Transaktionen anzeigen (bool, default: %s)</translation>
+        <source>Enable spork administration functionality with the appropriate private key.</source>
+        <translation>Aktiviere die Funktionalität der Spork-Administration mit dem entsprechenden privaten Schlüssel.</translation>
     </message>
     <message>
         <source>Enter regression test mode, which uses a special chain in which blocks can be solved instantly.</source>
@@ -4347,8 +5598,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Fehler: Überwachung von eingehenden Verbindungen fehlgeschlagen (listen return error %s)</translation>
     </message>
     <message>
+        <source>Error: The transaction is larger than the maximum allowed transaction size!</source>
+        <translation>Fehler: Die Transaktion ist größer als die maximal zulässige Transaktionsgröße!</translation>
+    </message>
+    <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
         <translation>Fehler: Nicht unterstütztes Argument -socks gefunden. Festlegen der SOCKS Version ist nicht mehr möglich, es werden nur noch SOCKS5-Proxys unterstützt.</translation>
+    </message>
+    <message>
+        <source>Exclude debugging information for a category. Can be used in conjunction with -debug=1 to output debug logs for all categories except one or more specified categories.</source>
+        <translation>Debugging Information für bestimmte Kategorie ausschließen. Dies kann in Verbindung mit -debug=1 verbunden werden, um die debug logs für alle außer eine oder mehrere spezifische Kategorien auszugeben</translation>
     </message>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
@@ -4363,20 +5622,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in FBN/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in FBN/kB) kleiner als diese gelten für die Weiterleitung als Null-Gebühr  (default: %s)</translation>
-    </message>
-    <message>
-        <source>Fees (in FBN/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in FBN/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
-    </message>
-    <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
         <translation>Flusht die Datenbankaktivität vom Speicherpool auf das Festplattenprotokoll alle &lt;n&gt; Megabytes (default: %u)</translation>
-    </message>
-    <message>
-        <source>Found unconfirmed denominated outputs, will wait till they confirm to continue.</source>
-        <translation>Gefundene unbestätigte benannte Outputs. Warte auf Bestätigung um fortzufahren.</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -4387,12 +5634,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>In diesem Modus -genproclimit steuern, wie viele Blöcke sofort erzeugt werden.</translation>
     </message>
     <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
-        <translation>Ungültiger Betrag für -maxtxfee=&lt;amount&gt;: '%s' (muss mindestens die minrelay Gebühr von %s sein, um Transaktionsstau zu vermeiden)</translation>
+        <source>Insufficient or insufficient confirmed funds, you might need to wait a few minutes and try again.</source>
+        <translation>Unzureichend oder unzureichend bestätigtes Guthaben, warten Sie ein paar Minuten und probieren es dann nochmal.</translation>
     </message>
     <message>
-        <source>Keep the specified amount available for spending at all times (default: 0)</source>
-        <translation>Behalte jeder Zeit den angegebenen Betrag für die Ausgaben (default: 0)</translation>
+        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
+        <translation>Ungültiger Betrag für -maxtxfee=&lt;amount&gt;: '%s' (muss mindestens die minrelay Gebühr von %s sein, um Transaktionsstau zu vermeiden)</translation>
     </message>
     <message>
         <source>Log transaction priority and fee per kB when mining blocks (default: %u)</source>
@@ -4403,8 +5650,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Pflege einen vollständigen Transaktionsindex, der von getrawtransaction rpc call verwendet wird. (default: %u)</translation>
     </message>
     <message>
+        <source>Maximum average size of an index occurrence in the block spam filter (default: %u)</source>
+        <translation>Maximale Größe der Indexliste im Blockspamfilter (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
         <translation>Maximale Größe der Daten in Datenträgertransaktionen, die wir weiterleiten und abbilden (default: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum size of the list of indexes in the block spam filter (default: %u)</source>
+        <translation>Maximale Größe der Indexliste im Blockspamfilter (standardmäßig: %u)</translation>
     </message>
     <message>
         <source>Maximum total fees to use in a single wallet transaction, setting too low may abort large transactions (default: %s)</source>
@@ -4415,16 +5670,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Sekundenanzahl, um fehlerhafte Peers von der Wiederverbindung abzuhalten (default: %u)</translation>
     </message>
     <message>
-        <source>Obfuscation uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.</source>
-        <translation>Verschleierung benötigt exakt gestückelte Mengen um Gelder zu versenden, ggf. müssen Sie einfach mehr Münzen anonymisieren.</translation>
-    </message>
-    <message>
         <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
         <translation>Debug-Informationen ausgeben (Standard: %u, die Bereitstellung von &lt;category&gt; ist optional)</translation>
-    </message>
-    <message>
-        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect)</source>
-        <translation>Abfrage von Gegenstellen-Adressen per DNS-Lookup, falls wenige Adressen verfügbar sind (Standard: 1, ausser -connect ist aktiviert)</translation>
     </message>
     <message>
         <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
@@ -4451,44 +5698,28 @@ Bitte haben Sie Geduld...</translation>
         <translation>Wenn aktiviert, kann die Anzahl der CPU-Threads für die Coin-Erzeugung festgelegt werden (-1 = alle Kerne, Standard: %d)</translation>
     </message>
     <message>
+        <source>Show N confirmations for a successfully locked transaction (0-9999, default: %u)</source>
+        <translation>Zeige N Bestätigungen für eine erfolgreich gesperrte Transaktion (0-9999, Standard: %u)</translation>
+    </message>
+    <message>
         <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
         <translation>Unterstütze Filtern von Blöcken und Transaktionen mittels Bloom-Filtern (Standard: %u)</translation>
     </message>
     <message>
-        <source>SwiftTX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
-        <translation>SwiftTX benötigt mindestens 6 confirmations, Sie sollten ggf. einige Minuten abwarten und dann erneut probieren.</translation>
+        <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
+        <translation>Die Block Datenbank enthält einen Block, der aus der Zukunft zu kommen scheint. Dies könnte an falschen Datum- und Zeiteinstellungen Ihres Computers liegen. Bauen Sie die Blockdatenbank nur neu auf, wenn Sie sich sicher sind, dass die Zeiteinstellungen Ihres Computers korrekt sind.</translation>
     </message>
     <message>
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>Dieses Produkt beinhaltet Software, die vom OpenSSL Projekt für die Nutzung im OpenSSL Toolkit &lt;https://www.openssl.org/&gt; entwickelt wurde. Desweiteren kryptografische Software , die von Eric Young, und UPnP Software, die von Thomas Bernard, geschrieben wurde.</translation>
     </message>
     <message>
-        <source>To use fivebalanced, or the -server option to fivebalance-qt, you must set an rpcpassword in the configuration file:
-%s
-It is recommended you use the following random password:
-rpcuser=fivebalancerpc
-rpcpassword=%s
-(you do not need to remember this password)
-The username and password MUST NOT be the same.
-If the file does not exist, create it with owner-readable-only file permissions.
-It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
-</source>
-        <translation>Um fivebalanced oder die -server option in fivebalance-qt zu nutzen, muss ein RPC-Passwort mittels rpcpassword in der Konfigurationsdatei gestzt werden:
-%s
-Es wird empfohlen das folgende zufällige Passwort zu nutzen:
-rpcuser=fivebalancerpc
-rpcpassword=%s
-(Sie müssen sich das Passwort nicht merken)
-User-Name und Passwort MÜSSEN NICHT die oben genannten sein.
-Falls die Datei bisher nicht existiert, erstellen Sie diese mit der eingeschränkten Berechtigung das nur der Besitzer diese lesen darf.
-Des weiteren wird empfohlen das Argument alertnotify zu setzen, damit Sie bei ggf. auftretenden Problemen benachrichtigt werden.
-Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
-</translation>
+        <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
+        <translation>Gesamtlänge des Netzwerkversionsstring (%i) überschreitet die Länge (%i). Reduzieren Sie die Zahl oder die Größe des Dokuments.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
-        <translation>Nicht genügend gestückeltes, verschleiertes Guthaben für diese Transaktion gefunden.</translation>
+        <source>Unable to bind to %s on this computer. FIVEBALANCE Core is probably already running.</source>
+        <translation>Fehler: Port %s ist bereits belegt! Läuft bereits eine andere FIVEBALANCE Core Wallet ?</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4503,8 +5734,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Warnung: -paytxfee ist sehr hoch eingestellt! Diese Transaktionsgebühr werden Ihnen abgebucht, falls Sie die Transaktion überweisen.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Fivebalance Core will not work properly.</source>
-        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird Fivebalance Core nicht korrekt funktionieren.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong FIVEBALANCE Core will not work properly.</source>
+        <translation>Warnung: Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird FIVEBALANCE Core nicht korrekt funktionieren.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4523,12 +5754,16 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Warnung: wallet.dat fehlerhaft, Daten wurden gerettet! Die originale wallet.dat wurde als wallet.{Zeitstempel}.bak in %s gesichert; falls ihr Kontostand oder ihre Transaktionen fehlerhaft sind, sollten Sie ein Backup zur Wiederherstellung nutzen.</translation>
     </message>
     <message>
-        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
-        <translation>Sie müssen einen privaten Masternode-Schlüssel in der Konfiguration festlegen. Bitte nutzen Sie die Dokumentation zwecks Hilfe.</translation>
+        <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>
+        <translation>Setze Verbindungen aus der folgenden Subnetzmaske oder IP-Adresse. Dies kann mehrere male spezifiziert werden.</translation>
     </message>
     <message>
-        <source>(30001 could be used only on mainnet)</source>
-        <translation>(30001 kann nur im Mainnet verwendet werden)</translation>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>Whitelist-Peers können nicht verboten werden und ihre Transaktionen werden immer weitergeleitet, auch wenn sie bereits im Mempool sind, nützlich z. für ein Gateway</translation>
+    </message>
+    <message>
+        <source>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</source>
+        <translation>Sie müssen einen privaten Masternode-Schlüssel in der Konfiguration festlegen. Bitte nutzen Sie die Dokumentation zwecks Hilfe.</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4539,16 +5774,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 30001 for mainnet)</source>
-        <translation>(muss im Mainnet 30001 sein)</translation>
-    </message>
-    <message>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Akzeptiere Kommandozeilen- und JSON-RPC- Eingaben</translation>
-    </message>
-    <message>
-        <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
-        <translation>Akzeptiere Verbindungen von aussen (Standard: 1 , falls -proxy oder -connect nicht genutzt wird)</translation>
     </message>
     <message>
         <source>Accept public REST requests (default: %u)</source>
@@ -4563,12 +5790,12 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Erlaube DNS lookups für -addnode, -seednode und -connect</translation>
     </message>
     <message>
-        <source>Already have that input.</source>
-        <translation>Eingabe bereits erhalten.</translation>
-    </message>
-    <message>
         <source>Always query for peer addresses via DNS lookup (default: %u)</source>
         <translation>Gegenstellen-Adressen immer per DNS lookup anfragen (Standard: %u)</translation>
+    </message>
+    <message>
+        <source>Append comment to the user agent string</source>
+        <translation>Hänge Kommentar an den User Agent String</translation>
     </message>
     <message>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
@@ -4583,40 +5810,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Block-Erzeugungs-Optionen:</translation>
     </message>
     <message>
-        <source>Can't find random Masternode.</source>
-        <translation>Kann zufällige Masternode nicht finden.</translation>
-    </message>
-    <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>Mixen während der Synchronisierung nicht möglich.</translation>
-    </message>
-    <message>
         <source>Cannot downgrade wallet</source>
         <translation>Wallet downgrade nicht möglich</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -bind address: '%s'</source>
-        <translation>Kann -bind Adresse nicht auflösen: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -externalip address: '%s'</source>
-        <translation>Kann -externalip Adresse nicht auflösen: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot resolve -whitebind address: '%s'</source>
-        <translation>Kann -whitebind Adresse nicht auflösen: '%s'</translation>
-    </message>
-    <message>
-        <source>Cannot write default address</source>
-        <translation>Standardadresse kann nicht geschrieben werden</translation>
-    </message>
-    <message>
-        <source>Collateral not valid.</source>
-        <translation>Pfand ungültig.</translation>
-    </message>
-    <message>
-        <source>Connect only to the specified node(s)</source>
-        <translation>Nur mit den aufgeführten Node(s) verbinden</translation>
     </message>
     <message>
         <source>Connect through SOCKS5 proxy</source>
@@ -4639,16 +5834,12 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Fivebalance Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Fivebalance Core Developers</translation>
+        <source>Copyright (C) 2015-%i The FIVEBALANCE Core Developers</source>
+        <translation>Copyright (C) 2015-%i The FIVEBALANCE Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
         <translation>Beschädigte Block-Datenbank gefunden</translation>
-    </message>
-    <message>
-        <source>Could not parse -rpcbind value %s as network address</source>
-        <translation>Kann -rpcbind Wert %s nicht als Netzwerkadresse parsen </translation>
     </message>
     <message>
         <source>Could not parse masternode.conf</source>
@@ -4659,8 +5850,20 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Debugging-  / Testoptionen</translation>
     </message>
     <message>
+        <source>Delete blockchain folders and resync from scratch</source>
+        <translation>Löschen Sie Blockchain-Ordner und resync von Grund auf neu</translation>
+    </message>
+    <message>
         <source>Disable OS notifications for incoming transactions (default: %u)</source>
         <translation>Benachrichtigungen über eingehende Transaktionen im Betriebsystem ausschalten (Standard: %u)</translation>
+    </message>
+    <message>
+        <source>Disable safemode, override a real safe mode event (default: %u)</source>
+        <translation>Deaktivieren Sie den Safemodus, überschreiben Sie ein echtes Safe-Mode-Ereignis (Standard: %u)</translation>
+    </message>
+    <message>
+        <source>Discover own IP address (default: 1 when listening and no -externalip)</source>
+        <translation>Eigene IP-Adresse erkennen (Standard: 1 beim Hören und keine -Ausnahme)</translation>
     </message>
     <message>
         <source>Do not load the wallet and disable wallet RPC calls</source>
@@ -4675,16 +5878,16 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Geladen</translation>
     </message>
     <message>
-        <source>Enable automatic Zerocoin minting (0-1, default: %u)</source>
-        <translation>Automatische Zerocoin-Prägung ermöglichen (0-1, Standard: %u)</translation>
+        <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivieren Sie die Veröffentlichung der Hash-Transaktion (gesperrt über SwiftX) in &lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction (locked via SwiftX) in &lt;address&gt;</source>
+        <translation>Aktivieren Sie die Publish-Raw-Transaktion (gesperrt über SwiftX) in&lt;address&gt;</translation>
     </message>
     <message>
         <source>Enable the client to act as a masternode (0-1, default: %u)</source>
         <translation>Ermögliche dem Client als Masternode zu fungieren (0-1, Standard: %u)</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Fehler beim Verbinden zur Masternode.</translation>
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -4707,8 +5910,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Fehler beim Laden von wallet.dat : Wallet beschädigt</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Fivebalance Core</source>
-        <translation>Fehler beim Laden der wallet.dat: Neuere Fivebalance Core Version benötigt</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of FIVEBALANCE Core</source>
+        <translation>Fehler beim Laden der wallet.dat: Neuere FIVEBALANCE Core Version benötigt</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4719,12 +5922,16 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Fehler beim Lesen der Datenbank, wird heruntergefahren.</translation>
     </message>
     <message>
-        <source>Error recovering public key.</source>
-        <translation>Fehler bei der Wiederherstellung des öffentlichen Schlüssels.</translation>
+        <source>Error writing zerocoinDB to disk</source>
+        <translation>Fehler beim Schreiben von zerocoinDB auf die Festplatte</translation>
     </message>
     <message>
         <source>Error</source>
         <translation>Fehler</translation>
+    </message>
+    <message>
+        <source>Error: </source>
+        <translation>Fehler:</translation>
     </message>
     <message>
         <source>Error: A fatal internal error occured, see debug.log for details</source>
@@ -4743,36 +5950,16 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Fehler: Wallet verschlossen, Transaktion konnte nicht erstellt werden!</translation>
     </message>
     <message>
-        <source>Error: You already have pending entries in the Obfuscation pool</source>
-        <translation>Fehler: Sie haben bereits ausstehende Einträge im Obfuscation-Pool</translation>
-    </message>
-    <message>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Abhören jeglicher Ports fehlgeschlagen. Nutzen Sie -listen=0 falls dies erwünscht ist.</translation>
     </message>
     <message>
-        <source>Failed to read block</source>
-        <translation>Block konnte nicht gelesen werden</translation>
-    </message>
-    <message>
-        <source>Fee (in FBN/kB) to add to transactions you send (default: %s)</source>
-        <translation>Gebühr (in FBN/kB) die den Transaktionen, die Sie überweisen, hinzugefügt wird (Standard: %s)</translation>
-    </message>
-    <message>
-        <source>Finalizing transaction.</source>
-        <translation>Schließe Transaktion ab.</translation>
+        <source>Failed to parse host:port string</source>
+        <translation>Fehler beim Analysieren von host: port string</translation>
     </message>
     <message>
         <source>Force safe mode (default: %u)</source>
         <translation>Erzwinge Safe-Mode (Standard: %u)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ( waiting %s )</source>
-        <translation>Genügend Benutzer gefunden, signiere (warte %s)</translation>
-    </message>
-    <message>
-        <source>Found enough users, signing ...</source>
-        <translation>Genügend Benutzer gefunden, signiere...</translation>
     </message>
     <message>
         <source>Generate coins (default: %u)</source>
@@ -4781,6 +5968,10 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
     <message>
         <source>How many blocks to check at startup (default: %u, 0 = all)</source>
         <translation>Zu überprüfende Blöcke beim Start (default: %u, 0 = all)</translation>
+    </message>
+    <message>
+        <source>If &lt;category&gt; is not supplied, output all debugging information.</source>
+        <translation>Wenn &lt;category&gt; nicht angegeben wurde, gebe alle Debuginformationen aus. </translation>
     </message>
     <message>
         <source>Importing...</source>
@@ -4795,14 +5986,6 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Ip-Adresse in Debug-Ausgabe einbeziehen (Standard: %u)</translation>
     </message>
     <message>
-        <source>Incompatible mode.</source>
-        <translation>Inkompatibler Modus.</translation>
-    </message>
-    <message>
-        <source>Incompatible version.</source>
-        <translation>Inkompatible Version.</translation>
-    </message>
-    <message>
         <source>Incorrect or no genesis block found. Wrong datadir for network?</source>
         <translation>Falscher oder kein Genesis-Block gefunden. Falsches Datenverzeichnis für das Netzwerk?</translation>
     </message>
@@ -4811,12 +5994,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Fivebalance Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. Fivebalance Core schaltet ab.</translation>
-    </message>
-    <message>
-        <source>Input is not valid.</source>
-        <translation>Input ist nicht gültig.</translation>
+        <source>Initialization sanity check failed. FIVEBALANCE Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. FIVEBALANCE Core schaltet ab.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4831,32 +6010,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Ungültige -onion Adresse oder Hostname: '%s'</translation>
     </message>
     <message>
-        <source>Invalid -proxy address or hostname: '%s'</source>
-        <translation>Ungültige Proxy-Adresse oder Hostname: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ungültiger Betrag für -maxtxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -minrelaytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ungültiger Betrag für -minrelaytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -mintxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ungültiger Betrag für -mintxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s' (must be at least %s)</source>
         <translation>Ungültiger Betrag für -paytxfee=&lt;amount&gt;: '%s' (muss mindestens  %s sein)</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -paytxfee=&lt;amount&gt;: '%s'</source>
-        <translation>Ungültiger Betrag für -paytxfee=&lt;amount&gt;: '%s'</translation>
-    </message>
-    <message>
-        <source>Invalid amount for -reservebalance=&lt;amount&gt;</source>
-        <translation>Ungültiger Betrag für -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
         <source>Invalid amount</source>
@@ -4871,16 +6026,24 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Fehlerhafte Netzmaske in -whitelist festgelegt: '%s'</translation>
     </message>
     <message>
-        <source>Invalid port detected in masternode.conf</source>
-        <translation>Ungültiger Port in masternode.conf entdeckt</translation>
+        <source>Recalculating FBN supply...</source>
+        <translation>Bestimme FBN Bestand erneut...</translation>
     </message>
     <message>
-        <source>Invalid private key.</source>
-        <translation>Ungültiger privater Schlüssel.</translation>
+        <source>Reindexing zerocoin database...</source>
+        <translation>Reindiziere Zerocoin Datenbank...</translation>
     </message>
     <message>
-        <source>Invalid script detected.</source>
-        <translation>Ungültiges Skript entdeckt.</translation>
+        <source>Reindexing zerocoin failed</source>
+        <translation>Zerocoin Reindizierung fehlgeschlagen</translation>
+    </message>
+    <message>
+        <source>Selected coins value is less than payment target</source>
+        <translation>Ausgewählter Coinwert ist geringer als der Zielbetrag</translation>
+    </message>
+    <message>
+        <source>SwiftX options:</source>
+        <translation>SwiftX Optionen:</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for staking or merchant applications!</source>
@@ -4889,7 +6052,7 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
     <message>
         <source> mints deleted
 </source>
-        <translation>Prägungen gelöscht 
+        <translation>Prägungen gelöscht
 </translation>
     </message>
     <message>
@@ -4903,20 +6066,36 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Fehler: Die Transaktion wurde abgelehnt! Dies könnte passieren, wenn einige Coins in deiner Wallet schon ausgegeben wurden, als  wenn du eine Kopie von der wallet.dat benutzt hättest. Coins wurden in der Kopie verbracht, aber hier nicht als verbracht markiert.</translation>
+        <source>Disable all FIVEBALANCE specific functionality (Masternodes, Zerocoin, SwiftX, Budgeting) (0-1, default: %u)</source>
+        <translation>Deaktivieren Sie alle FIVEBALANCE-spezifischen Funktionen (Masternodes, Zerocoin, SwiftX, Budgetierung) (0-1, Standard: %u)</translation>
     </message>
     <message>
-        <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fehler: Diese Transaktion erfordert eine Transaktionsgebühr von mindestens %s wegen ihrer Menge, Komplexität oder Verwendung von kürzlich erhaltenen Mitteln!</translation>
+        <source>Enable SwiftX, show confirmations for locked transactions (bool, default: %s)</source>
+        <translation>Swifttx aktivieren, Bestätigungen für gesperrte Transaktionen anzeigen (bool, default: %s)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
         <translation>Fehler: Nicht unterstütztes Argument -checklevel entdeckt. Checklevel muss Level 4 sein.</translation>
     </message>
     <message>
-        <source>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</source>
-        <translation>Bervorzugte Stückelung für automatisch geprägte Zerocoins (1/5/10/50/100/500/1000/5000), 0 falls keine bestimmte Stückelung präferiert wird. Standard: %u)</translation>
+        <source>Execute command when the best block changes and its size is over (%s in cmd is replaced by block hash, %d with the block size)</source>
+        <translation>Befehl ausführen, wenn sich der beste Block ändert und seine Größe überschritten ist (%s in cmd wird durch Blockhash ersetzt, %d durch die Blockgröße)</translation>
+    </message>
+    <message>
+        <source>Failed to find coin set amongst held coins with less than maxNumber of Spends</source>
+        <translation>Fehler beim Finden der Münzen unter den gehaltenen Münzen mit weniger als maxNaval of Spends</translation>
+    </message>
+    <message>
+        <source>In rare cases, a spend with 7 coins exceeds our maximum allowable transaction size, please retry spend using 6 or less coins</source>
+        <translation>In seltenen Fällen überschreiten Ausgaben mit 7 Münzen die maximal zulässige Transaktionsgröße. Bitte versuchen Sie erneut, mit 6 oder weniger Münzen auszugeben</translation>
+    </message>
+    <message>
+        <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
+        <translation>Benutzerdefinierten Sicherungspfad festlegen, in den Kopien von allen Wallet-Sicherungen abgelegt werden. Wenn ein Verzeichnis ausgewählt ist, wird jede Sicherung als Datei mit Zeitstempel erstellt. Wenn eine Datei ausgewählt ist, wird diese Datei bei jeder Sicherung überschrieben.</translation>
+    </message>
+    <message>
+        <source>SwiftX requires inputs with at least 6 confirmations, you might need to wait a few minutes and try again.</source>
+        <translation>SwiftTX benötigt mindestens 6 confirmations, Sie sollten ggf. einige Minuten abwarten und dann erneut probieren.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -4927,28 +6106,72 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Versuche die Wiederherstellung der fehlerhaften Blockchain zu forcieren</translation>
     </message>
     <message>
+        <source>Cannot create public spend input</source>
+        <translation>Public Spend Input konnte nicht erzeugt werden</translation>
+    </message>
+    <message>
+        <source>Display the stake modifier calculations in the debug.log file.</source>
+        <translation>Zeigen Sie die Berechnungen des Pfahlmodifikators in der Datei debug.log an.</translation>
+    </message>
+    <message>
+        <source>Display verbose coin stake messages in the debug.log file.</source>
+        <translation>Zeigen Sie in der Datei "debug.log" ausführliche Meldungen zum Pfahlstatus an.</translation>
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>Aktivieren Sie den Veröffentlichungs-Hash-Block in&lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>Aktivieren Sie die Veröffentlichung der Hash-Transaktion in&lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>Aktivieren Sie den Veröffentlichungsrohblock in&lt;address&gt;</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>Aktivieren Sie die Veröffentlichung der Rohtransaktion in&lt;address&gt;</translation>
+    </message>
+    <message>
         <source>Enable staking functionality (0-1, default: %u)</source>
         <translation>Aktiviere Staking-Funktionalität (0-1, default: %u)</translation>
     </message>
     <message>
+        <source>Error: A fatal internal error occurred, see debug.log for details</source>
+        <translation>Fehler: Ein schwerwiegender Fehler ist aufgetreten, schauen Sie für detailiertere Infos ins debug.log </translation>
+    </message>
+    <message>
+        <source>Error: No valid utxo!</source>
+        <translation>Error: No valid utxo!</translation>
+    </message>
+    <message>
+        <source>Failed to find Zerocoins in wallet.dat</source>
+        <translation>Zerocoins in wallet.dat nicht gefunden</translation>
+    </message>
+    <message>
+        <source>Failed to parse public spend</source>
+        <translation>Parsen des Public Spend gescheitert</translation>
+    </message>
+    <message>
+        <source>Failed to select a zerocoin</source>
+        <translation>Fehler beim Auswählen einer Nullstelle</translation>
+    </message>
+    <message>
+        <source>Failed to wipe zerocoinDB</source>
+        <translation>Zerocoin Datenbank konnte nicht gelöscht werden</translation>
+    </message>
+    <message>
+        <source>Failed to write coin serial number into wallet</source>
+        <translation>Fehler beim Schreiben der Seriennummer der Münze in die Brieftasche</translation>
+    </message>
+    <message>
+        <source>Invalid amount for -%s=&lt;amount&gt;: '%s'</source>
+        <translation>Ungültiger Betrag für -%s=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
         <translation>Halte höchstens &lt;n&gt; unverbindbare Transaktionen im Speicher (Standard: %u)</translation>
-    </message>
-    <message>
-        <source>Last Obfuscation was too recent.</source>
-        <translation>Nicht genügend Zeit seit der letzten Verschleierung vergangen.</translation>
-    </message>
-    <message>
-        <source>Last successful Obfuscation action was too recent.</source>
-        <translation>Nicht genügend Zeit seit der letzten erfolgreichen Verschleierung vergangen.</translation>
-    </message>
-    <message>
-        <source>Less than 3 mints added, unable to create spend</source>
-        <translation>Weniger als 3 Prägungen hinzugefügt, Überweisung konnte nicht erstellt werden</translation>
-    </message>
-    <message>
-        <source>Limit size of signature cache to &lt;n&gt; entries (default: %u)</source>
-        <translation>Begrenze die Größe des Signatur Cache auf &lt;n&gt; Einträge (Standard: %u)</translation>
     </message>
     <message>
         <source>Line: %d</source>
@@ -4965,6 +6188,10 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
     <message>
         <source>Loading addresses...</source>
         <translation>Lade Adressen...</translation>
+    </message>
+    <message>
+        <source>Loading banlist...</source>
+        <translation>Lade Verbannungsliste...</translation>
     </message>
     <message>
         <source>Loading block index...</source>
@@ -4987,24 +6214,32 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Lade Sporks...</translation>
     </message>
     <message>
-        <source>Loading wallet... (%3.2f %%)</source>
-        <translation>Lade Wallet... (%3.2f %%)</translation>
-    </message>
-    <message>
         <source>Loading wallet...</source>
         <translation>Lade Wallet...</translation>
     </message>
     <message>
+        <source>Location of the auth cookie (default: data dir)</source>
+        <translation>Location of the auth cookie (default: data dir)</translation>
+    </message>
+    <message>
+        <source>Lock masternodes from masternode configuration file (default: %u)</source>
+        <translation>Masternodes aus der masternode-Konfigurationsdatei sperren (Standard: %u)</translation>
+    </message>
+    <message>
+        <source>Lookup(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>Lookup(): Invalid -proxy address or hostname: '%s'</translation>
+    </message>
+    <message>
+        <source>MNs synchronization pending...</source>
+        <translation>MNs Synchronisation ausstehend...</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>Pflegen Sie höchstens&lt;n&gt; Verbindungen zu Peers (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Masternode options:</source>
         <translation>Masternode-Optionen:</translation>
-    </message>
-    <message>
-        <source>Masternode queue is full.</source>
-        <translation>Masternode-Schlange ist voll.</translation>
-    </message>
-    <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
     </message>
     <message>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
@@ -5015,64 +6250,32 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Maximaler Sendepuffer pro Verbindung &lt;n&gt;*1000 bytes (Standard: %u)</translation>
     </message>
     <message>
-        <source>Missing input transaction information.</source>
-        <translation>Fehlende Information in der Transaktionseingabe.</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mixing im Gange...</translation>
+        <source>Mint did not make it into blockchain</source>
+        <translation>Mint schaffte es nicht in Blockchain</translation>
     </message>
     <message>
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>Sie müssen einen Port mittels -whitebind festlegen: '%s'</translation>
     </message>
     <message>
-        <source>No Masternodes detected.</source>
-        <translation>Keine Masternodes gefunden.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>Keine kompatible Masternode gefunden.</translation>
-    </message>
-    <message>
-        <source>No funds detected in need of denominating.</source>
-        <translation>Kein Guthaben entdeckt das gestückelt werden müsste.</translation>
-    </message>
-    <message>
-        <source>No matching denominations found for mixing.</source>
-        <translation>Keine passende Stückelung für den Mixing-Prozess gefunden.</translation>
-    </message>
-    <message>
-        <source>Non-standard public key detected.</source>
-        <translation>Nicht Standard-konformer öffentlicher Schlüssel entdeckt.</translation>
-    </message>
-    <message>
-        <source>Not compatible with existing transactions.</source>
-        <translation>Nicht kompatibel mit existierenden Transaktionen.</translation>
+        <source>Node relay options:</source>
+        <translation>Optionen für Knotenrelais:</translation>
     </message>
     <message>
         <source>Not enough file descriptors available.</source>
         <translation>Nicht genügend Datei-Deskriptoren verfügbar.</translation>
     </message>
     <message>
-        <source>Not in the Masternode list.</source>
-        <translation>Nicht in der Masternode-Liste.</translation>
-    </message>
-    <message>
         <source>Number of automatic wallet backups (default: 10)</source>
         <translation>Anzahl automatischer Wallet-Backups (Standard: 10)</translation>
     </message>
     <message>
-        <source>Obfuscation is idle.</source>
-        <translation>Verschleierung im Leerlauf</translation>
+        <source>Number of custom location backups to retain (default: %d)</source>
+        <translation>Anzahl an benutzerdefinierter Backups die aufbewahrt werden (Standard: %d)</translation>
     </message>
     <message>
-        <source>Obfuscation request complete:</source>
-        <translation>Verschleierungsanfrage komplett</translation>
-    </message>
-    <message>
-        <source>Obfuscation request incomplete:</source>
-        <translation>Verschleierungsanfrage unvollständig</translation>
+        <source>On first run, create a legacy wallet instead of a HD wallet</source>
+        <translation>Beim ersten Start erzeugen Sie ein Legacy Wallet anstelle eines HD Wallets-.</translation>
     </message>
     <message>
         <source>Only accept block chain matching built-in checkpoints (default: %u)</source>
@@ -5091,8 +6294,126 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Passwort für JSON-RPC Verbindungen</translation>
     </message>
     <message>
-        <source>Percentage of automatically minted Zerocoin  (10-100, default: %u)</source>
-        <translation>Prozent automatisch geprägter Zerocoins (10-100, Standard: %u)</translation>
+        <source>Peers are being disconnected due time differences.</source>
+        <translation>Peers werden getrennt, da es zu Zeitunterschieden gekommen ist.</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint %s</source>
+        <translation>Transaktion mit Prägung %s konnte nicht gefunden werden</translation>
+    </message>
+    <message>
+        <source>Unable to find transaction containing mint, txHash: %s</source>
+        <translation>Transaktion mit Prägung und Hash: %s konnte nicht gefunden werden</translation>
+    </message>
+    <message>
+        <source>Use block spam filter (default: %u)</source>
+        <translation>Nutze Block Spamfilter (standardmäßig %u)</translation>
+    </message>
+    <message>
+        <source>isValid(): Invalid -proxy address or hostname: '%s'</source>
+        <translation>isValid(): Invalid -proxy address or hostname: '%s'</translation>
+    </message>
+    <message>
+        <source>Preparing for resync...</source>
+        <translation>Vorbereitung für die Resynchronisierung ...</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
+        <translation>Akzeptiere Verbindungen von aussen (Standard: 1 , falls -proxy oder -connect nicht genutzt wird)</translation>
+    </message>
+    <message>
+        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
+        <translation>Die Transaktionen werden nicht länger als &lt;n&gt; Stunden im Mempool aufbewahrt (Standard: %u).</translation>
+    </message>
+    <message>
+        <source>Fees (in %s/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in %s/Kb), die kleiner als diese sind, gelten für die Transaktionserstellung als Gebührenfei (Standard: %s).</translation>
+    </message>
+    <message>
+        <source>Minimum positive amount (in FBN) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Minimaler positiver Betrag (in FBN), der von GUI und RPC für den Stake split Schwellenwert zugelassen wird (Standard: %s)</translation>
+    </message>
+    <message>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong FIVEBALANCE Core will not work properly.</source>
+        <translation>Bitte stellen Sie sicher, das vom Computer verwendete Zeit und Datumangaben korrekt sind! Wenn ihr System falsche Zeitangaben nutzt, wird FIVEBALANCE Core nicht korrekt funktionieren.</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
+        <translation>Abfrage von Gegenstellen-Adressen per DNS-Lookup, falls wenige Adressen verfügbar sind (Standard: 1, ausser -connect/-noconnect ist aktiviert)</translation>
+    </message>
+    <message>
+        <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
+        <translation>Spezifizieren Sie den Speicherpfad der Debug Log Datei: Dies kann ein absoluter oder ein relativer Pfad zu dem Verzeichnis sein. (Standardmäßig: %s)</translation>
+    </message>
+    <message>
+        <source>WARNING: The transaction has been signed and recorded, so the wallet will try to re-send it. Use 'abandontransaction' to cancel it. (txid: %s)</source>
+        <translation>WARNUNG: Die Transaktion wurde signiert und aufgezeichnet, sodass das Wallet versucht, sie erneut zu senden. Verwenden Sie 'abandontransaction', um den Vorgang abzubrechen. (txid: %s)</translation>
+    </message>
+    <message>
+        <source>(must be %d for %s-net)</source>
+        <translation>(muss %d für %s-net sein)</translation>
+    </message>
+    <message>
+        <source>Active Masternode not initialized.</source>
+        <translation>Aktive Masternode nicht initialisiert</translation>
+    </message>
+    <message>
+        <source>Allows deprecated RPC method(s) to be used</source>
+        <translation>Erlaubt die Verwendung veralteter RPC-Methode(n)</translation>
+    </message>
+    <message>
+        <source>Cannot resolve -%s address: '%s'</source>
+        <translation>Kann -%s Adresse nicht auflösen: '%s'</translation>
+    </message>
+    <message>
+        <source>Cannot upgrade to HD wallet (already running HD support). Version: %d</source>
+        <translation>Konnte nicht zum HD Wallet upgraden (HD support läuft bereits). Version: %d</translation>
+    </message>
+    <message>
+        <source>Change index out of range</source>
+        <translation>Ändert den Index außerhalb des Bereichs</translation>
+    </message>
+    <message>
+        <source>Error: -listen must be true if -masternode is set.</source>
+        <translation> 
+Fehler: -listen muss true sein, wenn -masternode gesetzt ist</translation>
+    </message>
+    <message>
+        <source>Error: Invalid port %d for running a masternode.</source>
+        <translation>Fehler: Üngültiger Port %d für das Betreiben des Masternodes.</translation>
+    </message>
+    <message>
+        <source>Failed to accept tx in the memory pool (reason: %s)
+</source>
+        <translation>Fehler beim Akzeptieren von tx im Speicherpool (Grund:%s)</translation>
+    </message>
+    <message>
+        <source>Invalid -masternodeaddr address: %s</source>
+        <translation>Ungültige -masternodeaddr Adresse: %s</translation>
+    </message>
+    <message>
+        <source>Invalid -masternodeaddr port %d, only %d is supported on %s-net.</source>
+        <translation>Ungültiger -masternodeaddr Port %d, nur Port %d  wird von %s-net unterstützt.</translation>
+    </message>
+    <message>
+        <source>Invalid port %d detected in masternode.conf</source>
+        <translation>Ungültiger port %d in masternode.conf entdeckt</translation>
+    </message>
+    <message>
+        <source>Invalid status error.</source>
+        <translation>Ungültiger Status Fehler</translation>
+    </message>
+    <message>
+        <source>Masternodes are required to run on port %d for %s-net</source>
+        <translation>Masternode Port %d ist für %s-net erforderlich</translation>
+    </message>
+    <message>
+        <source>Need destination or change address because change is not exact</source>
+        <translation>Benötige Zieladresse oder Wechseladresse, weil der Wechsel nicht exakt ist</translation>
+    </message>
+    <message>
+        <source>No error</source>
+        <translation>Kein Fehler</translation>
     </message>
     <message>
         <source>Prepend debug output with timestamp (default: %u)</source>
@@ -5103,24 +6424,36 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Version drucken und Programm beenden</translation>
     </message>
     <message>
-        <source>RPC SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>RPC SSL Optionen: (Schauen Sie sich die Anleitungen für SSL Setup im Bitcoin Wiki an)</translation>
+        <source>Pubcoin not found in mint tx</source>
+        <translation>Pubcoin in Prägungstransaktion nicht gefunden</translation>
     </message>
     <message>
         <source>RPC server options:</source>
         <translation>RPC Serveroptionen:</translation>
     </message>
     <message>
-        <source>RPC support for HTTP persistent connections (default: %d)</source>
-        <translation>RPC-Unterstützung für persistente HTTP Verbindungen (Standard: %d)</translation>
+        <source>Randomly drop 1 of every &lt;n&gt; network messages</source>
+        <translation>Nach dem Zufallsprinzip 1 von jedem fallen lassen&lt;n&gt; Netzwerknachrichten</translation>
+    </message>
+    <message>
+        <source>Randomly fuzz 1 of every &lt;n&gt; network messages</source>
+        <translation>Zufällig fuzz 1 von jedem&lt;n&gt; Netzwerknachrichten</translation>
     </message>
     <message>
         <source>Rebuild block chain index from current blk000??.dat files</source>
         <translation>Baue den Blockchain-Index mithilfe der aktuellen blk000??.dat Datei erneut auf</translation>
     </message>
     <message>
-        <source>Receive and display P2P network alerts (default: %u)</source>
-        <translation>Empfange P2P-Netzwerk-Warnsignale und zeige diese an (Standard: %u)</translation>
+        <source>Reindex the %s and z%s money supply statistics</source>
+        <translation>Indiziere die Geldmengenstatistik %s und z%s neu</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>Relay und meine Datenträgertransaktionen (Standard: %u)</translation>
+    </message>
+    <message>
+        <source>Relay non-P2SH multisig (default: %u)</source>
+        <translation>Relais nicht-P2SH multisig (Standard: %u)</translation>
     </message>
     <message>
         <source>Rescan the block chain for missing wallet transactions</source>
@@ -5139,28 +6472,16 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>ResetSpentZerocoin abgeschlossen: </translation>
     </message>
     <message>
+        <source>Run a thread to flush wallet periodically (default: %u)</source>
+        <translation>Führen Sie einen Thread aus, um die Brieftasche regelmäßig zu leeren (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>Als Hintergrundprozess ausführen und Eingaben akzeptieren</translation>
     </message>
     <message>
         <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
         <translation>Sende die Transaktion als gebührenfreie Transaktion, falls möglich (Standard: %u)</translation>
-    </message>
-    <message>
-        <source>Server certificate file (default: %s)</source>
-        <translation>Server Zertifikat-Datei (Standard: %s)</translation>
-    </message>
-    <message>
-        <source>Server private key (default: %s)</source>
-        <translation>Privater Server Schlüssel (Standard: %s)</translation>
-    </message>
-    <message>
-        <source>Session not complete!</source>
-        <translation>Sitzung unvollständig!</translation>
-    </message>
-    <message>
-        <source>Session timed out.</source>
-        <translation>Zeitüberschreitung</translation>
     </message>
     <message>
         <source>Set database cache size in megabytes (%d to %d, default: %d)</source>
@@ -5179,6 +6500,14 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Maximale Blockgröße in Bytes festlegen (Standard: %d)</translation>
     </message>
     <message>
+        <source>Set minimum block size in bytes (default: %u)</source>
+        <translation>Minimale Blockgröße in Bytes festlegen (Standard: %u)</translation>
+    </message>
+    <message>
+        <source>Set the Maximum reorg depth (default: %u)</source>
+        <translation>Legen Sie die maximale Reorganisationstiefe fest (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Set the masternode private key</source>
         <translation>Privaten Masternode-Schlüssel festlegen</translation>
     </message>
@@ -5187,20 +6516,16 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Anzahl der Threads festlegen, die genutzt werden um RPC Anfragen zu bearbeiten (Standard: %d)</translation>
     </message>
     <message>
+        <source>Sets the DB_PRIVATE flag in the wallet db environment (default: %u)</source>
+        <translation>Setzt das DB_PRIVATE-Flag in der Wallet-Datenbankumgebung (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Show all debugging options (usage: --help -help-debug)</source>
         <translation>Zeige alle debugging Optionen (verwende: --help -help-debug)</translation>
     </message>
     <message>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Schrumpfe debug.log Datei beim Client-Start (Standard: 1, falls -debug nicht gesetzt ist)</translation>
-    </message>
-    <message>
-        <source>Signing failed.</source>
-        <translation>Signieren fehlgeschlagen.</translation>
-    </message>
-    <message>
-        <source>Signing timed out.</source>
-        <translation>Zeitüberschreitung bei der Signierung.</translation>
     </message>
     <message>
         <source>Signing transaction failed</source>
@@ -5216,7 +6541,7 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
     </message>
     <message>
         <source>Specify data directory</source>
-        <translation>Bezeichne Datenverzeichnis</translation>
+        <translation>Datenverzeichnis festlegen</translation>
     </message>
     <message>
         <source>Specify masternode configuration file (default: %s)</source>
@@ -5235,6 +6560,14 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Bezeichnen Sie ihre eigene öffentliche Adresse</translation>
     </message>
     <message>
+        <source>Spend Valid</source>
+        <translation>Spend Valid</translation>
+    </message>
+    <message>
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>Unbestätigte Änderung beim Senden von Transaktionen ausgeben (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Staking options:</source>
         <translation>Staking-Optionen:</translation>
     </message>
@@ -5243,32 +6576,12 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Stoppt den Lauf nach dem Importieren von Blöcken von der Festplatte (default: %u)</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>Folgende Einträge werden beim Masternode eingereicht: %u / %d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Beim Masternode eingereicht, wartet auf mehr Einträge ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Beim Masternode eingereicht, befindet sich in der Warteschlange %s</translation>
-    </message>
-    <message>
-        <source>SwiftTX options:</source>
-        <translation>SwiftTX Optionen:</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>Synchronisierung fehlgeschlagen</translation>
     </message>
     <message>
         <source>Synchronization finished</source>
         <translation>Synchronisierung erfolgreich beendet</translation>
-    </message>
-    <message>
-        <source>Synchronization pending...</source>
-        <translation>Synchronisierung ausstehend...</translation>
     </message>
     <message>
         <source>Synchronizing budgets...</source>
@@ -5287,6 +6600,15 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Synchronisiere Sporks....</translation>
     </message>
     <message>
+        <source>Syncing zFBN wallet...</source>
+        <translation>Synchronisiere zFBN Wallet... </translation>
+    </message>
+    <message>
+        <source>The threshold value cannot be less than %s</source>
+        <translation> 
+Der Schwellenwert darf nicht kleiner sein als %s</translation>
+    </message>
+    <message>
         <source>This help message</source>
         <translation>Dieser Hilfetext</translation>
     </message>
@@ -5299,12 +6621,20 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Dies ist für Regressionstest-Tools und Anwendungsentwicklung gedacht.</translation>
     </message>
     <message>
-        <source>This is not a Masternode.</source>
-        <translation>Dies ist keine Masternode.</translation>
+        <source>This is not a masternode. 'local' option disabled.</source>
+        <translation>Dies ist kein Masternode. Option 'lokal' deaktiviert.</translation>
+    </message>
+    <message>
+        <source>This is not a masternode.</source>
+        <translation>Dies ist keine Masternode</translation>
     </message>
     <message>
         <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
         <translation>Schwellenwert zum Trennen von sich falsch verhaltenden Gegenstellen (Standard: %u)</translation>
+    </message>
+    <message>
+        <source>Too many spends needed</source>
+        <translation>Zu viele Ausgaben benötigt</translation>
     </message>
     <message>
         <source>Tor control port password (default: empty)</source>
@@ -5315,6 +6645,14 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Zu verwendender Tor Kontroll-Port, falls onion Überwachung aktiviert ist (Standard %s)</translation>
     </message>
     <message>
+        <source>Transaction Created</source>
+        <translation>Transaktion erstellt</translation>
+    </message>
+    <message>
+        <source>Transaction Mint Started</source>
+        <translation>Transaktion Mint gestartet</translation>
+    </message>
+    <message>
         <source>Transaction amount too small</source>
         <translation>Transaktionsbetrag zu niedrig</translation>
     </message>
@@ -5323,16 +6661,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Transaktionsbeträge müssen positiv sein</translation>
     </message>
     <message>
-        <source>Transaction created successfully.</source>
-        <translation>Transaktion erfolgreich erstellt.</translation>
-    </message>
-    <message>
-        <source>Transaction fees are too high.</source>
-        <translation>Transaktionsgebühren sind zu hoch.</translation>
-    </message>
-    <message>
-        <source>Transaction not valid.</source>
-        <translation>Transaktion ungültig.</translation>
+        <source>Transaction canceled.</source>
+        <translation>Transaktion abgebrochen</translation>
     </message>
     <message>
         <source>Transaction too large for fee policy</source>
@@ -5343,32 +6673,40 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Transaktion zu groß</translation>
     </message>
     <message>
-        <source>Transmitting final transaction.</source>
-        <translation>Übertrage fertige Transaktion.</translation>
+        <source>Trying to spend an already spent serial #, try again.</source>
+        <translation>Versuchen Sie, eine bereits ausgegebene Seriennummer auszugeben, versuchen Sie es erneut.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
         <translation>Kann auf diesem Computer nicht an %s binden (zurückgegebener Fehler: %s)</translation>
     </message>
     <message>
+        <source>Unable to generate initial key</source>
+        <translation>Initialschlüssel konnte nicht generiert werden</translation>
+    </message>
+    <message>
+        <source>Unable to generate keys</source>
+        <translation>Schlüssel konnten nicht erzeugt werden</translation>
+    </message>
+    <message>
         <source>Unable to sign spork message, wrong key?</source>
         <translation>Die Spork-Nachricht konnte nicht signiert werden. Falscher Key?</translation>
+    </message>
+    <message>
+        <source>Unable to start HTTP server. See debug log for details.</source>
+        <translation>Der HTTP-Server konnte nicht gestartet werden. Details finden Sie im Debug-Protokoll.</translation>
     </message>
     <message>
         <source>Unknown network specified in -onlynet: '%s'</source>
         <translation>Unbekannter Netztyp in -onlynet angegeben: '%s'</translation>
     </message>
     <message>
-        <source>Unknown state: id = %u</source>
-        <translation>Unbekannter Status: id = %u</translation>
+        <source>Unsupported logging category %s=%s.</source>
+        <translation>NIcht unterstützte Logging-Kategorie %s=%s.</translation>
     </message>
     <message>
         <source>Upgrade wallet to latest format</source>
         <translation>Wallet auf das neueste Format aktualisieren</translation>
-    </message>
-    <message>
-        <source>Use OpenSSL (https) for JSON-RPC connections</source>
-        <translation>OpenSSL (https) für JSON-RPC-Verbindungen verwenden</translation>
     </message>
     <message>
         <source>Use UPnP to map the listening port (default: %u)</source>
@@ -5379,16 +6717,24 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>UPnP verwenden, um eine Portweiterleitung einzurichten (Standard: 1, wenn abgehört wird)</translation>
     </message>
     <message>
+        <source>Use a custom max chain reorganization depth (default: %u)</source>
+        <translation>Verwenden Sie eine benutzerdefinierte Max-Reorganisation der Kette (Standard: %u)</translation>
+    </message>
+    <message>
         <source>Use the test network</source>
         <translation>Das Testnetzwerk verwenden</translation>
+    </message>
+    <message>
+        <source>User Agent comment (%s) contains unsafe characters.</source>
+        <translation>User Agend Kommentar (%s) enthält nicht sichere Zeichen.</translation>
     </message>
     <message>
         <source>Username for JSON-RPC connections</source>
         <translation>Benutzername für JSON-RPC-Verbindungen</translation>
     </message>
     <message>
-        <source>Value more than Obfuscation pool maximum allows.</source>
-        <translation>Wert höher als der vom Verschleierungspool maximal erlaubte.</translation>
+        <source>Value is below the smallest available denomination (= 1) of zFBN</source>
+        <translation>Der Betrag ist unterhalb des kleinsten Wertes (=1) an zFBN</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -5403,12 +6749,8 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Wallet %s liegt außerhalb des Datenverzeichnisses %s</translation>
     </message>
     <message>
-        <source>Wallet is locked.</source>
-        <translation>Wallet gesperrt.</translation>
-    </message>
-    <message>
-        <source>Wallet needed to be rewritten: restart Fivebalance Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte Fivebalance Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart FIVEBALANCE Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte FIVEBALANCE Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5435,16 +6777,12 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>Warnung: Nicht unterstütztes Argument -debugnet wurde ignoriert, nutze stattdessen -debug=net.</translation>
     </message>
     <message>
-        <source>Will retry...</source>
-        <translation>Wird wiederholt...</translation>
+        <source>You don't have enough Zerocoins in your wallet</source>
+        <translation>Du hast nicht genug Zerocoins in deiner Brieftasche</translation>
     </message>
     <message>
-        <source>Your entries added successfully.</source>
-        <translation>Ihre Eingaben wurden erfolgreich hinzugefügt.</translation>
-    </message>
-    <message>
-        <source>Your transaction was accepted into the pool!</source>
-        <translation>Ihre Transaktion wurde in den Pool aufgenommen!</translation>
+        <source>You need to rebuild the database using -reindex to change -txindex</source>
+        <translation>Sie müssen die Datenbank mithilfe von -reindex neu erstellen, um -txindex zu ändern</translation>
     </message>
     <message>
         <source>Zapping all transactions from wallet...</source>
@@ -5455,12 +6793,12 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
         <translation>ZeroMQ Benachrichtigungsoptionen:</translation>
     </message>
     <message>
-        <source>Zerocoin options:</source>
-        <translation>Zerocoin Optionen:</translation>
+        <source>Zerocoin minting available only on regtest</source>
+        <translation>Zerocoin Prägung nur in regtest verfügbar</translation>
     </message>
     <message>
-        <source>failed to validate zerocoin</source>
-        <translation>fehlgeschlagen beim Zerocoin validieren</translation>
+        <source>Zerocoin options:</source>
+        <translation>Zerocoin Optionen:</translation>
     </message>
     <message>
         <source>on startup</source>
@@ -5469,6 +6807,53 @@ Beispiel: alertnotify=echo %%s | mail -s "Fivebalance Alert" admin@foo.com
     <message>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat beschädigt, Datenrettung fehlgeschlagen</translation>
+    </message>
+</context>
+<context>
+    <name>send</name>
+    <message>
+        <source>Form</source>
+        <translation>Formular</translation>
+    </message>
+    <message>
+        <source>Send</source>
+        <translation>Schicken</translation>
+    </message>
+    <message>
+        <source>Send public coins (FBN)</source>
+        <translation>Sende öffentliche Coins (FBN)</translation>
+    </message>
+    <message>
+        <source>FIVEBALANCE address or contact label</source>
+        <translation>FIVEBALANCE Adresse oder Kontaktbezeichnung</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Betrag</translation>
+    </message>
+    <message>
+        <source>Customize fee</source>
+        <translation>Benutzerdefinierte Gebühr</translation>
+    </message>
+    <message>
+        <source>Clear all</source>
+        <translation>Alles löschen</translation>
+    </message>
+    <message>
+        <source>Add recipient</source>
+        <translation>Füge Empfänger hinzu</translation>
+    </message>
+    <message>
+        <source>Total to send</source>
+        <translation>Totalbetrag zum Senden</translation>
+    </message>
+    <message>
+        <source>Reset to default</source>
+        <translation>Auf Voreinstellungen zurücksetzen</translation>
+    </message>
+    <message>
+        <source>Include delegated</source>
+        <translation>Schließe Zugewiesene mit ein</translation>
     </message>
 </context>
 </TS>
