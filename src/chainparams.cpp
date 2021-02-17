@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2015 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -69,17 +70,6 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (0, uint256S("00001a572ee83b41c45a0eb5ba27ec7f90043ea6d17f91b9c17f45db59287ceb"))
     (12320, uint256S("c0a44331f2f29ea599e2fe5546605e06a40ea7b4aa8599594ba6ca97a7085d53"))
     (625573, uint256S("fbcffc305f2944b9b873a7910dc3593c1005ab4ccffd0878515388fc84833c8f"));
-    //first block to use new modifierV1
-    //block that serial# range is enforced
-    //network split here
-    //!< First block with a "wrapped" serial spend
-    //!< Last block in the "wrapped" serial attack range
-    //!< Network split here
-    //!< Network split here
-    //!< First v7 block
-    //!< Network split here
-    //!< PIVX v4.1.1 enforced
-
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1598337045, // * UNIX timestamp of last checkpoint block
@@ -229,6 +219,11 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
+        // Sapling
+        bech32HRPs[SAPLING_PAYMENT_ADDRESS]      = "ps";
+        bech32HRPs[SAPLING_FULL_VIEWING_KEY]     = "pviews";
+        bech32HRPs[SAPLING_INCOMING_VIEWING_KEY] = "fbnks";
+        bech32HRPs[SAPLING_EXTENDED_SPEND_KEY]         = "p-secret-spending-key-main";
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -366,6 +361,11 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
+        // Sapling
+        bech32HRPs[SAPLING_PAYMENT_ADDRESS]      = "ptestsapling";
+        bech32HRPs[SAPLING_FULL_VIEWING_KEY]     = "pviewtestsapling";
+        bech32HRPs[SAPLING_INCOMING_VIEWING_KEY] = "fbnktestsapling";
+        bech32HRPs[SAPLING_EXTENDED_SPEND_KEY]         = "p-secret-spending-key-test";
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const

@@ -1,4 +1,5 @@
 // Copyright (c) 2018-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -133,7 +134,7 @@ CAmount CzFBNTracker::GetBalance(bool fConfirmedOnly, bool fUnconfirmedOnly) con
     }
 
     {
-        //LOCK(cs_fbntracker);
+        //LOCK(cs_pivtracker);
         // Get Unused coins
         for (auto& it : mapSerialHashes) {
             CMintMeta meta = it.second;
@@ -449,7 +450,7 @@ std::set<CMintMeta> CzFBNTracker::ListMints(bool fUnusedOnly, bool fMatureOnly, 
         for (auto& dMint : listDeterministicDB) {
             if (fExcludeV1 && dMint.GetVersion() < 2)
                 continue;
-            Add(dMint, false, false, wallet->zwalletMain);
+            Add(dMint, false, false, wallet->getZWallet());
         }
         LogPrint(BCLog::LEGACYZC, "%s: added %d dzfbn from DB\n", __func__, listDeterministicDB.size());
     }

@@ -1,4 +1,5 @@
 // Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
@@ -100,4 +101,4 @@ namespace ZFBNModule {
 };
 
 
-#endif //PIVX_ZFBNMODULE_H
+#endif //PIVX_ZPIVMODULE_H

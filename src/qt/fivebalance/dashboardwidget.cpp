@@ -1,4 +1,5 @@
 // Copyright (c) 2019-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -56,6 +57,9 @@ DashboardWidget::DashboardWidget(FIVEBALANCEGUI* parent) :
     setCssProperty(ui->labelSquarezFbn, "square-chart-zfbn");
     setCssProperty(ui->labelFbn, "text-chart-fbn");
     setCssProperty(ui->labelZfbn, "text-chart-zfbn");
+    ui->labelAmountZfbn->setVisible(false);
+    ui->labelSquarezFbn->setVisible(false);
+    ui->labelZfbn->setVisible(false);
 
     // Staking Amount
     QFont fontBold;
@@ -521,7 +525,7 @@ void DashboardWidget::updateStakeFilter()
     }
 }
 
-// pair PIV, zFBN
+// pair PIV, zPIV
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy()
 {
     updateStakeFilter();
@@ -577,7 +581,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair PIV, zFBN
+    chartData->amountsByCache = getAmountBy(); // pair PIV, zPIV
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {

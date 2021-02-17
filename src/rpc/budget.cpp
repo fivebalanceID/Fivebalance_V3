@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,7 +22,7 @@
 
 #include <fstream>
 
-void budgetToJSON(CBudgetProposal* pbudgetProposal, UniValue& bObj)
+void budgetToJSON(const CBudgetProposal* pbudgetProposal, UniValue& bObj, int nCurrentHeight)
 {
     CTxDestination address1;
     ExtractDestination(pbudgetProposal->GetPayee(), address1);
@@ -29,11 +30,11 @@ void budgetToJSON(CBudgetProposal* pbudgetProposal, UniValue& bObj)
     bObj.push_back(Pair("Name", pbudgetProposal->GetName()));
     bObj.push_back(Pair("URL", pbudgetProposal->GetURL()));
     bObj.push_back(Pair("Hash", pbudgetProposal->GetHash().ToString()));
-    bObj.push_back(Pair("FeeHash", pbudgetProposal->nFeeTXHash.ToString()));
+    bObj.push_back(Pair("FeeHash", pbudgetProposal->GetFeeTXHash().ToString()));
     bObj.push_back(Pair("BlockStart", (int64_t)pbudgetProposal->GetBlockStart()));
     bObj.push_back(Pair("BlockEnd", (int64_t)pbudgetProposal->GetBlockEnd()));
     bObj.push_back(Pair("TotalPaymentCount", (int64_t)pbudgetProposal->GetTotalPaymentCount()));
-    bObj.push_back(Pair("RemainingPaymentCount", (int64_t)pbudgetProposal->GetRemainingPaymentCount()));
+    bObj.push_back(Pair("RemainingPaymentCount", (int64_t)pbudgetProposal->GetRemainingPaymentCount(nCurrentHeight)));
     bObj.push_back(Pair("PaymentAddress", EncodeDestination(address1)));
     bObj.push_back(Pair("Ratio", pbudgetProposal->GetRatio()));
     bObj.push_back(Pair("Yeas", (int64_t)pbudgetProposal->GetYeas()));
@@ -43,10 +44,10 @@ void budgetToJSON(CBudgetProposal* pbudgetProposal, UniValue& bObj)
     bObj.push_back(Pair("MonthlyPayment", ValueFromAmount(pbudgetProposal->GetAmount())));
     bObj.push_back(Pair("IsEstablished", pbudgetProposal->IsEstablished()));
 
-    std::string strError = "";
-    bObj.push_back(Pair("IsValid", pbudgetProposal->IsValid(strError)));
-    bObj.push_back(Pair("IsValidReason", strError.c_str()));
-    bObj.push_back(Pair("fValid", pbudgetProposal->fValid));
+    bool fValid = pbudgetProposal->IsValid();
+    bObj.push_back(Pair("IsValid", fValid));
+    if (!fValid)
+        bObj.push_back(Pair("IsInvalidReason", pbudgetProposal->IsInvalidReason()));
 }
 
 void checkBudgetInputs(const UniValue& params, std::string &strProposalName, std::string &strURL,
@@ -65,7 +66,7 @@ void checkBudgetInputs(const UniValue& params, std::string &strProposalName, std
     if (nPaymentCount < 1)
         throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid payment count, must be more than zero.");
 
-    CBlockIndex* pindexPrev = chainActive.Tip();
+    CBlockIndex* pindexPrev = GetChainTip();
     if (!pindexPrev)
         throw JSONRPCError(RPC_IN_WARMUP, "Try again after active chain is loaded");
 
@@ -135,10 +136,11 @@ UniValue preparebudget(const JSONRPCRequest& request)
 
     // create transaction 15 minutes into the future, to allow for confirmation time
     CBudgetProposalBroadcast budgetProposalBroadcast(strProposalName, strURL, nPaymentCount, scriptPubKey, nAmount, nBlockStart, UINT256_ZERO);
+    const uint256& proposalHash = budgetProposalBroadcast.GetHash();
 
-    std::string strError = "";
-    if (!budgetProposalBroadcast.IsValid(strError, false))
-        throw std::runtime_error("Proposal is not valid - " + budgetProposalBroadcast.GetHash().ToString() + " - " + strError);
+    int nChainHeight = chainActive.Height();
+    if (!budgetProposalBroadcast.UpdateValid(nChainHeight, false))
+        throw std::runtime_error("Proposal is not valid - " + proposalHash.ToString() + " - " + budgetProposalBroadcast.IsInvalidReason());
 
     bool useIX = false; //true;
     // if (request.params.size() > 7) {
@@ -148,14 +150,14 @@ UniValue preparebudget(const JSONRPCRequest& request)
     // }
 
     CWalletTx wtx;
-    if (!pwalletMain->GetBudgetSystemCollateralTX(wtx, budgetProposalBroadcast.GetHash(), useIX)) { // 50 PIV collateral for proposal
+    // make our change address
+    CReserveKey keyChange(pwalletMain);
+    if (!pwalletMain->CreateBudgetFeeTX(wtx, proposalHash, keyChange, false)) { // 50 PIV collateral for proposal
         throw std::runtime_error("Error making collateral transaction for proposal. Please check your wallet balance.");
     }
 
-    // make our change address
-    CReserveKey reservekey(pwalletMain);
     //send the tx to the network
-    const CWallet::CommitResult& res = pwalletMain->CommitTransaction(wtx, reservekey, useIX ? NetMsgType::IX : NetMsgType::TX);
+    const CWallet::CommitResult& res = pwalletMain->CommitTransaction(wtx, keyChange, g_connman.get(), useIX ? NetMsgType::IX : NetMsgType::TX);
     if (res.status != CWallet::CommitStatus::OK)
         throw JSONRPCError(RPC_WALLET_ERROR, res.ToString());
 
@@ -212,11 +214,7 @@ UniValue submitbudget(const JSONRPCRequest& request)
         throw std::runtime_error("Must wait for client to sync with masternode network. Try again in a minute or so.");
     }
 
-    // if(!budgetProposalBroadcast.IsValid(strError)){
-    //     return "Proposal is not valid - " + budgetProposalBroadcast.GetHash().ToString() + " - " + strError;
-    // }
-
-    budget.mapSeenMasternodeBudgetProposals.insert(std::make_pair(budgetProposalBroadcast.GetHash(), budgetProposalBroadcast));
+    budget.AddSeenProposal(budgetProposalBroadcast);
     budgetProposalBroadcast.Relay();
     if(budget.AddProposal(budgetProposalBroadcast)) {
         return budgetProposalBroadcast.GetHash().ToString();
@@ -269,9 +267,9 @@ UniValue mnbudgetvote(const JSONRPCRequest& request)
     std::string strVote = request.params[2].get_str();
 
     if (strVote != "yes" && strVote != "no") return "You can only vote 'yes' or 'no'";
-    int nVote = VOTE_ABSTAIN;
-    if (strVote == "yes") nVote = VOTE_YES;
-    if (strVote == "no") nVote = VOTE_NO;
+    CBudgetVote::VoteDirection nVote = CBudgetVote::VOTE_ABSTAIN;
+    if (strVote == "yes") nVote = CBudgetVote::VOTE_YES;
+    if (strVote == "no") nVote = CBudgetVote::VOTE_NO;
 
     int success = 0;
     int failed = 0;
@@ -322,10 +320,8 @@ UniValue mnbudgetvote(const JSONRPCRequest& request)
             }
 
             std::string strError = "";
-            if (budget.UpdateProposal(vote, NULL, strError)) {
+            if (budget.AddAndRelayProposalVote(vote, strError)) {
                 success++;
-                budget.mapSeenMasternodeBudgetVotes.insert(std::make_pair(vote.GetHash(), vote));
-                vote.Relay();
                 statusObj.push_back(Pair("node", "local"));
                 statusObj.push_back(Pair("result", "success"));
                 statusObj.push_back(Pair("error", ""));
@@ -388,9 +384,7 @@ UniValue mnbudgetvote(const JSONRPCRequest& request)
             }
 
             std::string strError = "";
-            if (budget.UpdateProposal(vote, NULL, strError)) {
-                budget.mapSeenMasternodeBudgetVotes.insert(std::make_pair(vote.GetHash(), vote));
-                vote.Relay();
+            if (budget.AddAndRelayProposalVote(vote, strError)) {
                 success++;
                 statusObj.push_back(Pair("node", mne.getAlias()));
                 statusObj.push_back(Pair("result", "success"));
@@ -462,9 +456,7 @@ UniValue mnbudgetvote(const JSONRPCRequest& request)
             }
 
             std::string strError = "";
-            if(budget.UpdateProposal(vote, NULL, strError)) {
-                budget.mapSeenMasternodeBudgetVotes.insert(std::make_pair(vote.GetHash(), vote));
-                vote.Relay();
+            if(budget.AddAndRelayProposalVote(vote, strError)) {
                 success++;
                 statusObj.push_back(Pair("node", mne.getAlias()));
                 statusObj.push_back(Pair("result", "success"));
@@ -515,28 +507,9 @@ UniValue getbudgetvotes(const JSONRPCRequest& request)
             HelpExampleCli("getbudgetvotes", "\"test-proposal\"") + HelpExampleRpc("getbudgetvotes", "\"test-proposal\""));
 
     std::string strProposalName = SanitizeString(request.params[0].get_str());
-
-    UniValue ret(UniValue::VARR);
-
-    CBudgetProposal* pbudgetProposal = budget.FindProposal(strProposalName);
-
+    const CBudgetProposal* pbudgetProposal = budget.FindProposalByName(strProposalName);
     if (pbudgetProposal == NULL) throw std::runtime_error("Unknown proposal name");
-
-    std::map<uint256, CBudgetVote>::iterator it = pbudgetProposal->mapVotes.begin();
-    while (it != pbudgetProposal->mapVotes.end()) {
-        UniValue bObj(UniValue::VOBJ);
-        bObj.push_back(Pair("mnId", (*it).second.vin.prevout.hash.ToString()));
-        bObj.push_back(Pair("nHash", (*it).first.ToString().c_str()));
-        bObj.push_back(Pair("Vote", (*it).second.GetVoteString()));
-        bObj.push_back(Pair("nTime", (int64_t)(*it).second.nTime));
-        bObj.push_back(Pair("fValid", (*it).second.fValid));
-
-        ret.push_back(bObj);
-
-        it++;
-    }
-
-    return ret;
+    return pbudgetProposal->GetVotesArray();
 }
 
 UniValue getnextsuperblock(const JSONRPCRequest& request)
@@ -552,11 +525,11 @@ UniValue getnextsuperblock(const JSONRPCRequest& request)
             "\nExamples:\n" +
             HelpExampleCli("getnextsuperblock", "") + HelpExampleRpc("getnextsuperblock", ""));
 
-    CBlockIndex* pindexPrev = chainActive.Tip();
-    if (!pindexPrev) return "unknown";
+    int nChainHeight = WITH_LOCK(cs_main, return chainActive.Height());
+    if (nChainHeight < 0) return "unknown";
 
     const int nBlocksPerCycle = Params().GetConsensus().nBudgetCycleBlocks;
-    int nNext = pindexPrev->nHeight - pindexPrev->nHeight % nBlocksPerCycle + nBlocksPerCycle;
+    int nNext = nChainHeight - nChainHeight % nBlocksPerCycle + nBlocksPerCycle;
     return nNext;
 }
 
@@ -587,8 +560,7 @@ UniValue getbudgetprojection(const JSONRPCRequest& request)
             "    \"MonthlyPayment\": xxx.xxx,    (numeric) Monthly payment amount\n"
             "    \"IsEstablished\": true|false,  (boolean) Established (true) or (false)\n"
             "    \"IsValid\": true|false,        (boolean) Valid (true) or Invalid (false)\n"
-            "    \"IsValidReason\": \"xxxx\",      (string) Error message, if any\n"
-            "    \"fValid\": true|false,         (boolean) Valid (true) or Invalid (false)\n"
+            "    \"IsInvalidReason\": \"xxxx\",      (string) Error message, if any\n"
             "    \"Alloted\": xxx.xxx,           (numeric) Amount alloted in current period\n"
             "    \"TotalBudgetAlloted\": xxx.xxx (numeric) Total alloted\n"
             "  }\n"
@@ -610,7 +582,7 @@ UniValue getbudgetprojection(const JSONRPCRequest& request)
         ExtractDestination(pbudgetProposal->GetPayee(), address1);
 
         UniValue bObj(UniValue::VOBJ);
-        budgetToJSON(pbudgetProposal, bObj);
+        budgetToJSON(pbudgetProposal, bObj, budget.GetBestHeight());
         bObj.push_back(Pair("Alloted", ValueFromAmount(pbudgetProposal->GetAllotted())));
         bObj.push_back(Pair("TotalBudgetAlloted", ValueFromAmount(nTotalAllotted)));
 
@@ -650,8 +622,7 @@ UniValue getbudgetinfo(const JSONRPCRequest& request)
             "    \"MonthlyPayment\": xxx.xxx,    (numeric) Monthly payment amount\n"
             "    \"IsEstablished\": true|false,  (boolean) Established (true) or (false)\n"
             "    \"IsValid\": true|false,        (boolean) Valid (true) or Invalid (false)\n"
-            "    \"IsValidReason\": \"xxxx\",      (string) Error message, if any\n"
-            "    \"fValid\": true|false,         (boolean) Valid (true) or Invalid (false)\n"
+            "    \"IsInvalidReason\": \"xxxx\",      (string) Error message, if any\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -660,24 +631,25 @@ UniValue getbudgetinfo(const JSONRPCRequest& request)
             HelpExampleCli("getbudgetprojection", "") + HelpExampleRpc("getbudgetprojection", ""));
 
     UniValue ret(UniValue::VARR);
+    int nCurrentHeight = budget.GetBestHeight();
 
     std::string strShow = "valid";
     if (request.params.size() == 1) {
         std::string strProposalName = SanitizeString(request.params[0].get_str());
-        CBudgetProposal* pbudgetProposal = budget.FindProposal(strProposalName);
+        const CBudgetProposal* pbudgetProposal = budget.FindProposalByName(strProposalName);
         if (pbudgetProposal == NULL) throw std::runtime_error("Unknown proposal name");
         UniValue bObj(UniValue::VOBJ);
-        budgetToJSON(pbudgetProposal, bObj);
+        budgetToJSON(pbudgetProposal, bObj, nCurrentHeight);
         ret.push_back(bObj);
         return ret;
     }
 
     std::vector<CBudgetProposal*> winningProps = budget.GetAllProposals();
     for (CBudgetProposal* pbudgetProposal : winningProps) {
-        if (strShow == "valid" && !pbudgetProposal->fValid) continue;
+        if (strShow == "valid" && !pbudgetProposal->IsValid()) continue;
 
         UniValue bObj(UniValue::VOBJ);
-        budgetToJSON(pbudgetProposal, bObj);
+        budgetToJSON(pbudgetProposal, bObj, nCurrentHeight);
 
         ret.push_back(bObj);
     }
@@ -714,9 +686,9 @@ UniValue mnbudgetrawvote(const JSONRPCRequest& request)
     std::string strVote = request.params[3].get_str();
 
     if (strVote != "yes" && strVote != "no") return "You can only vote 'yes' or 'no'";
-    int nVote = VOTE_ABSTAIN;
-    if (strVote == "yes") nVote = VOTE_YES;
-    if (strVote == "no") nVote = VOTE_NO;
+    CBudgetVote::VoteDirection nVote = CBudgetVote::VOTE_ABSTAIN;
+    if (strVote == "yes") nVote = CBudgetVote::VOTE_YES;
+    if (strVote == "no") nVote = CBudgetVote::VOTE_NO;
 
     int64_t nTime = request.params[4].get_int64();
     std::string strSig = request.params[5].get_str();
@@ -732,7 +704,7 @@ UniValue mnbudgetrawvote(const JSONRPCRequest& request)
     }
 
     CBudgetVote vote(vin, hashProposal, nVote);
-    vote.nTime = nTime;
+    vote.SetTime(nTime);
     vote.SetVchSig(vchSig);
 
     if (!vote.CheckSignature()) {
@@ -742,9 +714,7 @@ UniValue mnbudgetrawvote(const JSONRPCRequest& request)
     }
 
     std::string strError = "";
-    if (budget.UpdateProposal(vote, NULL, strError)) {
-        budget.mapSeenMasternodeBudgetVotes.insert(std::make_pair(vote.GetHash(), vote));
-        vote.Relay();
+    if (budget.AddAndRelayProposalVote(vote, strError)) {
         return "Voted successfully";
     } else {
         return "Error voting : " + strError;
@@ -821,7 +791,7 @@ UniValue mnfinalbudget(const JSONRPCRequest& request)
 
             std::string strError = "";
             if (budget.UpdateFinalizedBudget(vote, NULL, strError)) {
-                budget.mapSeenFinalizedBudgetVotes.insert(std::make_pair(vote.GetHash(), vote));
+                budget.AddSeenFinalizedBudgetVote(vote);
                 vote.Relay();
                 success++;
                 statusObj.push_back(Pair("result", "success"));
@@ -871,7 +841,7 @@ UniValue mnfinalbudget(const JSONRPCRequest& request)
 
         std::string strError = "";
         if (budget.UpdateFinalizedBudget(vote, NULL, strError)) {
-            budget.mapSeenFinalizedBudgetVotes.insert(std::make_pair(vote.GetHash(), vote));
+            budget.AddSeenFinalizedBudgetVote(vote);
             vote.Relay();
             return "success";
         } else {
@@ -885,7 +855,7 @@ UniValue mnfinalbudget(const JSONRPCRequest& request)
         std::vector<CFinalizedBudget*> winningFbs = budget.GetFinalizedBudgets();
         for (CFinalizedBudget* finalizedBudget : winningFbs) {
             UniValue bObj(UniValue::VOBJ);
-            bObj.push_back(Pair("FeeTX", finalizedBudget->nFeeTXHash.ToString()));
+            bObj.push_back(Pair("FeeTX", finalizedBudget->GetFeeTXHash().ToString()));
             bObj.push_back(Pair("Hash", finalizedBudget->GetHash().ToString()));
             bObj.push_back(Pair("BlockStart", (int64_t)finalizedBudget->GetBlockStart()));
             bObj.push_back(Pair("BlockEnd", (int64_t)finalizedBudget->GetBlockEnd()));
@@ -893,9 +863,10 @@ UniValue mnfinalbudget(const JSONRPCRequest& request)
             bObj.push_back(Pair("VoteCount", (int64_t)finalizedBudget->GetVoteCount()));
             bObj.push_back(Pair("Status", finalizedBudget->GetStatus()));
 
-            std::string strError = "";
-            bObj.push_back(Pair("IsValid", finalizedBudget->IsValid(strError)));
-            bObj.push_back(Pair("IsValidReason", strError.c_str()));
+            bool fValid = finalizedBudget->IsValid();
+            bObj.push_back(Pair("IsValid", fValid));
+            if (!fValid)
+                bObj.push_back(Pair("IsInvalidReason", finalizedBudget->IsInvalidReason()));
 
             resultObj.push_back(Pair(finalizedBudget->GetName(), bObj));
         }
@@ -909,26 +880,9 @@ UniValue mnfinalbudget(const JSONRPCRequest& request)
 
         std::string strHash = request.params[1].get_str();
         uint256 hash(uint256S(strHash));
-
-        UniValue obj(UniValue::VOBJ);
-
         CFinalizedBudget* pfinalBudget = budget.FindFinalizedBudget(hash);
-
         if (pfinalBudget == NULL) return "Unknown budget hash";
-
-        std::map<uint256, CFinalizedBudgetVote>::iterator it = pfinalBudget->mapVotes.begin();
-        while (it != pfinalBudget->mapVotes.end()) {
-            UniValue bObj(UniValue::VOBJ);
-            bObj.push_back(Pair("nHash", (*it).first.ToString().c_str()));
-            bObj.push_back(Pair("nTime", (int64_t)(*it).second.nTime));
-            bObj.push_back(Pair("fValid", (*it).second.fValid));
-
-            obj.push_back(Pair((*it).second.vin.prevout.ToStringShort(), bObj));
-
-            it++;
-        }
-
-        return obj;
+        return pfinalBudget->GetVotesObject();
     }
 
     return NullUniValue;
@@ -944,7 +898,9 @@ UniValue checkbudgets(const JSONRPCRequest& request)
             "\nExamples:\n" +
             HelpExampleCli("checkbudgets", "") + HelpExampleRpc("checkbudgets", ""));
 
-    budget.CheckAndRemove();
+    if (!masternodeSync.IsSynced())
+        throw JSONRPCError(RPC_CLIENT_IN_INITIAL_DOWNLOAD, "Masternode/Budget sync not finished yet");
 
+    budget.CheckAndRemove();
     return NullUniValue;
 }

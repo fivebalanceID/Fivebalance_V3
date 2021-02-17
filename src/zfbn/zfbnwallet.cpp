@@ -1,4 +1,5 @@
 // Copyright (c) 2017-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -21,7 +22,7 @@ CzFBNWallet::CzFBNWallet(CWallet* parent)
     uint256 hashSeed;
     bool fFirstRun = !walletdb.ReadCurrentSeedHash(hashSeed);
 
-    //Check for old db version of storing zfbn seed
+    //Check for old db version of storing zpiv seed
     if (fFirstRun) {
         uint256 seed;
         if (walletdb.ReadZFBNSeed_deprecated(seed)) {
@@ -29,7 +30,7 @@ CzFBNWallet::CzFBNWallet(CWallet* parent)
             seedMaster = seed;
             hashSeed = Hash(seed.begin(), seed.end());
             if (wallet->AddDeterministicSeed(seed)) {
-                if (walletdb.EraseZFBNSeed_deprecated()) {
+                if (walletdb.EraseZFIVEBALANCEeed_deprecated()) {
                     LogPrintf("%s: Updated zFBN seed databasing\n", __func__);
                     fFirstRun = false;
                 } else {
@@ -183,7 +184,6 @@ void CzFBNWallet::SyncWithChain(bool fGenerateMintPool)
 {
     uint32_t nLastCountUsed = 0;
     bool found = true;
-    CWalletDB walletdb(wallet->strWalletFile);
 
     std::set<uint256> setAddedTx;
     while (found) {
@@ -262,12 +262,19 @@ void CzFBNWallet::SyncWithChain(bool fGenerateMintPool)
                 if (!setAddedTx.count(txHash)) {
                     CBlock block;
                     CWalletTx wtx(wallet, tx);
-                    if (pindex && ReadBlockFromDisk(block, pindex))
-                        wtx.SetMerkleBranch(block);
+                    if (pindex && ReadBlockFromDisk(block, pindex)) {
+                        int posInBlock;
+                        for (posInBlock = 0; posInBlock < (int)block.vtx.size(); posInBlock++) {
+                            if (wtx.GetHash() == txHash) {
+                                wtx.SetMerkleBranch(pindex, posInBlock);
+                                break;
+                            }
+                        }
+                    }
 
                     //Fill out wtx so that a transaction record can be created
                     wtx.nTimeReceived = pindex->GetBlockTime();
-                    wallet->AddToWallet(wtx, &walletdb);
+                    wallet->AddToWallet(wtx);
                     setAddedTx.insert(txHash);
                 }
 
@@ -319,15 +326,21 @@ bool CzFBNWallet::SetMintSeen(const CBigNum& bnValue, const int& nHeight, const 
         CWalletTx wtx(wallet, txSpend);
         CBlockIndex* pindex = chainActive[nHeightTx];
         CBlock block;
-        if (ReadBlockFromDisk(block, pindex))
-            wtx.SetMerkleBranch(block);
+        if (ReadBlockFromDisk(block, pindex)) {
+            int posInBlock;
+            for (posInBlock = 0; posInBlock < (int) block.vtx.size(); posInBlock++) {
+                if (wtx.GetHash() == txidSpend) {
+                    wtx.SetMerkleBranch(pindex, posInBlock);
+                    break;
+                }
+            }
+        }
 
         wtx.nTimeReceived = pindex->nTime;
-        CWalletDB walletdb(wallet->strWalletFile);
-        wallet->AddToWallet(wtx, &walletdb);
+        wallet->AddToWallet(wtx);
     }
 
-    // Add to zfbnTracker which also adds to database
+    // Add to zpivTracker which also adds to database
     wallet->zfbnTracker->Add(dMint, true);
 
     //Update the count if it is less than the mint's count

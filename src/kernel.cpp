@@ -2,6 +2,7 @@
 // Copyright (c) 2013-2014 The NovaCoin Developers
 // Copyright (c) 2014-2018 The BlackCoin Developers
 // Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -167,8 +168,6 @@ bool CheckProofOfStake(const CBlock& block, std::string& strError, const CBlockI
 
     // Verify Proof Of Stake
     CStakeKernel stakeKernel(pindexPrev, stakeInput.get(), block.nBits, block.nTime);
-    const Consensus::Params& consensus = Params().GetConsensus();
-    if (!consensus.NetworkUpgradeActive(nHeight, Consensus::UPGRADE_BIP65)) return true;
     if (!stakeKernel.CheckKernelHash()) {
         strError = "kernel hash check fails";
         return false;
@@ -187,7 +186,7 @@ bool CheckProofOfStake(const CBlock& block, std::string& strError, const CBlockI
     const CTxIn& txin = tx.vin[0];
     ScriptError serror;
     if (!VerifyScript(txin.scriptSig, stakePrevout.scriptPubKey, STANDARD_SCRIPT_VERIFY_FLAGS,
-             TransactionSignatureChecker(&tx, 0), &serror)) {
+             TransactionSignatureChecker(&tx, 0, stakePrevout.nValue), &serror)) {
         strError = strprintf("signature fails: %s", serror ? ScriptErrorString(serror) : "");
         return false;
     }

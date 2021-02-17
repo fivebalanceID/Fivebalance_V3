@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,7 +36,7 @@ bool TransactionRecord::decomposeCoinStake(const CWallet* wallet, const CWalletT
     TransactionRecord sub(hash, wtx.GetTxTime(), wtx.GetTotalSize());
 
     if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->zfbnTracker->HasMintTx(hash))) {
-        //zFBN stake reward
+        //zPIV stake reward
         sub.involvesWatchAddress = false;
         sub.type = TransactionRecord::StakeZFBN;
         sub.address = getValueOrReturnEmpty(wtx.mapValue, "zerocoinmint");
@@ -521,7 +522,6 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
     bool fConflicted = false;
     int depth = 0;
     bool isTrusted = wtx.IsTrusted(depth, fConflicted);
-    const bool isOffline = (GetAdjustedTime() - wtx.nTimeReceived > 2 * 60 && wtx.GetRequestCount() == 0);
     int nBlocksToMaturity = (wtx.IsCoinBase() || wtx.IsCoinStake()) ? std::max(0, (Params().GetConsensus().nCoinbaseMaturity + 1) - depth) : 0;
 
     status.countsForBalance = isTrusted && !(nBlocksToMaturity > 0);
@@ -550,11 +550,7 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
             status.status = TransactionStatus::Immature;
             status.matures_in = nBlocksToMaturity;
 
-            if (status.depth >= 0 && !fConflicted) {
-                // Check if the block was requested by anyone
-                if (isOffline)
-                    status.status = TransactionStatus::MaturesWarning;
-            } else {
+            if (status.depth < 0 || fConflicted) {
                 status.status = TransactionStatus::NotAccepted;
             }
         } else {
@@ -564,8 +560,6 @@ void TransactionRecord::updateStatus(const CWalletTx& wtx)
     } else {
         if (status.depth < 0 || fConflicted) {
             status.status = TransactionStatus::Conflicted;
-        } else if (isOffline) {
-            status.status = TransactionStatus::Offline;
         } else if (status.depth == 0) {
             status.status = TransactionStatus::Unconfirmed;
         } else if (status.depth < RecommendedNumConfirmations) {
@@ -612,8 +606,6 @@ bool TransactionRecord::isNull() const
 
 std::string TransactionRecord::statusToString(){
     switch (status.status){
-        case TransactionStatus::MaturesWarning:
-            return "Abandoned (not mature because no nodes have confirmed)";
         case TransactionStatus::Confirmed:
             return "Confirmed";
         case TransactionStatus::OpenUntilDate:

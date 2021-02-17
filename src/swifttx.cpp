@@ -1,5 +1,6 @@
 // Copyright (c) 2014-2016 The Dash developers
 // Copyright (c) 2016-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -49,7 +50,6 @@ void ProcessMessageSwiftTX(CNode* pfrom, std::string& strCommand, CDataStream& v
 
         CInv inv(MSG_TXLOCK_REQUEST, tx.GetHash());
         pfrom->AddInventoryKnown(inv);
-        GetMainSignals().Inventory(inv.hash);
 
         if (mapTxLockReq.count(tx.GetHash()) || mapTxLockReqRejected.count(tx.GetHash())) {
             return;
@@ -79,7 +79,7 @@ void ProcessMessageSwiftTX(CNode* pfrom, std::string& strCommand, CDataStream& v
             fAccepted = AcceptToMemoryPool(mempool, state, tx, true, &fMissingInputs);
         }
         if (fAccepted) {
-            RelayInv(inv);
+            g_connman->RelayInv(inv);
 
             DoConsensusVote(tx, nBlockHeight);
 
@@ -163,7 +163,7 @@ void ProcessMessageSwiftTX(CNode* pfrom, std::string& strCommand, CDataStream& v
                     mapUnknownVotes[ctx.vinMasternode.prevout.hash] = GetTime() + (60 * 10);
                 }
             }
-            RelayInv(inv);
+            g_connman->RelayInv(inv);
         }
 
         if (mapTxLockReq.count(ctx.txHash) && GetTransactionLockSignatures(ctx.txHash) == SWIFTTX_SIGNATURES_REQUIRED) {
@@ -223,9 +223,10 @@ bool IsIXTXValid(const CTransaction& txCollateral)
 
 int64_t CreateNewLock(CTransaction tx)
 {
+    int nChainHeight = WITH_LOCK(cs_main, return chainActive.Height(); );
     int64_t nTxAge = 0;
     BOOST_REVERSE_FOREACH (CTxIn i, tx.vin) {
-        nTxAge = GetInputAge(i);
+        nTxAge = pcoinsTip->GetCoinDepthAtHeight(i.prevout, nChainHeight);
         if (nTxAge < 5) //1 less than the "send IX" gui requires, incase of a block propagating the network at the time
         {
             LogPrintf("%s : Transaction not found / too new: %d / %s\n", __func__, nTxAge,
@@ -239,7 +240,7 @@ int64_t CreateNewLock(CTransaction tx)
         This prevents attackers from using transaction mallibility to predict which masternodes
         they'll use.
     */
-    int nBlockHeight = (chainActive.Tip()->nHeight - nTxAge) + 4;
+    int nBlockHeight = nChainHeight - nTxAge + 4;
 
     if (!mapTxLocks.count(tx.GetHash())) {
         LogPrintf("%s : New Transaction Lock %s !\n", __func__, tx.GetHash().ToString().c_str());
@@ -302,7 +303,7 @@ void DoConsensusVote(CTransaction& tx, int64_t nBlockHeight)
     mapTxLockVote[ctx.GetHash()] = ctx;
 
     CInv inv(MSG_TXLOCK_VOTE, ctx.GetHash());
-    RelayInv(inv);
+    g_connman->RelayInv(inv);
 }
 
 //received a consensus vote
@@ -350,6 +351,8 @@ bool ProcessConsensusVote(CNode* pnode, CConsensusVote& ctx)
     if (i != mapTxLocks.end()) {
         (*i).second.AddSignature(ctx);
 
+        // Not enabled swiftx for now, mapRequestCount doesn't exist anymore,
+        /*
 #ifdef ENABLE_WALLET
         if (pwalletMain) {
             //when we get back signatures, we'll count them as requests. Otherwise the client will think it didn't propagate.
@@ -357,6 +360,7 @@ bool ProcessConsensusVote(CNode* pnode, CConsensusVote& ctx)
                 pwalletMain->mapRequestCount[ctx.txHash]++;
         }
 #endif
+         */
 
         LogPrint(BCLog::MASTERNODE, "%s : Transaction Lock Votes %d - %s !\n", __func__, (*i).second.CountSignatures(), ctx.GetHash().ToString().c_str());
 

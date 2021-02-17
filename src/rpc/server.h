@@ -1,6 +1,7 @@
 // Copyright (c) 2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -214,7 +215,7 @@ extern UniValue prioritisetransaction(const JSONRPCRequest& request);
 extern UniValue getblocktemplate(const JSONRPCRequest& request);
 extern UniValue submitblock(const JSONRPCRequest& request);
 extern UniValue estimatefee(const JSONRPCRequest& request);
-extern UniValue estimatepriority(const JSONRPCRequest& request);
+extern UniValue estimatesmartfee(const JSONRPCRequest& request);
 extern UniValue getaddressinfo(const JSONRPCRequest& request);
 extern UniValue getblockchaininfo(const JSONRPCRequest& request);
 extern UniValue getnetworkinfo(const JSONRPCRequest& request);
@@ -234,11 +235,11 @@ extern UniValue importzerocoins(const JSONRPCRequest& request);
 extern UniValue exportzerocoins(const JSONRPCRequest& request);
 extern UniValue reconsiderzerocoins(const JSONRPCRequest& request);
 extern UniValue getspentzerocoinamount(const JSONRPCRequest& request);
-extern UniValue setzfbnseed(const JSONRPCRequest& request);
-extern UniValue getzfbnseed(const JSONRPCRequest& request);
+extern UniValue setzfivebalanceeed(const JSONRPCRequest& request);
+extern UniValue getzfivebalanceeed(const JSONRPCRequest& request);
 extern UniValue generatemintlist(const JSONRPCRequest& request);
 extern UniValue searchdzfbn(const JSONRPCRequest& request);
-extern UniValue dzfbnstate(const JSONRPCRequest& request);
+extern UniValue dzfivebalancetate(const JSONRPCRequest& request);
 
 extern UniValue getrawtransaction(const JSONRPCRequest& request); // in rpc/rawtransaction.cpp
 extern UniValue createrawtransaction(const JSONRPCRequest& request);

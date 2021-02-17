@@ -47,7 +47,7 @@ versions of Tor see [Section 3](#3-automatically-listen-on-tor).*
 
 	HiddenServiceDir /var/lib/tor/fivebalance-service/
 	HiddenServiceVersion 2
-	HiddenServicePort 5555 127.0.0.1:5555
+	HiddenServicePort 51472 127.0.0.1:51472
 	HiddenServicePort 61472 127.0.0.1:61472
 
 The directory can be different of course, but (both) port numbers should be equal to

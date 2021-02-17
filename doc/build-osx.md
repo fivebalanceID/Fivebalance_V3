@@ -16,7 +16,7 @@ Then install [Homebrew](https://brew.sh).
 Dependencies
 ----------------------
 
-    brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf python3 qt5 zmq libevent qrencode gmp
+    brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf python3 qt5 zmq libevent qrencode gmp libsodium rust
 
 See [dependencies.md](dependencies.md) for a complete overview.
 
@@ -43,8 +43,8 @@ Build FIVEBALANCE Core
 
 1. Clone the FIVEBALANCE Core source code:
 
-        git clone https://github.com/fivebalance-project/fivebalance
-        cd fivebalance
+        git clone https://github.com/fivebalanceID/Fivebalance_V3
+        cd Fivebalance_V3
 
 2.  Make the Homebrew OpenSSL headers visible to the configure script  (do ```brew info openssl``` to find out why this is necessary, or if you use Homebrew with installation folders different from the default).
 

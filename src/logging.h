@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2018 The Bitcoin developers
 // Copyright (c) 2015-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -61,7 +62,8 @@ namespace BCLog {
         STAKING     = (1 << 21),
         MASTERNODE  = (1 << 22),
         MNBUDGET    = (1 << 23),
-        LEGACYZC    = (1 << 24),
+        MNPING      = (1 << 24),
+        LEGACYZC    = (1 << 25),
         ALL         = ~(uint32_t)0,
     };
 

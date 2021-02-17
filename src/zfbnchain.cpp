@@ -1,4 +1,5 @@
 // Copyright (c) 2018-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -277,7 +278,7 @@ std::string ReindexZerocoinDB()
             return _("Reindexing zerocoin failed");
         }
         // update supply
-        UpdateZFBNSupplyConnect(block, pindex, true);
+        UpdateZFIVEBALANCEupplyConnect(block, pindex, true);
 
         for (const CTransaction& tx : block.vtx) {
             for (unsigned int i = 0; i < tx.vin.size(); i++) {
@@ -415,7 +416,7 @@ int64_t GetZerocoinSupply()
     return nTotal;
 }
 
-bool UpdateZFBNSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
+bool UpdateZFIVEBALANCEupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
 {
     AssertLockHeld(cs_main);
 
@@ -423,7 +424,7 @@ bool UpdateZFBNSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     if (!consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_ZC))
         return true;
 
-    //Add mints to zFBN supply (mints are forever disabled after last checkpoint)
+    //Add mints to zPIV supply (mints are forever disabled after last checkpoint)
     if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
         std::list<CZerocoinMint> listMints;
         std::set<uint256> setAddedToWallet;
@@ -435,15 +436,17 @@ bool UpdateZFBNSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
                 if (pwalletMain->IsMyMint(m.GetValue())) {
                     pwalletMain->UpdateMint(m.GetValue(), pindex->nHeight, m.GetTxHash(), m.GetDenomination());
                     // Add the transaction to the wallet
-                    for (auto& tx : block.vtx) {
+                    int posInBlock = 0;
+                    for (posInBlock = 0; posInBlock < (int)block.vtx.size(); posInBlock++) {
+                        auto& tx = block.vtx[posInBlock];
                         uint256 txid = tx.GetHash();
                         if (setAddedToWallet.count(txid))
                             continue;
                         if (txid == m.GetTxHash()) {
                             CWalletTx wtx(pwalletMain, tx);
                             wtx.nTimeReceived = block.GetBlockTime();
-                            wtx.SetMerkleBranch(block);
-                            pwalletMain->AddToWallet(wtx, nullptr);
+                            wtx.SetMerkleBranch(pindex, posInBlock);
+                            pwalletMain->AddToWallet(wtx);
                             setAddedToWallet.insert(txid);
                         }
                     }
@@ -452,7 +455,7 @@ bool UpdateZFBNSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
         }
     }
 
-    //Remove spends from zFBN supply
+    //Remove spends from zPIV supply
     std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
     for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
         mapZerocoinSupply.at(denom)--;
@@ -462,7 +465,7 @@ bool UpdateZFBNSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     }
 
     // Update Wrapped Serials amount
-    // A one-time event where only the zFBN supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zPIV supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
         for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
             mapZerocoinSupply.at(denom) += GetWrapppedSerialInflation(denom);
@@ -474,7 +477,7 @@ bool UpdateZFBNSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJus
     return true;
 }
 
-bool UpdateZFBNSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZFIVEBALANCEupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
 {
     AssertLockHeld(cs_main);
 
@@ -483,19 +486,19 @@ bool UpdateZFBNSupplyDisconnect(const CBlock& block, CBlockIndex* pindex)
         return true;
 
     // Undo Update Wrapped Serials amount
-    // A one-time event where only the zFBN supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the zPIV supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == consensus.height_last_ZC_WrappedSerials + 1) {
         for (const libzerocoin::CoinDenomination& denom : libzerocoin::zerocoinDenomList)
             mapZerocoinSupply.at(denom) -= GetWrapppedSerialInflation(denom);
     }
 
-    // Re-add spends to zFBN supply
+    // Re-add spends to zPIV supply
     std::list<libzerocoin::CoinDenomination> listDenomsSpent = ZerocoinSpendListFromBlock(block, true);
     for (const libzerocoin::CoinDenomination& denom : listDenomsSpent) {
         mapZerocoinSupply.at(denom)++;
     }
 
-    // Remove mints from zFBN supply (mints are forever disabled after last checkpoint)
+    // Remove mints from zPIV supply (mints are forever disabled after last checkpoint)
     if (pindex->nHeight < consensus.height_last_ZC_AccumCheckpoint) {
         std::list<CZerocoinMint> listMints;
         std::set<uint256> setAddedToWallet;

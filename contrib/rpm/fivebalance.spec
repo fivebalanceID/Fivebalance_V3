@@ -24,18 +24,18 @@ URL:		https://fivebalance.org/
 Source0:	https://fivebalance.org/bin/fivebalance-core-%{version}/fivebalance-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
-Source10:	https://raw.githubusercontent.com/fivebalance-project/fivebalance/v%{version}/contrib/debian/examples/fivebalance.conf
+Source10:	https://raw.githubusercontent.com/fivebalanceID/FIVEBALANCE/v%{version}/contrib/debian/examples/fivebalance.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/fivebalance-project/fivebalance/v%{version}/doc/man/fivebalanced.1
-Source21:	https://raw.githubusercontent.com/fivebalance-project/fivebalance/v%{version}/doc/man/fivebalance-cli.1
-Source22:	https://raw.githubusercontent.com/fivebalance-project/fivebalance/v%{version}/doc/man/fivebalance-qt.1
+Source20:	https://raw.githubusercontent.com/fivebalanceID/FIVEBALANCE/v%{version}/doc/man/fivebalanced.1
+Source21:	https://raw.githubusercontent.com/fivebalanceID/FIVEBALANCE/v%{version}/doc/man/fivebalance-cli.1
+Source22:	https://raw.githubusercontent.com/fivebalanceID/FIVEBALANCE/v%{version}/doc/man/fivebalance-qt.1
 
 #selinux
-Source30:	https://raw.githubusercontent.com/fivebalance-project/fivebalance/v%{version}/contrib/rpm/fivebalance.te
+Source30:	https://raw.githubusercontent.com/fivebalanceID/FIVEBALANCE/v%{version}/contrib/rpm/fivebalance.te
 # Source31 - what about fivebalance-tx and bench_fivebalance ???
-Source31:	https://raw.githubusercontent.com/fivebalance-project/fivebalance/v%{version}/contrib/rpm/fivebalance.fc
-Source32:	https://raw.githubusercontent.com/fivebalance-project/fivebalance/v%{version}/contrib/rpm/fivebalance.if
+Source31:	https://raw.githubusercontent.com/fivebalanceID/FIVEBALANCE/v%{version}/contrib/rpm/fivebalance.fc
+Source32:	https://raw.githubusercontent.com/fivebalanceID/FIVEBALANCE/v%{version}/contrib/rpm/fivebalance.if
 
 Source100:	https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
 

@@ -10,9 +10,8 @@
 #include <map>
 #include <set>
 #include <vector>
-
-#include <boost/unordered_set.hpp>
-#include <boost/unordered_map.hpp>
+#include <unordered_map>
+#include <unordered_set>
 
 namespace memusage
 {
@@ -46,8 +45,6 @@ template<typename X, typename Y> static inline size_t DynamicUsage(std::pair<X, 
 template<typename X> static size_t DynamicUsage(const std::vector<X>& v);
 template<typename X> static size_t DynamicUsage(const std::set<X>& s);
 template<typename X, typename Y> static size_t DynamicUsage(const std::map<X, Y>& m);
-template<typename X, typename Y> static size_t DynamicUsage(const boost::unordered_set<X, Y>& s);
-template<typename X, typename Y, typename Z> static size_t DynamicUsage(const boost::unordered_map<X, Y, Z>& s);
 template<typename X> static size_t DynamicUsage(const X& x);
 
 template<typename X> static size_t RecursiveDynamicUsage(const std::vector<X>& v);
@@ -164,22 +161,22 @@ static inline size_t RecursiveDynamicUsage(const std::pair<X, Y>& v)
 // Boost data structures
 
 template<typename X>
-struct boost_unordered_node : private X
+struct unordered_node : private X
 {
 private:
     void* ptr;
 };
 
 template<typename X, typename Y>
-static inline size_t DynamicUsage(const boost::unordered_set<X, Y>& s)
+static inline size_t DynamicUsage(const std::unordered_set<X, Y>& s)
 {
-    return MallocUsage(sizeof(boost_unordered_node<X>)) * s.size() + MallocUsage(sizeof(void*) * s.bucket_count());
+    return MallocUsage(sizeof(unordered_node<X>)) * s.size() + MallocUsage(sizeof(void*) * s.bucket_count());
 }
 
 template<typename X, typename Y, typename Z>
-static inline size_t DynamicUsage(const boost::unordered_map<X, Y, Z>& m)
+static inline size_t DynamicUsage(const std::unordered_map<X, Y, Z>& m)
 {
-    return MallocUsage(sizeof(boost_unordered_node<std::pair<const X, Y> >)) * m.size() + MallocUsage(sizeof(void*) * m.bucket_count());
+    return MallocUsage(sizeof(unordered_node<std::pair<const X, Y> >)) * m.size() + MallocUsage(sizeof(void*) * m.bucket_count());
 }
 
 // Dispatch to class method as fallback

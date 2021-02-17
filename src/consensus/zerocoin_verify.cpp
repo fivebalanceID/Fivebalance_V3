@@ -1,4 +1,5 @@
 // Copyright (c) 2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -152,7 +153,7 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
 bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend* spend, int nHeight, const uint256& hashBlock)
 {
     const Consensus::Params& consensus = Params().GetConsensus();
-    //Check to see if the zFBN is properly signed
+    //Check to see if the zPIV is properly signed
     if (consensus.NetworkUpgradeActive(nHeight, Consensus::UPGRADE_ZC_V2)) {
         try {
             if (!spend->HasValidSignature())
@@ -190,7 +191,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
     return true;
 }
 
-bool RecalculateFBNSupply(int nHeightStart, bool fSkipZfbn)
+bool RecalculateFIVEBALANCEupply(int nHeightStart, bool fSkipZfbn)
 {
     AssertLockHeld(cs_main);
 
@@ -250,9 +251,9 @@ bool RecalculateFBNSupply(int nHeightStart, bool fSkipZfbn)
         // Rewrite money supply
         nMoneySupply += (nValueOut - nValueIn);
 
-        // Rewrite zfbn supply too
+        // Rewrite zpiv supply too
         if (!fSkipZfbn && consensus.NetworkUpgradeActive(pindex->nHeight, Consensus::UPGRADE_ZC)) {
-            UpdateZFBNSupplyConnect(block, pindex, true);
+            UpdateZFIVEBALANCEupplyConnect(block, pindex, true);
         }
 
         // Add fraudulent funds to the supply and remove any recovered funds.
@@ -288,12 +289,11 @@ CAmount GetInvalidUTXOValue()
     for (auto out : invalid_out::setInvalidOutPoints) {
         bool fSpent = false;
         CCoinsViewCache cache(pcoinsTip);
-        const CCoins *coins = cache.AccessCoins(out.hash);
-        if(!coins || !coins->IsAvailable(out.n))
+        const Coin& coin = cache.AccessCoin(out);
+        if(coin.IsSpent())
             fSpent = true;
-
         if (!fSpent)
-            nValue += coins->vout[out.n].nValue;
+            nValue += coin.out.nValue;
     }
 
     return nValue;

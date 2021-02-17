@@ -1,4 +1,5 @@
 // Copyright (c) 2018-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -41,7 +42,7 @@ std::list<libzerocoin::CoinDenomination> ZerocoinSpendListFromBlock(const CBlock
 /** Global variable for the zerocoin supply */
 extern std::map<libzerocoin::CoinDenomination, int64_t> mapZerocoinSupply;
 int64_t GetZerocoinSupply();
-bool UpdateZFBNSupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck);
-bool UpdateZFBNSupplyDisconnect(const CBlock& block, CBlockIndex* pindex);
+bool UpdateZFIVEBALANCEupplyConnect(const CBlock& block, CBlockIndex* pindex, bool fJustCheck);
+bool UpdateZFIVEBALANCEupplyDisconnect(const CBlock& block, CBlockIndex* pindex);
 
-#endif //PIVX_ZFBNCHAIN_H
+#endif //PIVX_ZPIVCHAIN_H

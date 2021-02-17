@@ -26,7 +26,7 @@ Drag FIVEBALANCE-Qt to your applications folder, and then run FIVEBALANCE-Qt.
 
 ### Need Help?
 
-* See the documentation at the [FIVEBALANCE Wiki](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/wiki)
+* See the documentation at the [FIVEBALANCE Wiki](https://github.com/fivebalanceID/Fivebalance_V3/wiki)
 for help and more information.
 * Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [FIVEBALANCE Forum](http://forum.fivebalance.org/).
 * Join our Discord server [Discord Server](https://discord.fivebalance.org)

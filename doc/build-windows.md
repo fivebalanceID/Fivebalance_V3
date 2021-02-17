@@ -73,8 +73,8 @@ If you want to build the windows installer with `make deploy` you need [NSIS](ht
 
 Acquire the source in the usual way:
 
-    git clone https://github.com/fivebalance-project/fivebalance.git
-    cd fivebalance
+    git clone https://github.com/fivebalanceID/Fivebalance_V3.git
+    cd Fivebalance_V3
 
 ## Building for 64-bit Windows
 

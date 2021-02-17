@@ -42,10 +42,12 @@ struct BasicTestingSetup {
  * Included are data directory, coins database, script check threads
  * and wallet (if enabled) setup.
  */
+class CConnman;
 struct TestingSetup: public BasicTestingSetup {
     CCoinsViewDB *pcoinsdbview;
     fs::path pathTemp;
     boost::thread_group threadGroup;
+    CConnman* connman;
     ECCVerifyHandle globalVerifyHandle;
 
     TestingSetup();
@@ -64,10 +66,11 @@ struct TestMemPoolEntryHelper
     unsigned int nHeight;
     bool hadNoDependencies;
     bool spendsCoinbaseOrCoinstake;
+    unsigned int sigOpCount;
 
     TestMemPoolEntryHelper() :
         nFee(0), nTime(0), dPriority(0.0), nHeight(1),
-        hadNoDependencies(false), spendsCoinbaseOrCoinstake(false) { }
+        hadNoDependencies(false), spendsCoinbaseOrCoinstake(false), sigOpCount(1) { }
 
     CTxMemPoolEntry FromTx(CMutableTransaction &tx, CTxMemPool *pool = NULL);
 
@@ -78,6 +81,7 @@ struct TestMemPoolEntryHelper
     TestMemPoolEntryHelper &Height(unsigned int _height) { nHeight = _height; return *this; }
     TestMemPoolEntryHelper &HadNoDependencies(bool _hnd) { hadNoDependencies = _hnd; return *this; }
     TestMemPoolEntryHelper &SpendsCoinbaseOrCoinstake(bool _flag) { spendsCoinbaseOrCoinstake = _flag; return *this; }
+    TestMemPoolEntryHelper &SigOps(unsigned int _sigops) { sigOpCount = _sigops; return *this; }
 };
 
 #endif

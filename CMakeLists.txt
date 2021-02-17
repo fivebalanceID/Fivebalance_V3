@@ -10,6 +10,17 @@ if(CCACHE_PROGRAM)
     set(CXX_LAUNCHER "${CCACHE_PROGRAM}")
 endif()
 
+# Search for the cargo and rustc compilers required to build libzcashrust
+find_program(CARGO_PROGRAM cargo REQUIRED)
+if(CARGO_PROGRAM)
+    message(STATUS "Found cargo: ${CARGO_PROGRAM}")
+endif()
+
+find_program(RUSTC_PROGRAM rustc REQUIRED)
+if(RUSTC_PROGRAM)
+    message(STATUS "Found rustc: ${RUSTC_PROGRAM}")
+endif()
+
 project(FIVEBALANCE)
 
 set(BDB_VER "4.8.30")
@@ -25,6 +36,7 @@ endif()
 if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     message(STATUS "Compiling on macOS")
     set(ENV{target} "Mac")
+    add_definitions("-DMAC_OSX")
     list(APPEND CMAKE_PREFIX_PATH /usr/local/opt/qt5)
     list(APPEND CMAKE_PREFIX_PATH /usr/local/opt/openssl@1.1)
     list(APPEND CMAKE_PREFIX_PATH /usr/local/Cellar/berkeley-db@4)
@@ -86,6 +98,7 @@ endif()
 find_package(ZMQ)
 find_package(Miniupnp)
 find_package(Boost COMPONENTS system filesystem thread program_options REQUIRED)
+find_package(Sodium REQUIRED)
 
 # run autogen.sh if missing header files from configure on Linux/Mac
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/configure")
@@ -116,6 +129,15 @@ ExternalProject_Add (
         )
 
 ExternalProject_Add (
+        libzcashrust
+        SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}
+        CONFIGURE_COMMAND ""
+        BUILD_COMMAND ${CARGO_PROGRAM} build --release
+        BUILD_IN_SOURCE 1
+        INSTALL_COMMAND ""
+        )
+
+ExternalProject_Add (
         libsecp256k1
         SOURCE_DIR ${CMAKE_SOURCE_DIR}/src/secp256k1
         CONFIGURE_COMMAND ""
@@ -124,144 +146,16 @@ ExternalProject_Add (
         INSTALL_COMMAND ""
         )
 
-set(libleveldb_a_headers
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/atomic_pointer.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/port_example.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/port_posix.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/win/stdint.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/port.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/port_win.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/thread_annotations.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/db.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/options.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/comparator.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/filter_policy.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/slice.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/table_builder.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/env.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/c.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/iterator.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/cache.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/dumpfile.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/table.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/write_batch.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include/leveldb/status.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/log_format.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/memtable.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/version_set.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/write_batch_internal.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/filename.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/version_edit.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/dbformat.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/builder.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/log_writer.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/db_iter.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/skiplist.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/db_impl.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/table_cache.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/snapshot.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/log_reader.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/filter_block.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/block_builder.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/block.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/two_level_iterator.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/merger.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/format.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/iterator_wrapper.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/crc32c.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/env_posix_test_helper.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/arena.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/random.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/posix_logger.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/hash.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/histogram.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/coding.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/testutil.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/mutexlock.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/logging.h
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/testharness.h
-        )
+set(CRC32C_BUILD_TESTS OFF CACHE BOOL "Build CRC32C's unit tests" FORCE)
+set(CRC32C_BUILD_BENCHMARKS OFF CACHE BOOL "Build CRC32C's benchmarks" FORCE)
+set(CRC32C_USE_GLOG OFF CACHE BOOL "Build CRC32C's tests with Google Logging" FORCE)
+set(CRC32C_INSTALL OFF CACHE BOOL "Install CRC32C's header and library" FORCE)
+add_subdirectory(${CMAKE_SOURCE_DIR}/src/crc32c)
 
-set(libleveldb_a_sources
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/builder.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/c.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/dbformat.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/db_impl.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/db_iter.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/dumpfile.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/filename.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/log_reader.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/log_writer.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/memtable.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/repair.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/table_cache.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/version_edit.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/version_set.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/db/write_batch.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/block_builder.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/block.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/filter_block.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/format.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/iterator.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/merger.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/table_builder.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/table.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/table/two_level_iterator.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/arena.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/bloom.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/cache.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/coding.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/comparator.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/crc32c.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/env.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/env_posix.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/filter_policy.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/hash.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/histogram.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/logging.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/options.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/status.cc
-        )
-
-set(libleveldb_cpp_flags)
-if($ENV{target} MATCHES "Windows")
-        set(libleveldb_cpp_flags -DOS_WINDOWS -DLEVELDB_PLATFORM_WINDOWS -DWINVER=0x0500 -D__USE_MINGW_ANSI_STDIO=1)
-        set(libleveldb_a_sources ${libleveldb_a_sources} ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/util/env_win.cc
-            ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/port_win.cc)
-else()
-    if(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
-        set(libleveldb_cpp_flags -DOS_MACOSX -DLEVELDB_PLATFORM_POSIX)
-    else()
-        set(libleveldb_cpp_flags -DOS_LINUX -DLEVELDB_PLATFORM_POSIX)
-    endif()
-    set(libleveldb_a_sources ${libleveldb_a_sources} ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/port_posix.cc)
-endif()
-
-add_library(leveldb STATIC ${libleveldb_a_headers} ${libleveldb_a_sources})
-target_compile_definitions(leveldb PUBLIC ${libleveldb_cpp_flags} -DLEVELDB_ATOMIC_PRESENT -D__STDC_LIMIT_MACROS)
-target_include_directories(leveldb PUBLIC ${ENDIAN_INCLUDES}
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
-        )
-
-set(libmemenv_a_sources
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv/memenv.cc
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv/memenv.h
-        )
-add_library(memenv STATIC ${libmemenv_a_sources})
-target_compile_definitions(memenv PUBLIC ${libleveldb_cpp_flags})
-target_include_directories(memenv PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
-        )
-
-set(libleveldb_sse42_a_sources ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/port/port_posix_sse.cc)
-add_library(leveldb_sse42 ${libleveldb_sse42_a_sources})
-target_include_directories(leveldb_sse42 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
-        ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
-        )
+set(LEVELDB_BUILD_TESTS OFF CACHE BOOL "Build LevelDB's unit tests" FORCE)
+set(LEVELDB_BUILD_BENCHMARKS OFF CACHE BOOL "Build LevelDB's benchmarks" FORCE)
+set(LEVELDB_INSTALL OFF CACHE BOOL "Install LevelDB's header and library" FORCE)
+add_subdirectory(${CMAKE_SOURCE_DIR}/src/leveldb)
 
 file(GLOB HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/*.h)
 file(GLOB CRYPTO_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/crypto/*.h)
@@ -272,6 +166,8 @@ file(GLOB RPC_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/rpc/*.h)
 file(GLOB COMPAT_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/compat/*.h)
 file(GLOB CONSENSUS_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/consensus/*.h)
 file(GLOB CTAES_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/crypto/ctaes/*.h)
+file(GLOB ZRUST_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/rust/include/*.h)
+file(GLOB SAPLING_HEADERS ${CMAKE_CURRENT_SOURCE_DIR}/src/sapling/*.h)
 
 source_group("BitcoinHeaders" FILES
         ${HEADERS}
@@ -283,10 +179,13 @@ source_group("BitcoinHeaders" FILES
         ${COMPAT_HEADERS}
         ${CONSENSUS_HEADERS}
         ${CTAES_HEADERS}
+        ${ZRUST_HEADERS}
+        ${SAPLING_HEADERS}
         ./src/support/cleanse.h
         )
 
 set(SERVER_SOURCES
+        ./src/addrdb.cpp
         ./src/addrman.cpp
         ./src/bloom.cpp
         ./src/blocksignature.cpp
@@ -295,6 +194,7 @@ set(SERVER_SOURCES
         ./src/httprpc.cpp
         ./src/httpserver.cpp
         ./src/init.cpp
+        ./src/interface/wallet.cpp
         ./src/dbwrapper.cpp
         ./src/legacy/validation_zerocoin_legacy.cpp
         ./src/main.cpp
@@ -315,6 +215,7 @@ set(SERVER_SOURCES
         ./src/rpc/rawtransaction.cpp
         ./src/rpc/server.cpp
         ./src/script/sigcache.cpp
+        ./src/script/ismine.cpp
         ./src/sporkdb.cpp
         ./src/timedata.cpp
         ./src/torcontrol.cpp
@@ -331,6 +232,7 @@ target_include_directories(SERVER_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/src/univalue/include
     ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
     ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/helpers/memenv
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/rust/include
     ${ZMQ_INCLUDE_DIR} ${LIBEVENT_INCLUDE_DIR} ${OPENSSL_INCLUDE_DIR} ${BerkeleyDB_INCLUDE_DIRS}
     )
 
@@ -371,7 +273,6 @@ set(WALLET_SOURCES
         ./src/legacy/stakemodifier.cpp
         ./src/wallet/wallet.cpp
         ./src/wallet/wallet_zerocoin.cpp
-        ./src/wallet/wallet_ismine.cpp
         ./src/wallet/walletdb.cpp
         ./src/zfbn/zfbnwallet.cpp
         ./src/zfbn/zfbntracker.cpp
@@ -516,6 +417,7 @@ set(UTIL_SOURCES
         ./src/random.cpp
         ./src/rpc/protocol.cpp
         ./src/sync.cpp
+        ./src/threadinterrupt.cpp
         ./src/blob_uint256.cpp
         ./src/arith_uint256.cpp
         ./src/uint256.cpp
@@ -529,6 +431,7 @@ set(UTIL_SOURCES
 add_library(UTIL_A STATIC ${BitcoinHeaders} ${UTIL_SOURCES})
 target_include_directories(UTIL_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/univalue/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/rust/include
         ${OPENSSL_INCLUDE_DIR}
         )
 
@@ -538,23 +441,49 @@ target_include_directories(CLI_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/univalue/include
         )
 
+set(SAPLING_SOURCES
+        ./src/bech32.cpp
+        ./src/sapling/util.cpp
+        ./src/sapling/key_io_sapling.cpp
+        ./src/sapling/prf.cpp
+        ./src/sapling/noteencryption.cpp
+        ./src/sapling/address.cpp
+        ./src/sapling/note.cpp
+        ./src/sapling/zip32.cpp
+        ./src/sapling/crypter_sapling.cpp
+        ./src/sapling/saplingscriptpubkeyman.cpp
+        )
+
+add_library(SAPLING_A STATIC ${BitcoinHeaders} ${SAPLING_SOURCES})
+target_include_directories(SAPLING_A PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/sapling
+        ${CMAKE_CURRENT_SOURCE_DIR}/src/rust/include
+        ${OPENSSL_INCLUDE_DIR}
+        ${BerkeleyDB_INCLUDE_DIRS}
+        )
+
 link_directories(
         ${CMAKE_SOURCE_DIR}/src/univalue/.libs
         ${CMAKE_SOURCE_DIR}/src/secp256k1/.libs
+        ${CMAKE_SOURCE_DIR}/target/release
         )
+
+link_directories(${CMAKE_BINARY_DIR})
 
 set(fivebalance-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/fivebalance-cli.cpp)
 if($ENV{target} MATCHES "Windows")
     list(APPEND fivebalance-cli_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/fivebalance-cli-res.rc)
 endif()
 add_executable(fivebalance-cli ${fivebalance-cli_SOURCES})
-add_dependencies(fivebalance-cli libunivalue)
+add_dependencies(fivebalance-cli libunivalue libzcashrust)
 target_link_libraries(fivebalance-cli
         CLI_A
         univalue
         UTIL_A
         BITCOIN_CRYPTO_A
-        ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
+        SAPLING_A
+        rustzcash
+        ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB} ${sodium_LIBRARY_RELEASE} -ldl pthread
         )
 if($ENV{target} MATCHES "Windows")
     target_link_libraries(fivebalance-cli ${WINDOWS_LDADD})
@@ -565,7 +494,7 @@ if($ENV{target} MATCHES "Windows")
     list(APPEND fivebalance-tx_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/fivebalance-tx-res.rc)
 endif()
 add_executable(fivebalance-tx ${fivebalance-tx_SOURCES})
-add_dependencies(fivebalance-tx libunivalue libsecp256k1)
+add_dependencies(fivebalance-tx libunivalue libsecp256k1 libzcashrust)
 target_link_libraries(fivebalance-tx
         univalue
         COMMON_A
@@ -573,7 +502,9 @@ target_link_libraries(fivebalance-tx
         UTIL_A
         BITCOIN_CRYPTO_A
         secp256k1
-        ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB}
+        SAPLING_A
+        rustzcash
+        ${Boost_LIBRARIES} ${OPENSSL_LIBRARIES} ${LIBEVENT_LIB} ${sodium_LIBRARY_RELEASE} -ldl pthread
         )
 if($ENV{target} MATCHES "Windows")
     target_link_libraries(fivebalance-tx ${WINDOWS_LDADD})
@@ -582,14 +513,12 @@ if(GMP_FOUND)
     target_link_libraries(fivebalance-tx ${GMP_LIBRARY})
 endif()
 
-link_directories(${CMAKE_BINARY_DIR})
-
 set(fivebalanced_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/fivebalanced.cpp)
 if($ENV{target} MATCHES "Windows")
     list(APPEND fivebalanced_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/fivebalanced-res.rc)
 endif()
 add_executable(fivebalanced ${fivebalanced_SOURCES} ${BitcoinHeaders})
-add_dependencies(fivebalanced libunivalue libsecp256k1 leveldb leveldb_sse42 memenv)
+add_dependencies(fivebalanced libunivalue libsecp256k1 libzcashrust leveldb crc32c)
 target_include_directories(fivebalanced PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb
         ${CMAKE_CURRENT_SOURCE_DIR}/src/leveldb/include
@@ -603,11 +532,12 @@ target_link_libraries(fivebalanced
         univalue
         ZEROCOIN_A
         UTIL_A
+        SAPLING_A
         BITCOIN_CRYPTO_A
-        ${CMAKE_BINARY_DIR}/libleveldb.a
-        ${CMAKE_BINARY_DIR}/libleveldb_sse42.a
-        ${CMAKE_BINARY_DIR}/libmemenv.a
+        leveldb
+        crc32c
         secp256k1
+        rustzcash
         ${BerkeleyDB_LIBRARIES} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES} ${LIBEVENT_LIB} pthread
         )
 if($ENV{target} MATCHES "Windows")
@@ -628,6 +558,6 @@ if(MINIUPNP_FOUND)
     target_include_directories(fivebalanced PUBLIC ${MINIUPNP_INCLUDE_DIR})
 endif()
 
-target_link_libraries(fivebalanced -lpthread)
+target_link_libraries(fivebalanced ${sodium_LIBRARY_RELEASE} -ldl -lpthread)
 
 add_subdirectory(src/qt)

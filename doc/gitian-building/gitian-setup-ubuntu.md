@@ -32,7 +32,7 @@ git config --global user.email "MY_NAME@example.com"
 Fetching the Build Script
 --------------------------
 
-The build script we'll be using is contained in the FIVEBALANCE github repository ([contrib/gitian-build.py](https://github.com/fivebalance-project/fivebalance/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the FIVEBALANCE repository and will need to fetch this script with the following commands:
+The build script we'll be using is contained in the FIVEBALANCE github repository ([contrib/gitian-build.py](https://github.com/fivebalanceID/Fivebalance_V3/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the FIVEBALANCE repository and will need to fetch this script with the following commands:
 
 ```bash
 curl -L -O https://raw.githubusercontent.com/PIVX-Project/PIVX/master/contrib/gitian-build.py

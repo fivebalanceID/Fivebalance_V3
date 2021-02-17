@@ -13,7 +13,7 @@ index 6c9876c..291111c 100644
 +++ b/depends/packages/bdb.mk
 @@ -13,6 +13,19 @@ $(package)_cxxflags=-std=c++11
  endef
- 
+
  define $(package)_preprocess_cmds
 +  sed -i.old 's/\/var\/tmp/$HOME\/snap\/fivebalance\/common\/var\/tmp/g' csharp/DatabaseEnvironment.cs && \
 +  sed -i.old 's/\/var\/tmp/$HOME\/snap\/fivebalance\/common\/var\/tmp/g' csharp/DatabaseEnvironmentConfig.cs && \
@@ -31,6 +31,6 @@ index 6c9876c..291111c 100644
    sed -i.old 's/__atomic_compare_exchange/__atomic_compare_exchange_db/' dbinc/atomic.h && \
    sed -i.old 's/atomic_init/atomic_init_db/' dbinc/atomic.h mp/mp_region.c mp/mp_mvcc.c mp/mp_fget.c mutex/mut_method.c mutex/mut_tas.c && \
    cp -f $(BASEDIR)/config.guess $(BASEDIR)/config.sub dist
--- 
+--
 2.17.1
 

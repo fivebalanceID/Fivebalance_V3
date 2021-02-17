@@ -8,9 +8,9 @@
 
 import os
 
-from test_framework.test_framework import FivebalanceTestFramework
+from test_framework.test_framework import fivebalanceTestFramework
 
-class LoggingTest(FivebalanceTestFramework):
+class LoggingTest(fivebalanceTestFramework):
     def set_test_params(self):
         self.num_nodes = 1
         self.setup_clean_chain = True

@@ -1,4 +1,5 @@
 // Copyright (c) 2018-2020 The PIVX developers
+// Copyright (c) 2020 The FIVEBALANCE developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -52,4 +53,4 @@ public:
     void Clear();
 };
 
-#endif //PIVX_ZFBNTRACKER_H
+#endif //PIVX_ZPIVTRACKER_H

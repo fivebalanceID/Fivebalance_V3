@@ -519,7 +519,7 @@
             <item>
              <widget class="QLabel" name="labelMessage">
               <property name="text">
-               <string>Amount of FBN and zFBN staked.</string>
+               <string>Amount of FBN staked.</string>
               </property>
              </widget>
             </item>

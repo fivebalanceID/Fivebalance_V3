@@ -29,8 +29,8 @@ Build-Depends: debhelper,
  dh-systemd
 Standards-Version: 3.9.2
 Homepage: http://www.fivebalance.org
-Vcs-Git: git://github.com/FIVEBALANCE-Project/FIVEBALANCE.git
-Vcs-Browser: http://github.com/FIVEBALANCE-Project/FIVEBALANCE
+Vcs-Git: git://github.com/fivebalanceID/Fivebalance_V3.git
+Vcs-Browser: http://github.com/fivebalanceID/Fivebalance_V3
 
 Package: fivebalanced
 Architecture: any

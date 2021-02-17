@@ -10,7 +10,7 @@ packages:
 - "libssl1.0-dev"
 - "autoconf"
 remotes:
-- "url": "https://github.com/fivebalance-project/fivebalance-detached-sigs.git"
+- "url": "https://github.com/fivebalanceID/Fivebalance_V3-detached-sigs.git"
   "dir": "signature"
 files:
 - "osslsigncode-1.7.1.tar.gz"

@@ -1,8 +1,8 @@
-FIVEBALANCE Core version *4.2.0* is now available from:  <https://github.com/fivebalance-project/fivebalance/releases>
+FIVEBALANCE Core version *4.3.0* is now available from:  <https://github.com/fivebalanceID/Fivebalance_V3/releases>
 
 This is a new major version release, including various bug fixes and performance improvements, as well as updated translations.
 
-Please report bugs using the issue tracker at github: <https://github.com/fivebalance-project/fivebalance/issues>
+Please report bugs using the issue tracker at github: <https://github.com/fivebalanceID/Fivebalance_V3/issues>
 
 
 Recommended Update
@@ -14,6 +14,11 @@ How to Upgrade
 ==============
 
 If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/FIVEBALANCE-Qt (on Mac) or fivebalanced/fivebalance-qt (on Linux).
+
+Downgrading warning
+-------------------
+
+The chainstate database for this release is not compatible with previous releases, so if you run 4.3.0 and then decide to switch back to any older version, you will need to run the old release with the -reindex option to rebuild the chainstate data structures in the old format.
 
 
 Compatibility
@@ -31,281 +36,190 @@ FIVEBALANCE Core should also work on most other Unix-like systems but is not fre
 Notable Changes
 ==============
 
-### Removed zerocoin GUI
+Performance Improvements
+------------------------
 
-Spending zFBN and getting zFBN balance information is no longer available in the graphical interface ([#1549](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1549)). The feature remains accessible through the RPC interface: `getzerocoinbalance`, `listmintedzerocoins`, `listzerocoinamounts`, `spendzerocoin`, `spendzerocoinmints`.
+Version 4.3.0 contains a number of significant performance improvements, which make Initial Block Download, startup, transaction and block validation much faster:
 
+- The chainstate database (which is used for tracking UTXOs) has been changed from a per-transaction model to a per-output model ([See PR 1801](https://github.com/fivebalanceID/Fivebalance_V3/pull/1801)). Advantages of this model are that it:
+  - avoids the CPU overhead of deserializing and serializing the unused outputs;
+  - has more predictable memory usage;
+  - uses simpler code;
+  - is adaptable to various future cache flushing strategies.
+  
+  As a result, validating the blockchain during Initial Block Download (IBD) and reindex is ~30-40% faster, uses 10-20% less memory, and flushes to disk far less frequently. The only downside is that the on-disk database is 15% larger. During the conversion from the previous format a few extra gigabytes may be used.
 
-### Memory pool limiting
+- LevelDB has been upgraded to version 1.22 ([See PR 1738](https://github.com/fivebalanceID/Fivebalance_V3/pull/1738)). This version contains hardware acceleration for CRC on architectures supporting SSE 4.2. As a result, synchronization and block validation are now faster.
 
-Previous versions of FIVEBALANCE Core had their mempool limited by checking a transaction's fees against the node's minimum relay fee. There was no upper bound on the size of the mempool and attackers could send a large number of transactions paying just slighly more than the default minimum relay fee to crash nodes with relatively low RAM.
+Removal of Priority Estimation
+------------------------------
 
-FIVEBALANCE Core 4.2.0 will have a strict maximum size on the mempool. The default value is 300 MB and can be configured with the `-maxmempool` parameter. Whenever a transaction would cause the mempool to exceed its maximum size, the transaction that (along with in-mempool descendants) has the lowest total feerate (as a package) will be evicted and the node's effective minimum relay feerate will be increased to match this feerate plus the initial minimum relay feerate. The initial minimum relay feerate is set to 1000 satoshis per kB.
+Estimation of "priority" needed for a transaction to be included within a target number of blocks has been removed.  The rpc calls are deprecated and will either return `-1` or `1e24` appropriately. 
 
-FIVEBALANCE Core 4.2.0 also introduces new default policy limits on the length and size of unconfirmed transaction chains that are allowed in the mempool (generally limiting the length of unconfirmed chains to 25 transactions, with a total size of 101 KB). These limits can be overridden using command line arguments ([#1645](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1645), [#1647](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1647)).
+The format for fee_estimates.dat has also changed to no longer save these priority estimates. It will automatically be converted to the new format which is not readable by prior versions of the software.
 
-### Benchmarking Framework
+Dedicated mnping logging category
+---------------------------------
 
-FIVEBALANCE Core 4.2.0 backports  the internal benchmarking framework from Bitcoin Core, which can be used to benchmark cryptographic algorithms (e.g. SHA1, SHA256, SHA512, RIPEMD160, Poly1305, ChaCha20), Base58 encoding and decoding and thread queue. More tests are needed for script validation, coin selection and coins database, cuckoo cache, p2p throughtput ([#1650](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1650)).
-
-The binary file is compiled with fivebalance-core, unless configured with `--disable-bench`.<br>
-After compiling fivebalance-core, the benchmarks can be run with:
-```
-src/bench/bench_fivebalance
-```
-The output will be similar to:
-```
-#Benchmark,count,min(ns),max(ns),average(ns),min_cycles,max_cycles,average_cycles
-Base58CheckEncode,131072,7697,8065,7785,20015,20971,20242
-```
-
-'label' and 'account' APIs for wallet
--------------------------------------
-
-A new 'label' API has been introduced for the wallet. This is intended as a
-replacement for the deprecated 'account' API. The 'account' can continue to
-be used in v4.2 by starting fivebalanced with the '-deprecatedrpc=accounts'
-argument, and will be fully removed in v5.0.
-
-The label RPC methods mirror the account functionality, with the following functional differences:
-
-- Labels can be set on any address, not just receiving addresses. This functionality was previously only available through the GUI.
-- Labels can be deleted by reassigning all addresses using the `setlabel` RPC method.
-- There isn't support for sending transactions _from_ a label, or for determining which label a transaction was sent from.
-- Labels do not have a balance.
-
-Here are the changes to RPC methods:
-
-| Deprecated Method       | New Method            | Notes       |
-| :---------------------- | :-------------------- | :-----------|
-| `getaccount`            | `getaddressinfo`      | `getaddressinfo` returns a json object with address information instead of just the name of the account as a string. |
-| `getaccountaddress`     | n/a                   | There is no replacement for `getaccountaddress` since labels do not have an associated receive address. |
-| `getaddressesbyaccount` | `getaddressesbylabel` | `getaddressesbylabel` returns a json object with the addresses as keys, instead of a list of strings. |
-| `getreceivedbyaccount`  | `getreceivedbylabel`  | _no change in behavior_ |
-| `listaccounts`          | `listlabels`          | `listlabels` does not return a balance or accept `minconf` and `watchonly` arguments. |
-| `listreceivedbyaccount` | `listreceivedbylabel` | Both methods return new `label` fields, along with `account` fields for backward compatibility. |
-| `move`                  | n/a                   | _no replacement_ |
-| `sendfrom`              | n/a                   | _no replacement_ |
-| `setaccount`            | `setlabel`            | Both methods now: <ul><li>allow assigning labels to any address, instead of raising an error if the address is not receiving address.<li>delete the previous label associated with an address when the final address using that label is reassigned to a different label, instead of making an implicit `getaccountaddress` call to ensure the previous label still has a receiving address. |
-
-| Changed Method         | Notes   |
-| :--------------------- | :------ |
-| `listunspent`          | Returns new `label` fields, along with `account` fields for backward compatibility if running with the `-deprecatedrpc=accounts` argument |
-| `sendmany`             | The first parameter has been renamed to `dummy`, and must be set to an empty string, unless running with the `-deprecatedrpc=accounts` argument (in which case functionality is unchanged). |
-| `listtransactions`     | The first parameter has been renamed to `dummy`, and must be set to the string `*`, unless running with the `-deprecatedrpc=accounts` argument (in which case functionality is unchanged). |
-| `getbalance`           | `account`, `minconf` and `include_watchonly` parameters are deprecated, and can only be used if running with the `-deprecatedrpc=accounts` argument |
-| `getcoldstakingbalance`| The `account` parameter is deprecated, and can only be used if running with the `-deprecatedrpc=accounts` argument (in which case functionality is unchanged) |
-| `getdelegatedbalance`  | The `account` parameter is deprecated, and can only be used if running with the `-deprecatedrpc=accounts` argument (in which case functionality is unchanged) |
-
-GUI Changes
-----------
-
-### Topbar navigation
-
-- The "sync" button in the GUI topbar can be clicked to go directly to the Settings --> Information panel (where the current block number and hash is shown).
-
-- The "connections" button in the GUI topbar can be clicked to open the network monitor dialog ([#1688](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1688)).
-
-Functional Changes
-----------
-
-### Stake-Split threshold
-
-If the stake split is active (threshold > 0), then stake split threshold value must be greater than a minimum, set by default at 100 FBN. The minimum value can be changed using the `-minstakesplit` startup flag ([#1586](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1586)). A value `0` is still allowed, regardless of the minimum set, and, as before, can be used to disable the stake splitting functionality.
-
-### Changed command-line options
-
-- new command `-minstakesplit` to modify the minimum allowed for  the stake split threshold ([#1586](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1586)).
-
-- new commands `-maxmempool`, to customize  the memory pool size limit, and `-checkmempool=N`, to customize the frequency of the mempool check ([#1647](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1647)).
-
-- new commands `-limitancestorcount=N` and `limitancestorsize=N`, to limit the number and total size of all in-mempool ancestors for a transaction ([#1647](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1647)).
-
-- new commands `-limitdescendantcount=N` and `limitdescendantsize=N`, to limit the number and total size of all in-mempool descendants for a transaction ([#1647](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1647)).
+`mnping` related debug log messages have been moved to their own category of the same name. This is to reduce log spam when debugging with the `masternode` category enabled.
 
 RPC Changes
 ------------
 
-In addition to the afore mentioned 'label' and 'account' API changes, other RPC changes are as follows:
-
-### Low-level API changes
-
-- The `asm` property of each scriptSig now contains the decoded signature hash type for each signature that provides a valid defined hash type ([#1633](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1633)).<br>
-The following items contain assembly representations of scriptSig signatures
-and are affected by this change: RPC `getrawtransaction`, RPC `decoderawtransaction`, REST `/rest/tx/` (JSON format), REST `/rest/block/` (JSON format when including extended tx details), `fivebalance-tx -json`
-
 ### Modified input/output for existing commands
 
-- new "usage" field in the output of `getmempoolinfo`, displaying the total memory usage for the mempool ([#1645](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1645)).
-
-- new "upgrades" field in the output of `getblockchaininfo`, showing upcoming and active network upgrades ([#1665](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1665), [#1687](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1687)).
-
-- `listreceivedbyaddress` has a new optional "addressFilter" argument that will filter the results to only the specified address
+- The new database model no longer stores information about transaction
+  versions of unspent outputs. This means that:
+  - The `gettxout` RPC no longer has a `version` field in the response.
+  - The `gettxoutsetinfo` RPC reports `hash_serialized_2` instead of `hash_serialized`,
+    which does not commit to the transaction versions of unspent outputs, but does
+    commit to the height and coinbase/coinstake information.
+  - The `getutxos` REST path no longer reports the `txvers` field in JSON format,
+    and always reports 0 for transaction versions in the binary format
+- Three filtering options for the `getbalance` command have been reinstated:
+  - `minconf` (numeric) Only include transactions confirmed at least this many times.
+  - `includeWatchonly` (bool) Also include balance in watchonly addresses.
+  - `includeDelegated` (bool) Also include balance delegated to cold stakers.
+- `estimatefee` is now deprecated and replaced by `estimatesmartfee`:
+  - Input argument is the same for `estimatesmartfee`.
+  - Output is now a JSON object with 2 fields: `feerate` and `blocks`
+- The `getrawmempool` RPC command now includes an additional output field:
+  - `modifiedfee` (numeric) transaction fee with fee deltas used for mining priority.::ZZZZexit
+  
 
 ### Removed commands
 
-- `masternodedebug`. Use `getmasternodestatus` instead. ([#1698](https://github.com/FIVEBALANCE-Project/FIVEBALANCE/pull/1698)).
+The following commands have been removed from the interface:
+- `estimatepriority`
 
-*4.2.0* Change log
+*4.3.0* Change log
 ==============
 
 Detailed release notes follow. This overview includes changes that affect behavior, not code moves, refactors and string updates. For convenience in locating the code changes and accompanying discussion, both the pull request and git merge commit are mentioned.
 
 ### Core Features
- - #1414 `e3ceda31c5` uint256 to arith_uint256 migration (Second step). (furszy)
- - #1486 `e146131780` Replace OpenSSL AES with ctaes-based version (furszy)
- - #1488 `cc84157e52` CCrypter using secure allocator vector. (furszy)
- - #1531 `1f9e7e45ba` [Backport] Implement accurate UTXO cache size accounting (furszy)
- - #1533 `898bcd24ad` [Backport] Make connect=0 disable automatic outbound connections. (furszy)
- - #1534 `d45c58e89d` [Backport] Preemptively catch a few potential bugs (furszy)
- - #1554 `0dedec8157` [Core] Big endian support (random-zebra)
- - #1557 `8dfc4806f7` [Core] Prevector (random-zebra)
- - #1564 `2c11e37c91` Abstract out CTransaction-specific signing into SignatureCreator (furszy)
- - #1587 `c9741c53b1` [Backport] Shut down if trying to connect a corrupted block (furszy)
- - #1593 `f59c8fb625` Prepare for non-Base58 addresses [Step 1] (furszy)
- - #1629 `73d26f20e9` [DB] Bitcoin 0.12-0.14 dbwrapper improvements (random-zebra)
- - #1630 `a9ac1cc51f` [Refactoring] Lightweight abstraction of boost::filesystem (random-zebra)
- - #1631 `56b414761c` [Miner] Remove 2017 invalid outputs check (furszy)
- - #1633 `8cd9c592a9` [Core] Bitcoin 0.12-0.14 serialization improvements (random-zebra)
- - #1634 `e0239f801d` [Core] prevector: named union and defaults vars initialization (random-zebra)
- - #1641 `7c102142c7` [Core] New fee estimation code (random-zebra)
- - #1645 `49867086da` [Core] Implement accurate memory accounting for mempool (random-zebra)
- - #1647 `eb00d0f62f` [Core] MemPool package tracking and limits (Alex Morcos)
- - #1650 `4ed15cc69d` [Tests] Benchmarking Framework (random-zebra)
- - #1665 `602ad3d7f8` New upgrade structure. (furszy)
- - #1668 `7e65a82e7d` [Backport] Make sigcache faster (furszy)
- - #1669 `c072659135` Better sigcache implementation (CuckooCache) (furszy)
- - #1670 `8d7e7808d0` [Refactoring] CValidationState logging (random-zebra)
- - #1673 `a5ba7200c6` [Core] Separate Consensus CheckTxInputs and GetSpendHeight in CheckInputs (furszy)
- - #1676 `961e2d2a70` [Backport] Base58 performance improvements (Kaz Wesley)
- - #1677 `95fefe9c0d` Prepare for non-Base58 addresses [Step 2] (furszy)
- - #1679 `c157deb76b` Prepare for non-Base58 addresses [Step 3] (furszy)
- - #1687 `f054e3e627` [Refactor] Network upgrades management cleanup (random-zebra)
- - #1697 `13576cfe14` [BUG] Fix mempool entry priority (furszy)
- - #1707 `6bc917e859` RPC & Mempool back ports. (furszy)
- - #1728 `1c472ebae8` IsInitialBlockDownload: usually avoid locking (furszy)
- - #1729 `76ea490ac1` [Core] Add checkpoints for FIVEBALANCE v4.1.1 enforcement (random-zebra)
- - #1733 `e4ae10db31` Move zerocoin validation to its own legacy file. (furszy)
- - #1747 `6f90e8be13` NU custom activation height startup arg. (furszy)
-
-### Build System
- - #1681 `131ec069fd` [Build] Set complete cpp/cxx flags for bench_fivebalance binary (Fuzzbawls)
- - #1684 `69fa8dce5e` [Travis] Bump macOS CMake target image (Fuzzbawls)
- - #1710 `ed63a331a3` [Depends] Update dependency fallback URL (Fuzzbawls)
-
-### P2P Protocol and Network Code
- - #1542 `87feface84` [Net] Add and document network messages in protocol.h (Fuzzbawls)
- - #1579 `e941230894` [Net] Use SeedSpec6's rather than CAddress's for fixed seeds (Cory Fields)
- - #1616 `f295ee4e4e` [P2P] Enforce expected outbound services (Pieter Wuille)
- - #1618 `077ab3db70` [P2P] Do not set extra flags for unfiltered DNS seed results (Pieter Wuille)
- - #1638 `cadf9e6daa` [Net] Fix masking of irrelevant bits in address groups (Alex Morcos)
- - #1646 `4c829bb274` [Net] Turn net structures into dumb storage classes (furszy)
- - #1672 `745a05804f` [Bug] removed "dseg" message support re-introduced. (furszy)
- - #1704 `8bbc0650e6` [Net] Pre-requirements for network encapsulation (random-zebra)
+ - #1666 `5a092159f6` [Core] Base work for the Sapling signatureHash (furszy)
+ - #1746 `128978d45b` [Core] Only include undo.h from main.cpp (random-zebra)
+ - #1768 `6881e1063f` [Core] Use SipHash-2-4 for various non-cryptographic hashes (Pieter Wuille)
+ - #1771 `bda654c5f3` [Core] Use SipHash for node eviction (Pieter Wuille)
+ - #1773 `90ffc6683b` [Core] per-txout model preparation (random-zebra)
+ - #1774 `68df9a7d5b` [Core] Alter assumptions in CCoinsViewCache::BatchWrite (random-zebra)
+ - #1775 `85b5f2eb83` [Core] Remove BIP30 check (random-zebra)
+ - #1777 `3c767c46b5` [Core] ModifyNewCoins saves database lookups (random-zebra)
+ - #1788 `823ba8e334` [Core] Remove priority estimation (random-zebra)
+ - #1793 `af793b7bb9` [Core] Safer modify new coins (Russell Yanofsky)
+ - #1795 `afafd7f6a9` [Core] Use unordered_map for CCoinsMap and fix empty vectors in streams (Pieter Wuille)
+ - #1799 `fcb546ad05` [Core] Remove UTXO cache entries when the tx they were added for is removed (Pieter Wuille)
+ - #1801 `30d353edab` [Core] Per-txout model for chainstate database (random-zebra)
+ - #1804 `5c8b992033` [Core] Use std::unordered_{map,set} (C++11) instead of boost::unordered_* (random-zebra)
 
 ### GUI
- - #1059 `39a0fa6e04` [UI] Improve staking chart workflow (Akshay)
- - #1287 `e7dd0947c0` [GUI] Load persisted transaction filter during start (Mrs-X)
- - #1516 `93df7ce6ec` [GUI] MacOS fix open files with no default app. (furszy)
- - #1548 `176d3ae558` [Cleanup][GUI] Remove zFBN faqs (random-zebra)
- - #1549 `47bf23aa14` [Cleanup][GUI] Nuke zFBN from the GUI (random-zebra)
- - #1598 `f66f72656d` [GUI] Split "Delegators" address type in the table model (furszy)
- - #1601 `78a2923184` [GUI] Tor state missing translation (furszy)
- - #1604 `8ec6bbe737` [Refactor][GUI] Set static texts in .ui files + add missing tr() (random-zebra)
- - #1607 `749d42a812` [QT] Add password mismatch warnings (JSKitty)
- - #1610 `9ac68cffd5` [GUI][UX] Add accept/close keyboard controls to all dialogs (random-zebra)
- - #1611 `3d9222edf0` [GUI][Bug] CoinControl payAmounts and nBytes calculation (random-zebra)
- - #1612 `eea3f42ab6` [GUI] CoinControlDialog fix SelectAll / UnselectAll (random-zebra)
- - #1623 `b7e2d97a42` [GUI][Trivial] Change Custom fee amount when Recommended fee is selected (Ambassador)
- - #1626 `5b064a6145` [GUI][Bug] Notify transaction creation failure reason (random-zebra)
- - #1644 `34bf1c0583` [GUI] Fix invalid Destination toString encoding. (Fuzzbawls)
- - #1652 `a2850ce0fe` [GUI] cs widget: minor usability improvements (random-zebra)
- - #1653 `6ad9bfcc48` [GUI] Reuse collateral UTXOs in MnWizard (random-zebra)
- - #1657 `169fc34192` [GUI][Model] Remove unneeded lock in checkBalanceChanged (furszy)
- - #1667 `730566d510` [GUI] removing unused bitcoinamountfield file (furszy)
- - #1678 `fb14a8fb46` [GUI][Model] Remove zerocoin methods. (furszy)
- - #1683 `68e1ee69e5` [GUI] Add missing QPainterPath include (Fuzzbawls)
- - #1688 `129563c273` [GUI] TopBar navigation (sync/peers) (random-zebra)
- - #1690 `12a8f8a5c4` [BUG][GUI] check for available "unlocked" balance in prepareTransaction (random-zebra)
- - #1696 `f84445af1e` [BUG][GUI] Restore message() connection for ColdStakingWidget (random-zebra)
- - #1699 `9bba19c62e` [GUI] Fix dashboard txs list blinking issue (furszy)
- - #1708 `f3b54df58d` [BUG][GUI] Non-static coinControl object in CoinControlDialogs (random-zebra)
- - #1715 `37c01cf359` [GUI][Trivial] Update settingsfaqwidget.ui (Jeffrey)
- - #1724 `c178aab2fe` [GUI] Return early in pollBalanceChanged (Fuzzbawls)
- - #1732 `be99df3342` [GUI] Better start single MN error description. (furszy)
- - #1737 `78ed084999` [GUI] Replace more deprecated Qt methods (Fuzzbawls)
- - #1740 `141141c9cf` [GUI] Periodic make translate (Fuzzbawls)
- - #1741 `ffae965fad` [GUI] Settings console message moved to read only. (furszy)
- - #1742 `a94f8f9a90` [GUI] Fix settings language combobox initialization. (furszy)
- - #1744 `fda84ee710` [GUI] Recognize key event for clearing console (Fuzzbawls)
- - #1749 `e182e112bc` [GUI] Solving old, not loaded at startup, transactions notification issue. (furszy)
-
-### RPC/REST
- - #1640 `0b84a5025d` [P2P][RPC] Rework addnode behaviour (Pieter Wuille)
- - #1660 `10876c6c80` [RPC] Change btc to FBN in help text (PeterL73)
- - #1663 `0724bbbad2` [Wallet][RPC] FundTransaction - fundrawtransaction (random-zebra)
- - #1702 `7a849ca06a` [RPC] Table registration update and wallet table decoupled. (furszy)
- - #1731 `fe845a83d2` [RPC][Wallet] Deprecate internal account system (Fuzzbawls)
+ - #1754 `93d574170d` [Model] Wallet interface refactor + code cleanup. (furszy)
+ - #1776 `2ad27b1407` [Model] TransactionRecord decomposeTransaction refactoring (furszy)
+ - #1782 `ada4462782` [GUI] Start masternodes polling timer only when is needed. (furszy)
+ - #1805 `f0cc6fcc38` [BUG][GUI] Don't append cold-stake records twice (random-zebra)
+ - #1863 `ad15bce2f5` [Trivial][GUI] Fix init messages (random-zebra)
 
 ### Wallet
- - #1586 `73c3ecc388` [Wallet] Minimum value for stake split threshold (random-zebra)
- - #1695 `98cf582557` [Wallet] Abandon tx in CommitTransaction if ATMP fails (random-zebra)
- - #1698 `ccecffd144` [Wallet] Masternodes start performance boost (furszy)
- - #1713 `f31b51f08e` [Refactor] zerocoin code moved from wallet.cpp to wallet_zerocoin.cpp (furszy)
- - #1717 `f928674bf7` [Wallet] AddToWallet split in AddToWallet and LoadToWallet (furszy)
- - #1734 `78a4f68ab2` [Wallet][BUG] fix detection of wallet conflicts in CWallet::AddToWallet (random-zebra)
+ - #1752 `2e32285a70` [Wallet] Simple unused methods cleanup. (furszy)
+ - #1755 `eeb129b477` [wallet] List COutput solvability + wallet_ismine refactoring. (furszy)
+ - #1757 `e2cc4aa411` [Wallet] add cacheable amounts for caching credit/debit values (furszy)
+ - #1759 `dcc92f8157` [Wallet] AvailableCoins remove duplicated watchonly config argument. (furszy)
+ - #1760 `3b030f9978` [Wallet] AvailableCoins code readability improved (furszy)
+ - #1764 `6847d0d648` [Wallet] Securely erase potentially sensitive keys/values (Thomas Snider)
+ - #1767 `8ab63d3e5b` [Wallet] Ignore MarkConflict if block hash is not known (random-zebra)
+ - #1781 `4715915d4c` [Wallet] Acquire cs_main lock before cs_wallet during wallet initialization (random-zebra)
+ - #1783 `abf7c62934` [Wallet] Do not try to resend transactions if the node is importing or in IBD (furszy)
+ - #1787 `4b1f3eb792` [Wallet] Improve usage of fee estimation code (random-zebra)
+ - #1802 `7db7724cff` [Wallet] Make nWalletDBUpdated atomic to avoid a potential race (furszy)
+ - #1810 `49bd99929d` [Wallet] wtx cached balances test coverage + getAvailableCredit problem fix. (furszy)
+ - #1811 `e89e20eca1` [Wallet][Refactoring] wallet/init refactoring backports (random-zebra)
+ - #1817 `6480c7d9bf` [Wallet] Speedup coinstake creation removing redundancies. (furszy)
+ - #1832 `c14d130b48` [Wallet] Cleanup getbalance methods that are not fulfilling any purpose. (furszy)
 
-### Scripts and Tools
- - #1693 `a5265a4db4` Upstream scripts back ports [Step 1] (furszy)
- - #1701 `f8f0fe0bf1` [Tools] logprint-scanner for error() and strprintf() (random-zebra)
+### P2P Protocol and Network Code
+ - #1769 `1e334200bb` [Net] Remove bogus assert on number of oubound connections. (Matt Corallo)
+ - #1780 `5fcad0c139` [Net] cs_vSend-cs_main deadlock detection fixed. (furszy)
+ - #1800 `616b102f8b` [P2P] Improve AlreadyHave (Alex Morcos)
+ - #1812 `777638e7bc` [P2P] Begin Network Encapsulation (random-zebra)
+ - #1835 `cbd9271afb` [Net] Massive network refactoring and speedup (Fuzzbawls)
+
+### RPC/REST
+ - #1753 `e288a4508b` [Trivial] [RPC] Fix listcoldutxos help text (JSKitty)
+ - #1828 `4fc36b59ee` [RPC][BUG] Fix ActivateBestChain calls in reconsider(invalidate)block (random-zebra)
+ - #1831 `28509bf9e8` [RPC] re introducing filtering args in getbalance (furszy)
+
+### Build Systems
+ - #1553 `fddf765132` [Build] Sapling Foundations (Build System + ZIP32) (furszy)
+ - #1703 `2e11030e8b` [Build] Require minimum boost version 1.57.0 (Fuzzbawls)
+ - #1738 `21c467b1eb` [Build] Update leveldb to 1.22+ (Fuzzbawls)
+ - #1750 `544e619ebe` [Trivial] openssl.org dependency download link changed (CryptoDev-Project)
+ - #1770 `32a2e8a031` [Build] Bump minimum libc to 2.17 for release binaries (Fuzzbawls)
+ - #1790 `6e7b9b2a82` [Build] Fix glibc compat (Fuzzbawls)
+ - #1792 `a3da3aa9f5` [Build] allow for empty RUST_TARGET in offline builds (Fuzzbawls)
+ - #1794 `760f426430` [Build] Use syslibs for nightly snap builds (Fuzzbawls)
+ - #1813 `259523cdc2` [CMake] Define MAC_OSX for cmake builds on macOS (Fuzzbawls)
+ - #1823 `d675fa3a1a` [Travis] Lower the build timeout for the functional tests job (random-zebra)
+
+### Layer 2 (MN/Budget)
+ - #1791 `6162df962b` [Masternodes] Missing cs main locks in CalculateScore and GetMasternodeInputAge (furszy)
+ - #1803 `69ec4a3fdf` [Cleanup] masternode-budget tiny cleanup. (furszy)
+ - #1825 `a06c0fd993` [MN] more cleanup over the tier two area. (furszy)
+ - #1826 `961f5373bf` [Refactor] Masternode Budget first refactoring and cleanup (random-zebra)
+ - #1843 `f4d5d34bed` [Bug] Update budget manager best height even if mnSync is incomplete (random-zebra)
+
+### Miner/Block Generation
+ - #1700 `40742084de` [Miner] Move coinbase & coinstake to P2PKH (furszy)
+ - #1809 `959d707bc9` [Miner] decouple zFBN duplicated serials checks from CreateNewBlock (furszy)
+ - #1816 `0fa40d7695` [Miner] Unifying the disperse coinbase tx flow + further clean up. (furszy)
+ - #1818 `242356d012` [Miner] PoS process (furszy)
 
 ### Miscellaneous
- - #1547 `1824def118` [Refactor] Define constant string variable for currency unit (random-zebra)
- - #1568 `8c06746f18` [Trivial] Unused Image Removal & Readme Revisions (Yuurin Bee)
- - #1643 `80c5499b39` Fix Destination wrapper segfault on copy constructor (furszy)
- - #1659 `494c841f7e` Few compiler warnings fixed. (furszy)
- - #1662 `5d3266c25c` [Cleanup] Remove obsolete multisig code (random-zebra)
- - #1674 `360ee1dfc5` Remove unused MultiSigScriptSet typedef and member (furszy)
- - #1689 `9205aa6277` [Cleanup] Small main.cpp cleanup (furszy)
- - #1692 `1221efd5d6` [Cleanup] Don't sign MESS_VER_STRMESS network msgs anymore (random-zebra)
- - #1705 `2d6835e734` [Doc] Add/Update some release notes for 4.2 (random-zebra)
- - #1718 `5e75d4c344` [Trivial] Spelling Error (Yuurin Bee)
- - #1719 `b72ec2ff52` [Cleanup] remove masternode broadcast from CActiveMasternode class (random-zebra)
- - #1722 `f68acbe01e` Unused methods cleanup (furszy)
- - #1736 `fc5d36ac77` [Cleanup] Transaction primitive unused methods cleanup. (furszy)
- - #1751 `dbcbf8a995` [Miner] Unused reserveKey cleanup (furszy)
+ - #1694 `0604a98bd0` [Backport] Test LowS in standardness (furszy)
+ - #1721 `8e19562dc4` [Validation] Reduce cs_main locks during ConnectTip/SyncWithWallets (furszy)
+ - #1725 `e59d8e59fa` [Backport] mempool score index. (Alex Morcos)
+ - #1735 `ee749c5b9c` [Validation] DisconnectBlock updates. (furszy)
+ - #1785 `277b1114d9` [Bug] lock cs_main for Misbehaving (furszy)
+ - #1796 `6d62df529b` [BUG] Properly copy fCoinStake memeber between CTxInUndo and CCoins (random-zebra)
+ - #1797 `b909e96121` [Refactoring] Break circular dependency main ↔ txdb (random-zebra)
+ - #1806 `b9f30f65f2` [Refactor] Cleanup access to chainActive in a few places (random-zebra)
+ - #1808 `948e1a99c0` [Tests][Trivial] Remove mining in rpc_deprecated test (random-zebra)
+ - #1820 `846dca7b83` [Cleanup] remove unneeded chainActive access. (furszy)
+ - #1821 `4b3fb02dc3` [Cleanup] removing unused GetMasternodeByRank method (furszy)
+ - #1822 `48d7475bd4` [Refactor] Dedicated logging category for masternode pings (random-zebra)
+ - #1824 `6ec609f93d` [Cleanup] IsBlockValueValid refactored properly. (furszy)
+ - #1827 `70bf7203ee` [Cleanup] removed null check comparison against a new object. (furszy)
+ - #1833 `9c06e5d7ce` [Refactor] Remove GetInputAge and GetMasternodeInputAge (random-zebra)
+ - #1853 `e8d13ef4b0` [Cleanup] Removing unused and unneeded functions and members (furszy)
+ - #1855 `3cd52771f2` [Bug] wrong reserveKey when committing budget/proposal collaterals (random-zebra)
+ - #1860 `5aed03f6fe` [Bug] Missing mnping category added to logcategories (furszy)
 
 ## Credits
 
 Thanks to everyone who directly contributed to this release:
-- Akshay
 - Alex Morcos
-- Ambassador
-- Ben Woosley
 - Cory Fields
+- CryptoDev-Project
+- Daniel Kraft
 - Ethan Heilman
 - Fuzzbawls
-- Gavin Andresen
 - Gregory Maxwell
 - JSKitty
-- Jeffrey
+- Jack Grigg
 - Jeremy Rubin
-- Jiaxing Wang
-- John Newbery
-- Jonas Schnelli
-- João Barbosa
-- Kaz Wesley
-- Marko Bencun
+- Luke Dashjr
+- Matt Corallo
 - Patrick Strateman
-- Peter Todd
-- PeterL73
+- Pavel Janík
+- Philip Kaufmann
 - Pieter Wuille
+- Russell Yanofsky
 - Suhas Daftuar
+- Thomas Snider
 - Wladimir J. van der Laan
-- Yuurin Bee
 - furszy
-- practicalswift
+- jtimon
 - random-zebra
 
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/fivebalance-project-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/fivebalanceID-translations/), the QA team during Testing and the Node hosts supporting our Testnet.
