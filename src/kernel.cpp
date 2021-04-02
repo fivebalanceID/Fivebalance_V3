@@ -168,6 +168,8 @@ bool CheckProofOfStake(const CBlock& block, std::string& strError, const CBlockI
 
     // Verify Proof Of Stake
     CStakeKernel stakeKernel(pindexPrev, stakeInput.get(), block.nBits, block.nTime);
+	const Consensus::Params& consensus = Params().GetConsensus();
+    if (!consensus.NetworkUpgradeActive(nHeight, Consensus::UPGRADE_BIP65)) return true;
     if (!stakeKernel.CheckKernelHash()) {
         strError = "kernel hash check fails";
         return false;
