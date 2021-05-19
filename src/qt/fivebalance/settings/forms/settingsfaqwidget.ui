@@ -342,7 +342,7 @@
                   <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="text">
-                  <string>https://fivebalance.com/</string>
+                  <string>https://www.fivebalance.com/</string>
                  </property>
                 </widget>
                </item>
@@ -816,12 +816,11 @@
                         <property name="text">
                          <string>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           We have support channels in most of our official chat groups, for example
-                           &lt;a style='color: #219d85' href='https://discord.FIVEBALANCE.org'&gt;
-                           #support in our Discord&lt;/a&gt;.
-                           If you prefer to submit a ticket, You can do so at
-                           &lt;a style='color: #219d85' href='https://FIVEBALANCE.freshdesk.com'&gt;
-                           our Freshdesk support site&lt;/a&gt;.
+                           If you prefer to submit a ticket, You can contact us on
+                           &lt;a style='color: #219d85' href='https://fivebalance.com/#contact'&gt;
+                           our site&lt;/a&gt;, Or you can send a direct email to
+                           &lt;a style='color: #219d85' href='mailto:hello@fivebalance.com'&gt;
+                           hello@fivebalance.com
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </string>
                         </property>

@@ -506,7 +506,7 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey, CWallet* pwallet)
     if (Params().GetConsensus().NetworkUpgradeActive(nHeightNext, Consensus::UPGRADE_POS)) {
         LogPrintf("%s: Aborting PoW block creation during PoS phase\n", __func__);
         // sleep 1/2 a block time so we don't go into a tight loop.
-        MilliSleep((Params().GetConsensus().nTargetSpacing * 1000) >> 1);
+        MilliSleep((Params().GetConsensus().TargetSpacing(nHeightNext) * 1000) >> 1);
         return nullptr;
     }
 
@@ -567,7 +567,6 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     util::ThreadRename("fivebalance-miner");
     const Consensus::Params& consensus = Params().GetConsensus();
-    const int64_t nSpacingMillis = consensus.nTargetSpacing * 1000;
 
     // Each thread has its own key and counter
     Optional<CReserveKey> opReservekey{nullopt};
@@ -581,6 +580,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 
     while (fGenerateBitcoins || fProofOfStake) {
         CBlockIndex* pindexPrev = GetChainTip();
+		const int64_t nSpacingMillis = consensus.TargetSpacing(pindexPrev->nHeight + 1) * 1000;
         if (!pindexPrev) {
             MilliSleep(nSpacingMillis);       // sleep a block
             continue;

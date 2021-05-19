@@ -70,13 +70,18 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     (0, uint256S("00001a572ee83b41c45a0eb5ba27ec7f90043ea6d17f91b9c17f45db59287ceb"))
     (12320, uint256S("c0a44331f2f29ea599e2fe5546605e06a40ea7b4aa8599594ba6ca97a7085d53"))
     (625573, uint256S("fbcffc305f2944b9b873a7910dc3593c1005ab4ccffd0878515388fc84833c8f"))
-	(927127, uint256S("249dc50f59d76134b482cefaec50d1a6b7aec236c392fef593a3c49fb02a4c96"));
+	(927127, uint256S("249dc50f59d76134b482cefaec50d1a6b7aec236c392fef593a3c49fb02a4c96"))
+	(983499, uint256S("bd51c8c7d76179ff6afd4ed74cde8163ba4394484eafef50f2d987945afed532"))
+	(983500, uint256S("67ed0e1cf058c2bb8b7064a7ddb105a1ec29f86438995851a515d6fe1922c46e"))
+	(983501, uint256S("f9f70e79a6b26df3ea25fe46d7350f100197839f622c94f59ec214a233c60a57"))
+	(984207, uint256S("01bba14abdc77e06afe9fe5ce159c237f38f4cff2c6a0c0ef0d0e8205dfadf2d"))
+	;
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1617329400, // * UNIX timestamp of last checkpoint block
-    1867382,    // * total number of transactions between genesis and last checkpoint
+	1620896340, // * UNIX timestamp of last checkpoint block
+	1981788,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the UpdateTip debug.log lines)
-    3000        // * estimated number of transactions per day after checkpoint
+    1000        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -119,7 +124,7 @@ public:
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMasternodeCountDrift = 20;       // num of MN we allow the see-saw payments to be off by
-        consensus.nMaxMoneyOut = 1000000000 * COIN;
+        consensus.nMaxMoneyOut = 3000000000 * COIN;
         consensus.nPoolMaxTransactions = 3;
         consensus.nProposalEstablishmentTime = 60 * 60 * 24;    // must be at least a day old to make it into a budget
         consensus.nStakeMinAge = 60 * 60;
@@ -128,12 +133,14 @@ public:
         consensus.nTargetTimespanV2 = 30 * 60;
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
+        consensus.nIncreaseBlocktimeHeight = 983500;
+        consensus.nTargetSpacingV2 = 2 * 60;
 
         // spork keys
-        consensus.strSporkPubKey = "04CAB9566D2DBA3E08738921D568859171816D5C2D7E1E432C8B2401833C6B0E87C00162341DAA4025009711E4C93CC802DA7364A1FF636F890307207C73578FBE";
+        consensus.strSporkPubKey = "0485e8844a1590c7f84b98414281f9273cbe3d4c7332c9cb71c6d0cd8b15b8d9463b4ca9dc74c15d1a0a04b0da21c40055423a42b4e136a379c855f1bd0e349f8e";
         consensus.strSporkPubKeyOld = "04BCFBEA59EC97482475F554DB08F7F67C5C5A95A52A356B052D0ED878628RIKI6FE6022C33A0BAF09FCD8D3EE98EBB6AA6A77FB43D716641242CFD45369A88E7D";
-        consensus.nTime_EnforceNewSporkKey = 1598248800;    //!> Monday, August 24, 2020 6:00:00 AM GMT
-        consensus.nTime_RejectOldSporkKey = 1598378400;     //!> Tuesday, August 25, 2020 6:00:00 PM GNT
+        consensus.nTime_EnforceNewSporkKey = 1620795600;    //!> Wednesday, 12 May 2021 05:00:00 AM GMT
+        consensus.nTime_RejectOldSporkKey = 1620797400;     //!> Wednesday, 12 May 2021 05:30:00 AM GNT
 
         // height-based activations
         consensus.height_last_ZC_AccumCheckpoint = std::numeric_limits<int>::max();

@@ -349,7 +349,7 @@ RES_ICONS = \
   qt/fivebalance/res/img/ic-add-liliac.svg \
   qt/fivebalance/res/img/ic-check-theme-light.svg \
   qt/fivebalance/res/img/ic-nav-receive-hover.svg \
-  qt/fivebalance/res/img/img-empty-dark-multisend.svg \
+  qt/fivebalance/res/img/img-empty-dark-multisend.png \
   qt/fivebalance/res/img/ic-add-purple.svg \
   qt/fivebalance/res/img/ic-check-white.svg \
   qt/fivebalance/res/img/ic-nav-receive.svg \
@@ -358,11 +358,11 @@ RES_ICONS = \
   qt/fivebalance/res/img/ic-check.svg \
   qt/fivebalance/res/img/ic-nav-send-active.svg \
   qt/fivebalance/res/img/img-empty-dark-staking-off.svg \
-  qt/fivebalance/res/img/img-empty-dark-staking-on.svg \
+  qt/fivebalance/res/img/img-empty-dark-staking-on.png \
   qt/fivebalance/res/img/ic-address-book-grey.svg \
   qt/fivebalance/res/img/ic-chevron-left.svg \
   qt/fivebalance/res/img/ic-nav-send-hover.svg \
-  qt/fivebalance/res/img/img-empty-dark-transactions.svg \
+  qt/fivebalance/res/img/img-empty-dark-transactions.png \
   qt/fivebalance/res/img/ic-address-book-white.svg \
   qt/fivebalance/res/img/ic-chevron-right.svg \
   qt/fivebalance/res/img/ic-nav-send.svg \
@@ -374,27 +374,26 @@ RES_ICONS = \
   qt/fivebalance/res/img/ic-address-send-white.svg \
   qt/fivebalance/res/img/ic-clear-purple.svg \
   qt/fivebalance/res/img/ic-nav-settings-hover.svg \
-  qt/fivebalance/res/img/img-empty-multisend.svg \
+  qt/fivebalance/res/img/img-empty-multisend.png \
   qt/fivebalance/res/img/ic-address-send.svg \
   qt/fivebalance/res/img/ic-close-white.svg \
   qt/fivebalance/res/img/ic-nav-settings.svg \
   qt/fivebalance/res/img/img-empty-peers.svg \
-  qt/fivebalance/res/img/img-empty-privacy.svg \
-  qt/fivebalance/res/img/img-empty-privacy-dark.svg \
+  qt/fivebalance/res/img/img-empty-privacy.png \
+  qt/fivebalance/res/img/img-empty-privacy-dark.png \
   qt/fivebalance/res/img/ic-arrow-drop-down-white.svg \
   qt/fivebalance/res/img/ic-close.svg \
   qt/fivebalance/res/img/ic-radio-liliac-on.svg \
   qt/fivebalance/res/img/img-empty-staking-off.svg \
   qt/fivebalance/res/img/ic-arrow-drop-down.svg \
-  qt/fivebalance/res/img/ic-coin-fbn.svg \
+  qt/fivebalance/res/img/ic-coin-fbn.png \
   qt/fivebalance/res/img/ic-receive-off.svg \
-  qt/fivebalance/res/img/img-empty-staking-on.svg \
+  qt/fivebalance/res/img/img-empty-staking-on.png \
   qt/fivebalance/res/img/ic-arrow-drop-up-white.svg \
-  qt/fivebalance/res/img/ic-coin-zfbn.png \
   qt/fivebalance/res/img/ic-receive-on.svg \
-  qt/fivebalance/res/img/img-empty-transactions.svg \
+  qt/fivebalance/res/img/img-empty-transactions.png \
   qt/fivebalance/res/img/ic-arrow-drop-up.svg \
-  qt/fivebalance/res/img/ic-coin-zfbn.svg \
+  qt/fivebalance/res/img/ic-coin-zfbn.png \
   qt/fivebalance/res/img/ic-received.svg \
   qt/fivebalance/res/img/img-logo-fivebalance.png \
   qt/fivebalance/res/img/ic-arrow-drop-white-down.svg \
