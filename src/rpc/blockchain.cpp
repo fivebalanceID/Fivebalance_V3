@@ -520,9 +520,15 @@ UniValue getblock(const JSONRPCRequest& request)
     std::string strHash = request.params[0].get_str();
     uint256 hash(uint256S(strHash));
 
-    bool fVerbose = true;
-    if (request.params.size() > 1)
-        fVerbose = request.params[1].get_bool();
+    int fVerbose = 1;
+    if (!request.params[1].isNull()) {
+        if (request.params[1].isNum()) {
+            fVerbose = request.params[1].get_int();
+        }
+        else {
+            fVerbose = request.params[1].get_bool() ? 1 : 0;
+        }
+    }
 
     if (mapBlockIndex.count(hash) == 0)
         throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Block not found");
@@ -533,14 +539,14 @@ UniValue getblock(const JSONRPCRequest& request)
     if (!ReadBlockFromDisk(block, pblockindex))
         throw JSONRPCError(RPC_INTERNAL_ERROR, "Can't read block from disk");
 
-    if (!fVerbose) {
+    if (fVerbose <= 0) {
         CDataStream ssBlock(SER_NETWORK, PROTOCOL_VERSION);
         ssBlock << block;
         std::string strHex = HexStr(ssBlock.begin(), ssBlock.end());
         return strHex;
     }
 
-    return blockToJSON(block, pblockindex);
+    return blockToJSON(block, pblockindex, fVerbose >= 2);
 }
 
 UniValue getblockheader(const JSONRPCRequest& request)
@@ -1543,4 +1549,3 @@ UniValue getblockindexstats(const JSONRPCRequest& request) {
     return ret;
 
 }
-
